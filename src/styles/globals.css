@@ -81,6 +81,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
 h1,
 h2,
 h3,
@@ -106,6 +111,7 @@ label {
     color: var(--main-text-color);
 }
 
+.Banner_Btn,
 .Page_Button {
     padding: var(--small-gap) var(--big-gap);
 
@@ -141,9 +147,15 @@ label {
     padding-left: 1rem;
 }
 
+main {
+    margin-top: 10vh;
+}
+
 section {
     display: flex;
     flex-direction: row;
+    scroll-margin: 10vh;
+    scroll-snap-align: start;
 }
 
 .Container {
@@ -168,6 +180,7 @@ section {
 
 .Dark_Container {
     background-color: var(--alt-background-color);
+    z-index: 1;
 }
 
 .Image_Container {
@@ -188,6 +201,11 @@ section {
     font-size: 1.4rem;
 }
 
+.Container > p.Smaller_Paragraph {
+    max-width: 55ch;
+    font-size: 1.4rem;
+}
+
 /* Whatsapp Btn */
 
 .WhatsApp_Action_Container {
@@ -199,9 +217,25 @@ section {
 
     bottom: var(--medium-gap);
     right: var(--medium-gap);
+    z-index: 0;
+}
+
+.WhatsApp_Action_Container:hover > .WhatsApp_Btn {
+    display: flex;
+}
+
+.WhatsApp_Action_Container.Left {
+    right: unset;
+    left: var(--medium-gap);
+    flex-direction: row-reverse;
+}
+
+.WhatsApp_Action_Container.Left > .WhatsApp_Action_Logo > .WhatsApp_Action_Logo_Vector {
+    transform: scaleX(-1);
 }
 
 .WhatsApp_Btn {
+    display: none;
     font-size: 1.2rem;
 }
 
@@ -214,6 +248,11 @@ section {
 /* ------ Navbar ------ */
 
 .Navbar_Top {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -284,4 +323,110 @@ section {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--small-gap);
+}
+
+/* ------ Seção de Serviços ------  */
+
+.Banner_Slider_Container {
+    position: relative;
+}
+
+.Banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--medium-gap);
+    width: 100%;
+    flex: 2;
+}
+
+.Banner_Title {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--alt-text-color);
+    z-index: 3;
+}
+
+.Banner_Description {
+    text-align: center;
+    color: var(--alt-text-color);
+    max-width: 65ch;
+    font-size: 1.2rem;
+    letter-spacing: 0.0625rem;
+    z-index: 3;
+}
+
+.Banner_Btn {
+    font-weight: 100;
+    z-index: 3;
+}
+
+.Banner_Img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 20%;
+    z-index: 2;
+}
+
+.Banner_Slider_Btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 3;
+}
+
+.Banner_Slider_Btn.Next_Btn {
+    right: var(--medium-gap);
+}
+
+.Banner_Slider_Btn > span {
+    font-size: 2.4rem;
+    color: var(--alt-text-color);
+}
+
+.Banner_Slider_Indicator {
+    position: absolute;
+    bottom: var(--medium-gap);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--small-gap);
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.Banner_Slider_Indicator_Dot {
+    width: 1rem;
+    height: 1rem;
+    opacity: 50%;
+    border-radius: 50%;
+    background-color: var(--alt-text-color);
+
+    transition: opacity 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+.Banner_Slider_Indicator_Dot.Active {
+    opacity: 100%;
+    scale: 1.4;
+}
+
+/* ------ Footer ------ */
+
+footer {
+    background-color: var(--main-text-color);
+    height: 90vh;
+    z-index: 1;
+    position: relative;
+    scroll-snap-align: start;
+    scroll-margin: 10vh;
 }
