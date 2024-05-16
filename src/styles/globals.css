@@ -3,29 +3,36 @@
 /* Acumin Pro */
 @font-face {
     font-family: "Acumin Pro";
-    src: url("/public/fonts/acumin_pro/AcuminPro_Bold_Italic.otf") format("opentype");
+    src: url("/fonts/acumin_pro/AcuminPro_Bold_Italic.otf") format("opentype");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Acumin Pro";
-    src: url("/public/fonts/acumin_pro/AcuminPro_Bold.otf") format("opentype");
+    src: url("/fonts/acumin_pro/AcuminPro_Bold.otf") format("opentype");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Acumin Pro";
-    src: url("/public/fonts/acumin_pro/AcuminPro_Italic.otf") format("opentype");
+    src: url("/fonts/acumin_pro/AcuminPro_Italic.otf") format("opentype");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Acumin Pro";
-    src: url("/public/fonts/acumin_pro/AcuminPro_Regular.otf") format("opentype");
+    src: url("/fonts/acumin_pro/AcuminPro_Regular.otf") format("opentype");
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Acumin Pro";
+    src: url("/fonts/acumin_pro/AcuminPro_Light.ttf") format("truetype");
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -33,14 +40,14 @@
 
 @font-face {
     font-family: "Trajan Pro";
-    src: url("/public/fonts/acumin_pro/TrajanPro_Regular.ttf") format("truetype");
+    src: url("/fonts/trajan_pro/TrajanPro_Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Trajan Pro";
-    src: url("/public/fonts/acumin_pro/TrajanPro_Bold.otf") format("opentype");
+    src: url("/fonts/trajan_pro/TrajanPro_Bold.otf") format("opentype");
     font-weight: bold;
     font-style: normal;
 }
@@ -50,9 +57,12 @@
     --brand-color-gray: #4c4c4c;
     --brand-color-beige: #bea07d;
 
+    --brand-color-beige-bright: #ce9f68;
+
     --main-text-color: var(--brand-color-gray);
     --alt-text-color: var(--brand-color-white);
     --special-text-color: var(--brand-color-beige);
+    --active-text-color: var(--brand-color-beige-bright);
 
     --main-background-color: var(--brand-color-white);
     --alt-background-color: var(--brand-color-gray);
@@ -84,6 +94,7 @@
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    scroll-padding-top: 10vh;
 }
 
 h1,
@@ -126,10 +137,12 @@ label {
     align-items: center;
 
     gap: var(--small-gap);
+
+    text-decoration: none;
 }
 
 .Page_Button > p {
-    margin-top: 0.25rem;
+    margin-bottom: 0.125rem;
     display: flex;
     align-items: center;
     font-size: 1.1rem;
@@ -154,7 +167,6 @@ main {
 section {
     display: flex;
     flex-direction: row;
-    scroll-margin: 10vh;
     scroll-snap-align: start;
 }
 
@@ -176,6 +188,10 @@ section {
 
 .Padded_Container {
     padding: var(--container-padding);
+}
+
+.Unpadded_Container {
+    padding: 0;
 }
 
 .Dark_Container {
@@ -237,6 +253,7 @@ section {
 .WhatsApp_Btn {
     display: none;
     font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .WhatsApp_Action_Logo_Vector {
@@ -282,7 +299,6 @@ section {
     font-family: var(--title-font-family);
     color: var(--alt-text-color);
 
-    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -327,8 +343,14 @@ section {
 
 /* ------ Seção de Serviços ------  */
 
-.Banner_Slider_Container {
+.Banner_Slider {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: var(--medium-gap);
 }
 
 .Banner {
@@ -355,12 +377,14 @@ section {
     max-width: 65ch;
     font-size: 1.2rem;
     letter-spacing: 0.0625rem;
+    font-weight: 300;
     z-index: 3;
 }
 
 .Banner_Btn {
     font-weight: 100;
     z-index: 3;
+    text-decoration: none;
 }
 
 .Banner_Img {
@@ -382,9 +406,11 @@ section {
     background-color: transparent;
     border: none;
     z-index: 3;
+    left: var(--medium-gap);
 }
 
 .Banner_Slider_Btn.Next_Btn {
+    left: unset;
     right: var(--medium-gap);
 }
 
@@ -395,7 +421,7 @@ section {
 
 .Banner_Slider_Indicator {
     position: absolute;
-    bottom: var(--medium-gap);
+    bottom: var(--big-gap);
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -406,8 +432,8 @@ section {
 }
 
 .Banner_Slider_Indicator_Dot {
-    width: 1rem;
-    height: 1rem;
+    width: 0.75rem;
+    height: 0.75rem;
     opacity: 50%;
     border-radius: 50%;
     background-color: var(--alt-text-color);
@@ -423,10 +449,12 @@ section {
 /* ------ Footer ------ */
 
 footer {
-    background-color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 90vh;
     z-index: 1;
     position: relative;
+    background-color: var(--main-text-color);
     scroll-snap-align: start;
-    scroll-margin: 10vh;
 }
