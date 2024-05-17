@@ -7,7 +7,7 @@ const GoogleMap = () => {
 
     useEffect(() => {
         const loader = new Loader({
-            apiKey: "AIzaSyBoWxQtCEHcm-AqgB3fjGveoXqVgy8g9pI",
+            apiKey: "AIzaSyBoWxQtCEHcm-AqgB3fjGveoXqVgy8g9pI", // Criar uma variável de ambiente!
             version: "weekly",
             libraries: ["places"],
         });

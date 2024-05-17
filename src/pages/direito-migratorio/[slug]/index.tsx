@@ -1,16 +1,26 @@
+import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { Expertise_Data, Banners_Data, Servicos_Internacional } from "@/data/Expertises";
 import Link from "next/link";
+import { Banners_Data, Servicos_Migratorio, Service_Data } from "@/data/Expertises";
 
-const Direito_Internacional_Data = Banners_Data[2];
+export const getStaticPaths: GetStaticPaths = async () => {
+    // Get the paths we want to pre-render based on services
+    const paths = Servicos_Migratorio.map((service) => ({
+        params: { slug: service.slug },
+    }));
 
-const DireitoInternacional = () => {
+    // We'll pre-render only these paths at build time.
+    // { fallback: false } means other routes should 404.
+    return { paths, fallback: false };
+};
+
+const ServicePage = ({ service }: { service: Service_Data }) => {
     return (
         <>
             <Head>
-                <title>Direito Internacional | Taborda Lima & Advogados Associados</title>
-                <meta name="description" content="Taborda Lima & Advogados Associados" />
+                <title>{service.title + " | Taborda Lima & Advogados Associados "}</title>
+                <meta name="description" content={service.description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -43,41 +53,38 @@ const DireitoInternacional = () => {
 
             <main>
                 <section>
-                    <div className="Container Dark_Container Unpadded_Container Expertise_Header Low_Container">
+                    <div className="Container Dark_Container Unpadded_Container Ungaped_Container Expertise_Header Low_Container">
                         <div className="Expertise_Header_Top">
                             <div className="Expertise_Header_Top_Nav">
                                 <Link href={"/#servicos"} scroll={false} className="Page_Button Expertise_Header_Top_Nav_Button">
                                     <span className="material-icons">arrow_back</span>
                                     <p>Ir a Página Principal</p>
                                 </Link>
-                            </div>
 
-                            <Image
-                                className="Expertise_Header_Img"
-                                src={Direito_Internacional_Data.image}
-                                alt={"Direito Aduaneiro"}
-                                width={800}
-                                height={400}
-                            />
+                                <Link href={"/direito-migratorio"} scroll={false} className="Page_Button Expertise_Header_Top_Nav_Button">
+                                    <span className="material-icons">arrow_back</span>
+                                    <p>Ir a Direito Migratório</p>
+                                </Link>
+                            </div>
+                            <Image className="Expertise_Header_Img" src={service.image} alt={service.title} width={800} height={400} />
                         </div>
                         <div className="Expertise_Header_Info">
-                            <h2 className="Expertise_Header_Info_Subtitle">ÁREA DE EXPERTISE</h2>
-                            <h1 className="Expertise_Header_Info_Title">{Direito_Internacional_Data.title}</h1>
-                            <p className="Expertise_Header_Info_Description">{Direito_Internacional_Data.description}</p>
+                            <h2 className="Expertise_Header_Info_Subtitle">DIREITO MIGRATORIO</h2>
+                            <h1 className="Expertise_Header_Info_Title">{service.title}</h1>
+                            <p className="Expertise_Header_Info_Description">{service.description}</p>
                         </div>
                     </div>
 
                     <div className="Container Services_List_Container">
-                        <div className="Services_List">
-                            {Servicos_Internacional.map((service) => (
-                                <div key={service.title} className="Services_List_Item">
-                                    <h2 className="Services_List_Item_Title">{service.title}</h2>
-                                    <p className="Services_List_Description">{service.description}</p>
-                                    <Link href={service.link} className="Page_Button Services_List_Item_Button">
-                                        Mais Detalhes
-                                    </Link>
-                                </div>
+                        <div className="Service_Full_Description">
+                            <span className="Service_Full_Description_Pattern"></span>
+                            <h2 className="Service_Full_Description_Title">{service.title}</h2>
+                            {service.full_description.map((paragraph, index) => (
+                                <p key={index} className="Service_Full_Description_Paragraph">
+                                    {paragraph}
+                                </p>
                             ))}
+                            <span className="Service_Full_Description_Pattern"></span>
                         </div>
                     </div>
                 </section>
@@ -86,4 +93,22 @@ const DireitoInternacional = () => {
     );
 };
 
-export default DireitoInternacional;
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+    if (!params || typeof params.slug !== "string") {
+        return {
+            notFound: true,
+        };
+    }
+
+    const service = Servicos_Migratorio.find((service) => service.slug === params.slug);
+
+    if (!service) {
+        return {
+            notFound: true,
+        };
+    }
+
+    return { props: { service } };
+};
+
+export default ServicePage;

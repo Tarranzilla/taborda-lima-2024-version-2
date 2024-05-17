@@ -4,6 +4,7 @@ export type Service_Data = {
     full_description: string[];
     image: string;
     link: string;
+    slug: string;
 };
 
 export type Expertise_Data = {
@@ -25,6 +26,7 @@ export const Servicos_Civil = [
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-contratual",
+        slug: "direito-contratual",
     },
     {
         title: "Direito Bancário",
@@ -34,6 +36,7 @@ export const Servicos_Civil = [
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-bancario",
+        slug: "direito-bancario",
     },
     {
         title: "Direito do Consumidor",
@@ -43,6 +46,7 @@ export const Servicos_Civil = [
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-consumidor",
+        slug: "direito-consumidor",
     },
     {
         title: "Direito Imobiliário",
@@ -52,6 +56,7 @@ export const Servicos_Civil = [
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-imobiliario",
+        slug: "direito-imobiliario",
     },
     {
         title: "Direito de Família e Sucessões Nacional e Internacional",
@@ -61,6 +66,7 @@ export const Servicos_Civil = [
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-familia-sucessoes",
+        slug: "direito-familia-sucessoes",
     },
     {
         title: "Indenizações",
@@ -70,6 +76,7 @@ export const Servicos_Civil = [
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-indenizacoes",
+        slug: "direito-indenizacoes",
     },
 ];
 
@@ -84,6 +91,7 @@ export const Servicos_Desportivo = [
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/negociacao-contratos-transferencia-atletas",
+        slug: "negociacao-contratos-transferencia-atletas",
     },
     {
         title: "Licenciamento de Atletas e Agentes",
@@ -95,6 +103,7 @@ export const Servicos_Desportivo = [
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/licenciamento-atletas-agentes",
+        slug: "licenciamento-atletas-agentes",
     },
     {
         title: "Representação em Casos de Litígios Desportivos",
@@ -106,6 +115,7 @@ export const Servicos_Desportivo = [
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/representacao-litigios-desportivos",
+        slug: "representacao-litigios-desportivos",
     },
     {
         title: "Consultoria em Questões Regulatórias e de Conformidade",
@@ -117,6 +127,7 @@ export const Servicos_Desportivo = [
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/consultoria-questoes-regulatorias-conformidade",
+        slug: "consultoria-questoes-regulatorias-conformidade",
     },
     {
         title: "Assessoria em Questões de Doping e Antidoping",
@@ -128,6 +139,7 @@ export const Servicos_Desportivo = [
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/assessoria-doping-antidoping",
+        slug: "assessoria-doping-antidoping",
     },
     {
         title: "Resolução de conflitos em arbitragens desportivas",
@@ -139,6 +151,7 @@ export const Servicos_Desportivo = [
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/resolucao-conflitos-arbitragens-desportivas",
+        slug: "resolucao-conflitos-arbitragens-desportivas",
     },
 ];
 
@@ -153,6 +166,7 @@ export const Servicos_Internacional = [
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/analise-colaboracao-contratos",
+        slug: "analise-colaboracao-contratos",
     },
     {
         title: "Registro de Propriedade Intelectual",
@@ -164,6 +178,7 @@ export const Servicos_Internacional = [
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/registro-propriedade-intelectual",
+        slug: "registro-propriedade-intelectual",
     },
     {
         title: "Internacionalização de Franquias",
@@ -175,6 +190,7 @@ export const Servicos_Internacional = [
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/internacionalizacao-franquias",
+        slug: "internacionalizacao-franquias",
     },
     {
         title: "Estruturação Jurídica de Operações Comerciais Internacionais",
@@ -186,6 +202,7 @@ export const Servicos_Internacional = [
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/estruturacao-juridica-operacoes-comerciais-internacionais",
+        slug: "estruturacao-juridica-operacoes-comerciais-internacionais",
     },
     {
         title: "Proteção e Defesa dos Direitos nos Tribunais e Câmaras de Arbitragem Nacional",
@@ -197,6 +214,7 @@ export const Servicos_Internacional = [
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
+        slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
     },
     {
         title: "Pedidos de Waiver",
@@ -208,6 +226,7 @@ export const Servicos_Internacional = [
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/pedidos-waiver",
+        slug: "pedidos-waiver",
     },
 ];
 
@@ -222,6 +241,7 @@ export const Servicos_Migratorio = [
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-1",
+        slug: "visto-eb-1",
     },
     {
         title: "Visto EB-2",
@@ -232,6 +252,7 @@ export const Servicos_Migratorio = [
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-2",
+        slug: "visto-eb-2",
     },
     {
         title: "Visto EB-3",
@@ -242,6 +263,7 @@ export const Servicos_Migratorio = [
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-3",
+        slug: "visto-eb-3",
     },
     {
         title: "Visto EB-4",
@@ -252,6 +274,7 @@ export const Servicos_Migratorio = [
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-4",
+        slug: "visto-eb-4",
     },
     {
         title: "Visto EB-5",
@@ -262,6 +285,7 @@ export const Servicos_Migratorio = [
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-5",
+        slug: "visto-eb-5",
     },
     {
         title: "Visto de Artista (Visto O-1)",
@@ -273,6 +297,7 @@ export const Servicos_Migratorio = [
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-artista-o-1",
+        slug: "visto-artista-o-1",
     },
 ];
 
@@ -287,17 +312,22 @@ export const Servicos_Aduaneiro = [
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/analise-elaboracao-contratos",
+        slug: "analise-elaboracao-contratos",
     },
     {
         title: "Elaboração de Planejamento Tributário",
         description:
-            "Oferecemos assistência em importação e exportação, com planejamento tributário especializado para transações de Comércio Exterior.",
+            "Este serviço é fundamental para empresas e indivíduos envolvidos em negócios internacionais, pois busca assegurar que acordos contratuais estejam em conformidade com as leis e regulamentos pertinentes em diferentes jurisdições.",
         full_description: [
-            "Oferecemos assistência em importação e exportação, com planejamento tributário especializado para transações de Comércio Exterior.",
-            "Oferecemos assistência em importação e exportação, com planejamento tributário especializado para transações de Comércio Exterior.",
+            "Na prática do Direito Internacional, a análise e colaboração de contratos desempenham um papel crucial para garantir transações transfronteiriças seguras e eficazes. Este serviço é fundamental para empresas e indivíduos envolvidos em negócios internacionais, pois busca assegurar que acordos contratuais estejam em conformidade com as leis e regulamentos pertinentes em diferentes jurisdições. A expertise em Direito Internacional é essencial aqui, pois abrange uma gama complexa de regulamentos e tratados que podem impactar diretamente os termos e condições dos contratos.",
+            "O processo de análise e colaboração de contratos na área de Direito Internacional envolve uma abordagem meticulosa e detalhada. Os advogados especializados nesse campo examinam minuciosamente cada cláusula e disposição contratual, levando em consideração aspectos como leis aplicáveis, resolução de disputas internacionais e implicações fiscais. Além disso, a interpretação precisa de termos legais em diferentes idiomas e contextos culturais é essencial para garantir que todas as partes envolvidas compreendam plenamente os compromissos assumidos.",
+            "Uma peculiaridade notável desse serviço é sua capacidade de harmonizar diferentes sistemas legais e culturais em uma transação comercial ou acordo jurídico. Os advogados especializados em Direito Internacional não apenas facilitam a comunicação entre partes de diferentes países, mas também mitigam riscos decorrentes de diferenças legais e culturais. Isso contribui significativamente para a segurança e eficácia das transações transfronteiriças, promovendo relações comerciais sólidas e confiáveis em um contexto global cada vez mais interconectado.",
+            "A importância da análise e colaboração de contratos na área de Direito Internacional é evidente na minimização de ambiguidades e incertezas legais que podem surgir em transações entre fronteiras. Esse serviço não apenas protege os interesses das partes envolvidas, mas também promove a conformidade com normas internacionais e regulamentos específicos de cada país. Portanto, contar com especialistas em Direito Internacional para essa tarefa é essencial para mitigar riscos legais e garantir o sucesso de transações internacionais.",
+            "Em resumo, a análise e colaboração de contratos na área de Direito Internacional oferecem orientação especializada e personalizada para empresas e indivíduos envolvidos em negócios globais. Esse serviço garante que acordos contratuais sejam robustos, claros e legalmente vinculativos em diferentes jurisdições, facilitando transações transfronteiriças seguras e eficazes. A expertise em Direito Internacional é a chave para enfrentar os desafios complexos e as nuances legais associadas a negócios internacionais, fornecendo uma base sólida para o sucesso em um ambiente global dinâmico.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/elaboracao-planejamento-tributario",
+        slug: "elaboracao-planejamento-tributario",
     },
     {
         title: "Consultoria e Análise de Barreiras Tarifárias e Não Tarifárias",
@@ -309,6 +339,7 @@ export const Servicos_Aduaneiro = [
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/consultoria-analise-barreiras-tarifarias-nao-tarifarias",
+        slug: "consultoria-analise-barreiras-tarifarias-nao-tarifarias",
     },
     {
         title: "Licenciamento de Importação",
@@ -320,6 +351,7 @@ export const Servicos_Aduaneiro = [
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/licenciamento-importacao",
+        slug: "licenciamento-importacao",
     },
     {
         title: "Proteção e Defesa dos Direitos nos Tribunais e Câmaras de Arbitragem Nacional",
@@ -331,6 +363,7 @@ export const Servicos_Aduaneiro = [
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
+        slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
     },
     {
         title: "Assessoria para Regimes Aduaneiros Especiais, Benefícios e Incentivos Fiscais",
@@ -342,6 +375,7 @@ export const Servicos_Aduaneiro = [
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/assessoria-regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
+        slug: "assessoria-regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
     },
 ];
 
