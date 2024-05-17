@@ -530,20 +530,12 @@ export const Servicos_Empresarial = [
 
 export const Banners_Data = [
     {
-        title: "Direito Civil",
+        title: "Direito Migratório",
         description:
-            "Atuamos em diversas áreas do direito civil, abrangendo Direito Bancário, Direito do Consumidor, Direito Contratual, Direito Imobiliário, Direito de Família e Sucessões, Indenizações, Arbitragens e Mediações.",
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil",
-        services: Servicos_Civil,
-    },
-    {
-        title: "Direito Desportivo",
-        description:
-            "Elaboração e negociação de contratos, patrocínios, direitos de imagem e de arena, proteção de marcas e assessoria em questões trabalhistas específicas do esporte, além de questões como controle antidoping, licenciamento e métodos alternativos para a resolução de conflitos jurídico-desportivos.",
-        image: "/general_assets/banner_direito_desportivo.png",
-        link: "/direito-desportivo",
-        services: Servicos_Desportivo,
+            "Suporte especializado na obtenção de vistos, possibilitando que indivíduos conduzam seus negócios ou sejam empregados nos Estados Unidos.",
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio",
+        services: Servicos_Migratorio,
     },
     {
         title: "Direito Internacional",
@@ -554,12 +546,12 @@ export const Banners_Data = [
         services: Servicos_Internacional,
     },
     {
-        title: "Direito Migratório",
+        title: "Direito Civil",
         description:
-            "Suporte especializado na obtenção de vistos, possibilitando que indivíduos conduzam seus negócios ou sejam empregados nos Estados Unidos.",
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio",
-        services: Servicos_Migratorio,
+            "Atuamos em diversas áreas do direito civil, abrangendo Direito Bancário, Direito do Consumidor, Direito Contratual, Direito Imobiliário, Direito de Família e Sucessões, Indenizações, Arbitragens e Mediações.",
+        image: "/general_assets/banner_direito_civil.png",
+        link: "/direito-civil",
+        services: Servicos_Civil,
     },
     {
         title: "Direito Aduaneiro",
@@ -576,5 +568,13 @@ export const Banners_Data = [
         image: "/general_assets/banner_direito_empresarial.png",
         link: "/direito-empresarial",
         services: Servicos_Empresarial,
+    },
+    {
+        title: "Direito Desportivo",
+        description:
+            "Elaboração e negociação de contratos, patrocínios, direitos de imagem e de arena, proteção de marcas e assessoria em questões trabalhistas específicas do esporte, além de questões como controle antidoping, licenciamento e métodos alternativos para a resolução de conflitos jurídico-desportivos.",
+        image: "/general_assets/banner_direito_desportivo.png",
+        link: "/direito-desportivo",
+        services: Servicos_Desportivo,
     },
 ];

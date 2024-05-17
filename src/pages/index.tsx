@@ -5,18 +5,31 @@ import Link from "next/link";
 import BannerSlider from "@/components/BannerSlider";
 import GoogleMap from "@/components/GoogleMap";
 
+import { handleWhatsApp, handleScheduleWhatsApp } from "@/utils/WhatsApp";
+
 export default function Home() {
     return (
         <>
             <Head>
                 <title>Taborda Lima & Advogados Associados</title>
-                <meta name="description" content="Taborda Lima & Advogados Associados" />
+                <meta
+                    name="description"
+                    content="Com atuação tanto no Brasil quanto no Exterior, o escritório oferece um atendimento personalizado e eficiente aos seus
+                            clientes. A atuação em temas de Direito Internacional e Imigração revela seu compromisso e capacidade em bem atender seus
+                            clientes juntamente com o apoio advogados parceiros em Nova York, Newark, Miami, Orlando, Washington, Londres, Paris, Roma
+                            e em várias outras cidades, inclusive na América Latina."
+                />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
 
             {/* Botão do WhatsApp Esquerdo*/}
-            <div className="WhatsApp_Action_Container Left">
+            <div
+                onClick={() => {
+                    handleWhatsApp();
+                }}
+                className="WhatsApp_Action_Container Left"
+            >
                 <button className="Page_Button WhatsApp_Btn">
                     <p>Fale Conosco Pelo WhatsApp!</p>
                 </button>
@@ -42,7 +55,12 @@ export default function Home() {
             </div>
 
             {/* Botão do WhatsApp Direito*/}
-            <div className="WhatsApp_Action_Container Right">
+            <div
+                onClick={() => {
+                    handleWhatsApp();
+                }}
+                className="WhatsApp_Action_Container Right"
+            >
                 <button className="Page_Button WhatsApp_Btn">
                     <p>Fale Conosco Pelo WhatsApp!</p>
                 </button>
@@ -150,7 +168,12 @@ export default function Home() {
                             Estamos à disposição para esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o seu caso. Entre em
                             contato conosco e agende uma consulta.
                         </p>
-                        <button className="Page_Button">
+                        <button
+                            onClick={() => {
+                                handleScheduleWhatsApp();
+                            }}
+                            className="Page_Button"
+                        >
                             <p>Agende uma Consulta</p> <span className="material-icons">arrow_forward</span>
                         </button>
                     </div>

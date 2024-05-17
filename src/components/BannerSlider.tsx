@@ -6,7 +6,7 @@ import { motion as m, AnimatePresence } from "framer-motion";
 import { Banners_Data } from "@/data/Expertises";
 
 const BannerSlider = () => {
-    const [currentBanner, setCurrentBanner] = useState(2);
+    const [currentBanner, setCurrentBanner] = useState(0);
 
     function nextBanner() {
         setCurrentBanner((currentBanner + 1) % Banners_Data.length);
