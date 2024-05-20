@@ -2,6 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
+import { motion as m } from "framer-motion";
+import { commonTransition } from "@/utils/Animations";
+
 import BannerSlider from "@/components/BannerSlider";
 import GoogleMap from "@/components/GoogleMap";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
@@ -24,14 +27,14 @@ export default function Home() {
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            {/* Botão do WhatsApp Esquerdo*/}
-            <WhatsAppBtn position="Left" />
-
-            {/* Botão do WhatsApp Direito*/}
-            <WhatsAppBtn position="Right" />
-
             {/* Conteúdo Principal */}
-            <main className={""}>
+            <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" className={""} key={"pagina_principal"}>
+                {/* Botão do WhatsApp Esquerdo*/}
+                <WhatsAppBtn position="Left" />
+
+                {/* Botão do WhatsApp Direito*/}
+                <WhatsAppBtn position="Right" />
+
                 {/* Seção de Início */}
                 <section id="inicio" className="Main_Section LP_Section">
                     <div className="Container Container_Left Image_Container Dark_Container">
@@ -154,10 +157,11 @@ export default function Home() {
                         <GoogleMap />
                     </div>
                 </section>
-            </main>
-            <footer>
-                <Image src={"/general_assets/mega_logo_taborda_lima.png"} width={1200} height={400} alt="Logo Taborda Lima" />
-            </footer>
+
+                <footer>
+                    <Image src={"/general_assets/mega_logo_taborda_lima.png"} width={1200} height={400} alt="Logo Taborda Lima" />
+                </footer>
+            </m.main>
         </>
     );
 }

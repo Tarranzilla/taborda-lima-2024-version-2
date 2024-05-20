@@ -1,8 +1,12 @@
 const Sobre = () => {
     return (
-        <div>
-            <h1>Sobre</h1>
-        </div>
+        <main>
+            <section>
+                <div>
+                    <h1>Sobre</h1>
+                </div>
+            </section>
+        </main>
     );
 };
 

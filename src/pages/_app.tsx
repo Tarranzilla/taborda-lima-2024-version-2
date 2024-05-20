@@ -5,6 +5,8 @@ import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 
+import { AnimatePresence } from "framer-motion";
+
 import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -168,7 +170,9 @@ export default function App({ Component, pageProps }: AppProps) {
                 </div>
             </nav>
 
-            <Component {...pageProps} />
+            <AnimatePresence mode="wait">
+                <Component {...pageProps} />
+            </AnimatePresence>
         </>
     );
 }

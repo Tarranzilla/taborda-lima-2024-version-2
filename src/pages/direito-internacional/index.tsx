@@ -3,6 +3,9 @@ import Image from "next/image";
 import { Expertise_Data, Banners_Data, Servicos_Internacional } from "@/data/Expertises";
 import Link from "next/link";
 
+import { motion as m } from "framer-motion";
+import { commonTransition } from "@/utils/Animations";
+
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 
 const Direito_Internacional_Data = Banners_Data[1];
@@ -17,10 +20,10 @@ const DireitoInternacional = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {/* Botão do WhatsApp Esquerdo*/}
-            <WhatsAppBtn position="Left" high />
+            <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" key={"pagina_direito_internacional"}>
+                {/* Botão do WhatsApp Esquerdo*/}
+                <WhatsAppBtn position="Left" high />
 
-            <main>
                 <section>
                     <div className="Container Dark_Container Unpadded_Container Expertise_Header Low_Container Ungaped_Container">
                         <div className="Expertise_Header_Top">
@@ -60,7 +63,7 @@ const DireitoInternacional = () => {
                         </div>
                     </div>
                 </section>
-            </main>
+            </m.main>
         </>
     );
 };

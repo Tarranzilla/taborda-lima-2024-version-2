@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Banners_Data, Servicos_Empresarial, Service_Data } from "@/data/Expertises";
 
+import { motion as m } from "framer-motion";
+import { commonTransition } from "@/utils/Animations";
+
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -24,12 +27,13 @@ const ServicePage = ({ service }: { service: Service_Data }) => {
                 <title>{service.title + " | Taborda Lima & Advogados Associados "}</title>
                 <meta name="description" content={service.description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
-            {/* Botão do WhatsApp Esquerdo*/}
-            <WhatsAppBtn position="Left" high notHidden />
 
-            <main>
+            <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" key={"pagina_direito_empresarial_" + service.slug}>
+                {/* Botão do WhatsApp Esquerdo*/}
+                <WhatsAppBtn position="Left" high notHidden />
+
                 <section>
                     <div className="Container Dark_Container Unpadded_Container Ungaped_Container Expertise_Header Low_Container">
                         <div className="Expertise_Header_Top">
@@ -66,7 +70,7 @@ const ServicePage = ({ service }: { service: Service_Data }) => {
                         </div>
                     </div>
                 </section>
-            </main>
+            </m.main>
         </>
     );
 };

@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Banners_Data, Servicos_Civil, Service_Data } from "@/data/Expertises";
 
+import { motion as m } from "framer-motion";
+import { commonTransition } from "@/utils/Animations";
+
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -27,10 +30,10 @@ const ServicePage = ({ service }: { service: Service_Data }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {/* Botão do WhatsApp Esquerdo*/}
-            <WhatsAppBtn position="Left" high notHidden />
+            <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" key={"pagina_direito_civil_" + service.slug}>
+                {/* Botão do WhatsApp Esquerdo*/}
+                <WhatsAppBtn position="Left" high notHidden />
 
-            <main>
                 <section>
                     <div className="Container Dark_Container Unpadded_Container Ungaped_Container Expertise_Header Low_Container">
                         <div className="Expertise_Header_Top">
@@ -67,7 +70,7 @@ const ServicePage = ({ service }: { service: Service_Data }) => {
                         </div>
                     </div>
                 </section>
-            </main>
+            </m.main>
         </>
     );
 };
