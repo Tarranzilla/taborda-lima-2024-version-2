@@ -3,7 +3,9 @@ import Image from "next/image";
 import { Expertise_Data, Banners_Data, Servicos_Aduaneiro } from "@/data/Expertises";
 import Link from "next/link";
 
-const Direito_Aduaneiro_Data = Banners_Data[4];
+import WhatsAppBtn from "@/components/WhatsAppBtn";
+
+const Direito_Aduaneiro_Data = Banners_Data[3];
 
 const DireitoAduaneiro = () => {
     return (
@@ -43,7 +45,7 @@ const DireitoAduaneiro = () => {
 
             <main>
                 <section>
-                    <div className="Container Dark_Container Unpadded_Container Expertise_Header Low_Container">
+                    <div className="Container Dark_Container Unpadded_Container Expertise_Header Low_Container Ungaped_Container">
                         <div className="Expertise_Header_Top">
                             <div className="Expertise_Header_Top_Nav">
                                 <Link href={"/#servicos"} scroll={false} className="Page_Button Expertise_Header_Top_Nav_Button">

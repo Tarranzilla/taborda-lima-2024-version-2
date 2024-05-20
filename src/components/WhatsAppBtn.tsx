@@ -1,14 +1,27 @@
 import { useState } from "react";
 import { motion as m, AnimatePresence } from "framer-motion";
 
-const WhatsAppBtn = () => {
+import { handleWhatsApp } from "@/utils/WhatsApp";
+
+interface WhatsAppBtnProps {
+    position: "Left" | "Right";
+}
+
+const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <m.div className="WhatsApp_Action_Container Left">
+        <m.div
+            onClick={() => {
+                handleWhatsApp();
+            }}
+            className={`WhatsApp_Action_Container ${position}`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
             <AnimatePresence>
                 {isHovered && (
-                    <m.button className="Page_Button WhatsApp_Btn">
+                    <m.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Page_Button WhatsApp_Btn">
                         <p>Fale Conosco Pelo WhatsApp!</p>
                     </m.button>
                 )}
