@@ -5,19 +5,21 @@ import { handleWhatsApp } from "@/utils/WhatsApp";
 
 interface WhatsAppBtnProps {
     position: "Left" | "Right";
+    high?: boolean;
+    notHidden?: boolean; // Add this line
 }
 
-const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position }) => {
-    const [isHovered, setIsHovered] = useState(false);
+const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHidden = false }) => {
+    const [isHovered, setIsHovered] = useState(notHidden);
 
     return (
         <m.div
             onClick={() => {
                 handleWhatsApp();
             }}
-            className={`WhatsApp_Action_Container ${position}`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className={`WhatsApp_Action_Container ${position} ${high ? "WhatsApp_High_Container" : ""}`}
+            onMouseEnter={() => !notHidden && setIsHovered(true)}
+            onMouseLeave={() => !notHidden && setIsHovered(false)}
         >
             <AnimatePresence>
                 {isHovered && (

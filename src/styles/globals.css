@@ -596,6 +596,13 @@ section {
     margin-top: auto;
     margin-left: auto;
     padding: var(--medium-gap) var(--large-gap);
+
+    transition: scale 0.2s ease-in-out;
+    transform-origin: right bottom;
+}
+
+.Services_List_Item_Button:hover {
+    scale: 1.05;
 }
 
 /* ------ Detalhe de Serviço ------ */
