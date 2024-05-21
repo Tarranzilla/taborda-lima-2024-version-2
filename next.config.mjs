@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+    reactStrictMode: true,
+
+    i18n: {
+        locales: ["en", "pt-BR"],
+        defaultLocale: "pt-BR",
+    },
+    images: {
+        domains: ["scontent.cdninstagram.com"],
+    },
 };
 
 export default nextConfig;

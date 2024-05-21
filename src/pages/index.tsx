@@ -5,9 +5,13 @@ import Link from "next/link";
 import { motion as m } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 import BannerSlider from "@/components/BannerSlider";
 import GoogleMap from "@/components/GoogleMap";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
+import InstaFeed from "@/components/InstaFeed";
 
 import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
 
@@ -155,6 +159,30 @@ export default function Home() {
 
                     <div className="Container Container_Right Contact_Form_Container Dark_Container Unpadded_Container">
                         <GoogleMap />
+                    </div>
+                </section>
+
+                <section id="novidades">
+                    <div className="Container Unpadded_Container Dark_Container Half_Width_Container Relative_Container">
+                        <InstaFeed />
+                    </div>
+
+                    <div className="Container Centered_Container Padded_Container">
+                        <h1>Novidades</h1>
+                        <p>
+                            Nos siga nas redes sociais e confira as últimas atualizações sobre as peculiaridades das nossas áreas de atuação, assim
+                            como notícias e informações sobre a advocacia no Brasil e no mundo!
+                        </p>
+
+                        <div className="Intro_Actions_Container">
+                            <button className="Page_Button">
+                                <p>Instagram</p> <FontAwesomeIcon icon={faInstagram} />
+                            </button>
+
+                            <button className="Page_Button">
+                                <p>LinkedIn</p> <FontAwesomeIcon icon={faLinkedin} />
+                            </button>
+                        </div>
                     </div>
                 </section>
 
