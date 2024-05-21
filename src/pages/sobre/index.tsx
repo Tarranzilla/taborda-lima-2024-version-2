@@ -99,6 +99,9 @@ const Sobre = () => {
                         </div>
                     </div>
                 </section>
+                <section>
+                    <div className="Container Special_Container Full_Width_Container"></div>
+                </section>
             </m.main>
         </>
     );

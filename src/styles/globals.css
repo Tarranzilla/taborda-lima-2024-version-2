@@ -204,6 +204,10 @@ section {
     z-index: 1;
 }
 
+.Special_Container {
+    background-color: var(--special-text-color);
+}
+
 .Low_Container {
     z-index: 0;
 }
@@ -243,6 +247,11 @@ section {
 
 .Full_Width_Paragraphs > p {
     max-width: unset;
+}
+
+.Full_Width_Container {
+    width: 100%;
+    flex-basis: 100%;
 }
 
 /* Whatsapp Btn */
