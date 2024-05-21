@@ -825,6 +825,65 @@ section {
     scale: 1.1;
 }
 
+.Pictures_Container {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    gap: var(--medium-gap);
+    overflow-x: auto;
+    padding-bottom: var(--medium-gap);
+
+    cursor: grab;
+}
+
+.no-smooth-scroll {
+    scroll-behavior: auto !important;
+}
+
+.Pictures_Container:active {
+    /* your styles here */
+
+    cursor: grabbing;
+}
+
+.Pictures_Container::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+.Pictures_Container::-webkit-scrollbar-thumb {
+    background-color: var(--main-text-color);
+    border-radius: var(--default-border-radius);
+}
+
+.Pictures_Container::-webkit-scrollbar-track {
+    background-color: var(--brand-color-gray-light);
+}
+
+.Picture_Frame {
+    height: 100%;
+    width: auto;
+
+    scroll-snap-align: start;
+
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none;
+}
+.Picture_Frame > img {
+    width: auto;
+    height: 100%;
+    border-radius: var(--default-border-radius);
+
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none;
+
+    pointer-events: none;
+}
+
 /* ------ Página Sobre os Profissionais ------ */
 .Team_Member_Description_Card {
     display: flex;

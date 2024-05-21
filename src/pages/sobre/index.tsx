@@ -9,9 +9,51 @@ import { commonTransition } from "@/utils/Animations";
 
 import { teamMembers, TeamMember } from "@/data/Team_Members";
 
+const officePictures = [
+    {
+        src: "/office/fotos_escritorio_001.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_002.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_003.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_004.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_005.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+];
+
 const Sobre = () => {
     const containerRef = useRef<HTMLDivElement>(null);
-
     const handleMouseDown = (e: any) => {
         const container = containerRef.current;
 
@@ -36,6 +78,34 @@ const Sobre = () => {
         );
     };
 
+    const officePicturesRef = useRef<HTMLDivElement>(null);
+    const handleMouseDownOfficePictures = (e: any) => {
+        const container = officePicturesRef.current;
+
+        if (!container) return;
+
+        let startX = e.clientX - container.offsetLeft;
+        let scrollLeft = container.scrollLeft;
+
+        // Add a class to disable smooth scrolling
+        container.classList.add("no-smooth-scroll");
+
+        const handleMouseMove = (e: any) => {
+            const x = e.clientX - container.offsetLeft;
+            const walk = (x - startX) * 6; // scroll-fast
+            container.scrollLeft = scrollLeft - walk;
+        };
+
+        const handleMouseUp = () => {
+            // Remove the class to re-enable smooth scrolling
+            container.classList.remove("no-smooth-scroll");
+            container.removeEventListener("mousemove", handleMouseMove);
+        };
+
+        container.addEventListener("mousemove", handleMouseMove);
+        container.addEventListener("mouseup", handleMouseUp, { once: true });
+    };
+
     return (
         <>
             <Head key={"Sobre_Page_Head"}>
@@ -50,6 +120,7 @@ const Sobre = () => {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" className={""} key={"pagina_principal"}>
+                {/* Histórico e Membros da Equipe */}
                 <section>
                     <div className="Container Dark_Container Alt_Paragraphs Centered_Container Padded_Container Full_Width_Paragraphs">
                         <h1>A Nossa História</h1>
@@ -99,8 +170,18 @@ const Sobre = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Fotos do Escritório */}
                 <section>
-                    <div className="Container Special_Container Full_Width_Container"></div>
+                    <div className="Container Special_Container Full_Width_Container">
+                        <div ref={officePicturesRef} onMouseDown={handleMouseDownOfficePictures} className="Pictures_Container">
+                            {officePictures.map((picture, index) => (
+                                <div key={index} className="Picture_Frame">
+                                    <Image src={picture.src} alt={picture.alt} width={picture.size.width} height={picture.size.height} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </section>
             </m.main>
         </>
