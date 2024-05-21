@@ -1,5 +1,5 @@
-import "@/styles/globals.css";
 import "material-icons/iconfont/material-icons.css";
+import "@/styles/globals.css";
 
 import Link from "next/link";
 import Head from "next/head";
