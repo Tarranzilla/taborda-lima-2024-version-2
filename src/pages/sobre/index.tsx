@@ -8,6 +8,7 @@ import { motion as m } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
 
 import { teamMembers, TeamMember } from "@/data/Team_Members";
+import NewBannerSlider from "@/components/NewBannerSlider";
 
 const officePictures = [
     {
@@ -181,6 +182,13 @@ const Sobre = () => {
                                 </div>
                             ))}
                         </div>
+                    </div>
+                </section>
+
+                {/* Fotos Do Escritorio Especial */}
+                <section>
+                    <div className="Container Full_Width_Container">
+                        <NewBannerSlider />
                     </div>
                 </section>
             </m.main>
