@@ -108,9 +108,9 @@ export default function Home() {
                     <div className="Container Container_Left Image_Container Dark_Container">
                         <Image
                             className="Section_Image"
-                            src={"/general_assets/consulta_img.png"}
-                            width={800}
-                            height={600}
+                            src={"/office/fotos_escritorio_002.png"}
+                            width={1280}
+                            height={1280}
                             alt="Agende uma Consulta"
                         />
                     </div>

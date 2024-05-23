@@ -22,16 +22,16 @@ export const getStaticPaths: GetStaticPaths = async () => {
 const TeamMemberDetailPage = ({ person }: { person: TeamMember }) => {
     return (
         <main>
-            <div className="Container Dark_Container Alt_Paragraphs Centered_Container">
+            <div className="Container Dark_Container Alt_Paragraphs Centered_Container Full_Width_Container">
                 <div className="Team_Member_Description_Card">
-                    <Image className="Team_Member_Container_Image" src={person.image} alt={person.name} width={400} height={400} />
+                    <Image className="Team_Member_Container_Image" src={person.image} alt={person.name} width={1080} height={1080} />
                     <div className="Team_Member_Description_Card_Info">
                         <div className="Team_Member_Container_Header">
                             <h1>{person.name}</h1>
                             <h2>{person.role}</h2>
-                            <h3>
+                            <Link className="Team_Member_Container_OAB_Link" href={person.oabLink} target="_blank" rel="noopener noreferrer">
                                 {person.oab} <span className="material-icons">open_in_new</span>
-                            </h3>
+                            </Link>
                         </div>
                         {person.bio.map((paragraph, index) => (
                             <p key={index}>{paragraph}</p>

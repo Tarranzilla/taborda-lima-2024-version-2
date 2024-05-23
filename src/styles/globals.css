@@ -789,6 +789,7 @@ section {
 }
 
 .Team_Member_Card_Alt {
+    position: relative;
     background-color: var(--brand-color-gray-light);
     height: 100%;
     aspect-ratio: 2/3;
@@ -851,6 +852,15 @@ section {
 
 .Team_Member_Card_Link:hover {
     scale: 1.1;
+}
+
+.Team_Member_Card_Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    pointer-events: none;
+    position: absolute;
 }
 
 .Pictures_Container {
@@ -938,6 +948,7 @@ section {
     width: 45vh;
     background-color: var(--brand-color-gray-light);
     border-radius: var(--default-border-radius);
+    object-fit: cover;
 }
 
 .Team_Member_Container_Header {
@@ -950,21 +961,29 @@ section {
     text-transform: capitalize;
 }
 .Team_Member_Container_Header > h2 {
-    margin-top: -0.7rem;
+    margin-top: -0.6rem;
     font-family: var(--text-font-family);
     font-weight: 300;
     margin-bottom: 0.125rem;
 }
 
-.Team_Member_Container_Header > h3 {
+.Team_Member_Container_OAB_Link {
     font-size: 1rem;
     font-family: var(--text-font-family);
     display: flex;
     align-items: center;
     gap: 0.25rem;
+
+    margin-top: var(--small-gap);
+
+    letter-spacing: 0.025rem;
+
+    color: var(--special-text-color);
+
+    text-decoration: none;
 }
 
-.Team_Member_Container_Header > h3 > span {
+.Team_Member_Container_OAB_Link > span {
     font-weight: 300;
     color: var(--special-text-color);
     font-size: 1.1rem;

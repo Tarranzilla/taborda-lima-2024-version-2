@@ -157,7 +157,7 @@ const Sobre = () => {
                         <div ref={containerRef} onMouseDown={handleMouseDown} className="Team_Members_Container_Alt">
                             {teamMembers.map((member, index) => (
                                 <div className="Team_Member_Card_Alt" key={index}>
-                                    <span className="Team_Image_Placeholder"></span>
+                                    <Image src={member.image} alt={member.name} width={1080} height={1080} className="Team_Member_Card_Image" />
 
                                     <div className="Team_Member_Card_Footer">
                                         <h2 className="Team_Member_Card_Name">{member.name}</h2>
