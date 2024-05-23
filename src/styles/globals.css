@@ -165,12 +165,13 @@ label {
     width: 1.5rem;
     height: 1.5rem;
     fill: var(--alt-text-color);
+    flex-shrink: 0;
 
-    transition: padding 0.2s ease-in-out;
+    transition: margin 0.2s ease-in-out;
 }
 
 .Page_Button:hover > svg {
-    padding-left: 1rem;
+    margin-left: 1rem;
 }
 
 main {
@@ -1014,6 +1015,8 @@ section {
     flex-basis: 100%;
     flex-shrink: 0;
 
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1022,7 +1025,7 @@ section {
     padding: var(--large-gap);
 }
 
-.Insta_Feed_Item > * {
+.Insta_Feed_Item > img {
     width: 100%;
     height: 100%;
     max-height: 100%;
@@ -1034,6 +1037,48 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 
     user-select: none;
+    pointer-events: none;
+}
+
+.Insta_Feed_Item > video {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+    background-color: black;
+    border-radius: var(--default-border-radius);
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+
+    user-select: none;
+    pointer-events: none;
+}
+
+.Insta_Feed_Video_Button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    user-select: none;
+
+    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.Insta_Feed_Video_Button > span {
+    font-size: 4rem;
+    color: var(--alt-text-color);
+}
+
+.Insta_Feed_Video_Button.playing {
+    top: calc(100% - var(--large-gap));
+    left: calc(100% - var(--large-gap));
+    transform: translate(-100%, -100%);
 }
 
 /* ------ New Banner ------ */

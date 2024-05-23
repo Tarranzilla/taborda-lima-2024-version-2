@@ -175,13 +175,13 @@ export default function Home() {
                         </p>
 
                         <div className="Intro_Actions_Container">
-                            <button className="Page_Button">
+                            <Link href={"https://www.instagram.com"} target="_blank" rel="noopener noreferrer" className="Page_Button">
                                 <p>Instagram</p> <FontAwesomeIcon icon={faInstagram} />
-                            </button>
+                            </Link>
 
-                            <button className="Page_Button">
+                            <Link href={"https://www.linkedin.com"} target="_blank" rel="noopener noreferrer" className="Page_Button">
                                 <p>LinkedIn</p> <FontAwesomeIcon icon={faLinkedin} />
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </section>

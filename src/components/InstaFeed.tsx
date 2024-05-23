@@ -58,12 +58,7 @@ export default function InstaFeed() {
         <div ref={containerRef} onMouseDown={handleMouseDown} className="Insta_Feed_Wrapper">
             {feedList.map((item) => (
                 <div className="Insta_Feed_Item" key={item.id}>
-                    {item.media_type === "VIDEO" && (
-                        <video controls>
-                            <source src={item.media_url} type="video/mp4" />
-                        </video>
-                    )}
-
+                    {item.media_type === "VIDEO" && <InstaFeedVideo {...item} />}
                     {item.media_type === "IMAGE" && <Image draggable={false} width={400} height={400} src={item.media_url} alt={item.caption} />}
                     {item.media_type === "CAROUSEL_ALBUM" && <Image width={400} height={400} src={item.media_url} alt={item.caption} />}
                 </div>
@@ -71,3 +66,29 @@ export default function InstaFeed() {
         </div>
     );
 }
+
+const InstaFeedVideo = (item: any) => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const handlePlayPause = () => {
+        if (videoRef.current) {
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
+        }
+    };
+    return (
+        <>
+            <video ref={videoRef}>
+                <source src={item.media_url} type="video/mp4" />
+            </video>
+            <button className={`Insta_Feed_Video_Button ${isPlaying ? "playing" : ""}`} onClick={handlePlayPause}>
+                {isPlaying ? <span className="material-icons">pause_circle</span> : <span className="material-icons">play_circle_filled</span>}
+            </button>
+        </>
+    );
+};
