@@ -55,6 +55,8 @@
 :root {
     --brand-color-white: #ffffff;
     --brand-color-gray: #4c4c4c;
+    --brand-color-gray-faded: #4c4c4c80;
+
     --brand-color-beige: #bea07d;
 
     --brand-color-gray-light: #d9d9d9;
@@ -344,6 +346,12 @@ section {
     display: flex;
     align-items: center;
     flex: 1;
+}
+
+.Navbar_Logo {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
 }
 
 .Navbar_Link_Container {
@@ -1183,6 +1191,87 @@ section {
 .New_Banner_Indicator_Dot.active {
     opacity: 100%;
     scale: 1.4;
+}
+
+/* ------ Drawer ------ */
+
+.Drawer_Container {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: var(--brand-color-gray-faded);
+    opacity: 80%;
+}
+
+.Drawer {
+    position: absolute;
+    bottom: 0;
+    height: 75vh;
+    width: 100%;
+    background-color: var(--brand-color-gray-light);
+    border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+}
+
+.Drawer_Header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--medium-gap);
+    padding: var(--medium-gap);
+    background-color: var(--brand-color-gray-light);
+}
+
+.Drawer_Bar {
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--brand-color-beige);
+    border-radius: 0.25rem;
+    cursor: grab;
+    touch-action: none;
+    overflow: hidden;
+    border: none;
+}
+
+.Drawer_Bar:active {
+    cursor: grabbing;
+}
+
+.Drawer_Close_Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--brand-color-beige);
+    border-radius: 50%;
+}
+
+.Drawer_Close_Button > span {
+    font-size: 1.5rem;
+    color: var(--brand-color-gray-light);
+    cursor: pointer;
+}
+
+.Drawer_Content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-gap);
+    padding: var(--medium-gap);
+    overflow-y: auto;
+    margin-top: 4rem;
+    height: 100%;
+}
+
+.Drawer_Content > * {
+    max-width: 64ch;
 }
 
 /* ------ Footer ------ */

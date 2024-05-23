@@ -8,8 +8,14 @@ import Image from "next/image";
 import { AnimatePresence } from "framer-motion";
 
 import type { AppProps } from "next/app";
+import { useState, useEffect } from "react";
+import { motion as m } from "framer-motion";
+
+import DragAndCloseModal from "@/components/DragAndCloseModal";
 
 export default function App({ Component, pageProps }: AppProps) {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <>
             {/* Navbar */}
@@ -164,7 +170,12 @@ export default function App({ Component, pageProps }: AppProps) {
                     <button className="Nav_Button Language_Selector_Btn">
                         <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
                     </button>
-                    <button className="Nav_Button Menu_Btn">
+                    <button
+                        className="Nav_Button Menu_Btn"
+                        onClick={() => {
+                            setIsModalOpen(!isModalOpen);
+                        }}
+                    >
                         <span className="material-icons">menu_book</span>
                     </button>
                 </div>
@@ -173,6 +184,58 @@ export default function App({ Component, pageProps }: AppProps) {
             <AnimatePresence mode="wait">
                 <Component {...pageProps} />
             </AnimatePresence>
+
+            <DragAndCloseModal open={isModalOpen} setOpen={setIsModalOpen}>
+                <h2>Hello World!</h2>
+                <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Mé
+                    faiz elementum girarzis, nisi eros vermeio. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.
+                </p>
+                <p>
+                    Pellentesque nec nulla ligula. Donec gravida turpis a vulputate ultricies. Quem num gosta di mim que vai caçá sua turmis! Todo
+                    mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Negão é teu passadis, eu sou faxa pretis.
+                </p>
+                <p>
+                    Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Casamentiss faiz malandris se pirulitá.
+                    Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que vai caçá sua turmis!
+                </p>
+                <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Mé
+                    faiz elementum girarzis, nisi eros vermeio. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.
+                </p>
+                <p>
+                    Pellentesque nec nulla ligula. Donec gravida turpis a vulputate ultricies. Quem num gosta di mim que vai caçá sua turmis! Todo
+                    mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Negão é teu passadis, eu sou faxa pretis.
+                </p>
+                <p>
+                    Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Casamentiss faiz malandris se pirulitá.
+                    Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que vai caçá sua turmis!
+                </p>
+                <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Mé
+                    faiz elementum girarzis, nisi eros vermeio. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.
+                </p>
+                <p>
+                    Pellentesque nec nulla ligula. Donec gravida turpis a vulputate ultricies. Quem num gosta di mim que vai caçá sua turmis! Todo
+                    mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Negão é teu passadis, eu sou faxa pretis.
+                </p>
+                <p>
+                    Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Casamentiss faiz malandris se pirulitá.
+                    Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que vai caçá sua turmis!
+                </p>
+                <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Mé
+                    faiz elementum girarzis, nisi eros vermeio. Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi.
+                </p>
+                <p>
+                    Pellentesque nec nulla ligula. Donec gravida turpis a vulputate ultricies. Quem num gosta di mim que vai caçá sua turmis! Todo
+                    mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Negão é teu passadis, eu sou faxa pretis.
+                </p>
+                <p>
+                    Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Casamentiss faiz malandris se pirulitá.
+                    Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Quem num gosta di mim que vai caçá sua turmis!
+                </p>
+            </DragAndCloseModal>
         </>
     );
 }
