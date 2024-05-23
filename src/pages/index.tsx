@@ -14,6 +14,7 @@ import WhatsAppBtn from "@/components/WhatsAppBtn";
 import InstaFeed from "@/components/InstaFeed";
 
 import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
+import NewInstaFeed from "@/components/NewInstaFeed";
 
 export default function Home() {
     return (
@@ -164,7 +165,7 @@ export default function Home() {
 
                 <section id="novidades">
                     <div className="Container Unpadded_Container Dark_Container Half_Width_Container Relative_Container">
-                        <InstaFeed />
+                        <NewInstaFeed />
                     </div>
 
                     <div className="Container Centered_Container Padded_Container">

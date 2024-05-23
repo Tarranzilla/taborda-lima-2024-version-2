@@ -1111,6 +1111,27 @@ section {
     flex-shrink: 0;
 }
 
+.New_Insta_Feed_Slide {
+    width: 100%;
+    height: 90vh;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.New_Insta_Feed_Slide > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.New_Insta_Feed_Slide > video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
 .New_Banner_Slide > img {
     width: 100%;
     height: 100%;
