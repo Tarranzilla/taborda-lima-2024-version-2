@@ -188,13 +188,69 @@ export default function App({ Component, pageProps }: AppProps) {
             <AnimatePresence mode="wait">
                 <Component {...pageProps} />
             </AnimatePresence>
+
             <DragAndCloseModal open={isModalOpen} setOpen={setIsModalOpen}>
-                <h2>Início</h2>
-                <h2>Sobre</h2>
-                <h2>Serviços</h2>
-                <h2>Consulta</h2>
-                <h2>Contato</h2>
-                <h2>Novidades</h2>
+                <div className="Menu_Main_Info">
+                    <div className="Menu_Search_Container">
+                        <input placeholder="Digite aqui o que busca"></input>
+                        <button>
+                            <span className="material-icons">search</span>
+                        </button>
+                    </div>
+
+                    <Link
+                        href={"/#"}
+                        onClick={() => {
+                            setIsModalOpen(false);
+                        }}
+                    >
+                        Início
+                    </Link>
+                    <Link
+                        href={"/sobre"}
+                        onClick={() => {
+                            setIsModalOpen(false);
+                        }}
+                    >
+                        Sobre
+                    </Link>
+                    <Link
+                        href={"/#servicos"}
+                        onClick={() => {
+                            setIsModalOpen(false);
+                        }}
+                    >
+                        Serviços
+                    </Link>
+                    <Link
+                        href={"/#consulta"}
+                        onClick={() => {
+                            setIsModalOpen(false);
+                        }}
+                    >
+                        Consulta
+                    </Link>
+                    <Link
+                        href={"/#contato"}
+                        onClick={() => {
+                            setIsModalOpen(false);
+                        }}
+                    >
+                        Contato
+                    </Link>
+                    <Link
+                        href={"/#novidades"}
+                        onClick={() => {
+                            setIsModalOpen(false);
+                        }}
+                    >
+                        Novidades
+                    </Link>
+
+                    <button className="Language_Btn">
+                        <span className="material-icons">language</span>Change the Language to English
+                    </button>
+                </div>
             </DragAndCloseModal>
         </>
     );

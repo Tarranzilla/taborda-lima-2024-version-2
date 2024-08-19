@@ -1252,15 +1252,15 @@ section {
     align-items: center;
     justify-content: center;
     border: none;
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
     background-color: var(--brand-color-beige);
     border-radius: 50%;
     flex-shrink: 0;
 }
 
 .Drawer_Close_Button > span {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--brand-color-gray-light);
     cursor: pointer;
 }
@@ -1268,8 +1268,11 @@ section {
 .Drawer_Content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: var(--medium-gap);
     padding: var(--medium-gap);
+    padding-top: 0;
     overflow-y: auto;
     margin-top: 4rem;
     flex-grow: 1;
@@ -1278,6 +1281,83 @@ section {
 
 .Drawer_Content > * {
     max-width: 64ch;
+}
+
+.Menu_Main_Info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--small-gap);
+}
+
+.Menu_Main_Info > a {
+    font-size: 2rem;
+    font-family: var(--title-font-family);
+    color: var(--brand-color-beige);
+    text-decoration: none;
+    border-bottom: 1px solid var(--brand-color-beige);
+    width: 100%;
+}
+
+.Menu_Search_Container {
+    display: flex;
+    align-items: center;
+    gap: var(--small-gap);
+    width: 100%;
+    margin-bottom: var(--medium-gap);
+}
+
+.Menu_Search_Container > input {
+    width: 100%;
+    padding: var(--medium-gap) var(--medium-gap);
+    border: none;
+    font-size: 1rem;
+    border-radius: var(--default-border-radius);
+    background-color: var(--brand-color-gray-light);
+    border: 1px solid var(--brand-color-beige);
+}
+
+.Menu_Search_Container > button {
+    background-color: var(--brand-color-beige);
+    border: none;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.Menu_Search_Container > button > span {
+    font-size: 1.6rem;
+    color: var(--brand-color-gray-light);
+}
+
+.Language_Btn {
+    margin-top: var(--medium-gap);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--small-gap);
+    padding: var(--medium-gap) var(--large-gap);
+    background-color: var(--brand-color-beige);
+    border-radius: var(--default-border-radius);
+    border: none;
+    cursor: pointer;
+    color: var(--brand-color-gray-light);
+    width: 100%;
+    position: relative;
+    font-size: 1rem;
+}
+
+.Language_Btn > span {
+    font-size: 1.5rem;
+    color: var(--brand-color-gray-light);
+    position: absolute;
+    left: var(--medium-gap);
 }
 
 /* ------ Footer ------ */
