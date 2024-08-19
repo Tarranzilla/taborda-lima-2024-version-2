@@ -799,8 +799,8 @@ section {
 .Team_Member_Card_Alt {
     position: relative;
     background-color: var(--brand-color-gray-light);
-    height: 100%;
     aspect-ratio: 2/3;
+    min-width: 300px;
     flex-shrink: 0;
 
     display: flex;
@@ -1210,7 +1210,7 @@ section {
 .Drawer {
     position: absolute;
     bottom: 0;
-    height: 75vh;
+    height: 90vh;
     width: 100%;
     background-color: var(--brand-color-gray-light);
     border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
@@ -1226,6 +1226,10 @@ section {
     gap: var(--medium-gap);
     padding: var(--medium-gap);
     background-color: var(--brand-color-gray-light);
+}
+
+.Drawer_Title {
+    width: 6rem;
 }
 
 .Drawer_Bar {
@@ -1252,6 +1256,7 @@ section {
     height: 2rem;
     background-color: var(--brand-color-beige);
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .Drawer_Close_Button > span {
@@ -1267,7 +1272,8 @@ section {
     padding: var(--medium-gap);
     overflow-y: auto;
     margin-top: 4rem;
-    height: 100%;
+    flex-grow: 1;
+    height: calc(100% - 4rem);
 }
 
 .Drawer_Content > * {
@@ -1285,6 +1291,10 @@ footer {
     position: relative;
     background-color: var(--main-text-color);
     scroll-snap-align: start;
+}
+
+.Mobile_Only {
+    display: none;
 }
 
 @media (orientation: portrait) {
@@ -1438,5 +1448,98 @@ footer {
     footer > img {
         width: 90%;
         height: auto;
+    }
+
+    .Alt_Paragraphs > p {
+        font-size: 1.125rem;
+    }
+
+    .Sobre_Equipe {
+        align-items: center;
+    }
+
+    .Sobre_Equipe > h1 {
+        text-align: center;
+    }
+
+    .Team_Member_Card_Alt {
+        min-width: 340px;
+    }
+
+    .Pictures_Container {
+        scroll-snap-type: x mandatory;
+    }
+
+    .Picture_Frame {
+        height: unset;
+        width: 100%;
+        min-width: 100%;
+        scroll-snap-align: start;
+    }
+
+    .Picture_Frame > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Special_Sobre_Img_Banner {
+        display: none;
+    }
+
+    .Team_Member_Description_Card {
+        flex-direction: column;
+        gap: var(--medium-gap);
+    }
+
+    .Team_Member_Container_Image {
+        width: 100%;
+    }
+
+    .Team_Member_Container_Header {
+        align-items: center;
+        width: 100%;
+    }
+
+    .Team_Member_Container_Header > h1 {
+        font-size: 1.6rem;
+    }
+
+    .Team_Member_Container_Header > h2 {
+        margin-top: 0;
+    }
+
+    .Expertise_Header_Info {
+        padding: var(--medium-gap);
+        padding-block: var(--large-gap);
+    }
+
+    .Expertise_Header_Info_Description {
+        font-size: 1.2rem;
+    }
+
+    .Services_List {
+        padding-right: 0;
+    }
+
+    .Services_List_Description {
+        font-size: 1.125rem;
+    }
+
+    .Service_Full_Description {
+        padding-right: 0;
+        gap: var(--medium-gap);
+    }
+
+    .Service_Full_Description_Title {
+        font-size: 1.6rem;
+    }
+
+    .Service_Full_Description_Paragraph {
+        font-size: 1.2rem;
+    }
+
+    .Service_Full_Description_Pattern {
+        height: 4rem;
     }
 }

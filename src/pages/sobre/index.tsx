@@ -151,13 +151,20 @@ const Sobre = () => {
                             jurídico de excelência.
                         </p>
                     </div>
-                    <div className="Container">
-                        <h1>Conheça a Nossa Equipe</h1>
+                    <div className="Container Sobre_Equipe">
+                        <h1>A Nossa Equipe</h1>
 
                         <div ref={containerRef} onMouseDown={handleMouseDown} className="Team_Members_Container_Alt">
                             {teamMembers.map((member, index) => (
                                 <div className="Team_Member_Card_Alt" key={index}>
-                                    <Image src={member.image} alt={member.name} width={1080} height={1080} className="Team_Member_Card_Image" />
+                                    <Image
+                                        src={member.image}
+                                        alt={member.name}
+                                        width={1080}
+                                        height={1080}
+                                        quality={100}
+                                        className="Team_Member_Card_Image"
+                                    />
 
                                     <div className="Team_Member_Card_Footer">
                                         <h2 className="Team_Member_Card_Name">{member.name}</h2>
@@ -186,7 +193,7 @@ const Sobre = () => {
                 </section>
 
                 {/* Fotos Do Escritorio Especial */}
-                <section>
+                <section className="Special_Sobre_Img_Banner">
                     <div className="Container Full_Width_Container">
                         <NewBannerSlider />
                     </div>

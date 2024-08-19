@@ -1,4 +1,4 @@
-import { motion as m, useDragControls, useMotionValue, useAnimate } from "framer-motion";
+import { motion as m, useDragControls, useMotionValue, useAnimate, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 import useMeasure from "react-use-measure";
@@ -31,45 +31,56 @@ export default function DragAndCloseModal({ open, setOpen, children }: DragAndCl
 
     return (
         <>
-            {open && (
-                <m.div ref={scope} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="Drawer_Container" onClick={handleClose}>
+            <AnimatePresence>
+                {open && (
                     <m.div
-                        id="drawer"
-                        ref={drawerRef}
-                        initial={{ y: "100%" }}
-                        animate={{ y: "0%" }}
-                        transition={{ ease: "easeInOut" }}
-                        onClick={(e) => {
-                            e.stopPropagation();
-                        }}
-                        style={{ y }}
-                        drag="y"
-                        dragControls={controls}
-                        dragListener={false}
-                        dragConstraints={{ top: 0, bottom: 0 }}
-                        dragElastic={{ top: 0, bottom: 0.5 }}
-                        onDragEnd={() => {
-                            if (y.get() > 100) {
-                                handleClose();
-                            }
-                        }}
-                        className="Drawer"
+                        ref={scope}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="Drawer_Container"
+                        onClick={handleClose}
+                        key={"drawer_container"}
                     >
-                        <div className="Drawer_Header">
-                            <button
-                                className="Drawer_Bar"
-                                onPointerDown={(e) => {
-                                    controls.start(e);
-                                }}
-                            ></button>
-                            <button onClick={handleClose} className="Drawer_Close_Button">
-                                <span className="material-icons">close</span>
-                            </button>
-                        </div>
-                        <div className="Drawer_Content">{children}</div>
+                        <m.div
+                            key={"drawer"}
+                            id="drawer"
+                            ref={drawerRef}
+                            initial={{ y: "100%" }}
+                            animate={{ y: "0%" }}
+                            transition={{ ease: "easeInOut" }}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                            }}
+                            style={{ y }}
+                            drag="y"
+                            dragControls={controls}
+                            dragListener={false}
+                            dragConstraints={{ top: 0, bottom: 0 }}
+                            dragElastic={{ top: 0, bottom: 0.5 }}
+                            onDragEnd={() => {
+                                if (y.get() > 100) {
+                                    handleClose();
+                                }
+                            }}
+                            className="Drawer"
+                        >
+                            <div className="Drawer_Header">
+                                <h3 className="Drawer_Title">menu</h3>
+                                <button
+                                    className="Drawer_Bar"
+                                    onPointerDown={(e) => {
+                                        controls.start(e);
+                                    }}
+                                ></button>
+                                <button onClick={handleClose} className="Drawer_Close_Button">
+                                    <span className="material-icons">close</span>
+                                </button>
+                            </div>
+                            <div className="Drawer_Content">{children}</div>
+                        </m.div>
                     </m.div>
-                </m.div>
-            )}
+                )}
+            </AnimatePresence>
         </>
     );
 }

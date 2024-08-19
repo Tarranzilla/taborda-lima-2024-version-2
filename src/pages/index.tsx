@@ -86,9 +86,10 @@ export default function Home() {
                 <section className="Main_Section LP_Section" id="servicos">
                     <div className="Container Container_Left Centered_Container Padded_Container">
                         <h1>Nossos Serviços</h1>
+                        <p>Compreendemos que cada caso é único e merece atenção individualizada.</p>
                         <p>
-                            Compreendemos que cada caso é único e merece atenção individualizada. Assim, trabalhamos em estreita colaboração com
-                            nossos clientes, desenvolvendo estratégias jurídicas sob medida para alcançar os melhores resultados possíveis.
+                            Assim, trabalhamos em estreita colaboração com nossos clientes, desenvolvendo estratégias jurídicas sob medida para
+                            alcançar os melhores resultados possíveis.
                         </p>
                         <p>
                             Nosso compromisso com a excelência e a integridade é essencial em cada aspecto de nosso trabalho. Não apenas defendemos os
@@ -135,8 +136,8 @@ export default function Home() {
                     <div className="Container Container_Left Centered_Container Padded_Container">
                         <h1>Contato</h1>
                         <p className="Smaller_Paragraph">
-                            Entre em contato conosco para agendar uma consulta ou esclarecer suas dúvidas. Estamos à disposição para ajudá-lo a
-                            encontrar a melhor solução para o seu caso.
+                            Estamos à disposição para agendar consultas, esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o seu
+                            caso.
                         </p>
 
                         <div className="Intro_Actions_Container">

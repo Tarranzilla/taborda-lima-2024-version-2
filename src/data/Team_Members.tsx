@@ -25,7 +25,7 @@ export const teamMembers = [
             "Atuante na área internacional, Liana tem expertise em Comércio Internacional, Direito Aduaneiro e Imigratório para os EUA, Europa e diversos outros países.",
             "Com sua sólida formação acadêmica e vasta experiência prática, Liana é uma referência respeitada no meio jurídico, proporcionando orientação jurídica confiável e estratégica para seus clientes.",
         ],
-        image: "/team/liana-taborda-lima.jpg",
+        image: "/team/equipe_cesar_01.png",
     },
     {
         name: "Cesar Augusto Taborda Lima",
@@ -51,7 +51,7 @@ export const teamMembers = [
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/amanda-lazaroti.jpg",
+        image: "/team/equipe_cesar_01.png",
     },
     {
         name: "Amanda Lazaroti",
@@ -62,7 +62,7 @@ export const teamMembers = [
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/amanda-lazaroti.jpg",
+        image: "/team/equipe_cesar_01.png",
     },
     {
         name: "Amanda Lazaroti",
@@ -73,7 +73,7 @@ export const teamMembers = [
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/amanda-lazaroti.jpg",
+        image: "/team/equipe_cesar_01.png",
     },
     {
         name: "Amanda Lazaroti",
@@ -84,6 +84,6 @@ export const teamMembers = [
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/amanda-lazaroti.jpg",
+        image: "/team/equipe_cesar_01.png",
     },
 ];
