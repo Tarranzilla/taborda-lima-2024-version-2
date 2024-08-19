@@ -20,6 +20,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
             {/* Navbar */}
             <nav className="Navbar_Top">
+                <button className="Nav_Button Language_Selector_Btn Mobile_Only">
+                    <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
+                </button>
+
                 <div className="Navbar_Logo_Container">
                     <svg className="Navbar_Logo Svg" width="291" height="61" viewBox="0 0 291 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -166,8 +170,8 @@ export default function App({ Component, pageProps }: AppProps) {
                     </Link>
                 </div>
 
-                <div className="Navbat_Tools_Container">
-                    <button className="Nav_Button Language_Selector_Btn">
+                <div className="Navbar_Tools_Container">
+                    <button className="Nav_Button Language_Selector_Btn Desktop_Only">
                         <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
                     </button>
                     <button

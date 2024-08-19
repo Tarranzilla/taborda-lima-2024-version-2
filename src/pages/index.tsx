@@ -42,7 +42,7 @@ export default function Home() {
 
                 {/* Seção de Início */}
                 <section id="inicio" className="Main_Section LP_Section">
-                    <div className="Container Container_Left Image_Container Dark_Container">
+                    <div id="Imagem_Inicial" className="Container Container_Left Image_Container Dark_Container">
                         <Image
                             className="Intro_Logo_Image"
                             src={"/general_assets/taborda_lima_main_logo.png"}
@@ -55,14 +55,16 @@ export default function Home() {
                     <div className="Container Container_Right Centered_Container Padded_Container">
                         <h1>O Escritório</h1>
                         <p>
-                            O escritório Taborda Lima & Advogados Associados é reconhecido por sua excelência e agilidade na prestação de serviços
-                            jurídicos, com uma trajetória de mais de 27 anos dedicados exclusivamente à advocacia.
+                            Reconhecidos pela excelência e agilidade na prestação de serviços jurídicos, possuímos uma trajetória de quase 30 anos
+                            dedicados exclusivamente à advocacia.
                         </p>
                         <p>
-                            Com atuação tanto no Brasil quanto no Exterior, o escritório oferece um atendimento personalizado e eficiente aos seus
-                            clientes. A atuação em temas de Direito Internacional e Imigração revela seu compromisso e capacidade em bem atender seus
-                            clientes juntamente com o apoio advogados parceiros em Nova York, Newark, Miami, Orlando, Washington, Londres, Paris, Roma
-                            e em várias outras cidades, inclusive na América Latina.
+                            Com atuação tanto no Brasil quanto no Exterior, nosso escritório oferece um atendimento personalizado e eficiente em temas
+                            de Direito Internacional e Imigração.
+                        </p>
+                        <p>
+                            Estamos de prontidão para bem atender nossos clientes juntamente com o apoio de advogados parceiros em Nova York, Newark,
+                            Miami, Orlando, Washington, Londres, Paris, Roma e em diversas localidades da América Latina.
                         </p>
 
                         <div className="Intro_Actions_Container">
@@ -92,10 +94,6 @@ export default function Home() {
                             Nosso compromisso com a excelência e a integridade é essencial em cada aspecto de nosso trabalho. Não apenas defendemos os
                             interesses de nossos clientes de forma vigorosa, mas também o fazemos dentro dos mais altos padrões éticos.
                         </p>
-                        <p>
-                            Isso garante não apenas resultados satisfatórios, mas também a confiança e a satisfação duradouras daqueles que confiam em
-                            nossos serviços.
-                        </p>
                     </div>
 
                     <div className="Container Container_Right Banner_Slider_Container Dark_Container Unpadded_Container">
@@ -107,7 +105,7 @@ export default function Home() {
                 <section id="consulta">
                     <div className="Container Container_Left Image_Container Dark_Container">
                         <Image
-                            className="Section_Image"
+                            className="Section_Image Consulta_Image"
                             src={"/office/fotos_escritorio_002.png"}
                             width={1280}
                             height={1280}
@@ -118,9 +116,9 @@ export default function Home() {
                     <div className="Container Container_Right Centered_Container Padded_Container">
                         <h1>Consulta</h1>
                         <p className="Smaller_Paragraph">
-                            Estamos à disposição para esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o seu caso. Entre em
-                            contato conosco e agende uma consulta.
+                            Estamos à disposição para esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o seu caso.
                         </p>
+                        <p>Entre em contato conosco e agende uma consulta em poucos minutos!</p>
                         <button
                             onClick={() => {
                                 handleScheduleWhatsApp();
@@ -168,7 +166,7 @@ export default function Home() {
                         <NewInstaFeed />
                     </div>
 
-                    <div className="Container Centered_Container Padded_Container">
+                    <div className="Content_Container Container Centered_Container Padded_Container">
                         <h1>Novidades</h1>
                         <p>
                             Nos siga nas redes sociais e confira as últimas atualizações sobre as peculiaridades das nossas áreas de atuação, assim

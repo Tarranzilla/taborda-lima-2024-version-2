@@ -370,7 +370,7 @@ section {
     text-decoration: none;
 }
 
-.Navbat_Tools_Container {
+.Navbar_Tools_Container {
     display: flex;
     align-items: center;
     gap: var(--medium-gap);
@@ -1285,4 +1285,158 @@ footer {
     position: relative;
     background-color: var(--main-text-color);
     scroll-snap-align: start;
+}
+
+@media (orientation: portrait) {
+    :root {
+        font-size: 15px;
+    }
+
+    .Mobile_Only {
+        display: flex;
+    }
+
+    .Desktop_Only {
+        display: none;
+    }
+
+    .Navbar_Logo_Container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Navbar_Link_Container {
+        display: none;
+    }
+
+    .Navbar_Tools_Container {
+        flex: unset;
+    }
+
+    .WhatsApp_Action_Container {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: var(--large-gap);
+    }
+
+    section {
+        flex-direction: column;
+        min-height: calc(100vh - 10vh);
+    }
+
+    .Container {
+        flex-basis: 100%;
+        max-width: 100%;
+        flex-grow: 1;
+    }
+
+    .Padded_Container {
+        padding: var(--medium-gap);
+    }
+
+    .Centered_Container {
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+    }
+
+    #Imagem_Inicial {
+        display: none;
+    }
+
+    .Intro_Actions_Container {
+        width: 100%;
+    }
+
+    #inicio > .Container_Right > .Intro_Actions_Container {
+        margin-top: auto;
+    }
+
+    #consulta {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #consulta > .Container_Right {
+        z-index: 2;
+        background-color: transparent;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(to top, white, transparent);
+        flex-grow: unset;
+    }
+
+    .Image_Container {
+    }
+
+    .Consulta_Image {
+        width: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        aspect-ratio: unset;
+    }
+
+    .Banner_Slider {
+        scroll-snap-align: start;
+        flex-grow: 1;
+        min-height: 90vh;
+    }
+
+    .Banner_Slider_Btn {
+        bottom: 0;
+        top: unset;
+        height: auto;
+    }
+
+    .Banner {
+        padding-inline: var(--medium-gap);
+    }
+
+    .Banner_Description {
+        font-size: 1.125rem;
+        max-width: 100ch;
+    }
+
+    .Banner_Img {
+        opacity: 0.1;
+    }
+
+    .Content_Container {
+        flex-grow: unset;
+    }
+
+    #contato > .Container_Left {
+        flex-grow: unset;
+    }
+
+    #contato > .Container_Left > .Intro_Actions_Container {
+        flex-direction: column-reverse;
+    }
+
+    .Map {
+        min-height: 200px;
+        flex-grow: 1;
+    }
+
+    .Page_Button {
+        width: 100%;
+        position: relative;
+        padding-inline: var(--large-gap);
+    }
+
+    .Page_Button > span {
+        position: absolute;
+        right: var(--medium-gap);
+    }
+
+    footer > img {
+        width: 90%;
+        height: auto;
+    }
 }
