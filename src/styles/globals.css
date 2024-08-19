@@ -1594,6 +1594,15 @@ footer {
         padding-block: var(--large-gap);
     }
 
+    .Expertise_Header_Top_Nav_Button {
+        padding-left: 4rem;
+    }
+
+    .Expertise_Header_Top_Nav_Button > span {
+        left: var(--medium-gap);
+        right: unset;
+    }
+
     .Expertise_Header_Info_Description {
         font-size: 1.2rem;
     }
