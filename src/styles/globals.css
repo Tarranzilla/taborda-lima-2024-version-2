@@ -56,6 +56,7 @@
     --brand-color-white: #ffffff;
     --brand-color-gray: #4c4c4c;
     --brand-color-gray-faded: #4c4c4c80;
+    --brand-color-dark-brown: #3c2f2f;
 
     --brand-color-beige: #bea07d;
 
@@ -132,8 +133,9 @@ label {
     cursor: pointer;
     background-color: var(--special-text-color);
     color: var(--alt-text-color);
-    border: none;
+    border: 1px solid var(--brand-color-beige-bright);
     border-radius: var(--default-border-radius);
+    box-shadow: 0 2px 5px var(--brand-color-dark-brown);
 
     display: flex;
     justify-content: center;
@@ -340,6 +342,7 @@ section {
 
     padding: var(--medium-gap);
     background-color: var(--special-text-color);
+    box-shadow: 0px 0px 10px var(--brand-color-gray);
 }
 
 .Navbar_Logo_Container {
@@ -437,8 +440,10 @@ section {
     font-size: 1.8rem;
     text-align: center;
     text-transform: uppercase;
-    color: var(--alt-text-color);
+    color: var(--brand-color-beige);
+    border-bottom: 1px solid var(--brand-color-beige);
     z-index: 3;
+    padding-bottom: var(--medium-gap);
 }
 
 .Banner_Description {
@@ -722,6 +727,22 @@ section {
 
 .Service_Full_Description_Pattern:last-of-type {
     margin-top: var(--big-gap);
+}
+
+.Menu_Pattern {
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.Menu_Pattern:first-of-type {
+    margin-top: 0;
+    margin-bottom: var(--medium-gap);
+}
+
+.Menu_Pattern:last-of-type {
+    margin-top: var(--medium-gap);
+    margin-bottom: 0;
 }
 
 /* ------ Página Sobre o Escritório ------ */
@@ -1212,7 +1233,7 @@ section {
     bottom: 0;
     height: 90vh;
     width: 100%;
-    background-color: var(--brand-color-gray-light);
+    background-color: hsl(35, 100%, 95%);
     border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
 }
 
@@ -1225,7 +1246,7 @@ section {
     justify-content: center;
     gap: var(--medium-gap);
     padding: var(--medium-gap);
-    background-color: var(--brand-color-gray-light);
+    background-color: hsl(35, 100%, 95%);
 }
 
 .Drawer_Title {
@@ -1261,7 +1282,7 @@ section {
 
 .Drawer_Close_Button > span {
     font-size: 1.6rem;
-    color: var(--brand-color-gray-light);
+    color: hsl(35, 100%, 95%);
     cursor: pointer;
 }
 
@@ -1287,8 +1308,17 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     gap: var(--small-gap);
+
+    border: 1px solid var(--brand-color-beige);
+    padding: 2rem;
+    border-radius: var(--default-border-radius);
+    flex-grow: 1;
+
+    margin-top: 0.5rem;
+
+    width: 100%;
 }
 
 .Menu_Main_Info > a {
@@ -1306,20 +1336,26 @@ section {
     gap: var(--small-gap);
     width: 100%;
     margin-bottom: var(--medium-gap);
+
+    background-color: var(--brand-color-beige);
+    padding: var(--medium-gap);
+    border-radius: var(--default-border-radius);
+
+    box-shadow: 0 2px 5px var(--brand-color-dark-brown);
 }
 
 .Menu_Search_Container > input {
     width: 100%;
-    padding: var(--medium-gap) var(--medium-gap);
+    padding: var(--small-gap) var(--medium-gap);
     border: none;
     font-size: 1rem;
     border-radius: var(--default-border-radius);
-    background-color: var(--brand-color-gray-light);
-    border: 1px solid var(--brand-color-beige);
+    background-color: hsl(35, 100%, 95%);
+    border: none;
 }
 
 .Menu_Search_Container > button {
-    background-color: var(--brand-color-beige);
+    background-color: hsl(35, 100%, 95%);
     border: none;
     border-radius: 50%;
     width: 2.4rem;
@@ -1332,7 +1368,7 @@ section {
 
 .Menu_Search_Container > button > span {
     font-size: 1.6rem;
-    color: var(--brand-color-gray-light);
+    color: var(--brand-color-beige);
 }
 
 .Language_Btn {
@@ -1347,17 +1383,45 @@ section {
     border-radius: var(--default-border-radius);
     border: none;
     cursor: pointer;
-    color: var(--brand-color-gray-light);
+    color: hsl(35, 100%, 95%);
     width: 100%;
     position: relative;
     font-size: 1rem;
+
+    box-shadow: 0 2px 5px var(--brand-color-dark-brown);
 }
 
 .Language_Btn > span {
     font-size: 1.5rem;
-    color: var(--brand-color-gray-light);
+    color: hsl(35, 100%, 95%);
     position: absolute;
     left: var(--medium-gap);
+}
+
+.Coisa {
+    background-color: hsl(35, 100%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: var(--medium-gap);
+    border: 1px solid var(--brand-color-beige);
+    border-radius: var(--default-border-radius);
+    box-shadow: 5px 5px 10px var(--brand-color-beige);
+    margin-block: auto;
+    flex-grow: 1;
+}
+
+.Coisa > h1 {
+    border-bottom: 1px solid var(--brand-color-beige);
+    padding-bottom: var(--medium-gap);
+}
+
+.Coisa > p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--brand-color-dark-brown);
 }
 
 /* ------ Footer ------ */
@@ -1485,7 +1549,15 @@ footer {
     }
 
     .Banner {
-        padding-inline: var(--medium-gap);
+        padding-inline: 2rem;
+    }
+
+    .Banner_Btn {
+        margin-top: var(--medium-gap);
+    }
+
+    .Banner_Title {
+        max-width: 16ch;
     }
 
     .Banner_Description {
@@ -1520,7 +1592,8 @@ footer {
         padding-inline: var(--large-gap);
     }
 
-    .Page_Button > span {
+    .Page_Button > span,
+    .Page_Button > svg {
         position: absolute;
         right: var(--medium-gap);
     }
@@ -1630,5 +1703,11 @@ footer {
 
     .Service_Full_Description_Pattern {
         height: 4rem;
+    }
+
+    .Menu_Pattern {
+        height: auto;
+        flex-grow: 1;
+        flex-shrink: 0;
     }
 }

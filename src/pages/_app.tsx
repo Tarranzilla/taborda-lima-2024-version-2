@@ -191,6 +191,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
             <DragAndCloseModal open={isModalOpen} setOpen={setIsModalOpen}>
                 <div className="Menu_Main_Info">
+                    <span className="Service_Full_Description_Pattern Menu_Pattern"></span>
+
                     <div className="Menu_Search_Container">
                         <input placeholder="Digite aqui o que busca"></input>
                         <button>
@@ -248,8 +250,10 @@ export default function App({ Component, pageProps }: AppProps) {
                     </Link>
 
                     <button className="Language_Btn">
-                        <span className="material-icons">language</span>Change the Language to English
+                        <span className="material-icons">language</span>Change to English
                     </button>
+
+                    <span className="Service_Full_Description_Pattern Menu_Pattern"></span>
                 </div>
             </DragAndCloseModal>
         </>
