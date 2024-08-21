@@ -1,0 +1,274 @@
+import { WebStructure } from "@/types/WebStructure";
+
+import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
+import { Banners_Data_PT } from "@/content-list/banners/portuguese";
+import { Team_Data_PT } from "@/content-list/team/portuguese";
+import Privacy_Data_PT from "@/content-list/privacy/potuguese";
+import Terms_Data_PT from "@/content-list/terms/portuguese";
+
+const portuguese_web_structure: WebStructure = {
+    common: {
+        customScheduleText: "Agende uma Consulta",
+        returnToAreasOfExpertise: "Áreas de Expertise",
+        customTitle: "Taborda Lima | Advocacia e Consultoria Legal",
+        customDescription:
+            "Escritório de advocacia em Curitiba, com mais de 30 anos de experiência no mercado e uma sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com o compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes.",
+        customWebsiteURL: "https://www.tabordalima.com/",
+
+        noSearchResultsFound: "Nenhum item corresponde à sua pesquisa.",
+    },
+
+    expertise_data: Exepertise_Data_PT,
+    team_data: Team_Data_PT,
+
+    navbar: {
+        logo: {
+            pathURL: "/brand/logotipo_navbar.png",
+            title: "Taborda Lima",
+            width: 100,
+            height: 100,
+            alt: "Logotipo Taborda Lima",
+        },
+
+        navLinks: [
+            {
+                path: "/",
+                name: "Início",
+            },
+            {
+                path: "/#quem-somos",
+                name: "Sobre",
+            },
+            {
+                path: "/#areas-de-atuacao",
+                name: "Áreas de Expertise",
+            },
+            {
+                path: "/#consulta",
+                name: "Consulta",
+            },
+            {
+                path: "/#contato",
+                name: "Contato",
+            },
+            {
+                path: "/#novidades",
+                name: "Novidades",
+            },
+        ],
+
+        langBtn: {
+            text: "Change the Language to English",
+            label: "Mudar o Idioma para Português",
+            availableLangs: ["en", "pt-BR"],
+        },
+
+        menuBtn: {
+            title: "Menu",
+            label: "Abrir o Menu",
+        },
+    },
+
+    menu: {
+        title: "Menu",
+        links: [
+            {
+                path: "/",
+                name: "Início",
+            },
+            {
+                path: "/#quem-somos",
+                name: "Sobre",
+            },
+            {
+                path: "/#areas-de-atuacao",
+                name: "Áreas de Expertise",
+            },
+            {
+                path: "/#consulta",
+                name: "Consulta",
+            },
+            {
+                path: "/#contato",
+                name: "Contato",
+            },
+            {
+                path: "/#novidades",
+                name: "Novidades",
+            },
+            {
+                path: "/termos-de-uso",
+                name: "Termos de Uso",
+            },
+            {
+                path: "/privacidade",
+                name: "Privacidade",
+            },
+        ],
+
+        privacyBtn: {
+            title: "Política de Privacidade",
+            label: "Política de Privacidade",
+        },
+
+        termsBtn: {
+            title: "Termos de Uso",
+            label: "Termos de Uso",
+        },
+
+        langBtn: {
+            text: "Change the Language to English",
+            label: "Mudar o Idioma para Português",
+            availableLangs: ["en", "pt-BR"],
+        },
+
+        copyRight: "© 2024 | Taborda Lima",
+    },
+
+    cookies: {
+        title: "Cookies",
+        paragraphs: [
+            "Este site utiliza cookies para garantir que você tenha a melhor experiência.",
+            "Ao continuar a usar este site, você concorda com o uso de cookies.",
+        ],
+        btnText: "Entendido",
+    },
+
+    privacy: {
+        title: "Política de Privacidade",
+        paragraphs: Privacy_Data_PT,
+    },
+
+    terms: {
+        title: "Termos de Uso",
+        paragraphs: Terms_Data_PT,
+    },
+
+    landingPage: {
+        sections: {
+            home: {
+                key: "inicio",
+                title: "O Escritório", // O Escritório
+
+                paragraphs: [
+                    "Reconhecidos pela excelência e agilidade na prestação de serviços jurídicos, possuímos uma trajetória de quase 30 anos dedicados exclusivamente à advocacia.",
+                    "Com atuação tanto no Brasil quanto no Exterior, nosso escritório oferece um atendimento personalizado e eficiente em temas de Direito Internacional e Imigração.",
+                    "Estamos de prontidão para bem atender nossos clientes juntamente com o apoio de advogados parceiros em Nova York, Newark, Miami, Orlando, Washington, Londres, Paris, Roma e em diversas localidades da América Latina.",
+                ],
+
+                aboutUsBtn: {
+                    title: "Saiba Mais Sobre o Escritório",
+                    label: "Saiba Mais Sobre o Escritório",
+                },
+
+                servicesBtn: {
+                    title: "Conheça Nossos Serviços",
+                    label: "Conheça Nossos Serviços",
+                },
+
+                internationalServicesBtn: {
+                    title: "Atendimento à Estrangeiros",
+                    label: "Atendimento à Estrangeiros",
+                },
+
+                scheduleBtn: {
+                    title: "Agende uma Consulta",
+                    label: "Agende uma Consulta",
+                },
+
+                // bannerList: bannerList_EN,
+            },
+
+            expertise: {
+                key: "areas-de-atuacao",
+                title: "Áreas de Expertise",
+
+                paragraphs: [
+                    "Compreendemos que cada caso é único e merece atenção individualizada.",
+                    "Assim, trabalhamos em estreita colaboração com nossos clientes, desenvolvendo estratégias jurídicas sob medida para alcançar os melhores resultados possíveis.",
+                    "Nosso compromisso com a excelência e a integridade é essencial em cada aspecto de nosso trabalho. Não apenas defendemos os interesses de nossos clientes de forma vigorosa, mas também o fazemos dentro dos mais altos padrões éticos.",
+                ],
+
+                expertiseList: Exepertise_Data_PT,
+                expertiseBannerList: Banners_Data_PT,
+                bannerMoreInfoBtn: {
+                    title: "Saiba Mais",
+                    label: "Saiba Mais",
+                },
+            },
+
+            appointments: {
+                key: "consulta",
+                title: "Consulta",
+
+                paragraphs: [
+                    "Estamos à disposição para esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o seu caso.",
+                    "Entre em contato conosco e agende uma consulta em poucos minutos!",
+                ],
+
+                appointmentBtn: {
+                    title: "Agende uma Consulta",
+                    label: "Agende uma Consulta",
+                },
+            },
+
+            contact: {
+                key: "contato",
+                title: "Contato",
+
+                paragraphs: [
+                    "Estamos à disposição para agendar consultas, esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o seu caso.",
+                ],
+
+                email: {
+                    title: "Email",
+                    value: "",
+                },
+
+                telephone: {
+                    title: "Telephone",
+                    value: "",
+                },
+
+                functioningHours: {
+                    title: "Functioning Hours",
+                    value: "Monday to Friday: 09:00 - 12:00 | 13:00 - 18:00",
+                },
+
+                adress: {
+                    title: "Address",
+                    value: "Avenida Manoel Ribas, nº 507 - Sala 05 - Mercês Curitiba - PR 80510-346 Brazil",
+                    street: "",
+                    number: "",
+                    city_region: "",
+                    city: "",
+                    country: "",
+                    zip_code: "",
+                },
+            },
+
+            updates: {
+                key: "atualizacoes",
+                title: "Atualizações",
+
+                paragraphs: [
+                    "Nos siga nas redes sociais e confira as últimas atualizações sobre as peculiaridades das nossas áreas de atuação, assim como notícias e informações sobre a advocacia no Brasil e no mundo!",
+                ],
+
+                instagramBtn: {
+                    title: "Instagram",
+                    label: "Instagram",
+                },
+
+                linkedinBtn: {
+                    title: "LinkedIn",
+                    label: "LinkedIn",
+                },
+            },
+        },
+    },
+
+    pages: [],
+};
+
+export default portuguese_web_structure;

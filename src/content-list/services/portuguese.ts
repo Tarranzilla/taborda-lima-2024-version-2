@@ -1,20 +1,3 @@
-export type Service_Data = {
-    title: string;
-    description: string;
-    full_description: string[];
-    image: string;
-    link: string;
-    slug: string;
-};
-
-export type Expertise_Data = {
-    title: string;
-    description: string;
-    image: string;
-    link: string;
-    services: Service_Data[];
-};
-
 export const Servicos_Civil = [
     {
         title: "Direito Contratual",
@@ -528,7 +511,7 @@ export const Servicos_Empresarial = [
     },
 ];
 
-export const Todas_Expertises = [
+export const Exepertise_Data_PT = [
     {
         name: "Serviços Civis",
         expertises: Servicos_Civil,
@@ -552,56 +535,5 @@ export const Todas_Expertises = [
     {
         name: "Serviços Empresariais",
         expertises: Servicos_Empresarial,
-    },
-];
-
-export const Banners_Data = [
-    {
-        title: "Direito Migratório",
-        description:
-            "Suporte especializado na obtenção de vistos, possibilitando que indivíduos conduzam seus negócios ou sejam empregados nos Estados Unidos.",
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio",
-        services: Servicos_Migratorio,
-    },
-    {
-        title: "Direito Internacional",
-        description:
-            "Atendemos estrangeiros no Brasil, oferecendo suporte em inglês nativo, espanhol, italiano e português. Assessoramos investimentos, transações comerciais, propriedade intelectual e administração, alinhando interesses de brasileiros no exterior e estrangeiros no Brasil.",
-        image: "/general_assets/banner_direito_internacional.png",
-        link: "/direito-internacional",
-        services: Servicos_Internacional,
-    },
-    {
-        title: "Direito Civil",
-        description:
-            "Atuamos em diversas áreas do direito civil, abrangendo Direito Bancário, Direito do Consumidor, Direito Contratual, Direito Imobiliário, Direito de Família e Sucessões, Indenizações, Arbitragens e Mediações.",
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil",
-        services: Servicos_Civil,
-    },
-    {
-        title: "Direito Aduaneiro",
-        description:
-            "Oferecemos assistência em importação e exportação, com planejamento tributário especializado para transações de Comércio Exterior. Incluímos concessão de regimes aduaneiros especiais, identificação de benefícios fiscais e conformidade legal no Direito Aduaneiro.",
-        image: "/general_assets/banner_direito_aduaneiro.png",
-        link: "/direito-aduaneiro",
-        services: Servicos_Aduaneiro,
-    },
-    {
-        title: "Direito Empresarial",
-        description:
-            "Atuamos em diversas áreas do Direito Empresarial, incluindo Direito Societário, Direito Contratual, Direito Tributário, Direito do Trabalho, Direito da Concorrência, Direito do Consumidor, Direito Ambiental e Direito Internacional.",
-        image: "/general_assets/banner_direito_empresarial.png",
-        link: "/direito-empresarial",
-        services: Servicos_Empresarial,
-    },
-    {
-        title: "Direito Desportivo",
-        description:
-            "Elaboração e negociação de contratos, patrocínios, direitos de imagem e de arena, proteção de marcas e assessoria em questões trabalhistas específicas do esporte, além de questões como controle antidoping, licenciamento e métodos alternativos para a resolução de conflitos jurídico-desportivos.",
-        image: "/general_assets/banner_direito_desportivo.png",
-        link: "/direito-desportivo",
-        services: Servicos_Desportivo,
     },
 ];

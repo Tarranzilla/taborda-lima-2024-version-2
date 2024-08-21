@@ -1441,6 +1441,14 @@ footer {
     display: none;
 }
 
+@media (orientation: landscape) {
+    .Coisa {
+        align-items: flex-start;
+        flex-grow: unset;
+        margin-block: 0;
+    }
+}
+
 @media (orientation: portrait) {
     :root {
         font-size: 15px;
