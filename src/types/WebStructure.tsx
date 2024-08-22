@@ -32,9 +32,13 @@ export type WebStructure = {
 
         customScheduleText: string;
         returnToAreasOfExpertise: string;
+        returnToMainPage: string;
         customTitle: string;
         customDescription: string;
         customWebsiteURL: string;
+
+        area_of_expertise: string;
+        more_details: string;
     };
 
     expertise_data: any;

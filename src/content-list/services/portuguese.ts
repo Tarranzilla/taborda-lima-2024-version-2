@@ -513,27 +513,45 @@ export const Servicos_Empresarial = [
 
 export const Exepertise_Data_PT = [
     {
-        name: "Serviços Civis",
+        key: "civil",
+        name: "Direito Civil",
+        head_title: "Direito Civil | Taborda Lima & Advogados Associados",
+        head_description: "",
         expertises: Servicos_Civil,
     },
     {
-        name: "Serviços Desportivos",
+        key: "desportivo",
+        name: "Direito Desportivo",
+        head_title: "Direito Desportivo | Taborda Lima & Advogados Associados",
+        head_description: "",
         expertises: Servicos_Desportivo,
     },
     {
-        name: "Serviços Internacionais",
+        key: "internacional",
+        name: "Direito Internacional",
+        head_title: "Direito Internacional | Taborda Lima & Advogados Associados",
+        head_description: "",
         expertises: Servicos_Internacional,
     },
     {
-        name: "Serviços Migratórios",
+        key: "migratorio",
+        name: "Direito Migratorio",
+        head_title: "Direito Migratorio | Taborda Lima & Advogados Associados",
+        head_description: "",
         expertises: Servicos_Migratorio,
     },
     {
-        name: "Serviços Aduaneiros",
+        key: "aduaneiro",
+        name: "Direito Aduaneiro",
+        head_title: "Direito Aduaneiro | Taborda Lima & Advogados Associados",
+        head_description: "",
         expertises: Servicos_Aduaneiro,
     },
     {
-        name: "Serviços Empresariais",
+        key: "empresarial",
+        name: "Direito Empresarial",
+        head_title: "Direito Empresarial | Taborda Lima & Advogados Associados",
+        head_description: "",
         expertises: Servicos_Empresarial,
     },
 ];

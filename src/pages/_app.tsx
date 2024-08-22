@@ -27,12 +27,18 @@ export default function App({ Component, pageProps }: AppProps) {
         router.push(currentPath, currentPath, { locale: newLocale });
     };
 
+    const isEnglish = router.locale === "en";
+
     return (
         <>
             {/* Navbar */}
             <nav className="Navbar_Top">
                 <button className="Nav_Button Language_Selector_Btn Mobile_Only" onClick={changeLanguage}>
-                    <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
+                    {isEnglish ? (
+                        <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
+                    ) : (
+                        <Image src={"/general_assets/navbar_lang_btn_ptbr.png"} width={32} height={32} alt="Language Selector" />
+                    )}
                 </button>
 
                 <div className="Navbar_Logo_Container">
@@ -183,7 +189,11 @@ export default function App({ Component, pageProps }: AppProps) {
 
                 <div className="Navbar_Tools_Container">
                     <button className="Nav_Button Language_Selector_Btn Desktop_Only" onClick={changeLanguage}>
-                        <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
+                        {isEnglish ? (
+                            <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
+                        ) : (
+                            <Image src={"/general_assets/navbar_lang_btn_ptbr.png"} width={32} height={32} alt="Language Selector" />
+                        )}
                     </button>
                     <button
                         className="Nav_Button Menu_Btn"

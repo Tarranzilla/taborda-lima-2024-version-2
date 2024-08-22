@@ -10,12 +10,15 @@ const portuguese_web_structure: WebStructure = {
     common: {
         customScheduleText: "Agende uma Consulta",
         returnToAreasOfExpertise: "Áreas de Expertise",
+        returnToMainPage: "Ir a Página Principal",
         customTitle: "Taborda Lima | Advocacia e Consultoria Legal",
         customDescription:
             "Escritório de advocacia em Curitiba, com mais de 30 anos de experiência no mercado e uma sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com o compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes.",
         customWebsiteURL: "https://www.tabordalima.com/",
 
         noSearchResultsFound: "Nenhum item corresponde à sua pesquisa.",
+        area_of_expertise: "Área de Expertise",
+        more_details: "Mais Detalhes",
     },
 
     expertise_data: Exepertise_Data_PT,

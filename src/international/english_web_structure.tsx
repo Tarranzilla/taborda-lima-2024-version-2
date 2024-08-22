@@ -10,12 +10,15 @@ const english_web_structure: WebStructure = {
     common: {
         customScheduleText: "Schedule an Appointment",
         returnToAreasOfExpertise: "Areas of Expertise",
+        returnToMainPage: "Go to the Main Page",
         customTitle: "Taborda Lima | Advocacy and Legal Consultancy",
         customDescription:
             "Law firm in Curitiba, with more than 30 years of experience in the market and a solid academic background. We offer a wide range of legal services, including civil, criminal, labor, administrative, and tax law, with a commitment to providing reliable and personalized legal guidance to meet the individual needs of our clients.",
         customWebsiteURL: "https://www.tabordalima.com/en",
 
         noSearchResultsFound: "No item corresponds to your search.",
+        area_of_expertise: "Area of Expertise",
+        more_details: "More Details",
     },
 
     expertise_data: Exepertise_Data_EN,
@@ -153,7 +156,7 @@ const english_web_structure: WebStructure = {
                 ],
 
                 aboutUsBtn: {
-                    title: "Know More About our Office",
+                    title: "Learn More About our Office",
                     label: "Know More About our Office",
                 },
 
@@ -163,8 +166,8 @@ const english_web_structure: WebStructure = {
                 },
 
                 internationalServicesBtn: {
-                    title: "International Services",
-                    label: "International Services",
+                    title: "Assistance for Foreigners in Brazil",
+                    label: "Assistance for Foreigners",
                 },
 
                 scheduleBtn: {
