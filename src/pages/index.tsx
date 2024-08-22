@@ -8,6 +8,8 @@ import { commonTransition } from "@/utils/Animations";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+import { useSimpleTranslation } from "@/international/use_translation";
+
 import BannerSlider from "@/components/BannerSlider";
 import GoogleMap from "@/components/GoogleMap";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
@@ -17,6 +19,8 @@ import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
 import NewInstaFeed from "@/components/NewInstaFeed";
 
 export default function Home() {
+    const t = useSimpleTranslation();
+
     return (
         <>
             <Head>
@@ -54,31 +58,22 @@ export default function Home() {
 
                     <div className="Container Container_Right Centered_Container Padded_Container">
                         <div className="Coisa">
-                            <h1>O Escritório</h1>
-                            <p>
-                                Reconhecidos pela excelência e agilidade na prestação de serviços jurídicos, possuímos uma trajetória de quase 30 anos
-                                dedicados exclusivamente à advocacia.
-                            </p>
-                            <p>
-                                Com atuação tanto no Brasil quanto no Exterior, nosso escritório oferece um atendimento personalizado e eficiente em
-                                temas de Direito Internacional e Imigração.
-                            </p>
-                            <p>
-                                Estamos de prontidão para bem atender nossos clientes juntamente com o apoio de advogados parceiros em Nova York,
-                                Newark, Miami, Orlando, Washington, Londres, Paris, Roma e em diversas localidades da América Latina.
-                            </p>
+                            <h1>{t.landingPage.sections.home.title}</h1>
+                            {t.landingPage.sections.home.paragraphs.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
                         </div>
 
                         <div className="Intro_Actions_Container">
                             <Link href={"/sobre"} className="Page_Button">
-                                <p>Saiba Mais Sobre o Escritório</p> <span className="material-icons">arrow_forward</span>
+                                <p>{t.landingPage.sections.home.aboutUsBtn.title}</p> <span className="material-icons">arrow_forward</span>
                             </Link>
                             <Link href={"/#servicos"} className="Page_Button">
-                                <p>Conheça Nossos Serviços </p>
+                                <p>{t.landingPage.sections.home.internationalServicesBtn.title}</p>
                                 <span className="material-icons">arrow_forward</span>
                             </Link>
                             <Link href={"/#consulta"} className="Page_Button">
-                                <p>Agende uma Consulta</p> <span className="material-icons">arrow_forward</span>
+                                <p>{t.landingPage.sections.home.scheduleBtn.title}</p> <span className="material-icons">arrow_forward</span>
                             </Link>
                         </div>
                     </div>
@@ -88,17 +83,10 @@ export default function Home() {
                 <section className="Main_Section LP_Section" id="servicos">
                     <div className="Container Container_Left Centered_Container Padded_Container">
                         <div className="Coisa">
-                            <h1>Nossos Serviços</h1>
-                            <p>Compreendemos que cada caso é único e merece atenção individualizada.</p>
-                            <p>
-                                Assim, trabalhamos em estreita colaboração com nossos clientes, desenvolvendo estratégias jurídicas sob medida para
-                                alcançar os melhores resultados possíveis.
-                            </p>
-                            <p>
-                                Nosso compromisso com a excelência e a integridade é essencial em cada aspecto de nosso trabalho. Não apenas
-                                defendemos os interesses de nossos clientes de forma vigorosa, mas também o fazemos dentro dos mais altos padrões
-                                éticos.
-                            </p>
+                            <h1>{t.landingPage.sections.expertise.title}</h1>
+                            {t.landingPage.sections.expertise.paragraphs.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
                         </div>
                     </div>
 
@@ -121,11 +109,10 @@ export default function Home() {
 
                     <div className="Container Container_Right Centered_Container Padded_Container">
                         <div className="Coisa">
-                            <h1>Consulta</h1>
-                            <p className="Smaller_Paragraph">
-                                Estamos à disposição para esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o seu caso.
-                            </p>
-                            <p>Entre em contato conosco e agende uma consulta em poucos minutos!</p>
+                            <h1>{t.landingPage.sections.appointments.title}</h1>
+                            {t.landingPage.sections.appointments.paragraphs.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
                         </div>
 
                         <button
@@ -134,7 +121,7 @@ export default function Home() {
                             }}
                             className="Page_Button"
                         >
-                            <p>Agende uma Consulta</p> <span className="material-icons">arrow_forward</span>
+                            <p>{t.landingPage.sections.appointments.appointmentBtn.title}</p> <span className="material-icons">arrow_forward</span>
                         </button>
                     </div>
                 </section>
@@ -143,11 +130,10 @@ export default function Home() {
                 <section id="contato">
                     <div className="Container Container_Left Centered_Container Padded_Container">
                         <div className="Coisa">
-                            <h1>Contato</h1>
-                            <p className="Smaller_Paragraph">
-                                Estamos à disposição para agendar consultas, esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o
-                                seu caso.
-                            </p>
+                            <h1>{t.landingPage.sections.contact.title}</h1>
+                            {t.landingPage.sections.contact.paragraphs.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
                         </div>
 
                         <div className="Intro_Actions_Container">
@@ -184,11 +170,10 @@ export default function Home() {
 
                     <div className="Content_Container Container Centered_Container Padded_Container">
                         <div className="Coisa">
-                            <h1>Novidades</h1>
-                            <p>
-                                Nos siga nas redes sociais e confira as últimas atualizações sobre as peculiaridades das nossas áreas de atuação,
-                                assim como notícias e informações sobre a advocacia no Brasil e no mundo!
-                            </p>
+                            <h1>{t.landingPage.sections.updates.title}</h1>
+                            {t.landingPage.sections.updates.paragraphs.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
                         </div>
 
                         <div className="Intro_Actions_Container">

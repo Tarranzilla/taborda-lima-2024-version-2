@@ -3,7 +3,7 @@ import { WebStructure } from "@/types/WebStructure";
 import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
 import { Banners_Data_PT } from "@/content-list/banners/portuguese";
 import { Team_Data_PT } from "@/content-list/team/portuguese";
-import Privacy_Data_PT from "@/content-list/privacy/potuguese";
+import Privacy_Data_PT from "@/content-list/privacy/portuguese";
 import Terms_Data_PT from "@/content-list/terms/portuguese";
 
 const portuguese_web_structure: WebStructure = {
@@ -175,8 +175,6 @@ const portuguese_web_structure: WebStructure = {
                     title: "Agende uma Consulta",
                     label: "Agende uma Consulta",
                 },
-
-                // bannerList: bannerList_EN,
             },
 
             expertise: {
@@ -192,7 +190,7 @@ const portuguese_web_structure: WebStructure = {
                 expertiseList: Exepertise_Data_PT,
                 expertiseBannerList: Banners_Data_PT,
                 bannerMoreInfoBtn: {
-                    title: "Saiba Mais",
+                    title: "Mais Informações",
                     label: "Saiba Mais",
                 },
             },
@@ -222,21 +220,26 @@ const portuguese_web_structure: WebStructure = {
 
                 email: {
                     title: "Email",
-                    value: "",
+                    value: "contato@advtabordalima.com.br",
                 },
 
                 telephone: {
-                    title: "Telephone",
-                    value: "",
+                    title: "Telefone",
+                    value: "+55 41 3338 7611",
+                },
+
+                cellphone: {
+                    title: "Telefone Móvel",
+                    value: "+55 41 992 416 343",
                 },
 
                 functioningHours: {
-                    title: "Functioning Hours",
-                    value: "Monday to Friday: 09:00 - 12:00 | 13:00 - 18:00",
+                    title: "Horários de Funcionamento",
+                    value: "Segunda à Sexta: 09:00 - 12:00 | 13:00 - 18:00",
                 },
 
                 adress: {
-                    title: "Address",
+                    title: "Endereço",
                     value: "Avenida Manoel Ribas, nº 507 - Sala 05 - Mercês Curitiba - PR 80510-346 Brazil",
                     street: "",
                     number: "",

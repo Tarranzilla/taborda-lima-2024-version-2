@@ -11,16 +11,27 @@ import type { AppProps } from "next/app";
 import { useState, useEffect } from "react";
 import { motion as m } from "framer-motion";
 
+import { useRouter } from "next/router";
+
 import DragAndCloseModal from "@/components/DragAndCloseModal";
 
 export default function App({ Component, pageProps }: AppProps) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+    const router = useRouter();
+
+    const changeLanguage = () => {
+        const currentLocale = router.locale;
+        const newLocale = currentLocale === "en" ? "pt-BR" : "en";
+        const currentPath = router.asPath;
+        router.push(currentPath, currentPath, { locale: newLocale });
+    };
+
     return (
         <>
             {/* Navbar */}
             <nav className="Navbar_Top">
-                <button className="Nav_Button Language_Selector_Btn Mobile_Only">
+                <button className="Nav_Button Language_Selector_Btn Mobile_Only" onClick={changeLanguage}>
                     <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
                 </button>
 
@@ -171,7 +182,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 </div>
 
                 <div className="Navbar_Tools_Container">
-                    <button className="Nav_Button Language_Selector_Btn Desktop_Only">
+                    <button className="Nav_Button Language_Selector_Btn Desktop_Only" onClick={changeLanguage}>
                         <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
                     </button>
                     <button

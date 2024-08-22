@@ -216,12 +216,17 @@ const english_web_structure: WebStructure = {
 
                 email: {
                     title: "Email",
-                    value: "",
+                    value: "contato@advtabordalima.com.br",
                 },
 
                 telephone: {
                     title: "Telephone",
-                    value: "",
+                    value: "+55 41 3338 7611",
+                },
+
+                cellphone: {
+                    title: "Mobile Telephone",
+                    value: "+55 41 992 416 343",
                 },
 
                 functioningHours: {

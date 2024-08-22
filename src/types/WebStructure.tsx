@@ -204,6 +204,11 @@ export type WebStructure = {
                     value: string;
                 };
 
+                cellphone: {
+                    title: string;
+                    value: string;
+                };
+
                 functioningHours: {
                     title: string;
                     value: string;

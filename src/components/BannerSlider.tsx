@@ -3,9 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion as m, AnimatePresence } from "framer-motion";
 
+import { useSimpleTranslation } from "@/international/use_translation";
+
 import { Banners_Data } from "@/data/Expertises";
 
 const BannerSlider = () => {
+    const t = useSimpleTranslation();
     const [currentBanner, setCurrentBanner] = useState(0);
 
     function nextBanner() {
@@ -28,14 +31,14 @@ const BannerSlider = () => {
             </button>
 
             <AnimatePresence mode="wait">
-                {Banners_Data.map(
+                {t.landingPage.sections.expertise.expertiseBannerList.map(
                     (banner, index) =>
                         index === currentBanner && (
                             <m.div key={index} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Banner">
                                 <h2 className="Banner_Title">{banner.title}</h2>
                                 <p className="Banner_Description">{banner.description}</p>
                                 <Link href={banner.link} className="Banner_Btn Page_Button">
-                                    <p>Mais Informações</p>
+                                    <p>{t.landingPage.sections.expertise.bannerMoreInfoBtn.title}</p>
                                 </Link>
                                 <Image className="Banner_Img" src={banner.image} width={800} height={800} alt={banner.title} />
                             </m.div>
