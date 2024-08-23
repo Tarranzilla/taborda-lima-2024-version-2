@@ -11,6 +11,12 @@ const portuguese_web_structure: WebStructure = {
         customScheduleText: "Agende uma Consulta",
         returnToAreasOfExpertise: "Áreas de Expertise",
         returnToMainPage: "Ir a Página Principal",
+        returnToImmigrationLaw: "Ir a Direito Imigratório",
+        returnToInternationalLaw: "Ir a Direito Internacional",
+        returnToCivilLaw: "Ir a Direito Civil",
+        returnToCustomsLaw: "Ir a Direito Aduaneiro",
+        returnToBusinessLaw: "Ir a Direito Empresarial",
+        returnToSportsLaw: "Ir a Direito Desportivo",
         customTitle: "Taborda Lima | Advocacia e Consultoria Legal",
         customDescription:
             "Escritório de advocacia em Curitiba, com mais de 30 anos de experiência no mercado e uma sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com o compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes.",
@@ -19,6 +25,11 @@ const portuguese_web_structure: WebStructure = {
         noSearchResultsFound: "Nenhum item corresponde à sua pesquisa.",
         area_of_expertise: "Área de Expertise",
         more_details: "Mais Detalhes",
+
+        whatsappBtn: {
+            label: "Fale Conosco Pelo WhatsApp!",
+            link: "+5541992416343",
+        },
     },
 
     expertise_data: Exepertise_Data_PT,
@@ -39,11 +50,11 @@ const portuguese_web_structure: WebStructure = {
                 name: "Início",
             },
             {
-                path: "/#quem-somos",
+                path: "/sobre",
                 name: "Sobre",
             },
             {
-                path: "/#areas-de-atuacao",
+                path: "/#servicos",
                 name: "Áreas de Expertise",
             },
             {
@@ -80,11 +91,11 @@ const portuguese_web_structure: WebStructure = {
                 name: "Início",
             },
             {
-                path: "/#quem-somos",
+                path: "/sobre",
                 name: "Sobre",
             },
             {
-                path: "/#areas-de-atuacao",
+                path: "/#servicos",
                 name: "Áreas de Expertise",
             },
             {
@@ -172,6 +183,7 @@ const portuguese_web_structure: WebStructure = {
                 internationalServicesBtn: {
                     title: "Atendimento à Estrangeiros",
                     label: "Atendimento à Estrangeiros",
+                    phone: "+55 41 992 416 343",
                 },
 
                 scheduleBtn: {

@@ -12,6 +12,7 @@ export const Servicos_Civil = [
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-contratual",
         slug: "direito-contratual",
+        category: "Civil Law",
     },
     {
         title: "Banking Law",
@@ -24,6 +25,7 @@ export const Servicos_Civil = [
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-bancario",
         slug: "direito-bancario",
+        category: "Civil Law",
     },
     {
         title: "Consumer Law",
@@ -37,6 +39,7 @@ export const Servicos_Civil = [
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-consumidor",
         slug: "direito-consumidor",
+        category: "Civil Law",
     },
     {
         title: "Real Estate Law",
@@ -51,6 +54,7 @@ export const Servicos_Civil = [
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-imobiliario",
         slug: "direito-imobiliario",
+        category: "Civil Law",
     },
     {
         title: "National and International Family and Succession Law",
@@ -65,6 +69,7 @@ export const Servicos_Civil = [
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-familia-sucessoes",
         slug: "direito-familia-sucessoes",
+        category: "Civil Law",
     },
     {
         title: "Indemnities",
@@ -79,6 +84,7 @@ export const Servicos_Civil = [
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-indenizacoes",
         slug: "direito-indenizacoes",
+        category: "Civil Law",
     },
 ];
 
@@ -97,6 +103,7 @@ export const Servicos_Desportivo = [
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/negociacao-contratos-transferencia-atletas",
         slug: "negociacao-contratos-transferencia-atletas",
+        category: "Sports Law",
     },
     {
         title: "Licensing of Athletes and Agents",
@@ -112,6 +119,7 @@ export const Servicos_Desportivo = [
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/licenciamento-atletas-agentes",
         slug: "licenciamento-atletas-agentes",
+        category: "Sports Law",
     },
     {
         title: "Representation in Sports Litigation Cases",
@@ -127,6 +135,7 @@ export const Servicos_Desportivo = [
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/representacao-litigios-desportivos",
         slug: "representacao-litigios-desportivos",
+        category: "Sports Law",
     },
     {
         title: "Regulatory and Compliance Consulting",
@@ -142,6 +151,7 @@ export const Servicos_Desportivo = [
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/consultoria-questoes-regulatorias-conformidade",
         slug: "consultoria-questoes-regulatorias-conformidade",
+        category: "Sports Law",
     },
     {
         title: "Doping and Anti-Doping Consulting",
@@ -157,6 +167,7 @@ export const Servicos_Desportivo = [
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/assessoria-doping-antidoping",
         slug: "assessoria-doping-antidoping",
+        category: "Sports Law",
     },
     {
         title: "Conflict Resolution in Sports Arbitrations",
@@ -172,6 +183,7 @@ export const Servicos_Desportivo = [
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/resolucao-conflitos-arbitragens-desportivas",
         slug: "resolucao-conflitos-arbitragens-desportivas",
+        category: "Sports Law",
     },
 ];
 
@@ -188,6 +200,7 @@ export const Servicos_Internacional = [
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/analise-colaboracao-contratos",
         slug: "analise-colaboracao-contratos",
+        category: "International Law",
     },
     {
         title: "Intellectual Property Registration",
@@ -202,6 +215,7 @@ export const Servicos_Internacional = [
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/registro-propriedade-intelectual",
         slug: "registro-propriedade-intelectual",
+        category: "International Law",
     },
     {
         title: "Internationalization of Franchises",
@@ -217,6 +231,7 @@ export const Servicos_Internacional = [
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/internacionalizacao-franquias",
         slug: "internacionalizacao-franquias",
+        category: "International Law",
     },
     {
         title: "Legal Structuring of International Commercial Operations",
@@ -232,6 +247,7 @@ export const Servicos_Internacional = [
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/estruturacao-juridica-operacoes-comerciais-internacionais",
         slug: "estruturacao-juridica-operacoes-comerciais-internacionais",
+        category: "International Law",
     },
     {
         title: "Protection and Defense of Rights in National Courts and Arbitration Chambers",
@@ -247,6 +263,7 @@ export const Servicos_Internacional = [
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
         slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
+        category: "International Law",
     },
     {
         title: "Waiver Requests",
@@ -262,6 +279,7 @@ export const Servicos_Internacional = [
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/pedidos-waiver",
         slug: "pedidos-waiver",
+        category: "International Law",
     },
 ];
 
@@ -280,6 +298,7 @@ export const Servicos_Migratorio = [
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-1",
         slug: "visto-eb-1",
+        category: "Immigration Law",
     },
     {
         title: "EB-2 Visa",
@@ -295,6 +314,7 @@ export const Servicos_Migratorio = [
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-2",
         slug: "visto-eb-2",
+        category: "Immigration Law",
     },
     {
         title: "EB-3 Visa",
@@ -310,6 +330,7 @@ export const Servicos_Migratorio = [
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-3",
         slug: "visto-eb-3",
+        category: "Immigration Law",
     },
     {
         title: "EB-4 Visa",
@@ -325,6 +346,7 @@ export const Servicos_Migratorio = [
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-4",
         slug: "visto-eb-4",
+        category: "Immigration Law",
     },
     {
         title: "EB-5 Visa",
@@ -339,6 +361,7 @@ export const Servicos_Migratorio = [
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-5",
         slug: "visto-eb-5",
+        category: "Immigration Law",
     },
     {
         title: "Artist Visa (O-1 Visa)",
@@ -353,6 +376,7 @@ export const Servicos_Migratorio = [
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-artista-o-1",
         slug: "visto-artista-o-1",
+        category: "Immigration Law",
     },
 ];
 
@@ -371,6 +395,7 @@ export const Servicos_Aduaneiro = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/analise-elaboracao-contratos",
         slug: "analise-elaboracao-contratos",
+        category: "Customs Law",
     },
     {
         title: "Tax Planning",
@@ -386,6 +411,7 @@ export const Servicos_Aduaneiro = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/elaboracao-planejamento-tributario",
         slug: "elaboracao-planejamento-tributario",
+        category: "Customs Law",
     },
     {
         title: "Consultancy and Analysis of Tariff and Non-Tariff Barriers",
@@ -401,6 +427,7 @@ export const Servicos_Aduaneiro = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/consultoria-analise-barreiras-tarifarias-nao-tarifarias",
         slug: "consultoria-analise-barreiras-tarifarias-nao-tarifarias",
+        category: "Customs Law",
     },
     {
         title: "Import Licensing",
@@ -416,6 +443,7 @@ export const Servicos_Aduaneiro = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/licenciamento-importacao",
         slug: "licenciamento-importacao",
+        category: "Customs Law",
     },
     {
         title: "Protection and Defense of Rights in National Courts and Arbitration Chambers",
@@ -431,6 +459,7 @@ export const Servicos_Aduaneiro = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
         slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
+        category: "Customs Law",
     },
     {
         title: "Consultancy for Special Customs Regimes, Tax Benefits, and Incentives",
@@ -446,6 +475,7 @@ export const Servicos_Aduaneiro = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/assessoria-regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
         slug: "assessoria-regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
+        category: "Customs Law",
     },
 ];
 
@@ -464,6 +494,7 @@ export const Servicos_Empresarial = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/consultoria-apoio-juridico-estrategico-negociacao-desenvolvimento-modelos-negocios",
         slug: "consultoria-apoio-juridico-estrategico-negociacao-desenvolvimento-modelos-negocios",
+        category: "Business Law",
     },
     {
         title: "Development, Negotiation, Creation, and/or Review of Commercial Contracts",
@@ -479,6 +510,7 @@ export const Servicos_Empresarial = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/desenvolvimento-negociacao-criacao-revisao-contratos-comerciais",
         slug: "desenvolvimento-negociacao-criacao-revisao-contratos-comerciais",
+        category: "Business Law",
     },
     {
         title: "Advisory and Legal Support for the Management and Analysis of Corporate Contracts",
@@ -494,6 +526,7 @@ export const Servicos_Empresarial = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/aconselhamento-suporte-juridico-administracao-analise-contratos-corporativos",
         slug: "aconselhamento-suporte-juridico-administracao-analise-contratos-corporativos",
+        category: "Business Law",
     },
     {
         title: "Legal Studies and Opinions",
@@ -509,6 +542,7 @@ export const Servicos_Empresarial = [
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/estudos-pareceres",
         slug: "estudos-pareceres",
+        category: "Business Law",
     },
 ];
 

@@ -10,6 +10,12 @@ const english_web_structure: WebStructure = {
     common: {
         customScheduleText: "Schedule an Appointment",
         returnToAreasOfExpertise: "Areas of Expertise",
+        returnToImmigrationLaw: "Go to Immigration Law",
+        returnToInternationalLaw: "Go to International Law",
+        returnToCivilLaw: "Go to Civil Law",
+        returnToCustomsLaw: "Go to Customs Law",
+        returnToBusinessLaw: "Go to Business Law",
+        returnToSportsLaw: "Go to Sports Law",
         returnToMainPage: "Go to the Main Page",
         customTitle: "Taborda Lima | Advocacy and Legal Consultancy",
         customDescription:
@@ -19,6 +25,11 @@ const english_web_structure: WebStructure = {
         noSearchResultsFound: "No item corresponds to your search.",
         area_of_expertise: "Area of Expertise",
         more_details: "More Details",
+
+        whatsappBtn: {
+            label: "Contact us via WhatsApp!",
+            link: "+5541992416343",
+        },
     },
 
     expertise_data: Exepertise_Data_EN,
@@ -39,11 +50,11 @@ const english_web_structure: WebStructure = {
                 name: "Home",
             },
             {
-                path: "/#quem-somos",
+                path: "/sobre",
                 name: "About Us",
             },
             {
-                path: "/#areas-de-atuacao",
+                path: "/#servicos",
                 name: "Our Expertise",
             },
             {
@@ -80,11 +91,11 @@ const english_web_structure: WebStructure = {
                 name: "Home",
             },
             {
-                path: "/#quem-somos",
+                path: "/sobre",
                 name: "About Us",
             },
             {
-                path: "/#areas-de-atuacao",
+                path: "/#servicos",
                 name: "Our Expertise",
             },
             {
@@ -102,6 +113,10 @@ const english_web_structure: WebStructure = {
             {
                 path: "/termos-de-uso",
                 name: "Terms of Use",
+            },
+            {
+                path: "/privacidade",
+                name: "Privacy",
             },
         ],
 
@@ -168,6 +183,7 @@ const english_web_structure: WebStructure = {
                 internationalServicesBtn: {
                     title: "Assistance for Foreigners in Brazil",
                     label: "Assistance for Foreigners",
+                    phone: "+55 41 992 416 343",
                 },
 
                 scheduleBtn: {

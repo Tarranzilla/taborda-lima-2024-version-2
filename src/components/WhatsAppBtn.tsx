@@ -3,6 +3,8 @@ import { motion as m, AnimatePresence } from "framer-motion";
 
 import { handleWhatsApp } from "@/utils/WhatsApp";
 
+import { useSimpleTranslation } from "@/international/use_translation";
+
 interface WhatsAppBtnProps {
     position: "Left" | "Right";
     high?: boolean;
@@ -11,6 +13,8 @@ interface WhatsAppBtnProps {
 
 const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHidden = false }) => {
     const [isHovered, setIsHovered] = useState(notHidden);
+
+    const t = useSimpleTranslation();
 
     return (
         <m.div
@@ -24,7 +28,7 @@ const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHi
             <AnimatePresence>
                 {isHovered && (
                     <m.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Page_Button WhatsApp_Btn">
-                        <p>Fale Conosco Pelo WhatsApp!</p>
+                        <p>{t.common.whatsappBtn.label}</p>
                     </m.button>
                 )}
             </AnimatePresence>

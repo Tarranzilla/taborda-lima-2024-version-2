@@ -13,6 +13,8 @@ import { motion as m } from "framer-motion";
 
 import { useRouter } from "next/router";
 
+import { useSimpleTranslation } from "@/international/use_translation";
+
 import DragAndCloseModal from "@/components/DragAndCloseModal";
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -28,6 +30,8 @@ export default function App({ Component, pageProps }: AppProps) {
     };
 
     const isEnglish = router.locale === "en";
+
+    const t = useSimpleTranslation();
 
     return (
         <>
@@ -173,18 +177,11 @@ export default function App({ Component, pageProps }: AppProps) {
                 </div>
 
                 <div className="Navbar_Link_Container">
-                    <Link className="Navbar_Link" href="/#inicio">
-                        Início
-                    </Link>
-                    <Link className="Navbar_Link" href="/#servicos">
-                        Serviços
-                    </Link>
-                    <Link className="Navbar_Link" href="/#consulta">
-                        Consulta
-                    </Link>
-                    <Link className="Navbar_Link" href="/#contato">
-                        Contato
-                    </Link>
+                    {t.navbar.navLinks?.map((link, index) => (
+                        <Link key={index} className="Navbar_Link" href={link.path}>
+                            {link.name}
+                        </Link>
+                    ))}
                 </div>
 
                 <div className="Navbar_Tools_Container">
@@ -215,63 +212,21 @@ export default function App({ Component, pageProps }: AppProps) {
                     <span className="Service_Full_Description_Pattern Menu_Pattern"></span>
 
                     <div className="Menu_Search_Container">
-                        <input placeholder="Digite aqui o que busca"></input>
+                        <input placeholder={isEnglish ? "Type your search here" : "Digite aqui o que busca"}></input>
                         <button>
                             <span className="material-icons">search</span>
                         </button>
                     </div>
 
-                    <Link
-                        href={"/#"}
-                        onClick={() => {
-                            setIsModalOpen(false);
-                        }}
-                    >
-                        Início
-                    </Link>
-                    <Link
-                        href={"/sobre"}
-                        onClick={() => {
-                            setIsModalOpen(false);
-                        }}
-                    >
-                        Sobre
-                    </Link>
-                    <Link
-                        href={"/#servicos"}
-                        onClick={() => {
-                            setIsModalOpen(false);
-                        }}
-                    >
-                        Serviços
-                    </Link>
-                    <Link
-                        href={"/#consulta"}
-                        onClick={() => {
-                            setIsModalOpen(false);
-                        }}
-                    >
-                        Consulta
-                    </Link>
-                    <Link
-                        href={"/#contato"}
-                        onClick={() => {
-                            setIsModalOpen(false);
-                        }}
-                    >
-                        Contato
-                    </Link>
-                    <Link
-                        href={"/#novidades"}
-                        onClick={() => {
-                            setIsModalOpen(false);
-                        }}
-                    >
-                        Novidades
-                    </Link>
+                    {t.menu.links?.map((link, index) => (
+                        <Link key={index} href={link.path} onClick={() => setIsModalOpen(false)}>
+                            {link.name}
+                        </Link>
+                    ))}
 
-                    <button className="Language_Btn">
-                        <span className="material-icons">language</span>Change to English
+                    <button className="Language_Btn" onClick={changeLanguage}>
+                        <span className="material-icons">language</span>
+                        {isEnglish ? "Mudar para Português" : "Change to English"}
                     </button>
 
                     <span className="Service_Full_Description_Pattern Menu_Pattern"></span>

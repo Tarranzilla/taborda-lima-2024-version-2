@@ -33,9 +33,20 @@ export type WebStructure = {
         customScheduleText: string;
         returnToAreasOfExpertise: string;
         returnToMainPage: string;
+        returnToImmigrationLaw: string;
+        returnToInternationalLaw: string;
+        returnToCivilLaw: string;
+        returnToCustomsLaw: string;
+        returnToBusinessLaw: string;
+        returnToSportsLaw: string;
         customTitle: string;
         customDescription: string;
         customWebsiteURL: string;
+
+        whatsappBtn: {
+            label: string;
+            link: string;
+        };
 
         area_of_expertise: string;
         more_details: string;
@@ -159,6 +170,7 @@ export type WebStructure = {
                 internationalServicesBtn: {
                     title: string;
                     label: string;
+                    phone: string;
                 };
 
                 scheduleBtn: {

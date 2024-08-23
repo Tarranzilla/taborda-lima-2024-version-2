@@ -5,6 +5,7 @@ export type Service_Data = {
     image: string;
     link: string;
     slug: string;
+    category: string;
 };
 
 export type Expertise_Data = {
