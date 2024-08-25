@@ -8,18 +8,45 @@ import { commonTransition } from "@/utils/Animations";
 
 import { teamMembers, TeamMember } from "@/data/Team_Members";
 
-export const getStaticPaths: GetStaticPaths = async () => {
-    // Get the paths we want to pre-render based on services
-    const paths = teamMembers.map((person) => ({
-        params: { slug: person.slug },
-    }));
+import { Team_Data_EN } from "@/content-list/team/english";
+import { Team_Data_PT } from "@/content-list/team/portuguese";
 
-    // We'll pre-render only these paths at build time.
-    // { fallback: false } means other routes should 404.
-    return { paths, fallback: false };
+export const getStaticPaths: GetStaticPaths = async () => {
+    // Get the paths we want to pre-render based on
+
+    const paths: { params: { slug: string }; locale: string }[] = [];
+
+    // Add Portuguese paths
+    Team_Data_PT.forEach((person) => {
+        if (person.slug) {
+            paths.push({ params: { slug: person.slug }, locale: "pt-BR" });
+        } else {
+            console.error("Missing team member in portuguese:", person);
+        }
+    });
+
+    // Add English paths
+    Team_Data_EN.forEach((person) => {
+        if (person.slug) {
+            paths.push({ params: { slug: person.slug }, locale: "en" });
+        } else {
+            console.error("Missing team member in portuguese:", person);
+        }
+    });
+
+    console.log("paths:", paths);
+
+    return {
+        paths,
+        fallback: true,
+    };
 };
 
-const TeamMemberDetailPage = ({ person }: { person: TeamMember }) => {
+const TeamMemberDetailPage = ({ person }: { person: TeamMember | null }) => {
+    if (!person) {
+        return <div>Team Member not found</div>;
+    }
+
     return (
         <main>
             <div className="Container Dark_Container Alt_Paragraphs Centered_Container Full_Width_Container">
@@ -43,14 +70,17 @@ const TeamMemberDetailPage = ({ person }: { person: TeamMember }) => {
     );
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export async function getStaticProps({ params, locale }: { params: { slug: string }; locale: string }) {
+    console.log(`getStaticProps called for locale: ${locale}, slug: ${params.slug}`);
     if (!params || typeof params.slug !== "string") {
         return {
             notFound: true,
         };
     }
 
-    const person = teamMembers.find((person) => person.slug === params.slug);
+    const list = locale === "pt-BR" ? Team_Data_PT : Team_Data_EN;
+    console.log("team membeer slug:", params.slug);
+    const person = list.find((person) => person.slug === params.slug);
 
     if (!person) {
         return {
@@ -59,6 +89,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     }
 
     return { props: { person } };
-};
+}
 
 export default TeamMemberDetailPage;

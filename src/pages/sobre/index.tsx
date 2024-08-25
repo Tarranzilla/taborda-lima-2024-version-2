@@ -10,6 +10,8 @@ import { commonTransition } from "@/utils/Animations";
 import { teamMembers, TeamMember } from "@/data/Team_Members";
 import NewBannerSlider from "@/components/NewBannerSlider";
 
+import { useSimpleTranslation } from "@/international/use_translation";
+
 const officePictures = [
     {
         src: "/office/fotos_escritorio_001.png",
@@ -54,6 +56,8 @@ const officePictures = [
 ];
 
 const Sobre = () => {
+    const t = useSimpleTranslation();
+
     const containerRef = useRef<HTMLDivElement>(null);
     const handleMouseDown = (e: any) => {
         const container = containerRef.current;
@@ -124,38 +128,16 @@ const Sobre = () => {
                 {/* Histórico e Membros da Equipe */}
                 <section>
                     <div className="Container Dark_Container Alt_Paragraphs Centered_Container Padded_Container Full_Width_Paragraphs">
-                        <h1>A Nossa História</h1>
-                        <p>
-                            Fundado em Curitiba em 1996 pela Dra. Liana Maria Taborda Lima, o escritório Taborda Lima & Advogados Associados se
-                            destaca pela excelência e profissionalismo. Com uma equipe experiente e altamente qualificada, o escritório tem quase três
-                            décadas de atuação no mercado jurídico, sempre atualizado com as mais recentes mudanças e inovações legais.
-                        </p>
-                        <p>
-                            Inicialmente focado no Direito Aduaneiro, o escritório rapidamente se estabeleceu como referência na área, oferecendo
-                            serviços jurídicos de alta qualidade. O conhecimento especializado e o estudo contínuo dos temas aduaneiros permitem ao
-                            Taborda Lima & Advogados Associados prestar um atendimento distinto e eficiente.
-                        </p>
-                        <p>
-                            Os profissionais do escritório são especialistas, mestres e doutores em diversas áreas do Direito, incluindo Direito
-                            Aduaneiro, Migratório, Administrativo e Tributário. Com uma visão abrangente e internacional, eles se dedicam a oferecer
-                            excelência em todas as áreas de atuação.
-                        </p>
-                        <p>
-                            A atuação em Direito Internacional e Imigração reforça o compromisso do escritório em atender bem seus clientes. Com
-                            parceiros em Nova York, Newark, Miami, Orlando, Washington, Londres, Paris, Roma e várias outras cidades, incluindo a
-                            América Latina, o Taborda Lima & Advogados Associados oferece uma rede de apoio global para questões jurídicas complexas.
-                        </p>
-                        <p>
-                            Com um compromisso firme com a ética e a responsabilidade, o Taborda Lima & Advogados Associados se dedica à resolução de
-                            conflitos e à satisfação dos clientes. Sua missão é trabalhar com qualidade, entusiasmo e lealdade, garantindo um serviço
-                            jurídico de excelência.
-                        </p>
+                        <h1>{t.about_data.title}</h1>
+                        {t.about_data.paragraphs.map((paragraph: string, index: number) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
                     </div>
                     <div className="Container Sobre_Equipe">
-                        <h1>A Nossa Equipe</h1>
+                        <h1>{t.about_data.team_title}</h1>
 
                         <div ref={containerRef} onMouseDown={handleMouseDown} className="Team_Members_Container_Alt">
-                            {teamMembers.map((member, index) => (
+                            {t.team_data.map((member: TeamMember, index: number) => (
                                 <div className="Team_Member_Card_Alt" key={index}>
                                     <Image
                                         src={member.image}
@@ -179,8 +161,9 @@ const Sobre = () => {
                     </div>
                 </section>
 
-                {/* Fotos do Escritório */}
-                <section>
+                {/* Fotos do Escritório
+                
+                                <section>
                     <div className="Container Special_Container Full_Width_Container">
                         <div ref={officePicturesRef} onMouseDown={handleMouseDownOfficePictures} className="Pictures_Container">
                             {officePictures.map((picture, index) => (
@@ -191,6 +174,9 @@ const Sobre = () => {
                         </div>
                     </div>
                 </section>
+                
+                
+                */}
 
                 {/* Fotos Do Escritorio Especial */}
                 <section className="Special_Sobre_Img_Banner">

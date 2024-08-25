@@ -2,6 +2,7 @@ import { WebStructure } from "@/types/WebStructure";
 
 import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
 import { Banners_Data_PT } from "@/content-list/banners/portuguese";
+import { About_Data_PT } from "@/content-list/about/portuguese";
 import { Team_Data_PT } from "@/content-list/team/portuguese";
 import Privacy_Data_PT from "@/content-list/privacy/portuguese";
 import Terms_Data_PT from "@/content-list/terms/portuguese";
@@ -34,6 +35,7 @@ const portuguese_web_structure: WebStructure = {
 
     expertise_data: Exepertise_Data_PT,
     team_data: Team_Data_PT,
+    about_data: About_Data_PT,
 
     navbar: {
         logo: {
@@ -55,11 +57,11 @@ const portuguese_web_structure: WebStructure = {
             },
             {
                 path: "/#servicos",
-                name: "Áreas de Expertise",
+                name: "Expertise",
             },
             {
                 path: "/#consulta",
-                name: "Consulta",
+                name: "Consultas",
             },
             {
                 path: "/#contato",
@@ -96,11 +98,11 @@ const portuguese_web_structure: WebStructure = {
             },
             {
                 path: "/#servicos",
-                name: "Áreas de Expertise",
+                name: "Expertise",
             },
             {
                 path: "/#consulta",
-                name: "Consulta",
+                name: "Consultas",
             },
             {
                 path: "/#contato",

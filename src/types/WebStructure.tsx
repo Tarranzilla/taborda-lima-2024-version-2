@@ -54,6 +54,7 @@ export type WebStructure = {
 
     expertise_data: any;
     team_data: any;
+    about_data: any;
 
     navbar: {
         logo: {

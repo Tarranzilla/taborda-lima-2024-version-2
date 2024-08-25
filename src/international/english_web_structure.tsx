@@ -2,6 +2,7 @@ import { WebStructure } from "@/types/WebStructure";
 
 import { Exepertise_Data_EN } from "@/content-list/services/english";
 import { Banners_Data_EN } from "@/content-list/banners/english";
+import { About_Data_EN } from "@/content-list/about/english";
 import { Team_Data_EN } from "@/content-list/team/english";
 import Privacy_Data_EN from "@/content-list/privacy/english";
 import Terms_Data_EN from "@/content-list/terms/english";
@@ -34,6 +35,7 @@ const english_web_structure: WebStructure = {
 
     expertise_data: Exepertise_Data_EN,
     team_data: Team_Data_EN,
+    about_data: About_Data_EN,
 
     navbar: {
         logo: {
@@ -51,15 +53,15 @@ const english_web_structure: WebStructure = {
             },
             {
                 path: "/sobre",
-                name: "About Us",
+                name: "About",
             },
             {
                 path: "/#servicos",
-                name: "Our Expertise",
+                name: "Expertise",
             },
             {
                 path: "/#consulta",
-                name: "Schedule",
+                name: "Appointments",
             },
             {
                 path: "/#contato",
@@ -92,15 +94,15 @@ const english_web_structure: WebStructure = {
             },
             {
                 path: "/sobre",
-                name: "About Us",
+                name: "About",
             },
             {
                 path: "/#servicos",
-                name: "Our Expertise",
+                name: "Expertise",
             },
             {
                 path: "/#consulta",
-                name: "Schedule",
+                name: "Appointments",
             },
             {
                 path: "/#contato",
