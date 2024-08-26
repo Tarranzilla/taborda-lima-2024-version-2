@@ -4,7 +4,7 @@ const Terms_Data_EN: ParagraphsWithTitle[] = [
     {
         title: "Terms of Use",
         paragraphs: [
-            "These Terms of Use govern the use of the Stresser e Machado law firm's website (we, our, or us). By accessing and using our website www.stresseremachado.adv.br, you agree to these terms and conditions.",
+            "These Terms of Use govern the use of Taborda Lima & Associates website (we, our, or us). By accessing and using our website www.tabordalima.com, you agree to these terms and conditions.",
         ],
     },
     {
@@ -22,7 +22,7 @@ const Terms_Data_EN: ParagraphsWithTitle[] = [
     {
         title: "Limitation of Liability",
         paragraphs: [
-            "In no event shall the Stresser e Machado law firm, its directors, employees, or affiliates be liable for any direct, indirect, punitive, incidental, special, or consequential damages arising out of or in any way connected with the use or inability to use the website.",
+            "In no event shall Taborda Lima & Associates, its directors, employees, or affiliates be liable for any direct, indirect, punitive, incidental, special, or consequential damages arising out of or in any way connected with the use or inability to use the website.",
         ],
     },
     {
@@ -34,7 +34,7 @@ const Terms_Data_EN: ParagraphsWithTitle[] = [
     {
         title: "Applicable Law",
         paragraphs: [
-            "These Terms of Use shall be governed and construed in accordance with the laws of [insert country or state], without regard to its conflict of law provisions.",
+            "These Terms of Use shall be governed and construed in accordance with the laws of Brazil, without regard to its conflict of law provisions.",
         ],
     },
 ];

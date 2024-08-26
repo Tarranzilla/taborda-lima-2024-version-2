@@ -4,7 +4,7 @@ const Terms_Data_PT: ParagraphsWithTitle[] = [
     {
         title: "Termos de Uso",
         paragraphs: [
-            "Estes Termos de Uso regem o uso do site do escritório de advocacia Stresser e Machado (nós, nosso ou nos). Ao acessar e usar nosso site www.stresseremachado.adv.br, você concorda com estes termos e condições.",
+            "Estes Termos de Uso regem o uso do site da Taborda Lima & Advogados Associados (nós, nosso ou nos). Ao acessar e usar nosso site www.tabordalima.com, você concorda com estes termos e condições.",
         ],
     },
     {
@@ -22,7 +22,7 @@ const Terms_Data_PT: ParagraphsWithTitle[] = [
     {
         title: "Limitação de Responsabilidade",
         paragraphs: [
-            "Em nenhuma circunstância o escritório de advocacia Stresser e Machado, seus diretores, funcionários ou afiliados serão responsáveis por quaisquer danos diretos, indiretos, punitivos, incidentais, especiais ou consequenciais decorrentes do uso ou incapacidade de uso do site.",
+            "Em nenhuma circunstância a Taborda Lima & Advogados Associados, seus diretores, funcionários ou afiliados serão responsáveis por quaisquer danos diretos, indiretos, punitivos, incidentais, especiais ou consequenciais decorrentes do uso ou incapacidade de uso do site.",
         ],
     },
     {
@@ -34,7 +34,7 @@ const Terms_Data_PT: ParagraphsWithTitle[] = [
     {
         title: "Lei Aplicável",
         paragraphs: [
-            "Estes Termos de Uso serão regidos e interpretados de acordo com as leis do [inserir país ou estado], sem considerar suas disposições de conflito de leis.",
+            "Estes Termos de Uso serão regidos e interpretados de acordo com as leis do Brasil, sem considerar suas disposições de conflito de leis.",
         ],
     },
 ];

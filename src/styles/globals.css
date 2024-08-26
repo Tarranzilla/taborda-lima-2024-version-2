@@ -1458,6 +1458,31 @@ footer {
     scroll-snap-align: start;
 }
 
+.Privacidade_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--medium-gap);
+    padding: var(--medium-gap);
+    background-color: var(--brand-color-gray);
+    box-shadow: 5px 5px 10px var(--brand-color-dark-brown);
+}
+
+.Privacidade_Topico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--small-gap);
+    border-bottom: 1px solid var(--brand-color-beige);
+    padding-bottom: var(--medium-gap);
+}
+
+.Privacidade_Topico > p {
+    color: var(--brand-color-beige);
+    max-width: 64ch;
+}
+
 .Mobile_Only {
     display: none;
 }
