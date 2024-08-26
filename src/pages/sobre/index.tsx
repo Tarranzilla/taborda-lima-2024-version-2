@@ -114,15 +114,10 @@ const Sobre = () => {
     return (
         <>
             <Head key={"Sobre_Page_Head"}>
-                <title>Sobre | Taborda Lima & Advogados Associados</title>
-                <meta
-                    name="description"
-                    content="Fundado em Curitiba em 1996 pela Dra. Liana Maria Taborda Lima, o escritório Taborda Lima & Advogados Associados se
-                    destaca pela excelência e profissionalismo. Com uma equipe experiente e altamente qualificada, o escritório tem quase três
-                    décadas de atuação no mercado jurídico, sempre atualizado com as mais recentes mudanças e inovações legais."
-                />
+                <title>{t.about_data.head_title}</title>
+                <meta name="description" content={t.about_data.head_description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.png" />
+                <link rel="icon" href="favicon.png" />
             </Head>
             <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" className={""} key={"pagina_principal"}>
                 {/* Histórico e Membros da Equipe */}

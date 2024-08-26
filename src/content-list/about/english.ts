@@ -1,4 +1,7 @@
 const About_Data_EN = {
+    head_title: "About Us | Taborda Lima & Associates",
+    head_description:
+        "Founded in Curitiba in 1996 by Dr. Liana Maria Taborda Lima, Taborda Lima & Advogados Associados stands out for its excellence and professionalism. With an experienced and highly qualified team, the firm has nearly three decades of experience in the legal market, always staying up-to-date with the latest legal changes and innovations.",
     title: "Our History",
     paragraphs: [
         "Founded in Curitiba in 1996 by Dr. Liana Maria Taborda Lima, Taborda Lima & Advogados Associados stands out for its excellence and professionalism. With an experienced and highly qualified team, our firm has nearly three decades of experience in the legal market, always staying up-to-date with the latest legal changes and innovations.",

@@ -1371,6 +1371,27 @@ section {
     color: var(--brand-color-beige);
 }
 
+.Menu_Search_Results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-gap);
+    width: 100%;
+
+    padding: var(--medium-gap);
+    border-radius: var(--default-border-radius);
+    border: 1px solid var(--brand-color-beige);
+    margin-bottom: var(--medium-gap);
+}
+
+.Menu_Search_Results > a {
+    font-size: 1.2rem;
+    font-family: var(--text-font-family);
+    color: var(--brand-color-beige);
+    text-decoration: none;
+    border-bottom: 1px solid var(--brand-color-beige);
+    padding: var(--small-gap);
+}
+
 .Language_Btn {
     margin-top: var(--medium-gap);
     display: flex;
@@ -1711,6 +1732,10 @@ footer {
 
     .Service_Full_Description_Pattern {
         height: 4rem;
+    }
+
+    .Drawer_Content {
+        justify-content: flex-start;
     }
 
     .Menu_Pattern {

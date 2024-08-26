@@ -8,12 +8,16 @@ import Image from "next/image";
 import { AnimatePresence } from "framer-motion";
 
 import type { AppProps } from "next/app";
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import { motion as m } from "framer-motion";
 
 import { useRouter } from "next/router";
 
 import { useSimpleTranslation } from "@/international/use_translation";
+
+import { Exepertise_Data_EN } from "@/content-list/services/english";
+import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
+import { Expertise } from "@/content-list/services/english";
 
 import DragAndCloseModal from "@/components/DragAndCloseModal";
 
@@ -32,6 +36,47 @@ export default function App({ Component, pageProps }: AppProps) {
     const isEnglish = router.locale === "en";
 
     const t = useSimpleTranslation();
+
+    {
+        /*
+    
+        key: string;
+        name: string;
+        head_title: string;
+        head_description: string;
+        expertises: {
+            title: string;
+            description: string;
+            full_description: string[];
+            image: string;
+            link: string;
+            slug: string;
+            category: string;
+        }[];
+        
+    */
+    }
+
+    const [searchTerm, setSearchTerm] = useState("");
+    const [searchResults, setSearchResults] = useState<Expertise[]>([]);
+
+    const searchExpertises = (searchTerm: string) => {
+        const expertise_list = isEnglish ? Exepertise_Data_EN : Exepertise_Data_PT;
+
+        return expertise_list.flatMap((expertise) =>
+            expertise.expertises.filter((sub_expertise) => sub_expertise.title.toLowerCase().includes(searchTerm.toLowerCase()))
+        );
+    };
+
+    useEffect(() => {
+        if (searchTerm === "") {
+            setSearchResults([]);
+            return;
+        }
+        const searchResults = searchExpertises(searchTerm);
+        setSearchResults(searchResults);
+        console.log(searchResults);
+    }, [searchTerm]);
 
     return (
         <>
@@ -212,11 +257,26 @@ export default function App({ Component, pageProps }: AppProps) {
                     <span className="Service_Full_Description_Pattern Menu_Pattern"></span>
 
                     <div className="Menu_Search_Container">
-                        <input placeholder={isEnglish ? "Type your search here" : "Digite aqui o que busca"}></input>
+                        <input
+                            placeholder={isEnglish ? "Type your search here" : "Digite aqui o que busca"}
+                            onChange={(e) => {
+                                setSearchTerm(e.target.value);
+                            }}
+                        ></input>
                         <button>
                             <span className="material-icons">search</span>
                         </button>
                     </div>
+
+                    {searchResults.length > 0 && (
+                        <div className="Menu_Search_Results">
+                            {searchResults.map((result, index) => (
+                                <Link key={index} href={result.link}>
+                                    {result.title}
+                                </Link>
+                            ))}
+                        </div>
+                    )}
 
                     {t.menu.links?.map((link, index) => (
                         <Link key={index} href={link.path} onClick={() => setIsModalOpen(false)}>
