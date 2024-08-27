@@ -13,7 +13,7 @@ import { useSimpleTranslation } from "@/international/use_translation";
 import BannerSlider from "@/components/BannerSlider";
 import GoogleMap from "@/components/GoogleMap";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import InstaFeed from "@/components/InstaFeed";
+import InstaFeed from "@/components/InstaFeed"; // O Instafeed está com problemas.
 
 import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
 import NewInstaFeed from "@/components/NewInstaFeed";
@@ -23,15 +23,10 @@ export default function Home() {
 
     return (
         <>
+            {/* Meta Tags */}
             <Head>
-                <title>Taborda Lima & Advogados Associados</title>
-                <meta
-                    name="description"
-                    content="Com atuação tanto no Brasil quanto no Exterior, o escritório oferece um atendimento personalizado e eficiente aos seus
-                            clientes. A atuação em temas de Direito Internacional e Imigração revela seu compromisso e capacidade em bem atender seus
-                            clientes juntamente com o apoio advogados parceiros em Nova York, Newark, Miami, Orlando, Washington, Londres, Paris, Roma
-                            e em várias outras cidades, inclusive na América Latina."
-                />
+                <title>{t.landingPage.title}</title>
+                <meta name="description" content={t.landingPage.description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
@@ -163,6 +158,7 @@ export default function Home() {
                     </div>
                 </section>
 
+                {/* Seção de Novidades */}
                 <section id="novidades">
                     <div className="Container Unpadded_Container Dark_Container Half_Width_Container Relative_Container">
                         <NewInstaFeed />
@@ -188,6 +184,7 @@ export default function Home() {
                     </div>
                 </section>
 
+                {/* Rodapé */}
                 <footer>
                     <Image src={"/general_assets/mega_logo_taborda_lima.png"} width={1200} height={400} alt="Logo Taborda Lima" />
                 </footer>

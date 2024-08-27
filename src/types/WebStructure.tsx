@@ -25,6 +25,11 @@ export type WebStructure = {
             label: string;
         };
 
+        knowMoreBtn?: {
+            title: string;
+            label: string;
+        };
+
         shopBtn?: {
             title: string;
             label: string;
@@ -152,6 +157,9 @@ export type WebStructure = {
     };
 
     landingPage: {
+        title: string;
+        description: string;
+
         sections: {
             home: {
                 key: string;

@@ -23,6 +23,7 @@ import DragAndCloseModal from "@/components/DragAndCloseModal";
 
 export default function App({ Component, pageProps }: AppProps) {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isCookiesAccepted, setIsCookiesAccepted] = useState(false);
 
     const router = useRouter();
 
@@ -34,28 +35,9 @@ export default function App({ Component, pageProps }: AppProps) {
     };
 
     const isEnglish = router.locale === "en";
+    const isPrivacyPage = router.pathname === "/privacidade";
 
     const t = useSimpleTranslation();
-
-    {
-        /*
-    
-        key: string;
-        name: string;
-        head_title: string;
-        head_description: string;
-        expertises: {
-            title: string;
-            description: string;
-            full_description: string[];
-            image: string;
-            link: string;
-            slug: string;
-            category: string;
-        }[];
-        
-    */
-    }
 
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState<Expertise[]>([]);
@@ -231,6 +213,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
                 <div className="Navbar_Tools_Container">
                     <button className="Nav_Button Language_Selector_Btn Desktop_Only" onClick={changeLanguage}>
+                        <p className="Language_Label">{isEnglish ? "LANGUAGE" : "IDIOMA"}</p>
                         {isEnglish ? (
                             <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} alt="Language Selector" />
                         ) : (
@@ -248,10 +231,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 </div>
             </nav>
 
-            <AnimatePresence mode="wait">
-                <Component {...pageProps} />
-            </AnimatePresence>
-
+            {/* Menu */}
             <DragAndCloseModal open={isModalOpen} setOpen={setIsModalOpen}>
                 <div className="Menu_Main_Info">
                     <span className="Service_Full_Description_Pattern Menu_Pattern"></span>
@@ -271,7 +251,14 @@ export default function App({ Component, pageProps }: AppProps) {
                     {searchResults.length > 0 && (
                         <div className="Menu_Search_Results">
                             {searchResults.map((result, index) => (
-                                <Link key={index} href={result.link}>
+                                <Link
+                                    key={index}
+                                    href={result.link}
+                                    onClick={() => {
+                                        setIsModalOpen(false);
+                                        setSearchTerm("");
+                                    }}
+                                >
                                     {result.title}
                                 </Link>
                             ))}
@@ -292,6 +279,50 @@ export default function App({ Component, pageProps }: AppProps) {
                     <span className="Service_Full_Description_Pattern Menu_Pattern"></span>
                 </div>
             </DragAndCloseModal>
+
+            {/* Cookies */}
+            <AnimatePresence>
+                {!isCookiesAccepted && !isPrivacyPage && (
+                    <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Cookies_Banner">
+                        <div className="Cookies_Banner_Content">
+                            <div className="Cookies_Header">
+                                <span className="material-icons Cookie_Icon">cookie</span>
+                                <h1 className="Cookies_Title">{t.cookies.title}</h1>
+                            </div>
+                            <div className="Cookies_Paragraphs">
+                                {t.cookies.paragraphs.map((paragraph, index) => (
+                                    <p key={index} className="Cookie_Paragraph">
+                                        {paragraph}
+                                    </p>
+                                ))}
+                            </div>
+                        </div>
+
+                        <button
+                            className="Cookie_Button"
+                            onClick={() => {
+                                setIsCookiesAccepted(true);
+                                localStorage.setItem("cookiesAccepted", "true");
+                            }}
+                        >
+                            {t.cookies.btnText}
+                        </button>
+                        <button
+                            onClick={() => {
+                                router.push("/privacidade");
+                            }}
+                            className="Cookie_Button"
+                        >
+                            {t.common.knowMoreBtn?.title}
+                        </button>
+                    </m.div>
+                )}
+            </AnimatePresence>
+
+            {/* Página */}
+            <AnimatePresence mode="wait">
+                <Component {...pageProps} />
+            </AnimatePresence>
         </>
     );
 }

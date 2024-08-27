@@ -27,6 +27,11 @@ const english_web_structure: WebStructure = {
         area_of_expertise: "Area of Expertise",
         more_details: "More Details",
 
+        knowMoreBtn: {
+            title: "Know More",
+            label: "Know More",
+        },
+
         whatsappBtn: {
             label: "Contact us via WhatsApp!",
             link: "+5541992416343",
@@ -161,6 +166,9 @@ const english_web_structure: WebStructure = {
     },
 
     landingPage: {
+        title: "Taborda Lima | Advocacy and Legal Consultancy",
+        description:
+            "Recognized for excellence and agility in providing legal services, we have a history of nearly 30 years dedicated exclusively to law practice. With operations both in Brazil and abroad, our firm offers personalized and efficient services in matters of International Law and Immigration.",
         sections: {
             home: {
                 key: "inicio",

@@ -27,6 +27,11 @@ const portuguese_web_structure: WebStructure = {
         area_of_expertise: "Área de Expertise",
         more_details: "Mais Detalhes",
 
+        knowMoreBtn: {
+            title: "Saiba Mais",
+            label: "Saiba Mais",
+        },
+
         whatsappBtn: {
             label: "Fale Conosco Pelo WhatsApp!",
             link: "+5541992416343",
@@ -144,8 +149,8 @@ const portuguese_web_structure: WebStructure = {
     cookies: {
         title: "Cookies",
         paragraphs: [
-            "Este site utiliza cookies para garantir que você tenha a melhor experiência.",
-            "Ao continuar a usar este site, você concorda com o uso de cookies.",
+            "Este site utiliza cookies para garantir que você tenha segurança e uma melhor experiência de uso.",
+            "Ao continuar a navegar, você concorda com o uso destas tecnologias.",
         ],
         btnText: "Entendido",
     },
@@ -161,6 +166,9 @@ const portuguese_web_structure: WebStructure = {
     },
 
     landingPage: {
+        title: "Taborda Lima & Advogados Associados",
+        description:
+            "Reconhecidos pela excelência e agilidade na prestação de serviços jurídicos, possuímos uma trajetória de quase 30 anos dedicados exclusivamente à advocacia. Com atuação tanto no Brasil quanto no Exterior, nosso escritório oferece um atendimento personalizado e eficiente em temas de Direito Internacional e Imigração.",
         sections: {
             home: {
                 key: "inicio",
