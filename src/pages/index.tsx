@@ -140,16 +140,16 @@ export default function Home() {
 
                             */}
 
-                            <button className="Page_Button">
+                            <Link href={"mailto:contato@advtabordalima.com.br"} className="Page_Button">
                                 <p>contato@advtabordalima.com.br</p>
                                 <span className="material-icons">email</span>
-                            </button>
-                            <button className="Page_Button">
+                            </Link>
+                            <Link href={"tel:+5541992416343"} className="Page_Button">
                                 <p>+55 41 992 416 343</p> <span className="material-icons">phone_forwarded</span>
-                            </button>
-                            <button className="Page_Button">
+                            </Link>
+                            <Link href={"tel:+554133387611"} className="Page_Button">
                                 <p>+55 41 3338 7611</p> <span className="material-icons">fax</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
 

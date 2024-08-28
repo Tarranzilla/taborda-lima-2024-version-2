@@ -314,6 +314,12 @@ section {
     font-size: 1.2rem;
     font-weight: 300;
     padding-block: var(--small-gap);
+    transition: scale 0.2s ease-in-out;
+}
+
+.WhatsApp_Btn:hover,
+.WhatsApp_Btn:focus {
+    scale: 1.05;
 }
 
 .WhatsApp_Action_Logo_Vector {
@@ -349,6 +355,14 @@ section {
     display: flex;
     align-items: center;
     flex: 1;
+
+    transition: scale 0.2s ease-in-out;
+    transform-origin: left;
+}
+
+.Navbar_Logo_Container:hover,
+.Navbar_Logo_Container:focus-within {
+    scale: 1.05;
 }
 
 .Navbar_Logo {
@@ -371,6 +385,32 @@ section {
     color: var(--alt-text-color);
 
     text-decoration: none;
+    transition: scale 0.2s ease-in-out;
+    position: relative;
+}
+
+.Navbar_Link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--alt-text-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-in-out;
+}
+
+.Navbar_Link:hover::before,
+.Navbar_Link:focus-within::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.Navbar_Link:hover,
+.Navbar_Link:focus-within {
+    scale: 1.1;
 }
 
 .Navbar_Tools_Container {
@@ -394,8 +434,17 @@ section {
     color: var(--alt-text-color);
 }
 
+.Menu_Btn {
+    transition: scale 0.2s ease-in-out;
+}
+
 .Menu_Btn > span {
     font-size: 2.4rem;
+}
+
+.Menu_Btn:hover,
+.Menu_Btn:focus {
+    scale: 1.1;
 }
 
 /* ------ Seção de Início ------  */
@@ -1278,12 +1327,19 @@ section {
     background-color: var(--brand-color-beige);
     border-radius: 50%;
     flex-shrink: 0;
+
+    transition: scale 0.2s ease-in-out;
 }
 
 .Drawer_Close_Button > span {
     font-size: 1.6rem;
     color: hsl(35, 100%, 95%);
     cursor: pointer;
+}
+
+.Drawer_Close_Button:hover,
+.Drawer_Close_Button:focus {
+    scale: 1.1;
 }
 
 .Drawer_Content {
@@ -1328,6 +1384,15 @@ section {
     text-decoration: none;
     border-bottom: 1px solid var(--brand-color-beige);
     width: 100%;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.Menu_Main_Info > a:hover,
+.Menu_Main_Info > a:focus {
+    font-size: 2.4rem;
+    font-weight: 800;
+    border-bottom: 4px solid var(--brand-color-beige);
 }
 
 .Menu_Search_Container {
@@ -1342,6 +1407,13 @@ section {
     border-radius: var(--default-border-radius);
 
     box-shadow: 0 2px 5px var(--brand-color-dark-brown);
+
+    transition: scale 0.2s ease-in-out;
+}
+
+.Menu_Search_Container:hover,
+.Menu_Search_Container:focus-within {
+    scale: 1.025;
 }
 
 .Menu_Search_Container > input {
@@ -1369,6 +1441,12 @@ section {
 .Menu_Search_Container > button > span {
     font-size: 1.6rem;
     color: var(--brand-color-beige);
+
+    transition: scale 0.2s ease-in-out;
+}
+
+.Menu_Search_Container > button > span.Active {
+    scale: 1.2;
 }
 
 .Menu_Search_Results {
@@ -1392,6 +1470,44 @@ section {
     padding: var(--small-gap);
 }
 
+.Language_Selector_Btn {
+    transition: scale 0.2s ease-in-out;
+}
+
+.Language_Selector_Btn:hover,
+.Language_Selector_Btn:focus {
+    scale: 1.1;
+}
+
+.Language_Selector_Btn > p {
+    transition: font-size 0.2s ease-in-out;
+    position: relative;
+}
+
+.Language_Selector_Btn > p::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    background-color: var(--alt-text-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-in-out;
+}
+
+.Language_Selector_Btn:hover > p,
+.Language_Selector_Btn:focus > p {
+    font-size: 0.9rem;
+}
+
+.Language_Selector_Btn:hover > p::before,
+.Language_Selector_Btn:focus > p::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 .Language_Btn {
     margin-top: var(--medium-gap);
     display: flex;
@@ -1410,6 +1526,8 @@ section {
     position: relative;
     font-size: 1rem;
 
+    transition: scale 0.2s ease-in-out;
+
     box-shadow: 0 2px 5px var(--brand-color-dark-brown);
 }
 
@@ -1418,6 +1536,11 @@ section {
     color: hsl(35, 100%, 95%);
     position: absolute;
     left: var(--medium-gap);
+}
+
+.Language_Btn:hover,
+.Language_Btn:focus {
+    scale: 1.05;
 }
 
 .Language_Label {
@@ -1553,6 +1676,22 @@ footer {
     height: 3rem;
     min-width: max-content;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--small-gap);
+
+    transition: scale 0.2s ease-in-out;
+    box-shadow: 0 2px 5px var(--brand-color-dark-brown);
+}
+
+.Cookie_Button > span {
+    color: var(--brand-color-white);
+}
+
+.Cookie_Button:hover,
+.Cookie_Button:focus {
+    scale: 1.05;
 }
 
 .Mobile_Only {

@@ -42,6 +42,8 @@ export default function App({ Component, pageProps }: AppProps) {
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState<Expertise[]>([]);
 
+    const searchIsEmpty = searchTerm === "";
+
     const searchExpertises = (searchTerm: string) => {
         const expertise_list = isEnglish ? Exepertise_Data_EN : Exepertise_Data_PT;
 
@@ -72,7 +74,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     )}
                 </button>
 
-                <div className="Navbar_Logo_Container">
+                <Link href={"/#"} className="Navbar_Logo_Container">
                     <svg className="Navbar_Logo Svg" width="291" height="61" viewBox="0 0 291 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M14.6653 15.8515C14.6653 18.4021 14.6653 21.442 14.8273 22.8142C14.894 23.6655 15.1227 24.3516 16.1011 24.5136C16.5267 24.5803 16.9174 24.6121 17.5051 24.6756C18.0292 24.7074 18.1594 24.8058 18.1594 25.0345C18.1594 25.2315 17.9974 25.3299 17.4066 25.3299C15.1831 25.3299 12.013 25.2315 11.4889 25.2315C10.933 25.2315 7.76293 25.3299 6.68294 25.3299C6.15882 25.3299 5.93012 25.2632 5.93012 25.0028C5.93012 24.7741 6.19059 24.6756 6.58447 24.6756C6.91164 24.6438 7.27058 24.6089 7.62952 24.5454C8.34739 24.4151 8.57609 23.6941 8.67456 22.7475C8.8048 21.3753 8.8715 19.0215 8.8715 15.8515V3.03771C7.59775 3.03771 5.57118 3.00594 3.93532 3.10441C2.10569 3.20288 1.38464 3.62853 0.962173 4.77204C0.800175 5.13098 0.73347 5.32792 0.666765 5.52486C0.600059 5.78533 0.504766 6.04897 0.276063 6.04897C-0.0193458 6.04897 -0.0193458 5.7885 0.015595 5.39463C0.152182 4.05099 0.511119 2.28489 0.739823 1.04291C0.806528 0.553735 0.901821 0.226562 1.09876 0.226562C1.32746 0.226562 1.4577 0.325032 2.21051 0.48703C2.79815 0.617264 4.59602 0.715734 5.83801 0.715734H20.0557C21.069 0.715734 21.6567 0.649029 22.1141 0.5855C22.6382 0.48703 22.8986 0.388561 23.1274 0.388561C23.4228 0.388561 23.4545 0.5855 23.4545 1.40184C23.4545 1.85925 23.2576 4.8991 23.2258 5.71545C23.1941 6.17285 23.0956 6.36979 22.8986 6.36979C22.6382 6.36979 22.5715 6.17285 22.5397 5.78215C22.5079 5.42321 22.5079 5.29298 22.473 5.1278C22.3428 4.11452 21.8504 3.32994 19.9223 3.19971C18.8423 3.10124 17.1429 3.03771 14.659 3.03771V15.8515H14.6653Z"
@@ -201,11 +203,18 @@ export default function App({ Component, pageProps }: AppProps) {
                         <line x1="167" y1="34.5" x2="291" y2="34.5" stroke="white" />
                         <line y1="34.5" x2="124" y2="34.5" stroke="white" />
                     </svg>
-                </div>
+                </Link>
 
                 <div className="Navbar_Link_Container">
                     {t.navbar.navLinks?.map((link, index) => (
-                        <Link key={index} className="Navbar_Link" href={link.path}>
+                        <Link
+                            key={index}
+                            className="Navbar_Link"
+                            href={link.path}
+                            onClick={() => {
+                                setIsModalOpen(false);
+                            }}
+                        >
                             {link.name}
                         </Link>
                     ))}
@@ -244,7 +253,7 @@ export default function App({ Component, pageProps }: AppProps) {
                             }}
                         ></input>
                         <button>
-                            <span className="material-icons">search</span>
+                            <span className={searchIsEmpty ? "material-icons" : "material-icons Active"}>search</span>
                         </button>
                     </div>
 
@@ -305,15 +314,18 @@ export default function App({ Component, pageProps }: AppProps) {
                                 localStorage.setItem("cookiesAccepted", "true");
                             }}
                         >
+                            <span className="material-icons">done</span>
                             {t.cookies.btnText}
                         </button>
                         <button
                             onClick={() => {
                                 router.push("/privacidade");
+                                setIsModalOpen(false);
                             }}
                             className="Cookie_Button"
                         >
                             {t.common.knowMoreBtn?.title}
+                            <span className="material-icons">info</span>
                         </button>
                     </m.div>
                 )}
