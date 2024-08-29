@@ -152,7 +152,7 @@ const english_web_structure: WebStructure = {
             "This website use cookies to guarantee that you get the best experience.",
             "By continuing to use this site, you agree to the use of cookies.",
         ],
-        btnText: "Understood",
+        btnText: "I Understand",
     },
 
     privacy: {

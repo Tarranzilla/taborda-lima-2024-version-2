@@ -2000,7 +2000,11 @@ footer {
 
     .New_Banner_Wrapper {
         position: relative;
-        height: 90vh;
+        max-height: 44vh;
+    }
+
+    .New_Insta_Feed_Slide {
+        max-height: 44vh;
     }
 
     .New_Banner_Indicator_Dot {
