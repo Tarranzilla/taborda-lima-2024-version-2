@@ -94,6 +94,34 @@ export default function NewInstaFeed() {
     );
 }
 
+const InstaFeedVideo = (item: any) => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const handlePlayPause = () => {
+        if (videoRef.current) {
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
+        }
+    };
+    return (
+        <>
+            <video ref={videoRef}>
+                <source src={item.media_url} type="video/mp4" />
+            </video>
+            <button className={`Insta_Feed_Video_Button ${isPlaying ? "playing" : ""}`} onClick={handlePlayPause}>
+                {isPlaying ? <span className="material-icons">pause_circle</span> : <span className="material-icons">play_circle_filled</span>}
+            </button>
+        </>
+    );
+};
+
+/*
+
 function InstaFeed() {
     const [feedList, setFeedList] = useState<FeedItem[]>([]);
 
@@ -147,28 +175,4 @@ function InstaFeed() {
     );
 }
 
-const InstaFeedVideo = (item: any) => {
-    const videoRef = useRef<HTMLVideoElement>(null);
-    const [isPlaying, setIsPlaying] = useState(false);
-
-    const handlePlayPause = () => {
-        if (videoRef.current) {
-            if (isPlaying) {
-                videoRef.current.pause();
-            } else {
-                videoRef.current.play();
-            }
-            setIsPlaying(!isPlaying);
-        }
-    };
-    return (
-        <>
-            <video ref={videoRef}>
-                <source src={item.media_url} type="video/mp4" />
-            </video>
-            <button className={`Insta_Feed_Video_Button ${isPlaying ? "playing" : ""}`} onClick={handlePlayPause}>
-                {isPlaying ? <span className="material-icons">pause_circle</span> : <span className="material-icons">play_circle_filled</span>}
-            </button>
-        </>
-    );
-};
+*/
