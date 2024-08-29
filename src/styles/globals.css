@@ -1997,4 +1997,14 @@ footer {
         flex-grow: 1;
         flex-shrink: 0;
     }
+
+    .New_Banner_Wrapper {
+        position: relative;
+        height: 90vh;
+    }
+
+    .New_Banner_Indicator_Dot {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
 }
