@@ -74,7 +74,7 @@ export default function NewInstaFeed() {
                     <div className="New_Insta_Feed_Slide" key={item.id}>
                         {item.media_type === "VIDEO" && <InstaFeedVideo {...item} />}
                         {item.media_type === "IMAGE" && <img width={400} height={400} src={item.media_url} alt={item.caption} />}
-                        {item.media_type === "CAROUSEL_ALBUM" && <Image width={400} height={400} src={item.media_url} alt={item.caption} />}
+                        {item.media_type === "CAROUSEL_ALBUM" && <img width={400} height={400} src={item.media_url} alt={item.caption} />}
                     </div>
                 ))}
             </m.div>
