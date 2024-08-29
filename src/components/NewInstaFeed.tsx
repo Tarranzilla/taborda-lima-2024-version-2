@@ -73,7 +73,7 @@ export default function NewInstaFeed() {
                 {feedList.map((item) => (
                     <div className="New_Insta_Feed_Slide" key={item.id}>
                         {item.media_type === "VIDEO" && <InstaFeedVideo {...item} />}
-                        {item.media_type === "IMAGE" && <Image draggable={false} width={400} height={400} src={item.media_url} alt={item.caption} />}
+                        {item.media_type === "IMAGE" && <img width={400} height={400} src={item.media_url} alt={item.caption} />}
                         {item.media_type === "CAROUSEL_ALBUM" && <Image width={400} height={400} src={item.media_url} alt={item.caption} />}
                     </div>
                 ))}
@@ -137,8 +137,10 @@ function InstaFeed() {
             {feedList.map((item) => (
                 <div className="Insta_Feed_Item" key={item.id}>
                     {item.media_type === "VIDEO" && <InstaFeedVideo {...item} />}
-                    {item.media_type === "IMAGE" && <Image draggable={false} width={400} height={400} src={item.media_url} alt={item.caption} />}
-                    {item.media_type === "CAROUSEL_ALBUM" && <Image width={400} height={400} src={item.media_url} alt={item.caption} />}
+                    {item.media_type === "IMAGE" && (
+                        <Image priority draggable={false} width={400} height={400} src={item.media_url} alt={item.caption} />
+                    )}
+                    {item.media_type === "CAROUSEL_ALBUM" && <Image priority width={400} height={400} src={item.media_url} alt={item.caption} />}
                 </div>
             ))}
         </div>
