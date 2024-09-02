@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { motion as m } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
+import { useRouter } from "next/router";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -16,10 +17,14 @@ import WhatsAppBtn from "@/components/WhatsAppBtn";
 import InstaFeed from "@/components/InstaFeed"; // O Instafeed está com problemas.
 
 import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
+import { handleScheduleWhatsApp_EN, handleWhatsApp_EN } from "@/utils/WhatsApp_en";
 import NewInstaFeed from "@/components/NewInstaFeed";
 
 export default function Home() {
     const t = useSimpleTranslation();
+    const router = useRouter();
+
+    const isEnglish = router.locale === "en";
 
     return (
         <>
@@ -63,7 +68,13 @@ export default function Home() {
                             <Link href={"/sobre"} className="Page_Button">
                                 <p>{t.landingPage.sections.home.aboutUsBtn.title}</p> <span className="material-icons">arrow_forward</span>
                             </Link>
-                            <Link href={"/#servicos"} className="Page_Button">
+                            <Link
+                                href={"/#servicos"}
+                                className="Page_Button"
+                                onClick={() => {
+                                    handleWhatsApp_EN();
+                                }}
+                            >
                                 <p>{t.landingPage.sections.home.internationalServicesBtn.title}</p>
                                 <span className="material-icons">arrow_forward</span>
                             </Link>
@@ -112,7 +123,7 @@ export default function Home() {
 
                         <button
                             onClick={() => {
-                                handleScheduleWhatsApp();
+                                isEnglish ? handleScheduleWhatsApp_EN() : handleScheduleWhatsApp();
                             }}
                             className="Page_Button"
                         >
@@ -173,11 +184,21 @@ export default function Home() {
                         </div>
 
                         <div className="Intro_Actions_Container">
-                            <Link href={"https://www.instagram.com"} target="_blank" rel="noopener noreferrer" className="Page_Button">
+                            <Link
+                                href={"https://www.instagram.com/tabordalima.internationallaw/"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="Page_Button"
+                            >
                                 <p>Instagram</p> <FontAwesomeIcon icon={faInstagram} />
                             </Link>
 
-                            <Link href={"https://www.linkedin.com"} target="_blank" rel="noopener noreferrer" className="Page_Button">
+                            <Link
+                                href={"https://www.linkedin.com/in/taborda-lima-advogados-aduaneiros-ab872526/"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="Page_Button"
+                            >
                                 <p>LinkedIn</p> <FontAwesomeIcon icon={faLinkedin} />
                             </Link>
                         </div>

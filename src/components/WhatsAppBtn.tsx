@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion as m, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
 import { handleWhatsApp } from "@/utils/WhatsApp";
+import { handleWhatsApp_EN } from "@/utils/WhatsApp_en";
 
 import { useSimpleTranslation } from "@/international/use_translation";
 
@@ -13,13 +15,16 @@ interface WhatsAppBtnProps {
 
 const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHidden = false }) => {
     const [isHovered, setIsHovered] = useState(notHidden);
+    const router = useRouter();
+
+    const isEnglish = router.locale === "en";
 
     const t = useSimpleTranslation();
 
     return (
         <m.div
             onClick={() => {
-                handleWhatsApp();
+                isEnglish ? handleWhatsApp_EN() : handleWhatsApp();
             }}
             className={`WhatsApp_Action_Container ${position} ${high ? "WhatsApp_High_Container" : ""}`}
             onMouseEnter={() => !notHidden && setIsHovered(true)}
