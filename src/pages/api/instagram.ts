@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import axios from "axios";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    const token = process.env.NEW_INSTAGRAM_JOAOTARRAN_TOKEN;
+    const token = process.env.NEW_INSTAGRAM_TABORDA_LIMA_TOKEN;
     const fields = "id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username";
 
     // Check if the token exists before proceeding
