@@ -126,6 +126,10 @@ label {
     color: var(--main-text-color);
 }
 
+.WhatsApp_Btn_Mobile {
+    display: none;
+}
+
 .Banner_Btn,
 .Page_Button {
     padding: var(--medium-gap) var(--big-gap);
@@ -2010,5 +2014,23 @@ footer {
     .New_Banner_Indicator_Dot {
         width: 1.5vw;
         height: 1.5vw;
+    }
+
+    .WhatsApp_Btn_Mobile {
+        margin-top: var(--medium-gap);
+        display: flex;
+        background-color: var(--special-text-color);
+        padding: var(--medium-gap) var(--large-gap);
+        border-radius: var(--default-border-radius);
+        border: none;
+        box-shadow: 0 2px 5px var(--brand-color-dark-brown);
+    }
+
+    .WhatsApp_Btn_Mobile > p {
+        font-size: 1.1rem;
+        color: var(--brand-color-white);
+        font-family: var(--text-font-family);
+        font-weight: 300;
+        letter-spacing: 0.0625rem;
     }
 }

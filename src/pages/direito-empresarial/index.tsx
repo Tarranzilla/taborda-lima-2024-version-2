@@ -8,6 +8,7 @@ import { motion as m } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
 
 import WhatsAppBtn from "@/components/WhatsAppBtn";
+import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 
 const DireitoEmpresarial = () => {
     const t = useSimpleTranslation();
@@ -51,6 +52,8 @@ const DireitoEmpresarial = () => {
                             <h2 className="Expertise_Header_Info_Subtitle">{t.common.area_of_expertise}</h2>
                             <h1 className="Expertise_Header_Info_Title">{direito_empresarial_banner.title}</h1>
                             <p className="Expertise_Header_Info_Description">{direito_empresarial_banner.description}</p>
+
+                            <WhatsAppBtnMobile />
                         </div>
                     </div>
 

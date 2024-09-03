@@ -8,6 +8,7 @@ import { motion as m } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
 
 import WhatsAppBtn from "@/components/WhatsAppBtn";
+import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 
 import { Exepertise_Data_EN } from "@/content-list/services/english";
 import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
@@ -89,6 +90,8 @@ const ServicePage = ({ expertise }: { expertise: Service_Data | null }) => {
                             <h2 className="Expertise_Header_Info_Subtitle">{expertise.category}</h2>
                             <h1 className="Expertise_Header_Info_Title">{expertise.title}</h1>
                             <p className="Expertise_Header_Info_Description">{expertise.description}</p>
+
+                            <WhatsAppBtnMobile />
                         </div>
                     </div>
 

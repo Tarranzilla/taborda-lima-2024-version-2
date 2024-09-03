@@ -5,7 +5,11 @@ import { useRouter } from "next/router";
 import { handleWhatsApp } from "@/utils/WhatsApp";
 import { handleWhatsApp_EN } from "@/utils/WhatsApp_en";
 
+import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
+import { handleScheduleWhatsApp_EN } from "@/utils/WhatsApp_en";
+
 import { useSimpleTranslation } from "@/international/use_translation";
+import Link from "next/link";
 
 interface WhatsAppBtnProps {
     position: "Left" | "Right";
@@ -60,5 +64,28 @@ const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHi
         </m.div>
     );
 };
+
+interface WhatsAppBtnMobileProps {
+    isMobile: boolean;
+}
+
+const WhatsAppBtnMobile = () => {
+    const router = useRouter();
+    const isEnglish = router.locale === "en";
+    const t = useSimpleTranslation();
+
+    return (
+        <button
+            className="WhatsApp_Btn_Mobile"
+            onClick={() => {
+                isEnglish ? handleScheduleWhatsApp_EN() : handleScheduleWhatsApp();
+            }}
+        >
+            <p>{t.common.customScheduleText}</p>
+        </button>
+    );
+};
+
+export { WhatsAppBtnMobile };
 
 export default WhatsAppBtn;
