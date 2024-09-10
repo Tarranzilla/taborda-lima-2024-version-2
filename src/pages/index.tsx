@@ -151,8 +151,8 @@ export default function Home() {
 
                             */}
 
-                            <Link href={"mailto:contato@advtabordalima.com.br"} className="Page_Button">
-                                <p>contato@advtabordalima.com.br</p>
+                            <Link href={"mailto:contato@tabordalima.com"} className="Page_Button">
+                                <p>contato@tabordalima.com</p>
                                 <span className="material-icons">email</span>
                             </Link>
                             <Link href={"tel:+5541992416343"} className="Page_Button">
