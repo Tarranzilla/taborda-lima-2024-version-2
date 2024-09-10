@@ -44,14 +44,29 @@ export default function Home() {
                 {/* Botão do WhatsApp Direito*/}
                 <WhatsAppBtn position="Right" />
 
+                {/* Rodapé */}
+                <footer>
+                    <Image src={"/general_assets/mega_logo_taborda_lima.png"} width={1200} height={400} alt="Logo Taborda Lima" />
+                </footer>
+
                 {/* Seção de Início */}
                 <section id="inicio" className="Main_Section LP_Section">
                     <div id="Imagem_Inicial" className="Container Container_Left Image_Container Dark_Container">
+                        {/*
+                            <Image
+                                className="Intro_Logo_Image"
+                                src={"/general_assets/taborda_lima_main_logo.png"}
+                                width={800}
+                                height={600}
+                                alt="Escritório Placeholder"
+                            />
+                        */}
+
                         <Image
-                            className="Intro_Logo_Image"
-                            src={"/general_assets/taborda_lima_main_logo.png"}
-                            width={800}
-                            height={600}
+                            src={"/office/fotos_escritorio_004.png"}
+                            className="Foto_Intro_Alt"
+                            width={1280}
+                            height={1280}
                             alt="Escritório Placeholder"
                         />
                     </div>
@@ -204,11 +219,6 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-
-                {/* Rodapé */}
-                <footer>
-                    <Image src={"/general_assets/mega_logo_taborda_lima.png"} width={1200} height={400} alt="Logo Taborda Lima" />
-                </footer>
             </m.main>
         </>
     );

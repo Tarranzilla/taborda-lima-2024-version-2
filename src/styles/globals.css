@@ -465,6 +465,12 @@ section {
     gap: var(--small-gap);
 }
 
+.Foto_Intro_Alt {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* ------ Seção de Serviços ------  */
 
 .Banner_Slider {
