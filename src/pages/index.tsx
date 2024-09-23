@@ -46,7 +46,7 @@ export default function Home() {
 
                 {/* Rodapé */}
                 <footer>
-                    <Image src={"/general_assets/mega_logo_taborda_lima.png"} width={1200} height={400} alt="Logo Taborda Lima" />
+                    <Image src={"/general_assets/taborda_lima_main_logo.png"} width={1200} height={400} alt="Logo Taborda Lima" />
                 </footer>
 
                 {/* Seção de Início */}
@@ -219,6 +219,11 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+
+                {/* Rodapé */}
+                <footer>
+                    <Image src={"/general_assets/taborda_lima_main_logo.png"} width={1200} height={400} alt="Logo Taborda Lima" />
+                </footer>
             </m.main>
         </>
     );

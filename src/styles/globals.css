@@ -54,8 +54,8 @@
 
 :root {
     --brand-color-white: #ffffff;
-    --brand-color-gray: #4c4c4c;
-    --brand-color-gray-faded: #4c4c4c80;
+    --brand-color-gray: #000810;
+    --brand-color-gray-faded: #00081080;
     --brand-color-dark-brown: #3c2f2f;
 
     --brand-color-beige: #bea07d;
@@ -373,6 +373,13 @@ section {
     width: 100%;
     max-width: 15rem;
     height: auto;
+    fill: white;
+    stroke: white;
+    stroke-width: 0.5px;
+}
+
+.cls-2 {
+    stroke: white;
 }
 
 .Navbar_Link_Container {
@@ -1482,6 +1489,8 @@ section {
 
 .Language_Selector_Btn {
     transition: scale 0.2s ease-in-out;
+    flex-direction: column;
+    position: relative;
 }
 
 .Language_Selector_Btn:hover,
@@ -1490,8 +1499,10 @@ section {
 }
 
 .Language_Selector_Btn > p {
+    display: none;
     transition: font-size 0.2s ease-in-out;
-    position: relative;
+    position: absolute;
+    bottom: -1.5rem;
 }
 
 .Language_Selector_Btn > p::before {
@@ -1554,14 +1565,30 @@ section {
 }
 
 .Language_Label {
-    padding-top: 0.4rem;
     font-size: 0.8rem;
     font-family: var(--text-font-family);
     color: var(--brand-color-white);
 
     border-bottom: 1px solid var(--brand-color-beige);
     width: 100%;
-    margin-right: var(--small-gap);
+}
+
+.Language_Flags {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.BR_Flag {
+    rotate: 180deg;
+}
+
+.Language_Flag_Img {
+    filter: saturate(0);
+    transition: filter 0.2s ease-in-out;
+}
+
+.Language_Flag_Img.Active {
+    filter: saturate(1);
 }
 
 .Coisa {
@@ -1639,7 +1666,7 @@ footer {
     background-color: var(--brand-color-gray);
     padding: var(--medium-gap);
 
-    box-shadow: 0 10px 10px var(--brand-color-dark-brown);
+    box-shadow: 0 10px 10px black;
 }
 
 .Cookies_Header {
