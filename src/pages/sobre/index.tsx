@@ -155,8 +155,15 @@ const Sobre = () => {
                         </div>
                     </div>
                 </section>
+            </m.main>
+        </>
+    );
+};
 
-                {/* Fotos do Escritório
+export default Sobre;
+
+{
+    /* Fotos do Escritório
                 
                                 <section>
                     <div className="Container Special_Container Full_Width_Container">
@@ -169,19 +176,14 @@ const Sobre = () => {
                         </div>
                     </div>
                 </section>
-                
-                
-                */}
 
-                {/* Fotos Do Escritorio Especial */}
+                // Fotos Do Escritorio Especial 
                 <section className="Special_Sobre_Img_Banner">
                     <div className="Container Full_Width_Container">
-                        <NewBannerSlider />
+                        <NewBannerSlider pictures={officePictures} padded />
                     </div>
                 </section>
-            </m.main>
-        </>
-    );
-};
-
-export default Sobre;
+                
+                
+    */
+}

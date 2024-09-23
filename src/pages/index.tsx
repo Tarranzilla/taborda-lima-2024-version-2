@@ -19,6 +19,42 @@ import InstaFeed from "@/components/InstaFeed"; // O Instafeed está com problem
 import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
 import { handleScheduleWhatsApp_EN, handleWhatsApp_EN } from "@/utils/WhatsApp_en";
 import NewInstaFeed from "@/components/NewInstaFeed";
+import NewBannerSlider from "@/components/NewBannerSlider";
+
+const officePictures = [
+    {
+        src: "/office/fotos_escritorio_004.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_002.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_003.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_005.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+];
 
 export default function Home() {
     const t = useSimpleTranslation();
@@ -44,31 +80,15 @@ export default function Home() {
                 {/* Botão do WhatsApp Direito*/}
                 <WhatsAppBtn position="Right" />
 
-                {/* Rodapé */}
-                <footer>
+                {/* Banner Inicial */}
+                <div className="LP_Intro_Banner">
                     <Image src={"/general_assets/taborda_lima_main_logo.png"} width={1200} height={400} alt="Logo Taborda Lima" />
-                </footer>
+                </div>
 
-                {/* Seção de Início */}
+                {/* Seção de Início | Atualizar o Scroll com as Novas Imagens do Escritório */}
                 <section id="inicio" className="Main_Section LP_Section">
                     <div id="Imagem_Inicial" className="Container Container_Left Image_Container Dark_Container">
-                        {/*
-                            <Image
-                                className="Intro_Logo_Image"
-                                src={"/general_assets/taborda_lima_main_logo.png"}
-                                width={800}
-                                height={600}
-                                alt="Escritório Placeholder"
-                            />
-                        */}
-
-                        <Image
-                            src={"/office/fotos_escritorio_004.png"}
-                            className="Foto_Intro_Alt"
-                            width={1280}
-                            height={1280}
-                            alt="Escritório Placeholder"
-                        />
+                        <NewBannerSlider pictures={officePictures} />
                     </div>
 
                     <div className="Container Container_Right Centered_Container Padded_Container">
@@ -100,7 +120,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Seção de Serviços */}
+                {/* Seção de Serviços | Aprimorar o Scroll Container dos Serviços */}
                 <section className="Main_Section LP_Section" id="servicos">
                     <div className="Container Container_Left Centered_Container Padded_Container">
                         <div className="Coisa">
@@ -184,7 +204,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Seção de Novidades */}
+                {/* Seção de Novidades | Ajustar o tamanho da seção e o tamanho das imagens que o instafeed recebe */}
                 <section id="novidades">
                     <div className="Container Unpadded_Container Dark_Container Half_Width_Container Relative_Container">
                         <NewInstaFeed />

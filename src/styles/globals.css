@@ -1221,6 +1221,12 @@ section {
 
 .New_Banner_Slide {
     width: 100%;
+    height: 90vh;
+    flex-shrink: 0;
+}
+
+.New_Banner_Slide.Padded {
+    width: 100%;
     height: calc(90vh - 2 * var(--medium-gap));
     flex-shrink: 0;
 }
@@ -1619,6 +1625,7 @@ section {
 
 /* ------ Footer ------ */
 
+.LP_Intro_Banner,
 footer {
     display: flex;
     align-items: center;
@@ -1917,7 +1924,7 @@ footer {
         position: absolute;
         right: var(--medium-gap);
     }
-
+    .LP_Intro_Banner > img,
     footer > img {
         width: 90%;
         height: auto;

@@ -1,52 +1,18 @@
 import { useState, useEffect, useRef } from "react";
 import { motion as m, AnimatePresence, useMotionValue } from "framer-motion";
 
-const officePictures = [
-    {
-        src: "/office/fotos_escritorio_001.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-    {
-        src: "/office/fotos_escritorio_002.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-    {
-        src: "/office/fotos_escritorio_003.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-    {
-        src: "/office/fotos_escritorio_004.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-    {
-        src: "/office/fotos_escritorio_005.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-];
+type OfficePicture = {
+    src: string;
+    alt: string;
+    size: {
+        width: number;
+        height: number;
+    };
+};
 
 const DRAG_LIMIT = 50;
 
-export default function NewBannerSlider() {
+export default function NewBannerSlider({ pictures, padded }: { pictures: OfficePicture[]; padded?: boolean }) {
     const [imgIndex, setImgIndex] = useState(0);
     const [isDragging, setIsDragging] = useState(false);
 
@@ -60,9 +26,9 @@ export default function NewBannerSlider() {
         const x = dragX.get();
 
         if (x <= -DRAG_LIMIT) {
-            setImgIndex((prev) => (prev + 1) % officePictures.length);
+            setImgIndex((prev) => (prev + 1) % pictures.length);
         } else if (x >= DRAG_LIMIT) {
-            setImgIndex((prev) => (prev - 1 + officePictures.length) % officePictures.length);
+            setImgIndex((prev) => (prev - 1 + pictures.length) % pictures.length);
         }
     };
 
@@ -88,15 +54,15 @@ export default function NewBannerSlider() {
                 }}
                 className="New_Banner_Wrapper"
             >
-                {officePictures.map((picture, index) => (
-                    <div key={index} className="New_Banner_Slide">
+                {pictures.map((picture, index) => (
+                    <div key={index} className={padded ? "New_Banner_Slide Padded" : "New_Banner_Slide"}>
                         <img src={picture.src} alt={picture.alt} width={picture.size.width} height={picture.size.height} />
                     </div>
                 ))}
             </m.div>
 
             <div className="New_Banner_Indicator">
-                {officePictures.map((_, index) => (
+                {pictures.map((_, index) => (
                     <div
                         key={index}
                         onClick={() => {
