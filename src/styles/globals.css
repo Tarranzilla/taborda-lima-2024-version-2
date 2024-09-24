@@ -815,14 +815,19 @@ section {
 
 /* ------ Página Sobre o Escritório ------ */
 
+#a_nossa_historia {
+}
+
+.Sobre_Equipe {
+    overflow: hidden;
+    position: relative;
+}
+
 .Team_Members_Container {
     flex: 1;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-auto-rows: 20rem;
-    grid-gap: 2px;
-    overflow-y: auto;
     padding-right: var(--medium-gap);
 }
 
@@ -855,13 +860,9 @@ section {
 }
 
 .Team_Members_Container_Alt {
-    flex: 1;
-    width: 100%;
+    height: 100%;
     display: flex;
-    overflow-x: auto;
     gap: var(--medium-gap);
-    padding-bottom: var(--medium-gap);
-
     cursor: grab;
 }
 
@@ -889,7 +890,7 @@ section {
     position: relative;
     background-color: var(--brand-color-gray-light);
     aspect-ratio: 2/3;
-    min-width: 300px;
+    min-width: 500px;
     flex-shrink: 0;
 
     display: flex;
@@ -1975,12 +1976,17 @@ footer {
         font-size: 1.125rem;
     }
 
+    #a_nossa_historia {
+        padding-block: var(--large-gap);
+        padding-inline: var(--medium-gap);
+    }
+
     .Sobre_Equipe {
-        align-items: center;
     }
 
     .Sobre_Equipe > h1 {
         text-align: center;
+        margin-inline: auto;
     }
 
     .Team_Member_Card_Alt {

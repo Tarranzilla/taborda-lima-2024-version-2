@@ -1,10 +1,10 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import { motion as m } from "framer-motion";
+import { motion as m, useMotionValue, useTransform } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
 
 import { teamMembers, TeamMember } from "@/data/Team_Members";
@@ -59,57 +59,19 @@ const Sobre = () => {
     const t = useSimpleTranslation();
 
     const containerRef = useRef<HTMLDivElement>(null);
-    const handleMouseDown = (e: any) => {
-        const container = containerRef.current;
+    const cardRef = useRef<HTMLDivElement>(null);
+    const x = useMotionValue(0);
+    const [containerWidth, setContainerWidth] = useState(0);
 
-        if (!container) return;
+    useEffect(() => {
+        if (containerRef.current && cardRef.current) {
+            const cardWidth = cardRef.current.getBoundingClientRect().width;
+            const totalWidth = containerRef.current.scrollWidth - cardWidth;
+            setContainerWidth(totalWidth);
+        }
+    }, [t.team_data]);
 
-        let startX = e.clientX - container.offsetLeft;
-        let scrollLeft = container.scrollLeft;
-
-        const handleMouseMove = (e: any) => {
-            const x = e.clientX - container.offsetLeft;
-            const walk = (x - startX) * 3; // scroll-fast
-            container.scrollLeft = scrollLeft - walk;
-        };
-
-        container.addEventListener("mousemove", handleMouseMove);
-        container.addEventListener(
-            "mouseup",
-            () => {
-                container.removeEventListener("mousemove", handleMouseMove);
-            },
-            { once: true }
-        );
-    };
-
-    const officePicturesRef = useRef<HTMLDivElement>(null);
-    const handleMouseDownOfficePictures = (e: any) => {
-        const container = officePicturesRef.current;
-
-        if (!container) return;
-
-        let startX = e.clientX - container.offsetLeft;
-        let scrollLeft = container.scrollLeft;
-
-        // Add a class to disable smooth scrolling
-        container.classList.add("no-smooth-scroll");
-
-        const handleMouseMove = (e: any) => {
-            const x = e.clientX - container.offsetLeft;
-            const walk = (x - startX) * 6; // scroll-fast
-            container.scrollLeft = scrollLeft - walk;
-        };
-
-        const handleMouseUp = () => {
-            // Remove the class to re-enable smooth scrolling
-            container.classList.remove("no-smooth-scroll");
-            container.removeEventListener("mousemove", handleMouseMove);
-        };
-
-        container.addEventListener("mousemove", handleMouseMove);
-        container.addEventListener("mouseup", handleMouseUp, { once: true });
-    };
+    const scrollX = useTransform(x, [0, -containerWidth], [0, containerWidth]);
 
     return (
         <>
@@ -122,18 +84,27 @@ const Sobre = () => {
             <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" className={""} key={"pagina_principal"}>
                 {/* Histórico e Membros da Equipe */}
                 <section>
-                    <div className="Container Dark_Container Alt_Paragraphs Centered_Container Padded_Container Full_Width_Paragraphs">
+                    <div
+                        id="a_nossa_historia"
+                        className="Container Dark_Container Alt_Paragraphs Centered_Container Padded_Container Full_Width_Paragraphs"
+                    >
                         <h1>{t.about_data.title}</h1>
                         {t.about_data.paragraphs.map((paragraph: string, index: number) => (
                             <p key={index}>{paragraph}</p>
                         ))}
                     </div>
                     <div className="Container Sobre_Equipe">
-                        <h1>{t.about_data.team_title}</h1>
+                        {/*<h1>{t.about_data.team_title}</h1>*/}
 
-                        <div ref={containerRef} onMouseDown={handleMouseDown} className="Team_Members_Container_Alt">
+                        <m.div
+                            ref={containerRef}
+                            className="Team_Members_Container_Alt"
+                            drag="x"
+                            dragConstraints={{ left: -containerWidth, right: 0 }} // Adjust based on your needs
+                            style={{ x: scrollX }}
+                        >
                             {t.team_data.map((member: TeamMember, index: number) => (
-                                <div className="Team_Member_Card_Alt" key={index}>
+                                <m.div className="Team_Member_Card_Alt" key={index} ref={index === 0 ? cardRef : null}>
                                     <Image
                                         src={member.image}
                                         alt={member.name}
@@ -150,9 +121,9 @@ const Sobre = () => {
                                             read_more
                                         </Link>
                                     </div>
-                                </div>
+                                </m.div>
                             ))}
-                        </div>
+                        </m.div>
                     </div>
                 </section>
             </m.main>
