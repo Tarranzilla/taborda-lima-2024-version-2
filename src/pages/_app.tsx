@@ -174,6 +174,7 @@ export default function App({ Component, pageProps }: AppProps) {
                                     }}
                                 >
                                     {result.title}
+                                    <span className="material-icons">open_in_new</span>
                                 </Link>
                             ))}
                         </div>

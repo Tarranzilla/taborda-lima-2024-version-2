@@ -20,6 +20,7 @@ import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
 import { handleScheduleWhatsApp_EN, handleWhatsApp_EN } from "@/utils/WhatsApp_en";
 import NewInstaFeed from "@/components/NewInstaFeed";
 import NewBannerSlider from "@/components/NewBannerSlider";
+import ExpertiseSlider from "@/components/ExpertiseSlider";
 
 const officePictures = [
     {
@@ -82,7 +83,7 @@ export default function Home() {
 
                 {/* Banner Inicial */}
                 <div className="LP_Intro_Banner">
-                    <Image src={"/general_assets/taborda_lima_main_logo.png"} width={1200} height={400} alt="Logo Taborda Lima" />
+                    <Image src={"/general_assets/LOGO_TL_Legacy.png"} width={1200} height={400} alt="Logo Taborda Lima" />
                 </div>
 
                 {/* Seção de Início | Atualizar o Scroll com as Novas Imagens do Escritório */}
@@ -132,7 +133,7 @@ export default function Home() {
                     </div>
 
                     <div className="Container Container_Right Banner_Slider_Container Dark_Container Unpadded_Container">
-                        <BannerSlider />
+                        <ExpertiseSlider />
                     </div>
                 </section>
 
@@ -242,7 +243,7 @@ export default function Home() {
 
                 {/* Rodapé */}
                 <footer>
-                    <Image src={"/general_assets/taborda_lima_main_logo.png"} width={1200} height={400} alt="Logo Taborda Lima" />
+                    <Image src={"/general_assets/LOGO_TL_Legacy.png"} width={1200} height={400} alt="Logo Taborda Lima" />
                 </footer>
             </m.main>
         </>
