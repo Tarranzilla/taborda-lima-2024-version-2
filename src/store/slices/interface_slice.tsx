@@ -69,6 +69,11 @@ const InterfaceSlice = createSlice({
         toggleMenuOpen: (state) => {
             state.isMenuOpen = !state.isMenuOpen;
         },
+
+        setMenuOpen: (state, action: PayloadAction<boolean>) => {
+            state.isMenuOpen = action.payload;
+        },
+
         toggleUserTabOpen: (state) => {
             state.isUserTabOpen = !state.isUserTabOpen;
         },
@@ -99,6 +104,7 @@ export const {
     toggleCookiesOpen,
     closeMenu,
     toggleMenuOpen,
+    setMenuOpen,
     toggleUserTabOpen,
     setUserTabNeedsUpdate,
     setUserTabOpen,

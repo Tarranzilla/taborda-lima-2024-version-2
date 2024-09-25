@@ -1,15 +1,25 @@
 import { motion as m, useDragControls, useMotionValue, useAnimate, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+
+import { useDispatch, useSelector } from "react-redux";
+import { toggleMenuOpen, setMenuOpen } from "@/store/slices/interface_slice";
+import { RootState } from "@/store/store";
 
 import useMeasure from "react-use-measure";
 
 type DragAndCloseModalProps = {
-    open: boolean;
-    setOpen: (open: boolean) => void;
     children: React.ReactNode;
 };
 
-export default function DragAndCloseModal({ open, setOpen, children }: DragAndCloseModalProps) {
+export default function DragAndCloseModal({ children }: DragAndCloseModalProps) {
+    const dispatch = useDispatch();
+
+    const open = useSelector((state: RootState) => state.interface.isMenuOpen);
+    const [local_open, set_local_open] = useState(false);
+    const set_open_action = (state: boolean) => {
+        dispatch(setMenuOpen(state));
+    };
+
     const controls = useDragControls();
     const [scope, animate] = useAnimate();
     const y = useMotionValue(0);
@@ -26,17 +36,30 @@ export default function DragAndCloseModal({ open, setOpen, children }: DragAndCl
         await animate("#drawer", {
             y: [yStart, height],
         });
-        setOpen(false);
+
+        set_local_open(false);
+        set_open_action(false);
     };
+
+    useEffect(() => {
+        if (open) {
+            set_local_open(true);
+        }
+
+        if (!open && scope.current) {
+            handleClose();
+        }
+    }, [open]);
 
     return (
         <>
             <AnimatePresence>
-                {open && (
+                {local_open && (
                     <m.div
                         ref={scope}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
                         className="Drawer_Container"
                         onClick={handleClose}
                         key={"drawer_container"}
@@ -47,6 +70,7 @@ export default function DragAndCloseModal({ open, setOpen, children }: DragAndCl
                             ref={drawerRef}
                             initial={{ y: "100%" }}
                             animate={{ y: "0%" }}
+                            exit={{ y: "100%" }}
                             transition={{ ease: "easeInOut" }}
                             onClick={(e) => {
                                 e.stopPropagation();
