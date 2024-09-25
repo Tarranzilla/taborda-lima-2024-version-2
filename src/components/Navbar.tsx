@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import { useDispatch, useSelector } from "react-redux";
-import { toggleMenuOpen } from "@/store/slices/interface_slice";
+import { toggleMenuOpen, setMenuOpen } from "@/store/slices/interface_slice";
 import { RootState } from "@/store/store";
 
 import { useState, useEffect } from "react";
