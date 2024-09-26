@@ -27,6 +27,7 @@ export type User_Local = {
 };
 
 type UserState = {
+    acceptedCookies: boolean;
     firebaseUser: User_Firebase | null;
     currentUser: User_Local | null;
     editedCurrentUser: User_Local | null;
@@ -34,6 +35,7 @@ type UserState = {
 };
 
 const initialState: UserState = {
+    acceptedCookies: false,
     firebaseUser: null,
     currentUser: null,
     editedCurrentUser: null,
@@ -48,6 +50,9 @@ const userSlice = createSlice({
     name: "user",
     initialState,
     reducers: {
+        setAcceptedCookies: (state, action: PayloadAction<boolean>) => {
+            state.acceptedCookies = action.payload;
+        },
         setFirebaseUser: (state, action: SetFirebaseUserAction) => {
             state.firebaseUser = action.payload;
         },
@@ -65,5 +70,5 @@ const userSlice = createSlice({
     },
 });
 
-export const { setFirebaseUser, setCurrentUser, setCurrentEditedUser, setUserIsAdmin } = userSlice.actions;
+export const { setAcceptedCookies, setFirebaseUser, setCurrentUser, setCurrentEditedUser, setUserIsAdmin } = userSlice.actions;
 export default userSlice.reducer;

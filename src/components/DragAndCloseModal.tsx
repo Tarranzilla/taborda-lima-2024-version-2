@@ -95,9 +95,9 @@ export default function DragAndCloseModal({ children }: DragAndCloseModalProps) 
                             <div className="Drawer_Header">
                                 <h3 className="Drawer_Title">menu</h3>
                                 <button className="Drawer_Bar" onPointerDown={(e) => controls.start(e)}></button>
-                                <button onClick={handleClose} className="Drawer_Close_Button">
+                                <m.button whileTap={{ scale: 0.95 }} onClick={handleClose} className="Drawer_Close_Button">
                                     <span className="material-icons">close</span>
-                                </button>
+                                </m.button>
                             </div>
                             <div className="Drawer_Content">{children}</div>
                         </m.div>

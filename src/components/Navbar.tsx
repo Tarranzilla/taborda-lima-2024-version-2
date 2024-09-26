@@ -1,15 +1,14 @@
 import Link from "next/link";
-import Head from "next/head";
 import Image from "next/image";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { toggleMenuOpen, setMenuOpen } from "@/store/slices/interface_slice";
-import { RootState } from "@/store/store";
 
 import { useState, useEffect } from "react";
-import { motion as m } from "framer-motion";
 
 import { useRouter } from "next/router";
+
+import { motion as m } from "framer-motion";
 
 import { useSimpleTranslation } from "@/international/use_translation";
 
@@ -19,11 +18,18 @@ import { Expertise } from "@/content-list/services/english";
 
 import DragAndCloseModal from "@/components/DragAndCloseModal";
 
+const MotionLink = m(Link);
+const LogoLink = m(Link);
+
 const Navbar = () => {
     const dispatch = useDispatch();
 
     const toggleMenu_Action = () => {
         dispatch(toggleMenuOpen());
+    };
+
+    const setMenuOpen_Action = (state: boolean) => {
+        dispatch(setMenuOpen(state));
     };
 
     const router = useRouter();
@@ -32,7 +38,7 @@ const Navbar = () => {
         const currentLocale = router.locale;
         const newLocale = currentLocale === "en" ? "pt-BR" : "en";
         const currentPath = router.asPath;
-        router.push(currentPath, currentPath, { locale: newLocale });
+        router.push(currentPath, currentPath, { locale: newLocale, scroll: false });
     };
 
     const isEnglish = router.locale === "en";
@@ -66,7 +72,7 @@ const Navbar = () => {
         <>
             {/* Navbar */}
             <nav className="Navbar_Top">
-                <button className="Nav_Button Language_Selector_Btn Mobile_Only" onClick={changeLanguage}>
+                <m.button whileTap={{ scale: 0.95 }} className="Nav_Button Language_Selector_Btn Mobile_Only" onClick={changeLanguage}>
                     {isEnglish ? (
                         <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} quality={100} alt="Language Selector" />
                     ) : (
@@ -79,9 +85,9 @@ const Navbar = () => {
                             alt="Language Selector"
                         />
                     )}
-                </button>
+                </m.button>
 
-                <Link href={"/#"} className="Navbar_Logo_Container">
+                <LogoLink key={"LOGO"} whileTap={{ scale: 0.95 }} href={"/#"} className="Navbar_Logo_Container">
                     <svg id="Layer_2" className="Navbar_Logo Svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 35">
                         <g id="Layer_1-2">
                             <path className="cls-2" d="M0,19.83h73.96M84.86,19.83h72.63" />
@@ -103,26 +109,26 @@ const Navbar = () => {
                             />
                         </g>
                     </svg>
-                </Link>
+                </LogoLink>
 
                 <div className="Navbar_Link_Container">
                     {t.navbar.navLinks?.map((link, index) => (
-                        <Link
+                        <MotionLink
                             key={index}
                             className="Navbar_Link"
                             href={link.path}
                             onClick={() => {
-                                //setIsModalOpen(false);
-                                toggleMenu_Action();
+                                setMenuOpen_Action(false);
                             }}
+                            whileTap={{ scale: 0.95 }}
                         >
                             {link.name}
-                        </Link>
+                        </MotionLink>
                     ))}
                 </div>
 
                 <div className="Navbar_Tools_Container">
-                    <button className="Nav_Button Language_Selector_Btn Desktop_Only" onClick={changeLanguage}>
+                    <m.button whileTap={{ scale: 0.95 }} className="Nav_Button Language_Selector_Btn Desktop_Only" onClick={changeLanguage}>
                         <p className="Language_Label">{isEnglish ? "LANGUAGE" : "IDIOMA"}</p>
 
                         <div className="Language_Flags">
@@ -141,15 +147,16 @@ const Navbar = () => {
                                 alt="Language Selector"
                             />
                         </div>
-                    </button>
-                    <button
+                    </m.button>
+                    <m.button
+                        whileTap={{ scale: 0.95 }}
                         className="Nav_Button Menu_Btn"
                         onClick={() => {
                             toggleMenu_Action();
                         }}
                     >
                         <span className="material-icons">menu_book</span>
-                    </button>
+                    </m.button>
                 </div>
             </nav>
 
@@ -173,38 +180,41 @@ const Navbar = () => {
                     {searchResults.length > 0 && (
                         <div className="Menu_Search_Results">
                             {searchResults.map((result, index) => (
-                                <Link
-                                    key={index}
+                                <MotionLink
+                                    whileTap={{ scale: 0.95 }}
+                                    key={index + "MENU_SEARCH_RESULT"}
                                     href={result.link}
                                     onClick={() => {
                                         //setIsModalOpen(false);
-                                        toggleMenu_Action();
+                                        setMenuOpen_Action(false);
                                         setSearchTerm("");
                                     }}
                                 >
                                     {result.title}
                                     <span className="material-icons">open_in_new</span>
-                                </Link>
+                                </MotionLink>
                             ))}
                         </div>
                     )}
 
                     {t.menu.links?.map((link, index) => (
-                        <Link
-                            key={index}
+                        <MotionLink
+                            whileTap={{ scale: 0.95 }}
+                            key={index + "MENU_LINK"}
                             href={link.path}
                             onClick={() => {
-                                toggleMenu_Action();
+                                //setIsModalOpen(false);
+                                setMenuOpen_Action(false);
                             }}
                         >
                             {link.name}
-                        </Link>
+                        </MotionLink>
                     ))}
 
-                    <button className="Language_Btn" onClick={changeLanguage}>
+                    <m.button whileTap={{ scale: 0.95 }} className="Language_Btn" onClick={changeLanguage}>
                         <span className="material-icons">language</span>
                         {isEnglish ? "Mudar para Português" : "Change to English"}
-                    </button>
+                    </m.button>
 
                     <span className="Service_Full_Description_Pattern Menu_Pattern"></span>
                 </div>
