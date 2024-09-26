@@ -11,6 +11,8 @@ import { teamMembers, TeamMember } from "@/data/Team_Members";
 import { Team_Data_EN } from "@/content-list/team/english";
 import { Team_Data_PT } from "@/content-list/team/portuguese";
 
+import CardPanner from "@/components/CardPanner";
+
 export const getStaticPaths: GetStaticPaths = async () => {
     // Get the paths we want to pre-render based on
 
@@ -48,25 +50,35 @@ const TeamMemberDetailPage = ({ person }: { person: TeamMember | null }) => {
     }
 
     return (
-        <main>
-            <div className="Container Dark_Container Alt_Paragraphs Centered_Container Full_Width_Container">
-                <div className="Team_Member_Description_Card">
-                    <Image className="Team_Member_Container_Image" src={person.image} alt={person.name} width={1080} height={1080} />
-                    <div className="Team_Member_Description_Card_Info">
-                        <div className="Team_Member_Container_Header">
-                            <h1>{person.name}</h1>
-                            <h2>{person.role}</h2>
-                            <Link className="Team_Member_Container_OAB_Link" href={person.oabLink} target="_blank" rel="noopener noreferrer">
-                                {person.oab} <span className="material-icons">open_in_new</span>
-                            </Link>
+        <>
+            <Head>
+                <title>{person.name + " | Taborda Lima & Advogados Associados"}</title>
+                <meta name="description" content={person.bio[0]} />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.png" />
+            </Head>
+            <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" key={"sobre-" + person.name}>
+                <div className="Container Dark_Container Alt_Paragraphs Centered_Container Full_Width_Container">
+                    <div className="Team_Member_Description_Card">
+                        <Image className="Team_Member_Container_Image Mobile_Only" src={person.image} alt={person.name} width={1080} height={1080} />
+
+                        <CardPanner image_src={person.image} />
+                        <div className="Team_Member_Description_Card_Info">
+                            <div className="Team_Member_Container_Header">
+                                <h1>{person.name}</h1>
+                                <h2>{person.role}</h2>
+                                <Link className="Team_Member_Container_OAB_Link" href={person.oabLink} target="_blank" rel="noopener noreferrer">
+                                    {person.oab} <span className="material-icons">open_in_new</span>
+                                </Link>
+                            </div>
+                            {person.bio.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
                         </div>
-                        {person.bio.map((paragraph, index) => (
-                            <p key={index}>{paragraph}</p>
-                        ))}
                     </div>
                 </div>
-            </div>
-        </main>
+            </m.main>
+        </>
     );
 };
 

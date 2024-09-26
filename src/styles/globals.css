@@ -1049,6 +1049,28 @@ section {
     object-fit: cover;
 }
 
+.Card_Panner {
+    height: 60vh;
+    width: 45vh;
+    background-color: var(--brand-color-gray-light);
+    border-radius: var(--default-border-radius);
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    outline: 1px solid var(--brand-color-gray-light);
+}
+
+.Card_Panner > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
 .Team_Member_Container_Header {
     display: flex;
     flex-direction: column;
@@ -2020,6 +2042,10 @@ footer {
     }
 
     .Team_Member_Container_Image {
+        width: 100%;
+    }
+
+    .Card_Panner {
         width: 100%;
     }
 
