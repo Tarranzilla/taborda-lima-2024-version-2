@@ -7,53 +7,10 @@ import Link from "next/link";
 import { motion as m, useMotionValue, useTransform } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
 
-import { teamMembers, TeamMember } from "@/data/Team_Members";
-import NewBannerSlider from "@/components/NewBannerSlider";
-
+import { TeamMember } from "@/data/Team_Members";
 import { useSimpleTranslation } from "@/international/use_translation";
 
-const officePictures = [
-    {
-        src: "/office/fotos_escritorio_001.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-    {
-        src: "/office/fotos_escritorio_002.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-    {
-        src: "/office/fotos_escritorio_003.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-    {
-        src: "/office/fotos_escritorio_004.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-    {
-        src: "/office/fotos_escritorio_005.png",
-        alt: "Escritório Taborda Lima & Advogados Associados",
-        size: {
-            width: 1080,
-            height: 1080,
-        },
-    },
-];
+const MotionLink = m(Link);
 
 const Sobre = () => {
     const t = useSimpleTranslation();
@@ -114,13 +71,17 @@ const Sobre = () => {
                                         className="Team_Member_Card_Image"
                                     />
 
-                                    <div className="Team_Member_Card_Footer">
+                                    <m.div className="Team_Member_Card_Footer">
                                         <h2 className="Team_Member_Card_Name">{member.name}</h2>
                                         <p className="Team_Member_Card_Role">{member.role}</p>
-                                        <Link href={member.memberPage} className="material-icons Team_Member_Card_Link">
+                                        <MotionLink
+                                            whileTap={{ scale: 0.95 }}
+                                            href={member.memberPage}
+                                            className="material-icons Team_Member_Card_Link"
+                                        >
                                             read_more
-                                        </Link>
-                                    </div>
+                                        </MotionLink>
+                                    </m.div>
                                 </m.div>
                             ))}
                         </m.div>

@@ -98,7 +98,6 @@ const CardPanner: React.FC<CardPannerProps> = ({ image_src }) => {
 
                 <div ref={cardRef} className={"Card_Panner"}>
                     <Image src={image_src} alt={"Card Image"} width={1080} height={1080} />
-                    <h1 className={"Card_Panner_State"}>Card {isCardHovered ? "Hovered" : ""}</h1>
                 </div>
             </div>
         </>

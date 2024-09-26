@@ -302,12 +302,14 @@ section {
     bottom: var(--medium-gap);
     right: var(--medium-gap);
     z-index: 0;
+    transform-origin: right;
 }
 
 .WhatsApp_Action_Container.Left {
     right: unset;
     left: var(--medium-gap);
     flex-direction: row-reverse;
+    transform-origin: left;
 }
 
 .WhatsApp_Action_Container.Left > .WhatsApp_Action_Logo > .WhatsApp_Action_Logo_Vector {
@@ -816,6 +818,21 @@ section {
 /* ------ Página Sobre o Escritório ------ */
 
 #a_nossa_historia {
+    box-shadow: 0 0 10px var(--brand-color-gray);
+    overflow-y: auto;
+    justify-content: flex-start;
+}
+
+#a_nossa_historia::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+#a_nossa_historia::-webkit-scrollbar-thumb {
+    background-color: var(--special-text-color);
+}
+
+#a_nossa_historia::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .Sobre_Equipe {
@@ -892,6 +909,8 @@ section {
     aspect-ratio: 2/3;
     min-width: 500px;
     flex-shrink: 0;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 
     display: flex;
     flex-direction: column;

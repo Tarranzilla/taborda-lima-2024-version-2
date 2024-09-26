@@ -68,7 +68,9 @@ export default function ExpertiseSlider({ padded }: { padded?: boolean }) {
 
             <div className="New_Banner_Indicator">
                 {expertises.map((_, index) => (
-                    <div
+                    <m.div
+                        whileTap={{ scale: 0.95 }}
+                        whileHover={{ scale: 1.2 }}
                         key={index}
                         onClick={() => {
                             setImgIndex(index);

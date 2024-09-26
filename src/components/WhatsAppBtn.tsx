@@ -27,6 +27,7 @@ const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHi
 
     return (
         <m.div
+            whileHover={{ scale: 1.1 }}
             onClick={() => {
                 isEnglish ? handleWhatsApp_EN() : handleWhatsApp();
             }}
@@ -36,13 +37,19 @@ const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHi
         >
             <AnimatePresence>
                 {isHovered && (
-                    <m.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Page_Button WhatsApp_Btn">
+                    <m.button
+                        whileTap={{ scale: 0.95 }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="Page_Button WhatsApp_Btn"
+                    >
                         <p>{t.common.whatsappBtn.label}</p>
                     </m.button>
                 )}
             </AnimatePresence>
 
-            <div className="WhatsApp_Action_Logo">
+            <m.div whileTap={{ scale: 0.95 }} className="WhatsApp_Action_Logo">
                 <svg
                     className="WhatsApp_Action_Logo_Vector"
                     width="80"
@@ -60,7 +67,7 @@ const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHi
                         fill="#BEA07D"
                     />
                 </svg>
-            </div>
+            </m.div>
         </m.div>
     );
 };
@@ -75,14 +82,15 @@ const WhatsAppBtnMobile = () => {
     const t = useSimpleTranslation();
 
     return (
-        <button
+        <m.button
+            whileTap={{ scale: 0.95 }}
             className="WhatsApp_Btn_Mobile"
             onClick={() => {
                 isEnglish ? handleScheduleWhatsApp_EN() : handleScheduleWhatsApp();
             }}
         >
             <p>{t.common.customScheduleText}</p>
-        </button>
+        </m.button>
     );
 };
 
