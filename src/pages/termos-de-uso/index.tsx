@@ -1,10 +1,12 @@
+import { motion as m } from "framer-motion";
 import { useSimpleTranslation } from "@/international/use_translation";
+import { commonTransition } from "@/utils/Animations";
 
 const TermosDeUso = () => {
     const t = useSimpleTranslation();
 
     return (
-        <main>
+        <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" key={"pagina-termos-de-uso"}>
             <div className="Privacidade_Container">
                 {t.terms.paragraphs.map((paragraph, index) => (
                     <div key={index} className="Privacidade_Topico">
@@ -15,7 +17,7 @@ const TermosDeUso = () => {
                     </div>
                 ))}
             </div>
-        </main>
+        </m.main>
     );
 };
 

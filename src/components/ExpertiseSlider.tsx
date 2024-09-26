@@ -1,25 +1,11 @@
-import { useState, useEffect, useRef } from "react";
-import { motion as m, AnimatePresence, useMotionValue } from "framer-motion";
+import { useState } from "react";
+import { motion as m, useMotionValue } from "framer-motion";
 import { useSimpleTranslation } from "@/international/use_translation";
 
 import Image from "next/image";
 import Link from "next/link";
 
-type OfficePicture = {
-    src: string;
-    alt: string;
-    size: {
-        width: number;
-        height: number;
-    };
-};
-
-type ExpertiseBanner = {
-    title: string;
-    description: string;
-    image: string;
-    link: string;
-};
+const MotionLink = m(Link);
 
 const DRAG_LIMIT = 50;
 
@@ -72,9 +58,9 @@ export default function ExpertiseSlider({ padded }: { padded?: boolean }) {
                     <div key={index} className={padded ? "Expertise_Banner_Slide Padded" : "Expertise_Banner_Slide"}>
                         <h2 className="Banner_Title">{expertise_banner.title}</h2>
                         <p className="Banner_Description">{expertise_banner.description}</p>
-                        <Link href={expertise_banner.link} className="Banner_Btn Page_Button">
+                        <MotionLink whileTap={{ scale: 0.95 }} href={expertise_banner.link} className="Banner_Btn Page_Button">
                             <p>{t.landingPage.sections.expertise.bannerMoreInfoBtn.title}</p>
-                        </Link>
+                        </MotionLink>
                         <Image className="Banner_Img" src={expertise_banner.image} width={800} height={800} alt={expertise_banner.title} />
                     </div>
                 ))}

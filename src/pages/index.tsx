@@ -55,6 +55,8 @@ const officePictures = [
     },
 ];
 
+const MotionLink = m(Link);
+
 export default function Home() {
     const t = useSimpleTranslation();
     const router = useRouter();
@@ -99,10 +101,11 @@ export default function Home() {
                         </div>
 
                         <div className="Intro_Actions_Container">
-                            <Link href={"/sobre"} className="Page_Button">
+                            <MotionLink whileTap={{ scale: 0.95 }} href={"/sobre"} className="Page_Button">
                                 <p>{t.landingPage.sections.home.aboutUsBtn.title}</p> <span className="material-icons">arrow_forward</span>
-                            </Link>
-                            <Link
+                            </MotionLink>
+                            <MotionLink
+                                whileTap={{ scale: 0.95 }}
                                 href={"/#servicos"}
                                 className="Page_Button"
                                 onClick={() => {
@@ -111,10 +114,10 @@ export default function Home() {
                             >
                                 <p>{t.landingPage.sections.home.internationalServicesBtn.title}</p>
                                 <span className="material-icons">arrow_forward</span>
-                            </Link>
-                            <Link href={"/#consulta"} className="Page_Button">
+                            </MotionLink>
+                            <MotionLink whileTap={{ scale: 0.95 }} href={"/#consulta"} className="Page_Button">
                                 <p>{t.landingPage.sections.home.scheduleBtn.title}</p> <span className="material-icons">arrow_forward</span>
-                            </Link>
+                            </MotionLink>
                         </div>
                     </div>
                 </section>
@@ -155,14 +158,15 @@ export default function Home() {
                             ))}
                         </div>
 
-                        <button
+                        <m.button
+                            whileTap={{ scale: 0.95 }}
                             onClick={() => {
                                 isEnglish ? handleScheduleWhatsApp_EN() : handleScheduleWhatsApp();
                             }}
                             className="Page_Button"
                         >
                             <p>{t.landingPage.sections.appointments.appointmentBtn.title}</p> <span className="material-icons">arrow_forward</span>
-                        </button>
+                        </m.button>
                     </div>
                 </section>
 
@@ -185,16 +189,16 @@ export default function Home() {
 
                             */}
 
-                            <Link href={"mailto:contato@tabordalima.com"} className="Page_Button">
+                            <MotionLink whileTap={{ scale: 0.95 }} href={"mailto:contato@tabordalima.com"} className="Page_Button">
                                 <p>contato@tabordalima.com</p>
                                 <span className="material-icons">email</span>
-                            </Link>
-                            <Link href={"tel:+5541992416343"} className="Page_Button">
+                            </MotionLink>
+                            <MotionLink whileTap={{ scale: 0.95 }} href={"tel:+5541992416343"} className="Page_Button">
                                 <p>+55 41 992 416 343</p> <span className="material-icons">phone_forwarded</span>
-                            </Link>
-                            <Link href={"tel:+554133387611"} className="Page_Button">
+                            </MotionLink>
+                            <MotionLink whileTap={{ scale: 0.95 }} href={"tel:+554133387611"} className="Page_Button">
                                 <p>+55 41 3338 7611</p> <span className="material-icons">fax</span>
-                            </Link>
+                            </MotionLink>
                         </div>
                     </div>
 
@@ -218,23 +222,25 @@ export default function Home() {
                         </div>
 
                         <div className="Intro_Actions_Container">
-                            <Link
+                            <MotionLink
+                                whileTap={{ scale: 0.95 }}
                                 href={"https://www.instagram.com/tabordalima.internationallaw/"}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="Page_Button"
                             >
                                 <p>Instagram</p> <FontAwesomeIcon icon={faInstagram} />
-                            </Link>
+                            </MotionLink>
 
-                            <Link
+                            <MotionLink
+                                whileTap={{ scale: 0.95 }}
                                 href={"https://www.linkedin.com/in/taborda-lima-advogados-aduaneiros-ab872526/"}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="Page_Button"
                             >
                                 <p>LinkedIn</p> <FontAwesomeIcon icon={faLinkedin} />
-                            </Link>
+                            </MotionLink>
                         </div>
                     </div>
                 </section>

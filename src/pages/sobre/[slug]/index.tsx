@@ -12,6 +12,7 @@ import { Team_Data_EN } from "@/content-list/team/english";
 import { Team_Data_PT } from "@/content-list/team/portuguese";
 
 import CardPanner from "@/components/CardPanner";
+const MotionLink = m(Link);
 
 export const getStaticPaths: GetStaticPaths = async () => {
     // Get the paths we want to pre-render based on
@@ -67,9 +68,15 @@ const TeamMemberDetailPage = ({ person }: { person: TeamMember | null }) => {
                             <div className="Team_Member_Container_Header">
                                 <h1>{person.name}</h1>
                                 <h2>{person.role}</h2>
-                                <Link className="Team_Member_Container_OAB_Link" href={person.oabLink} target="_blank" rel="noopener noreferrer">
+                                <MotionLink
+                                    whileTap={{ scale: 0.95 }}
+                                    className="Team_Member_Container_OAB_Link"
+                                    href={person.oabLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     {person.oab} <span className="material-icons">open_in_new</span>
-                                </Link>
+                                </MotionLink>
                             </div>
                             {person.bio.map((paragraph, index) => (
                                 <p key={index}>{paragraph}</p>

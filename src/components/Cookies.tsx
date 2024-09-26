@@ -38,7 +38,8 @@ const Cookies = () => {
                             </div>
                         </div>
 
-                        <button
+                        <m.button
+                            whileTap={{ scale: 0.95 }}
                             className="Cookie_Button"
                             onClick={() => {
                                 set_accepted_cookies_action(true);
@@ -47,17 +48,18 @@ const Cookies = () => {
                         >
                             <span className="material-icons">done</span>
                             {t.cookies.btnText}
-                        </button>
-                        <button
+                        </m.button>
+                        <m.button
+                            whileTap={{ scale: 0.95 }}
                             onClick={() => {
                                 router.push("/privacidade");
                                 //setIsModalOpen(false);
                             }}
                             className="Cookie_Button"
                         >
-                            {t.common.knowMoreBtn?.title}
                             <span className="material-icons">info</span>
-                        </button>
+                            {t.common.knowMoreBtn?.title}
+                        </m.button>
                     </m.div>
                 )}
             </AnimatePresence>
