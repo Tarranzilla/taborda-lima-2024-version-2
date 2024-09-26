@@ -545,6 +545,24 @@ export const Servicos_Empresarial = [
     },
 ];
 
+export type Expertise = {
+    title: string;
+    description: string;
+    full_description: string[];
+    image: string;
+    link: string;
+    slug: string;
+    category: string;
+};
+
+export type Expertise_Group = {
+    key: string;
+    name: string;
+    head_title: string;
+    head_description: string;
+    expertises: Expertise[];
+};
+
 export const Exepertise_Data_PT = [
     {
         key: "civil",

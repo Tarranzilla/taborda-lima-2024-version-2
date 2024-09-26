@@ -19,6 +19,7 @@ import { handleScheduleWhatsApp_EN, handleWhatsApp_EN } from "@/utils/WhatsApp_e
 import NewInstaFeed from "@/components/NewInstaFeed";
 import NewBannerSlider from "@/components/NewBannerSlider";
 import ExpertiseSlider from "@/components/ExpertiseSlider";
+import { Expertise_Group, Expertise } from "@/content-list/services/portuguese";
 
 const officePictures = [
     {
@@ -244,6 +245,24 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+
+                {/* Rodapé dos Links */}
+                <footer className="expertise_footer">
+                    {t.expertise_data.map((expertise: Expertise_Group, index: number) => (
+                        <div className="expertise_footer_group" key={index}>
+                            <h2 className="expertise_footer_group_title">{expertise.name}</h2>
+                            <div className="expertise_footer_group_list">
+                                {expertise.expertises.map((expertise: Expertise, index: number) => (
+                                    <MotionLink whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.95 }} key={index} href={expertise.link}>
+                                        {expertise.title}
+
+                                        <span className="material-icons">open_in_new</span>
+                                    </MotionLink>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </footer>
 
                 {/* Rodapé */}
                 <footer>
