@@ -11,10 +11,8 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { useSimpleTranslation } from "@/international/use_translation";
 
-import BannerSlider from "@/components/BannerSlider";
 import GoogleMap from "@/components/GoogleMap";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
-import InstaFeed from "@/components/InstaFeed"; // O Instafeed está com problemas.
 
 import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
 import { handleScheduleWhatsApp_EN, handleWhatsApp_EN } from "@/utils/WhatsApp_en";

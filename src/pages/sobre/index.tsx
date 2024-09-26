@@ -81,7 +81,7 @@ const Sobre = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="favicon.png" />
             </Head>
-            <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" className={""} key={"pagina_principal"}>
+            <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" className={""} key={"pagina_sobre"}>
                 {/* Histórico e Membros da Equipe */}
                 <section>
                     <div
