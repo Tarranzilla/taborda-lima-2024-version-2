@@ -247,7 +247,7 @@ export default function Home() {
                 </section>
 
                 {/* Rodapé dos Links */}
-                <footer className="expertise_footer">
+                <div className="expertise_footer">
                     {t.expertise_data.map((expertise: Expertise_Group, index: number) => (
                         <div className="expertise_footer_group" key={index}>
                             <h2 className="expertise_footer_group_title">{expertise.name}</h2>
@@ -262,7 +262,7 @@ export default function Home() {
                             </div>
                         </div>
                     ))}
-                </footer>
+                </div>
 
                 {/* Rodapé */}
                 <footer>

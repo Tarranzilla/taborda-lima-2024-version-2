@@ -183,7 +183,10 @@ label {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     margin-top: 10vh;
+    min-height: 90vh;
 }
 
 section {
@@ -280,6 +283,7 @@ section {
     width: 100%;
     max-width: 100%;
     flex-basis: 100%;
+    flex-grow: 1;
 }
 
 .Half_Width_Container {
@@ -1713,7 +1717,7 @@ section {
 }
 
 /* ------ Footer ------ */
-
+.expertise_footer,
 .LP_Intro_Banner,
 footer {
     display: flex;
@@ -1726,6 +1730,12 @@ footer {
     scroll-snap-align: start;
 }
 
+.LP_Intro_Banner > img,
+footer > img {
+    width: 55%;
+    height: auto;
+}
+
 .Privacidade_Container {
     display: flex;
     flex-direction: column;
@@ -1735,6 +1745,7 @@ footer {
     padding: var(--medium-gap);
     background-color: var(--brand-color-gray);
     box-shadow: 5px 5px 10px var(--brand-color-dark-brown);
+    flex-grow: 1;
 }
 
 .Privacidade_Topico {
@@ -1859,6 +1870,9 @@ footer {
     flex-grow: 1;
     flex-basis: 60ch;
     border-radius: var(--default-border-radius);
+
+    scroll-snap-align: start;
+    scroll-margin: 1rem;
 
     transition: background-color 0.1s ease-in-out;
 }
@@ -1988,7 +2002,10 @@ footer {
     main {
         display: flex;
         flex-direction: column;
-        gap: var(--large-gap);
+    }
+
+    .expertise_footer {
+        padding: var(--medium-gap);
     }
 
     section {
