@@ -192,17 +192,122 @@ export const Servicos_Desportivo = [
 
 export const Servicos_Internacional = [
     {
-        title: "Análise e Colaboração de Contratos",
+        title: "Comércio Internacional",
         description:
-            "Garante que os acordos sejam claros, justos e conformes à lei, prevenindo litígios. A análise envolve a revisão detalhada dos termos para identificar riscos e ambiguidades, assegurando a proteção dos direitos das partes.",
+            "O comércio internacional envolve a troca de bens e serviços entre países, e para ingressar nesse mercado, as empresas devem escolher a melhor estratégia de entrada.",
         full_description: [
-            "A Análise e Colaboração de Contratos é essencial para garantir que os acordos sejam claros, justos e conformes à lei, prevenindo litígios. A análise envolve a revisão detalhada dos termos para identificar riscos e ambiguidades, assegurando a proteção dos direitos das partes.",
-            "A colaboração na elaboração implica a negociação dos termos entre as partes para alcançar um acordo equilibrado, considerando prazos, pagamentos e garantias. Em contratos internacionais, aplica-se tratados e convenções para harmonizar as obrigações.",
-            "Por fim, a Análise e Colaboração de Contratos está em constante evolução, acompanhando mudanças legislativas e tecnológicas, como contratos eletrônicos e plataformas digitais, para atender às necessidades do mercado.",
+            "As opções incluem a exportação direta, onde a empresa vende diretamente para o mercado externo, ou a exportação indireta, que utiliza intermediários, como trading companies, para acessar outros países. Alternativamente, parcerias ou joint ventures permitem compartilhar riscos com empresas locais, enquanto o estabelecimento de uma filial oferece maior controle sobre as operações no exterior.",
+            "Além disso, é essencial adaptar os produtos e serviços para atender às normas e preferências culturais de cada mercado, garantindo que as embalagens e rotulagens estejam em conformidade com as leis locais.",
+            "O planejamento logístico envolve escolher o melhor modal de transporte e gerenciar a cadeia de suprimentos de forma eficaz. A compliance exige atenção às licenças, certificações e regulamentações aduaneiras para garantir que as operações internacionais ocorram sem entraves legais.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
-        link: "/direito-internacional/analise-colaboracao-contratos",
-        slug: "analise-colaboracao-contratos",
+        link: "/direito-internacional/comercio-internacional",
+        slug: "comercio-internacional",
+        category: "Direito Internacional",
+    },
+    {
+        title: "Tributação Internacional",
+        description:
+            "A tributação internacional refere-se às regras e regulamentações fiscais aplicáveis a transações, lucros e rendimentos de empresas e indivíduos que operam em mais de um país.",
+        full_description: [
+            "Em situações comuns, como no caso de uma filial estrangeira que tributa seus lucros localmente e a empresa-mãe paga impostos sobre esses mesmos lucros em seu país de origem, pode ocorrer a dupla tributação.",
+            "Expatriados também podem ser tributados tanto no país onde trabalham quanto no país de origem, o que pode aumentar a carga tributária de forma significativa.",
+            "Os Tratados para Evitar a Dupla Tributação (TDTs) são acordos bilaterais que ajudam a evitar ou reduzir essa carga excessiva, regulando qual país tem o direito de tributar certos tipos de rendimentos. Eles podem oferecer benefícios como a redução de impostos retidos na fonte sobre dividendos, royalties e juros, além de eliminar a dupla tributação.",
+            "Para empresas que operam internacionalmente, o planejamento tributário estratégico é essencial para otimizar sua carga fiscal, aproveitando TDTs e regimes fiscais especiais, como zonas francas, regimes de investimento estrangeiro, que reduzem alíquotas sobre lucros reinvestidos, e regimes de tributação simplificada, que simplificam processos e reduzem tributos.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/tributacao-internacional",
+        slug: "tributacao-internacional",
+        category: "Direito Internacional",
+    },
+    {
+        title: "Adoção Internacional",
+        description:
+            "Processo em que uma criança de um país é adotada por pais de outro país, geralmente regulada pela Convenção de Haia, que visa proteger o melhor interesse da criança.",
+        full_description: [
+            "O processo é utilizado quando não é possível encontrar uma família no país de origem e envolve a cooperação entre as autoridades dos países de origem e acolhimento. Essas autoridades garantem que a criança é adotável, que os futuros pais estão habilitados e que não há pagamentos ou compensações ilegais envolvidos.",
+            "Se um dos países não for signatário da Convenção, o processo segue as leis nacionais. Embora ofereça a oportunidade de um novo lar para a criança, a adoção internacional pode ser complexa, com desafios legais, burocráticos e de adaptação cultural para a criança e os pais adotivos.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/adocao-internacional",
+        slug: "adocao-internacional",
+        category: "Direito Internacional",
+    },
+    {
+        title: "Divórcio de Casamento Realizado no Exterior",
+        description:
+            "O divórcio de casamento realizado no exterior segue um processo específico, que exige primeiro o reconhecimento do casamento no Brasil.",
+        full_description: [
+            "Caso o casamento não tenha sido registrado no país, será necessário realizar sua homologação para que o divórcio possa ter validade legal. Entre os documentos necessários para o processo de divórcio estão a certidão de casamento original, traduzida por tradutor juramentado, e os documentos pessoais dos cônjuges. Em alguns casos, também será necessária a homologação do casamento estrangeiro.",
+            "O procedimento judicial do divórcio pode ser consensual, quando ambas as partes estão de acordo, ou litigioso, se houver discordâncias, levando a uma resolução judicial. Assim como em divórcios realizados no Brasil, é importante assegurar que todos os direitos e deveres dos cônjuges sejam respeitados, incluindo a partilha de bens, a guarda dos filhos e pensão alimentícia.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/divorcio-casamento-realizado-exterior",
+        slug: "divorcio-casamento-realizado-exterior",
+        category: "Direito Internacional",
+    },
+    {
+        title: "Homologação de Casamento Realizado no Exterior",
+        description:
+            "Para registrar um casamento realizado no exterior no Brasil, é necessário seguir alguns passos e reunir a documentação adequada.",
+        full_description: [
+            "O primeiro passo é garantir que você possua a certidão de casamento original, emitida no país onde o casamento ocorreu, devidamente traduzida por um tradutor juramentado. Além disso, serão exigidos documentos pessoais dos cônjuges, como RG e CPF.",
+            "O registro pode ser feito de duas maneiras: se o casal ainda estiver no exterior, é possível realizar o registro no consulado brasileiro do país onde o casamento foi realizado, o que facilita o processo de reconhecimento no Brasil. Caso o casal já esteja no Brasil, o registro deve ser feito em um cartório de Registro Civil das Pessoas Naturais, onde o casamento será formalmente reconhecido, garantindo sua validade legal no Brasil e permitindo que produza todos os efeitos jurídicos necessários.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/homologacao-casamento-realizado-exterior",
+        slug: "homologacao-casamento-realizado-exterior",
+        category: "Direito Internacional",
+    },
+    {
+        title: "Homologação de Sentença Estrangeira no Brasil",
+        description:
+            "Procedimento jurídico pelo qual uma decisão judicial proferida em outro país é reconhecida e passa a produzir efeitos legais no território brasileiro.",
+        full_description: [
+            "Esse processo é fundamental para garantir que sentenças, como divórcios, decisões sobre guarda de filhos, disputas contratuais ou questões patrimoniais, tenham validade legal no Brasil.",
+            "Para que uma sentença estrangeira seja homologada no Brasil, ela deve atender a uma série de requisitos. Primeiro, a sentença deve ser definitiva e ter sido emitida por uma autoridade judicial competente no país de origem. Além disso, é necessário que a sentença seja traduzida por um tradutor juramentado e legalizada ou apostilada, conforme as normas internacionais, como a Convenção de Haia.",
+            "Os documentos exigidos incluem uma cópia autenticada da sentença, uma tradução oficial para o português, a certidão de inteiro teor da sentença e a comprovação de que o tribunal estrangeiro tinha competência para proferir a decisão.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/homologacao-sentenca-estrangeira-brasil",
+        slug: "homologacao-sentenca-estrangeira-brasil",
+        category: "Direito Internacional",
+    },
+    {
+        title: "Operações Back to Back",
+        description:
+            "Transações comerciais internacionais em que uma empresa intermediária compra mercadorias de um fornecedor em um país e as vende diretamente a um cliente em outro país, sem que as mercadorias passem fisicamente pelo território da empresa intermediária.",
+        full_description: [
+            "Operações back to back oferecem vantagens como a otimização logística e a redução de custos, mas exigem conhecimento técnico e jurídico para garantir que a operação esteja em conformidade com as regulamentações comerciais e tributárias internacionais.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/operacoes-back-to-back",
+        slug: "operacoes-back-to-back",
+        category: "Direito Internacional",
+    },
+    {
+        title: "Incoterms Marítimos",
+        description:
+            "Conjunto de regras padronizadas que definem as responsabilidades de compradores e vendedores em transações internacionais, especificamente no transporte de mercadorias por via marítima.",
+        full_description: [
+            "No contexto das operações de comércio internacional, os Incoterms marítimos são fundamentais para definir quem será responsável pelos custos do transporte, pelo seguro da mercadoria, e pelo risco durante o percurso. A compreensão e o uso correto dos Incoterms marítimos são essenciais para evitar disputas e garantir a segurança jurídica nas transações comerciais internacionais.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/incoterms-maritimos",
+        slug: "incoterms-maritimos",
+        category: "Direito Internacional",
+    },
+    {
+        title: "Planejamento Patrimonial Internacional",
+        description:
+            "Processo de organizar a distribuição de ativos em vários países, garantindo que a transferência de riqueza seja realizada de acordo com seus desejos e em conformidade com as leis locais de cada jurisdição.",
+        full_description: [
+            "Esse tipo de planejamento é crucial para indivíduos com ativos globais, pois ajuda a navegar por diferentes estruturas legais, impostos sobre herança e diferenças culturais nas leis de sucessão. Cada país pode ter regulamentações diferentes quanto à distribuição de bens, e, sem um plano abrangente, o processo pode se tornar complicado e custoso para os herdeiros.",
+            "Os principais benefícios do planejamento patrimonial internacional incluem a redução de encargos fiscais por meio de estruturas fiscalmente eficientes e a prevenção de disputas entre membros da família. Utilizando ferramentas como trusts, testamentos internacionais e fundos, os indivíduos podem proteger seus ativos e garantir uma transferência de riqueza tranquila. O planejamento adequado também assegura que seus desejos sejam respeitados globalmente, minimizando o risco de conflitos legais ou atrasos na distribuição de bens entre fronteiras.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/planejamento-patrimonial-internacional",
+        slug: "incoterms-maritimos",
         category: "Direito Internacional",
     },
     {
@@ -252,7 +357,7 @@ export const Servicos_Internacional = [
         category: "Direito Internacional",
     },
     {
-        title: "Proteção e Defesa dos Direitos nos Tribunais e Câmaras de Arbitragem Nacional",
+        title: "Proteção e Defesa dos Direitos nos Tribunais e Câmaras de Arbitragem Nacional e Internacional",
         description:
             "Um serviço crucial para indivíduos e empresas que buscam resolver conflitos de maneira justa e eficiente. Essa prática jurídica garante que as partes envolvidas em uma disputa tenham seus interesses protegidos e que os litígios sejam resolvidos de acordo com a lei.",
         full_description: [
@@ -263,29 +368,86 @@ export const Servicos_Internacional = [
             "Em resumo, a proteção e defesa dos direitos nos tribunais e câmaras de arbitragem nacionais é essencial para resolver disputas de maneira justa e eficiente. Com uma abordagem estratégica, uma compreensão detalhada das leis e procedimentos aplicáveis, e a capacidade de representar eficazmente os interesses dos clientes, os advogados podem garantir que as disputas sejam resolvidas de forma satisfatória. Esse serviço não só protege os direitos das partes envolvidas, mas também promove a justiça e a estabilidade nas relações comerciais e pessoais.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
-        link: "/direito-internacional/protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
-        slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
+        link: "/direito-internacional/protecao-defesa-direitos-tribunais-camaras-arbitragem",
+        slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem",
         category: "Direito Internacional",
+    },
+];
+
+export const Servicos_Migratorio = [
+    {
+        title: "Visto L-1",
+        description:
+            "Uma autorização temporária que permite que empresas transfiram executivos, gestores ou profissionais com conhecimento especializado de uma filial estrangeira para uma subsidiária ou afiliada nos Estados Unidos.",
+        full_description: [
+            "O visto L1 é uma autorização temporária que permite que empresas transfiram executivos, gestores ou profissionais com conhecimento especializado de uma filial estrangeira para uma subsidiária ou afiliada nos Estados Unidos. ",
+            "Ele é ideal para empresas que desejam expandir suas operações no país, facilitando a abertura de novas filiais ou subsidiárias. Um dos grandes benefícios desse visto é que ele não exige um diploma específico e pode ser um caminho para que executivos e gestores solicitem o Green Card, sem a necessidade de passar pelo processo de certificação trabalhista.",
+            "A transferência pode ocorrer internamente, quando a empresa já possui uma filial nos EUA, ou pode ser utilizada para estabelecer uma nova operação no país, com o executivo responsável pela gestão inicial. O visto L1 oferece uma solução prática para empresas que buscam expandir suas atividades nos EUA e transferir seus principais líderes ou especialistas para supervisionar a operação.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-l-1",
+        slug: "visto-l-1",
+        category: "Direito Migratório",
+    },
+    {
+        title: "Visto E-1",
+        description:
+            "Destinado a cidadãos de países que possuem tratados de comércio com os Estados Unidos, permitindo que se envolvam substancialmente na importação e exportação de bens, serviços ou tecnologia entre os dois países.",
+        full_description: [
+            "O visto E-1 é destinado a cidadãos de países que possuem tratados de comércio com os Estados Unidos, permitindo que se envolvam substancialmente na importação e exportação de bens, serviços ou tecnologia entre os dois países.",
+            "Para ser elegível, é necessário ser cidadão de um desses países, estar envolvido em comércio substancial entre os EUA e o país do tratado, e ocupar uma posição essencial na empresa, seja como operador principal ou empregado chave.",
+            "Os requisitos incluem a submissão da petição I-129 pelo empregador, documentação que comprove transações comerciais substanciais, preenchimento do formulário DS-160 e outros documentos de suporte, como contratos e faturas. O visto E-1 permite que negócios de importação e exportação sejam conduzidos legalmente nos EUA, abrangendo setores como tecnologia, transporte, turismo e serviços financeiros. Além disso, ele pode ser renovado indefinidamente, desde que os requisitos continuem sendo atendidos.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-e-1",
+        slug: "visto-e-1",
+        category: "Direito Migratório",
+    },
+    {
+        title: "Visto E-2",
+        description:
+            "Permite que cidadãos de países com tratados comerciais com os Estados Unidos invistam em um negócio no país e residam temporariamente enquanto o empreendimento estiver em operação.",
+        full_description: [
+            "O visto E-2 permite que cidadãos de países com tratados comerciais com os Estados Unidos invistam em um negócio no país e residam temporariamente enquanto o empreendimento estiver em operação.",
+            "Esse visto é ideal para empreendedores que desejam expandir seus negócios e viver nos EUA. Para ser elegível, o requerente deve ser cidadão de um país com Tratado de Comércio e Navegação com os EUA, como Espanha, Alemanha, Itália, França e Portugal.",
+            "Além disso, é necessário apresentar um plano de negócios detalhado que comprove a viabilidade e o potencial de crescimento do negócio nos EUA. Esse plano deve incluir uma descrição da empresa, estratégias de mercado e projeções financeiras. O visto E-2 oferece várias vantagens, como a possibilidade de residir nos EUA com a família, renovação indefinida enquanto o negócio continuar ativo, e autorização de trabalho para o cônjuge.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-e-2",
+        slug: "visto-e-2",
+        category: "Direito Migratório",
+    },
+    {
+        title: "Visto de Casamento para os Estados Unidos",
+        description:
+            "Esse visto é solicitado quando um cidadão americano ou residente permanente deseja trazer seu cônjuge estrangeiro para os EUA, seja para viver permanentemente ou temporariamente.",
+        full_description: [
+            "Esse visto é solicitado quando um cidadão americano ou residente permanente deseja trazer seu cônjuge estrangeiro para os EUA, seja para viver permanentemente ou temporariamente.",
+            "Existem diferentes tipos de vistos de casamento, como o visto CR-1 (residente condicional) ou IR-1 (residente imediato) para aqueles que já estão casados, e o visto K-1 (noivo/noiva) para quem pretende se casar em território americano.",
+            "O processo envolve a apresentação de petições e documentação específica, além de cumprir os requisitos legais de elegibilidade estabelecidos pelas leis de imigração dos EUA. O objetivo é demonstrar a legitimidade do relacionamento e garantir que o cônjuge estrangeiro atenda aos critérios para viver legalmente no país.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-de-casamento-eua",
+        slug: "visto-de-casamento-eua",
+        category: "Direito Migratório",
     },
     {
         title: "Pedidos de Waiver",
         description:
             "Waivers, ou dispensas, permitem que indivíduos ou empresas obtenham isenções de determinados requisitos legais que, de outra forma, seriam obrigatórios.",
         full_description: [
-            "Os pedidos de waiver são uma ferramenta essencial no campo jurídico, especialmente no contexto de imigração, regulamentações empresariais e leis internacionais. Waivers, ou dispensas, permitem que indivíduos ou empresas obtenham isenções de determinados requisitos legais que, de outra forma, seriam obrigatórios. A importância desses pedidos reside na sua capacidade de proporcionar flexibilidade e alívio em situações onde o cumprimento estrito das normas pode ser impraticável ou injusto.",
-            "O processo de solicitação de um waiver começa com a identificação clara da necessidade e da base legal para o pedido. É fundamental que os solicitantes demonstrem razões convincentes pelas quais a dispensa deve ser concedida. Isso pode envolver a apresentação de evidências de dificuldades significativas, impacto econômico negativo, ou outras circunstâncias atenuantes. A preparação de um pedido de waiver requer uma análise detalhada dos requisitos legais e uma compreensão profunda do contexto específico da solicitação.",
+            "Waivers, ou dispensas, permitem que indivíduos ou empresas obtenham isenções de determinados requisitos legais que, de outra forma, seriam obrigatórios.",
+            "A importância desses pedidos reside na sua capacidade de proporcionar flexibilidade e alívio em situações onde o cumprimento estrito das normas pode ser impraticável ou injusto. O processo de solicitação de um waiver começa com a identificação clara da necessidade e da base legal para o pedido.",
+            "É fundamental que os solicitantes demonstrem razões convincentes pelas quais a dispensa deve ser concedida. Isso pode envolver a apresentação de evidências de dificuldades significativas, impacto econômico negativo, ou outras circunstâncias atenuantes. A preparação de um pedido de waiver requer uma análise detalhada dos requisitos legais e uma compreensão profunda do contexto específico da solicitação.",
             "Uma vez preparado, o pedido de waiver deve ser submetido à autoridade competente, que pode variar conforme a natureza do waiver e a jurisdição. Pode ser uma agência governamental, um órgão regulador ou uma entidade internacional. A submissão geralmente inclui uma petição formal, acompanhada de documentação de suporte, como declarações juramentadas, relatórios financeiros, atestados médicos, entre outros. O rigor e a qualidade da documentação são cruciais para aumentar as chances de aprovação do pedido.",
             "As peculiaridades dos pedidos de waiver variam significativamente dependendo do campo de aplicação. Em imigração, por exemplo, um waiver pode ser solicitado para superar uma barreira de inadmissibilidade aos Estados Unidos, como uma violação anterior de imigração ou uma condenação criminal. Em contexto empresarial, waivers podem ser necessários para isenções de certos requisitos regulatórios que afetam a operação de negócios internacionais. Cada tipo de waiver possui critérios específicos e procedimentos detalhados que devem ser rigorosamente seguidos.",
             "Em resumo, os pedidos de waiver são uma ferramenta vital para obter alívio legal em situações complexas e desafiadoras. A importância desse serviço está na possibilidade de flexibilizar a aplicação das leis, oferecendo soluções justas e práticas para indivíduos e empresas. Com uma preparação cuidadosa, uma compreensão profunda dos requisitos legais e uma apresentação meticulosa, os advogados podem efetivamente defender os interesses de seus clientes e maximizar as chances de sucesso na obtenção de waivers.",
         ],
-        image: "/general_assets/banner_direito_internacional.png",
-        link: "/direito-internacional/pedidos-waiver",
-        slug: "pedidos-waiver",
-        category: "Direito Internacional",
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/pedidos-de-waiver",
+        slug: "pedidos-de-waiver",
+        category: "Direito Migratório",
     },
-];
-
-export const Servicos_Migratorio = [
     {
         title: "Visto EB-1",
         description:
@@ -398,6 +560,46 @@ export const Servicos_Aduaneiro = [
         category: "Direito Aduaneiro",
     },
     {
+        title: "Drawback",
+        description:
+            "Um regime especial que visa desonerar tributos e estimular as exportações brasileiras, permitindo que empresas adquiram insumos com isenção, suspensão ou restituição de tributos.",
+        full_description: [
+            "Esse mecanismo é fundamental para tornar os produtos brasileiros mais competitivos no mercado internacional, reduzindo os custos de produção ao eliminar a carga tributária sobre os insumos utilizados na fabricação de bens destinados à exportação.",
+            "Entre os tributos que podem ser suspensos ou restituídos estão o Imposto de Importação (II), o Imposto sobre Produtos Industrializados (IPI), e as contribuições ao PIS/PASEP e Cofins.",
+            "Para empresas que atuam no comércio exterior, o Drawback é uma ferramenta poderosa de redução de custos e aumento de competitividade.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-aduaneiro/drawback",
+        slug: "drawback",
+        category: "Direito Aduaneiro",
+    },
+    {
+        title: "Entreposto Aduaneiro",
+        description:
+            "Um regime especial no Direito Aduaneiro que permite a armazenagem de mercadorias importadas ou destinadas à exportação sem o pagamento imediato de tributos, como o Imposto de Importação (II) e o IPI.",
+        full_description: [
+            "Esse regime oferece flexibilidade para que as empresas aguardem a melhor destinação das mercadorias, seja para o mercado interno ou exportação, otimizando suas operações e evitando custos tributários antecipados.",
+            "A assessoria jurídica é fundamental para garantir o correto uso do regime e o cumprimento das obrigações fiscais e alfandegárias.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-aduaneiro/entreposto-aduaneiro",
+        slug: "entreposto-aduaneiro",
+        category: "Direito Aduaneiro",
+    },
+    {
+        title: "Parametrização Aduaneira",
+        description:
+            "Um processo fundamental dentro do Direito Aduaneiro, utilizado pela Receita Federal para determinar o nível de fiscalização necessário durante o desembaraço de mercadorias importadas ou exportadas.",
+        full_description: [
+            "Esse sistema classifica as operações em diferentes canais (verde, amarelo, vermelho e cinza), cada um com um grau de verificação, desde a liberação automática até a necessidade de inspeção física ou documental detalhada.",
+            "A parametrização aduaneira é baseada em critérios de risco e visa garantir o cumprimento das obrigações legais e tributárias, além de evitar fraudes e irregularidades nas operações de comércio exterior.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-aduaneiro/parametrizacao-aduaneira",
+        slug: "parametrizacao-aduaneira",
+        category: "Direito Aduaneiro",
+    },
+    {
         title: "Elaboração de Planejamento Tributário",
         description:
             "Este serviço é fundamental para empresas e indivíduos envolvidos em negócios internacionais, pois busca assegurar que acordos contratuais estejam em conformidade com as leis e regulamentos pertinentes em diferentes jurisdições.",
@@ -446,39 +648,48 @@ export const Servicos_Aduaneiro = [
         category: "Direito Aduaneiro",
     },
     {
-        title: "Proteção e Defesa dos Direitos nos Tribunais e Câmaras de Arbitragem Nacional",
+        title: "Regimes Aduaneiros Especiais, Benefícios e Incentivos Fiscais",
         description:
-            "Esse serviço é vital para assegurar que os direitos das partes sejam respeitados e que as disputas sejam solucionadas de acordo com a lei e de maneira justa e eficaz.",
+            "Mecanismos previstos no Direito Aduaneiro que oferecem tratamento fiscal diferenciado para mercadorias em trânsito internacional, com o objetivo de promover o comércio exterior e aumentar a competitividade das empresas.",
         full_description: [
-            "A proteção e defesa dos direitos nos tribunais e câmaras de arbitragem nacionais é um serviço fundamental oferecido por escritórios de advocacia para garantir que indivíduos e empresas possam resolver seus conflitos de maneira justa e eficaz. Esse serviço é vital para assegurar que os direitos das partes sejam respeitados e que as disputas sejam solucionadas de acordo com a lei. A importância dessa prática reside na capacidade de proporcionar uma resolução definitiva e vinculante, minimizando o impacto negativo de conflitos prolongados.",
-            "O processo de defesa nos tribunais começa com uma análise detalhada do caso. Os advogados revisam os fatos, coletam evidências e analisam as leis aplicáveis para desenvolver uma estratégia jurídica robusta. Esse passo inicial é crucial para garantir que o caso seja bem fundamentado e que todas as opções legais sejam exploradas. Após a preparação do caso, os advogados representam seus clientes em todas as fases do processo judicial, desde a apresentação de petições até as audiências e o julgamento final.",
-            "Paralelamente ao sistema judicial tradicional, a arbitragem emerge como uma alternativa eficaz para a resolução de disputas. As câmaras de arbitragem oferecem um ambiente mais flexível e privado, permitindo que as partes escolham árbitros especializados no assunto em questão. O processo de arbitragem geralmente é mais rápido e menos formal do que os processos judiciais tradicionais, e as decisões dos árbitros são legalmente vinculantes e executáveis. Essa eficiência e especialização fazem da arbitragem uma opção atraente para a resolução de conflitos comerciais e empresariais.",
-            "A defesa em tribunais e câmaras de arbitragem requer uma compreensão profunda das particularidades de cada foro. Nos tribunais, os advogados devem estar familiarizados com os procedimentos processuais e as normas de evidência, enquanto na arbitragem é crucial entender as regras específicas da câmara de arbitragem escolhida e a legislação aplicável. Além disso, a habilidade de negociação e mediação é frequentemente essencial para alcançar acordos favoráveis antes de um julgamento ou decisão arbitral.",
-            "Em resumo, a proteção e defesa dos direitos nos tribunais e câmaras de arbitragem nacionais é essencial para resolver disputas de maneira justa e eficiente. Com uma abordagem estratégica, compreensão detalhada das leis e procedimentos aplicáveis, e a capacidade de representar eficazmente os interesses dos clientes, os advogados garantem que as disputas sejam solucionadas de forma satisfatória. Esse serviço não só protege os direitos das partes envolvidas, mas também promove a justiça e a estabilidade nas relações comerciais e pessoais, assegurando a paz e a continuidade dos negócios e relações interpessoais.",
+            "Esses regimes permitem a suspensão, isenção ou redução de tributos incidentes sobre mercadorias importadas ou exportadas, proporcionando maior flexibilidade e redução de custos nas operações comerciais.",
+            "Entre os principais regimes aduaneiros especiais estão o Drawback, que permite a isenção de tributos sobre insumos importados destinados à exportação; o Entreposto Aduaneiro, que possibilita a armazenagem de mercadorias sem o pagamento imediato de tributos; a Admissão Temporária, que permite a entrada de bens no país por tempo determinado, com suspensão de impostos; e a Exportação Temporária, que permite a saída de mercadorias para o exterior com isenção fiscal, desde que retornem ao Brasil no prazo determinado.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
-        link: "/direito-aduaneiro/protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
-        slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
-        category: "Direito Aduaneiro",
-    },
-    {
-        title: "Assessoria para Regimes Aduaneiros Especiais, Benefícios e Incentivos Fiscais",
-        description: "Um serviço jurídico crucial para empresas que desejam otimizar suas operações comerciais e reduzir custos tributários.",
-        full_description: [
-            "A assessoria para regimes aduaneiros especiais, benefícios e incentivos fiscais é um serviço jurídico crucial para empresas que desejam otimizar suas operações comerciais e reduzir custos tributários. Esse serviço é essencial para empresas que operam no comércio internacional, pois ajuda a maximizar a eficiência das operações e a competitividade no mercado global. A importância desse serviço reside na sua capacidade de proporcionar economia significativa, facilitar o cumprimento das regulamentações e explorar vantagens fiscais disponíveis.",
-            "O processo de avaliação começa com uma análise detalhada das operações da empresa e das oportunidades disponíveis dentro dos regimes aduaneiros especiais e dos benefícios fiscais. Os advogados especializados examinam as atividades de importação e exportação da empresa, identificando áreas onde podem ser aplicados regimes como drawback, entreposto aduaneiro, regime de admissão temporária, entre outros. Essa análise permite identificar as melhores estratégias para minimizar a carga tributária e maximizar a eficiência operacional.",
-            "Após a análise inicial, os advogados trabalham na preparação e submissão de toda a documentação necessária para a obtenção dos benefícios e incentivos fiscais. Isso inclui a elaboração de requerimentos, a obtenção de certificados e a coordenação com as autoridades aduaneiras e fiscais. A precisão e a completude dos documentos são cruciais para garantir a aprovação das solicitações e evitar atrasos ou problemas futuros. Além disso, os advogados monitoram continuamente as mudanças na legislação para garantir que a empresa esteja sempre em conformidade.",
-            "Uma das peculiaridades deste serviço é a necessidade de um profundo conhecimento das complexas e frequentemente mutáveis leis e regulamentos aduaneiros e fiscais. Cada país tem suas próprias regras e benefícios específicos, o que exige uma abordagem personalizada para cada cliente. Além disso, a aplicação de regimes aduaneiros especiais pode envolver múltiplas jurisdições, exigindo uma coordenação cuidadosa e um entendimento claro das implicações internacionais.",
-            "Em resumo, a assessoria para regimes aduaneiros especiais, benefícios e incentivos fiscais é fundamental para empresas que desejam otimizar suas operações comerciais e reduzir custos tributários. Com uma análise detalhada das operações, preparação cuidadosa da documentação e monitoramento contínuo da conformidade, os advogados especializados ajudam as empresas a maximizar suas vantagens fiscais e a operar de maneira mais eficiente. Esse serviço não só proporciona economia significativa, mas também assegura que as operações estejam em conformidade com todas as regulamentações aplicáveis, promovendo a competitividade e o sucesso a longo prazo das empresas no mercado global.",
-        ],
-        image: "/general_assets/banner_direito_aduaneiro.png",
-        link: "/direito-aduaneiro/assessoria-regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
-        slug: "assessoria-regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
+        link: "/direito-aduaneiro/regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
+        slug: "regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
         category: "Direito Aduaneiro",
     },
 ];
 
 export const Servicos_Empresarial = [
+    {
+        title: "Apuração de Haveres do Sócio Retirante",
+        description:
+            "Um processo essencial no âmbito do direito empresarial, utilizado para calcular o valor da participação societária de um sócio que decide se retirar de uma empresa.",
+        full_description: [
+            "Esse procedimento é fundamental para garantir que o sócio retirante receba de forma justa o valor correspondente à sua quota ou ações, levando em consideração o patrimônio líquido da empresa, suas reservas, lucros acumulados e possíveis passivos. A correta apuração dos haveres evita conflitos entre os sócios remanescentes e o sócio que está deixando a sociedade, promovendo uma transição organizada e transparente.",
+            "Além disso, o processo pode envolver avaliações minuciosas, incluindo perícias contábeis e análises detalhadas dos ativos e passivos da empresa. Outro ponto relevante é a definição do momento de apuração dos haveres, que pode ser a data de saída do sócio ou uma data previamente estipulada em contrato social. Garantir que o procedimento seja conduzido com suporte jurídico adequado é essencial para proteger os interesses de todas as partes envolvidas e evitar litígios que possam comprometer a continuidade do negócio.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-empresarial/apuracao-haveres-socio-retirante",
+        slug: "apuracao-haveres-socio-retirante",
+        category: "Direito Empresarial",
+    },
+    {
+        title: "Holding Familiar",
+        description:
+            "Uma ferramenta essencial no planejamento patrimonial e sucessório, que permite organizar e proteger o patrimônio de uma família.",
+        full_description: [
+            "Por meio da constituição de uma holding, é possível centralizar a administração de bens e ativos em uma única empresa, garantindo maior controle sobre a gestão e facilitando a divisão do patrimônio entre os herdeiros.",
+            "Além disso, essa estrutura jurídica permite otimizar a carga tributária, especialmente em relação à transmissão de bens e ao pagamento de impostos, proporcionando vantagens fiscais e evitando complicações futuras.",
+            "Outro ponto relevante da holding familiar é a proteção do patrimônio contra riscos financeiros, como dívidas e ações judiciais. Ao segregar o patrimônio pessoal do empresarial, a família tem mais segurança para administrar seus bens, além de garantir que o processo sucessório seja feito de forma eficiente e harmoniosa. Esse modelo de planejamento é ideal para famílias que buscam preservar seu legado e facilitar a continuidade dos negócios, evitando conflitos familiares e disputas judiciais.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-empresarial/holding-familiar",
+        slug: "holding-familiar",
+        category: "Direito Empresarial",
+    },
     {
         title: "Consultoria e Apoio Jurídico Estratégico para a Negociação e Desenvolvimento de Modelos de Negócios",
         description:

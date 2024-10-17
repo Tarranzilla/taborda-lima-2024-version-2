@@ -39,7 +39,7 @@ const officePictures = [
         },
     },
     {
-        src: "/office/fotos_escritorio_003.png",
+        src: "/office/fotos_escritorio_006.jpg",
         alt: "Escritório Taborda Lima & Advogados Associados",
         size: {
             width: 1080,
@@ -47,7 +47,15 @@ const officePictures = [
         },
     },
     {
-        src: "/office/fotos_escritorio_005.png",
+        src: "/office/fotos_escritorio_007.jpg",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_008.jpg",
         alt: "Escritório Taborda Lima & Advogados Associados",
         size: {
             width: 1080,

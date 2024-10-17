@@ -199,17 +199,122 @@ export const Servicos_Desportivo = [
 
 export const Servicos_Internacional = [
     {
-        title: "Contract Analysis and Collaboration",
+        title: "International Trade",
         description:
-            "Contract Analysis and Collaboration are essential to ensure that agreements are clear, fair, and compliant with the law, preventing litigation.",
+            "International trade involves the exchange of goods and services between countries, and for entering this market, companies must choose the best entry strategy.",
         full_description: [
-            "Contract Analysis and Collaboration are essential to ensure that agreements are clear, fair, and compliant with the law, preventing litigation. The analysis involves a detailed review of the terms to identify risks and ambiguities, ensuring the protection of the parties' rights.",
-            "Collaboration in drafting implies negotiating the terms between the parties to reach a balanced agreement, considering deadlines, payments, and guarantees. In international contracts, treaties and conventions are applied to harmonize obligations.",
-            "Finally, Contract Analysis and Collaboration are constantly evolving, keeping up with legislative and technological changes, such as electronic contracts and digital platforms, to meet market needs.",
+            "Options include direct export, where the company sells directly to the foreign market, or indirect export, which uses intermediaries, such as trading companies, to access other countries. Alternatively, partnerships or joint ventures allow sharing risks with local companies, while establishing a subsidiary offers greater control over foreign operations.",
+            "Additionally, it is essential to adapt products and services to meet the cultural norms and preferences of each market, ensuring that packaging and labeling comply with local laws.",
+            "Logistics planning involves choosing the best mode of transportation and managing the supply chain effectively. Compliance requires attention to licenses, certifications, and customs regulations to ensure international operations run smoothly without legal hurdles.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
-        link: "/direito-internacional/analise-colaboracao-contratos",
-        slug: "analise-colaboracao-contratos",
+        link: "/direito-internacional/comercio-internacional",
+        slug: "comercio-internacional",
+        category: "International Law",
+    },
+    {
+        title: "International Taxation",
+        description:
+            "International taxation refers to the tax rules and regulations applicable to transactions, profits, and income of companies and individuals operating in more than one country.",
+        full_description: [
+            "In common situations, such as a foreign subsidiary taxing its profits locally and the parent company paying taxes on the same profits in its home country, double taxation can occur.",
+            "Expatriates may also be taxed both in the country where they work and in their home country, which can significantly increase their tax burden.",
+            "Double Taxation Treaties (DTTs) are bilateral agreements that help avoid or reduce this excessive burden by regulating which country has the right to tax certain types of income. They can offer benefits such as reduced withholding taxes on dividends, royalties, and interest, as well as eliminating double taxation.",
+            "For companies operating internationally, strategic tax planning is essential to optimize their tax burden by taking advantage of DTTs and special tax regimes, such as free trade zones, foreign investment regimes that reduce taxes on reinvested profits, and simplified tax regimes that streamline processes and reduce taxes.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/tributacao-internacional",
+        slug: "tributacao-internacional",
+        category: "International Law",
+    },
+    {
+        title: "International Adoption",
+        description:
+            "A process where a child from one country is adopted by parents from another country, usually regulated by the Hague Convention, which aims to protect the best interests of the child.",
+        full_description: [
+            "The process is used when it is not possible to find a family in the country of origin and involves cooperation between the authorities of the countries of origin and adoption. These authorities ensure that the child is adoptable, that the prospective parents are qualified, and that no illegal payments or compensations are involved.",
+            "If one of the countries is not a signatory to the Convention, the process follows national laws. While it offers the opportunity for a new home for the child, international adoption can be complex, with legal, bureaucratic, and cultural adaptation challenges for both the child and adoptive parents.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/adocao-internacional",
+        slug: "adocao-internacional",
+        category: "International Law",
+    },
+    {
+        title: "Divorce of Marriage Performed Abroad",
+        description:
+            "The divorce of a marriage performed abroad follows a specific process, which first requires the recognition of the marriage in Brazil.",
+        full_description: [
+            "If the marriage has not been registered in the country, its homologation will be necessary for the divorce to have legal validity. Among the necessary documents for the divorce process are the original marriage certificate, translated by a sworn translator, and the personal documents of the spouses. In some cases, the homologation of the foreign marriage will also be required.",
+            "The judicial divorce procedure can be consensual, when both parties agree, or litigious, if there are disagreements, leading to a judicial resolution. As with divorces performed in Brazil, it is important to ensure that all rights and duties of the spouses are respected, including the division of assets, child custody, and alimony.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/divorcio-casamento-realizado-exterior",
+        slug: "divorcio-casamento-realizado-exterior",
+        category: "International Law",
+    },
+    {
+        title: "Recognition of Marriage Performed Abroad",
+        description:
+            "To register a marriage performed abroad in Brazil, it is necessary to follow some steps and gather the appropriate documentation.",
+        full_description: [
+            "The first step is to ensure you have the original marriage certificate, issued in the country where the marriage took place, duly translated by a sworn translator. In addition, personal documents of the spouses, such as RG and CPF, will be required.",
+            "The registration can be done in two ways: if the couple is still abroad, it is possible to register at the Brazilian consulate in the country where the marriage was performed, which facilitates the recognition process in Brazil. If the couple is already in Brazil, the registration must be done at a Civil Registry office, where the marriage will be formally recognized, ensuring its legal validity in Brazil and allowing it to produce all necessary legal effects.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/homologacao-casamento-realizado-exterior",
+        slug: "homologacao-casamento-realizado-exterior",
+        category: "International Law",
+    },
+    {
+        title: "Recognition of Foreign Judgment in Brazil",
+        description:
+            "A legal procedure by which a judicial decision issued in another country is recognized and becomes legally effective in Brazilian territory.",
+        full_description: [
+            "This process is fundamental to ensure that judgments, such as divorces, decisions on child custody, contractual disputes, or property issues, have legal validity in Brazil.",
+            "For a foreign judgment to be recognized in Brazil, it must meet several requirements. First, the judgment must be final and have been issued by a competent judicial authority in the country of origin. Additionally, the judgment must be translated by a sworn translator and legalized or apostilled, following international norms such as the Hague Convention.",
+            "The required documents include a certified copy of the judgment, an official translation into Portuguese, the full certificate of the judgment, and proof that the foreign court had jurisdiction to issue the decision.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/homologacao-sentenca-estrangeira-brasil",
+        slug: "homologacao-sentenca-estrangeira-brasil",
+        category: "International Law",
+    },
+    {
+        title: "Back-to-Back Operations",
+        description:
+            "International commercial transactions in which an intermediary company buys goods from a supplier in one country and sells them directly to a customer in another country, without the goods physically passing through the intermediary company's territory.",
+        full_description: [
+            "Back-to-back operations offer advantages such as logistics optimization and cost reduction, but they require technical and legal knowledge to ensure that the operation complies with international trade and tax regulations.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/operacoes-back-to-back",
+        slug: "operacoes-back-to-back",
+        category: "International Law",
+    },
+    {
+        title: "Maritime Incoterms",
+        description:
+            "A set of standardized rules that define the responsibilities of buyers and sellers in international transactions, specifically in the transportation of goods by sea.",
+        full_description: [
+            "In the context of international trade operations, maritime Incoterms are essential to define who will be responsible for transportation costs, merchandise insurance, and risk during the journey. Understanding and correctly using maritime Incoterms is crucial to avoid disputes and ensure legal security in international commercial transactions.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/incoterms-maritimos",
+        slug: "incoterms-maritimos",
+        category: "International Law",
+    },
+    {
+        title: "International Estate Planning",
+        description:
+            "The process of organizing the distribution of assets across multiple countries, ensuring that the transfer of wealth is carried out according to your wishes and in compliance with the local laws of each jurisdiction.",
+        full_description: [
+            "This type of planning is crucial for individuals with global assets, as it helps navigate varying legal frameworks, inheritance taxes, and cultural differences in succession laws. Each country may have different regulations regarding the distribution of assets, and without a comprehensive plan, the process can become complicated and costly for heirs.",
+            "Key benefits of international estate planning include the reduction of tax burdens through tax-efficient structures and the prevention of disputes among family members. By utilizing tools such as trusts, international wills, and funds, individuals can protect their assets and ensure a smooth transfer of wealth. Proper planning also ensures that your wishes are respected globally, minimizing the risk of legal conflicts or delays in asset distribution across borders.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/planejamento-patrimonial-internacional",
+        slug: "planejamento-patrimonial-internacional",
         category: "International Law",
     },
     {
@@ -275,25 +380,80 @@ export const Servicos_Internacional = [
         slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
         category: "International Law",
     },
-    {
-        title: "Waiver Requests",
-        description:
-            "Waiver requests are an essential tool in the legal field, especially in the context of immigration, business regulations, and international laws. Waivers allow individuals or companies to obtain exemptions from certain legal requirements that would otherwise be mandatory.",
-        full_description: [
-            "Waiver requests are an essential tool in the legal field, especially in the context of immigration, business regulations, and international laws. Waivers allow individuals or companies to obtain exemptions from certain legal requirements that would otherwise be mandatory. The importance of these requests lies in their ability to provide flexibility and relief in situations where strict compliance with the rules may be impractical or unfair.",
-            "The process of requesting a waiver begins with the clear identification of the need and the legal basis for the request. It is crucial for applicants to demonstrate compelling reasons why the waiver should be granted. This may involve presenting evidence of significant hardship, negative economic impact, or other mitigating circumstances. Preparing a waiver request requires a detailed analysis of legal requirements and a deep understanding of the specific context of the request.",
-            "Once prepared, the waiver request must be submitted to the competent authority, which may vary depending on the nature of the waiver and the jurisdiction. It could be a government agency, a regulatory body, or an international entity. The submission generally includes a formal petition accompanied by supporting documentation, such as affidavits, financial reports, medical certificates, and more. The rigor and quality of the documentation are crucial to increasing the chances of approval.",
-            "The peculiarities of waiver requests vary significantly depending on the field of application. In immigration, for example, a waiver may be requested to overcome a barrier of inadmissibility to the United States, such as a previous immigration violation or a criminal conviction. In a business context, waivers may be necessary for exemptions from certain regulatory requirements affecting international business operations. Each type of waiver has specific criteria and detailed procedures that must be rigorously followed.   ",
-            "In summary, waiver requests are a vital tool for obtaining legal relief in complex and challenging situations. The importance of this service lies in the possibility of flexibly applying the laws, offering fair and practical solutions for individuals and companies. With careful preparation, a deep understanding of legal requirements, and meticulous presentation, lawyers can effectively advocate for their clients' interests and maximize the chances of success in obtaining waivers.",
-        ],
-        image: "/general_assets/banner_direito_internacional.png",
-        link: "/direito-internacional/pedidos-waiver",
-        slug: "pedidos-waiver",
-        category: "International Law",
-    },
 ];
 
 export const Servicos_Migratorio = [
+    {
+        title: "L-1 Visa",
+        description:
+            "A temporary authorization that allows companies to transfer executives, managers, or professionals with specialized knowledge from a foreign branch to a subsidiary or affiliate in the United States.",
+        full_description: [
+            "The L-1 visa is a temporary authorization that allows companies to transfer executives, managers, or professionals with specialized knowledge from a foreign branch to a subsidiary or affiliate in the United States.",
+            "It is ideal for companies looking to expand their operations in the country, facilitating the opening of new branches or subsidiaries. One of the major benefits of this visa is that it does not require a specific degree and can be a pathway for executives and managers to apply for a Green Card without going through the labor certification process.",
+            "The transfer can occur internally, when the company already has a branch in the U.S., or it can be used to establish a new operation in the country, with the executive in charge of the initial management. The L-1 visa offers a practical solution for companies seeking to expand their activities in the U.S. and transfer their key leaders or specialists to oversee the operation.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-l-1",
+        slug: "visto-l-1",
+        category: "Immigration Law",
+    },
+    {
+        title: "E-1 Visa",
+        description:
+            "Designed for citizens of countries that have trade treaties with the United States, allowing them to substantially engage in the import and export of goods, services, or technology between the two countries.",
+        full_description: [
+            "The E-1 visa is designed for citizens of countries that have trade treaties with the United States, allowing them to substantially engage in the import and export of goods, services, or technology between the two countries.",
+            "To be eligible, you must be a citizen of one of these countries, be involved in substantial trade between the U.S. and the treaty country, and hold an essential position in the company, either as the principal operator or key employee.",
+            "The requirements include submitting the I-129 petition by the employer, documentation proving substantial trade transactions, completing the DS-160 form, and other supporting documents such as contracts and invoices. The E-1 visa allows import and export businesses to legally operate in the U.S., covering sectors such as technology, transportation, tourism, and financial services. Additionally, it can be renewed indefinitely as long as the requirements continue to be met.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-e-1",
+        slug: "visto-e-1",
+        category: "Immigration Law",
+    },
+    {
+        title: "E-2 Visa",
+        description:
+            "Allows citizens of countries with trade treaties with the United States to invest in a business in the country and temporarily reside while the business is operational.",
+        full_description: [
+            "The E-2 visa allows citizens of countries with trade treaties with the United States to invest in a business in the country and temporarily reside while the business is operational.",
+            "This visa is ideal for entrepreneurs who wish to expand their businesses and live in the U.S. To be eligible, the applicant must be a citizen of a country with a Treaty of Trade and Navigation with the U.S., such as Spain, Germany, Italy, France, and Portugal.",
+            "Additionally, a detailed business plan must be presented to prove the feasibility and growth potential of the business in the U.S. This plan should include a description of the company, market strategies, and financial projections. The E-2 visa offers several advantages, such as the possibility of residing in the U.S. with family, indefinite renewal while the business remains active, and work authorization for the spouse.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-e-2",
+        slug: "visto-e-2",
+        category: "Immigration Law",
+    },
+    {
+        title: "Marriage Visa for the United States",
+        description:
+            "This visa is requested when a U.S. citizen or permanent resident wishes to bring their foreign spouse to the U.S., either to live permanently or temporarily.",
+        full_description: [
+            "This visa is requested when a U.S. citizen or permanent resident wishes to bring their foreign spouse to the U.S., either to live permanently or temporarily.",
+            "There are different types of marriage visas, such as the CR-1 (conditional resident) or IR-1 (immediate resident) visas for those already married, and the K-1 (fiancé) visa for those intending to marry in the U.S.",
+            "The process involves submitting specific petitions and documentation, as well as meeting the legal eligibility requirements established by U.S. immigration laws. The goal is to demonstrate the legitimacy of the relationship and ensure that the foreign spouse meets the criteria to legally live in the country.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-de-casamento-eua",
+        slug: "visto-de-casamento-eua",
+        category: "Immigration Law",
+    },
+    {
+        title: "Pedidos de Waiver",
+        description: "Waivers allow individuals or companies to obtain exemptions from certain legal requirements that would otherwise be mandatory.",
+        full_description: [
+            "The importance of these requests lies in their ability to provide flexibility and relief in situations where strict compliance with the rules may be impractical or unfair. The waiver application process begins with a clear identification of the need and legal basis for the request.",
+            "Applicants must demonstrate compelling reasons why the waiver should be granted. This may involve presenting evidence of significant hardship, negative economic impact, or other mitigating circumstances. Preparing a waiver request requires a detailed analysis of the legal requirements and a deep understanding of the specific context of the application.",
+            "Once prepared, the waiver request must be submitted to the relevant authority, which may vary depending on the nature of the waiver and the jurisdiction. It could be a government agency, regulatory body, or international entity. The submission typically includes a formal petition accompanied by supporting documentation, such as sworn statements, financial reports, medical certificates, among others. The rigor and quality of the documentation are crucial to increasing the chances of approval.",
+            "The specifics of waiver requests vary significantly depending on the field of application. In immigration, for example, a waiver may be requested to overcome a barrier to admissibility to the United States, such as a previous immigration violation or criminal conviction. In a business context, waivers may be necessary to exempt certain regulatory requirements affecting the operation of international businesses. Each type of waiver has specific criteria and detailed procedures that must be strictly followed.",
+            "In summary, waiver requests are a vital tool for obtaining legal relief in complex and challenging situations. The importance of this service lies in the ability to flexibly apply the law, offering fair and practical solutions for individuals and businesses. With careful preparation, a deep understanding of the legal requirements, and meticulous presentation, lawyers can effectively advocate for their clients' interests and maximize the chances of success in obtaining waivers.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/pedidos-de-waiver",
+        slug: "pedidos-de-waiver",
+        category: "Immigration Law",
+    },
     {
         title: "EB-1 Visa",
         description:
@@ -408,6 +568,46 @@ export const Servicos_Aduaneiro = [
         category: "Customs Law",
     },
     {
+        title: "Drawback",
+        description:
+            "A special regime aimed at reducing taxes and stimulating Brazilian exports, allowing companies to acquire inputs with exemption, suspension, or tax refund.",
+        full_description: [
+            "This mechanism is essential to make Brazilian products more competitive in the international market, reducing production costs by eliminating taxes on inputs used in the manufacture of goods destined for export.",
+            "Among the taxes that can be suspended or refunded are Import Tax (II), Tax on Industrialized Products (IPI), and contributions to PIS/PASEP and Cofins.",
+            "For companies involved in foreign trade, Drawback is a powerful tool for cost reduction and increased competitiveness.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-aduaneiro/drawback",
+        slug: "drawback",
+        category: "Customs Law",
+    },
+    {
+        title: "Customs Warehouse",
+        description:
+            "A special regime in Customs Law that allows the storage of imported goods or goods destined for export without the immediate payment of taxes, such as Import Tax (II) and IPI.",
+        full_description: [
+            "This regime offers flexibility for companies to wait for the best destination of goods, whether for the domestic market or export, optimizing their operations and avoiding upfront tax costs.",
+            "Legal advice is essential to ensure the correct use of the regime and compliance with fiscal and customs obligations.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-aduaneiro/entreposto-aduaneiro",
+        slug: "entreposto-aduaneiro",
+        category: "Customs Law",
+    },
+    {
+        title: "Customs Clearance Parameterization",
+        description:
+            "A fundamental process in Customs Law, used by the Federal Revenue Service to determine the level of inspection required during the clearance of imported or exported goods.",
+        full_description: [
+            "This system classifies operations into different channels (green, yellow, red, and gray), each with a degree of verification, ranging from automatic release to the need for detailed physical or documentary inspection.",
+            "Customs clearance parameterization is based on risk criteria and aims to ensure compliance with legal and tax obligations, as well as prevent fraud and irregularities in foreign trade operations.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-aduaneiro/parametrizacao-aduaneira",
+        slug: "parametrizacao-aduaneira",
+        category: "Customs Law",
+    },
+    {
         title: "Tax Planning",
         description:
             "This process involves a detailed analysis of tax obligations and the implementation of strategies that allow for the reduction of tax liabilities within the limits of current legislation.",
@@ -456,40 +656,47 @@ export const Servicos_Aduaneiro = [
         category: "Customs Law",
     },
     {
-        title: "Protection and Defense of Rights in National Courts and Arbitration Chambers",
+        title: "Special Customs Regimes, Benefits, and Tax Incentives",
         description:
-            "This service is vital to ensuring that the rights of the parties are respected and that disputes are resolved according to the law.",
+            "Mechanisms provided in Customs Law that offer differentiated tax treatment for goods in international transit, aiming to promote foreign trade and increase the competitiveness of companies.",
         full_description: [
-            "The protection and defense of rights in national courts and arbitration chambers is a fundamental service offered by law firms to ensure that individuals and companies can resolve their conflicts fairly and effectively. This service is vital to ensuring that the rights of the parties are respected and that disputes are resolved according to the law. The importance of this practice lies in its ability to provide a definitive and binding resolution, minimizing the negative impact of prolonged conflicts.",
-            "The defense process in courts begins with a detailed analysis of the case. Lawyers review the facts, collect evidence, and analyze applicable laws to develop a robust legal strategy. This initial step is crucial to ensuring that the case is well-founded and that all legal options are explored. After preparing the case, lawyers represent their clients in all stages of the judicial process, from filing petitions to hearings and the final judgment.",
-            "In parallel with the traditional judicial system, arbitration emerges as an effective alternative for dispute resolution. Arbitration chambers offer a more flexible and private environment, allowing parties to choose arbitrators specialized in the subject matter. The arbitration process is generally faster and less formal than traditional judicial processes, and the arbitrators' decisions are legally binding and enforceable. This efficiency and specialization make arbitration an attractive option for resolving commercial and business disputes.",
-            "Defense in courts and arbitration chambers requires a deep understanding of the particularities of each forum. In courts, lawyers must be familiar with procedural rules and evidence standards, while in arbitration, it is crucial to understand the specific rules of the chosen arbitration chamber and applicable legislation. Additionally, negotiation and mediation skills are often essential to reach favorable agreements before a trial or arbitral decision.",
-            "In summary, the protection and defense of rights in national courts and arbitration chambers are essential for resolving disputes fairly and efficiently. With a strategic approach, detailed understanding of applicable laws and procedures, and the ability to effectively represent clients' interests, lawyers ensure that disputes are resolved satisfactorily. This service not only protects the rights of the parties involved but also promotes justice and stability in commercial and personal relationships, ensuring the continuity and peace of business and interpersonal relations.",
+            "These regimes allow the suspension, exemption, or reduction of taxes on imported or exported goods, providing greater flexibility and cost reduction in commercial operations.",
+            "Among the main special customs regimes are Drawback, which allows tax exemption on imported inputs destined for export; Customs Warehouse, which enables the storage of goods without immediate payment of taxes; Temporary Admission, which allows the entry of goods into the country for a determined period with tax suspension; and Temporary Exportation, which allows goods to leave the country with tax exemption, as long as they return to Brazil within a specified period.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
-        link: "/direito-aduaneiro/protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
-        slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
-        category: "Customs Law",
-    },
-    {
-        title: "Consultancy for Special Customs Regimes, Tax Benefits, and Incentives",
-        description:
-            ". This service is essential for companies operating in international trade, as it helps maximize operational efficiency and competitiveness in the global market.",
-        full_description: [
-            "Consultancy for special customs regimes, tax benefits, and incentives is a crucial legal service for companies that wish to optimize their commercial operations and reduce tax costs. This service is essential for companies operating in international trade, as it helps maximize operational efficiency and competitiveness in the global market. The importance of this service lies in its ability to provide significant savings, facilitate regulatory compliance, and explore available tax advantages.",
-            "The evaluation process begins with a detailed analysis of the company's operations and the opportunities available within special customs regimes and tax benefits. Specialized lawyers examine the company's import and export activities, identifying areas where regimes such as drawback, bonded warehouse, temporary admission regime, among others, can be applied. This analysis allows identifying the best strategies to minimize the tax burden and maximize operational efficiency.",
-            "After the initial analysis, lawyers work on preparing and submitting all necessary documentation to obtain benefits and tax incentives. This includes drafting requests, obtaining certificates, and coordinating with customs and tax authorities. The accuracy and completeness of the documents are crucial to ensure approval of applications and avoid delays or future problems. Additionally, lawyers continuously monitor legislative changes to ensure that the company is always in compliance.",
-            "A peculiarity of this service is the need for deep knowledge of the complex and frequently changing customs and tax laws and regulations. Each country has its own rules and specific benefits, requiring a personalized approach for each client. Additionally, applying special customs regimes may involve multiple jurisdictions, requiring careful coordination and a clear understanding of international implications.",
-            "In summary, consultancy for special customs regimes, tax benefits, and incentives is fundamental for companies that wish to optimize their commercial operations and reduce tax costs. With detailed analysis of operations, careful preparation of documentation, and continuous monitoring of compliance, specialized lawyers help companies maximize their tax advantages and operate more efficiently. This service not only provides significant savings but also ensures that operations comply with all applicable regulations, promoting competitiveness and long-term success of companies in the global market.",
-        ],
-        image: "/general_assets/banner_direito_aduaneiro.png",
-        link: "/direito-aduaneiro/assessoria-regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
-        slug: "assessoria-regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
+        link: "/direito-aduaneiro/regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
+        slug: "regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
         category: "Customs Law",
     },
 ];
 
 export const Servicos_Empresarial = [
+    {
+        title: "Appraisal of Withdrawing Partner’s Share",
+        description:
+            "An essential process in corporate law, used to calculate the value of a partner's share when they decide to withdraw from a company.",
+        full_description: [
+            "This procedure is crucial to ensure that the withdrawing partner fairly receives the value corresponding to their shares or quotas, considering the company's net worth, reserves, accumulated profits, and potential liabilities. Proper appraisal of the partner’s share helps prevent conflicts between the remaining partners and the one leaving the company, promoting an organized and transparent transition.",
+            "Furthermore, the process may involve thorough evaluations, including accounting expertise and detailed analysis of the company’s assets and liabilities. Another relevant aspect is defining the moment of the share appraisal, which may be the partner's withdrawal date or a date previously stipulated in the partnership agreement. Ensuring that the procedure is conducted with proper legal support is essential to protect the interests of all parties involved and avoid litigation that could compromise the continuity of the business.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-empresarial/apuracao-haveres-socio-retirante",
+        slug: "apuracao-haveres-socio-retirante",
+        category: "Business Law",
+    },
+    {
+        title: "Family Holding Company",
+        description: "An essential tool in estate and succession planning that allows the organization and protection of a family's assets.",
+        full_description: [
+            "Through the establishment of a holding company, it is possible to centralize the management of assets and properties in a single entity, ensuring greater control over administration and facilitating the division of assets among heirs.",
+            "Additionally, this legal structure allows for optimizing the tax burden, especially regarding the transfer of assets and the payment of taxes, offering fiscal advantages and avoiding future complications.",
+            "Another relevant aspect of a family holding company is asset protection against financial risks such as debts and lawsuits. By separating personal and business assets, the family gains more security in managing their properties, as well as ensuring that the succession process is carried out efficiently and harmoniously. This planning model is ideal for families seeking to preserve their legacy and facilitate business continuity, avoiding family conflicts and legal disputes.",
+        ],
+        image: "/general_assets/banner_direito_aduaneiro.png",
+        link: "/direito-empresarial/holding-familiar",
+        slug: "holding-familiar",
+        category: "Business Law",
+    },
     {
         title: "Consultancy and Strategic Legal Support for Negotiation and Business Model Development",
         description:
