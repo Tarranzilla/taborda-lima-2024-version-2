@@ -14,13 +14,6 @@ export const Banners_Data_PT = [
         link: "/direito-internacional",
     },
     {
-        title: "Direito Civil",
-        description:
-            "Atuamos em diversas áreas do direito civil, abrangendo Direito Bancário, Direito do Consumidor, Direito Contratual, Direito Imobiliário, Direito de Família e Sucessões, Indenizações, Arbitragens e Mediações.",
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil",
-    },
-    {
         title: "Direito Aduaneiro",
         description:
             "Oferecemos assistência em importação e exportação, com planejamento tributário especializado para transações de Comércio Exterior. Incluímos concessão de regimes aduaneiros especiais, identificação de benefícios fiscais e conformidade legal no Direito Aduaneiro.",
@@ -28,17 +21,31 @@ export const Banners_Data_PT = [
         link: "/direito-aduaneiro",
     },
     {
-        title: "Direito Empresarial",
-        description:
-            "Atuamos em diversas áreas do Direito Empresarial, incluindo Direito Societário, Direito Contratual, Direito Tributário, Direito do Trabalho, Direito da Concorrência, Direito do Consumidor, Direito Ambiental e Direito Internacional.",
-        image: "/general_assets/banner_direito_empresarial.png",
-        link: "/direito-empresarial",
-    },
-    {
         title: "Direito Desportivo",
         description:
             "Elaboração e negociação de contratos, patrocínios, direitos de imagem e de arena, proteção de marcas e assessoria em questões trabalhistas específicas do esporte, além de questões como controle antidoping, licenciamento e métodos alternativos para a resolução de conflitos jurídico-desportivos.",
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo",
+    },
+    {
+        title: "Direito do Entretenimento",
+        description:
+            "Elaboração e negociação de contratos, patrocínios, direitos de imagem e autorais, proteção de marcas e assessoria em questões trabalhistas específicas do entretenimento.",
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento",
+    },
+    {
+        title: "Direito Civil",
+        description:
+            "Atuamos em diversas áreas do direito civil, abrangendo Direito Bancário, Direito do Consumidor, Direito Contratual, Direito Imobiliário, Direito de Família e Sucessões, Indenizações, Arbitragens e Mediações.",
+        image: "/general_assets/banner_direito_civil.png",
+        link: "/direito-civil",
+    },
+    {
+        title: "Direito Empresarial",
+        description:
+            "Atuamos em diversas áreas do Direito Empresarial, incluindo Direito Societário, Direito Contratual, Direito Tributário, Direito do Trabalho, Direito da Concorrência, Direito do Consumidor, Direito Ambiental e Direito Internacional.",
+        image: "/general_assets/banner_direito_empresarial.png",
+        link: "/direito-empresarial",
     },
 ];
