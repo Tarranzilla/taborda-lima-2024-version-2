@@ -7,7 +7,7 @@ import { commonTransition } from "@/utils/Animations";
 import { useRouter } from "next/router";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin, faMailchimp } from "@fortawesome/free-brands-svg-icons";
 
 import { useSimpleTranslation } from "@/international/use_translation";
 
@@ -20,6 +20,7 @@ import NewInstaFeed from "@/components/NewInstaFeed";
 import NewBannerSlider from "@/components/NewBannerSlider";
 import ExpertiseSlider from "@/components/ExpertiseSlider";
 import { Expertise_Group, Expertise } from "@/content-list/services/portuguese";
+import { faNewspaper } from "@fortawesome/free-regular-svg-icons";
 
 const officePictures = [
     {
@@ -231,6 +232,16 @@ export default function Home() {
                         </div>
 
                         <div className="Intro_Actions_Container">
+                            <MotionLink
+                                whileTap={{ scale: 0.95 }}
+                                href={"https://mailchi.mp/eccc85dd3b44/assine-nossa-newsletter"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="Page_Button"
+                            >
+                                <p>Assine a Newsletter</p> <FontAwesomeIcon icon={faNewspaper} />
+                            </MotionLink>
+
                             <MotionLink
                                 whileTap={{ scale: 0.95 }}
                                 href={"https://www.instagram.com/tabordalima.internationallaw/"}
