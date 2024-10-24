@@ -8,6 +8,125 @@ export type Expertise = {
     category: string;
 };
 
+export const Servicos_Mercado_Capitais_Estangeiro = [
+    {
+        title: "Investment Visas",
+        description:
+            "We assist foreigners who wish to obtain residency in Brazil through investments. Our firm provides full support in establishing companies, ensuring that all legal steps are fulfilled.",
+        full_description: [
+            "We assist foreigners who wish to obtain residency in Brazil through investments. Our firm provides full support in establishing companies, ensuring that all legal steps are fulfilled.",
+            "Additionally, we handle the Registration of Foreign Investments with the Central Bank, ensuring compliance with Brazilian law and facilitating the process for investors looking to establish or expand their businesses in the country.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-investimento",
+        slug: "vistos-investimento",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Family Reunion Visas",
+        description: "For foreigners seeking to reside in Brazil due to marriage, stable union, or children.",
+        full_description: [
+            "We assist through all stages of the process, from planning to the preparation of necessary documentation. We also represent our clients in administrative appeals, ensuring their rights are upheld, providing peace of mind to keep their families together.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-reuniao-familiar",
+        slug: "vistos-reuniao-familiar",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Work Visas",
+        description: "Our firm offers complete consultancy for Brazilian companies and foreign employees in obtaining work visas.",
+        full_description: [
+            "We ensure that all legal requirements are met, guiding companies through the requirements for hiring foreigners and assisting in the preparation of all documentation. Our goal is to facilitate the process for foreigners to work legally in Brazil without bureaucratic obstacles.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-de-trabalho",
+        slug: "vistos-de-trabalho",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Other Types of Visas",
+        description:
+            "We provide legal support for foreigners seeking different types of visas, whether for retirement, studies, or technical activities.",
+        full_description: [
+            "Our team closely follows the immigration process, offering personalized consultancy for each situation. We analyze the best options to meet the needs of each client, aiming for legal residency in Brazil, either temporarily or permanently.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/outros-vistos",
+        slug: "outros-vistos",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Brazilian Naturalization",
+        description: "Our firm offers full advisory services for foreigners who wish to become naturalized Brazilian citizens.",
+        full_description: [
+            "We provide guidance on the legal requirements and act directly with the Ministry of Justice to conduct the process efficiently. Additionally, we represent clients in nationality option cases and in reversing the loss of nationality, ensuring proper handling of complex and sensitive processes.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/naturalizacao-brasileira",
+        slug: "naturalizacao-brasileira",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Deportation, Extradition, and Asylum",
+        description: "We represent foreigners in deportation, extradition, and asylum cases in Brazil.",
+        full_description: [
+            "Specializing in services for Francophone clients, we provide effective and personalized legal support to ensure the protection of our clients' rights. Our attorneys work with dedication to prevent the expulsion or extradition of individuals, seeking legal alternatives to ensure their stay in the country.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/deportacao-extradicao-asilo",
+        slug: "deportacao-extradicao-asilo",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Real Estate Purchase Advisory",
+        description:
+            "The purchase of real estate in Brazil by foreigners requires specific legal care, and we offer complete advisory throughout all phases of this process.",
+        full_description: [
+            "We conduct a thorough review of documents, draft purchase and sale contracts, and research debts related to both the property and the owner. In addition, we provide guidance on the stages of international fund transfers, ensuring a secure purchase in compliance with the law.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/assessoria-compra-imoveis",
+        slug: "assessoria-compra-imoveis",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "General Support for Foreign Residents in Brazil",
+        description:
+            "We offer broad assistance to foreigners residing in Brazil, facilitating the acquisition of necessary documents, retirement regularization, and representation in legal proceedings.",
+        full_description: [
+            "Taborda Lima Advogados also provides support to expatriates in matters such as visa renewal and regularization of their status in the country, always ensuring that all legal procedures are properly followed, so they can live safely and peacefully.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/suporte-geral-estrangeiro-residente-brasil",
+        slug: "suporte-geral-estrangeiro-residente-brasil",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Foreign Investment",
+        description:
+            "It involves the allocation of capital to businesses or projects outside the investor's home country, aiming to diversify revenue sources and explore new market opportunities.",
+        full_description: [
+            "In Brazil, this type of investment is regulated by specific laws, which aim to both protect investors and ensure local economic development. Taborda Lima Advogados offers complete support in this process, guiding foreign investors on regulatory compliance, taxation, and business structuring.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/investimento-estrangeiro",
+        slug: "investimento-estrangeiro",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Cross-Border Transactions",
+        description: "These refer to financial or commercial operations carried out between companies or individuals from different countries.",
+        full_description: [
+            "These transactions involve specific legal and regulatory challenges, such as differences in each country's laws, exchange policies, and bilateral agreements. Taborda Lima Advogados works to ensure these operations are carried out safely and efficiently, offering legal consultancy on topics like international contracts, project financing, and risk management in international transactions.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/transacoes-cross-border",
+        slug: "transacoes-cross-border",
+        category: "Capital Markets and Foreign Investment",
+    },
+];
+
 export const Servicos_Entretenimento = [
     {
         title: "Copyrights, Trademarks, and Publicity Rights",
@@ -899,5 +1018,12 @@ export const Exepertise_Data_EN = [
         head_title: "Entertainment Law | Taborda Lima & Associated Lawyers",
         head_description: "",
         expertises: Servicos_Entretenimento,
+    },
+    {
+        key: "mercado_de_capitais_e_invesimento_estrangeiro",
+        name: "Capital Market and Foreign Investment",
+        head_title: "Capital Market and Foreign Investment | Taborda Lima & Associated Lawyers",
+        head_description: "",
+        expertises: Servicos_Mercado_Capitais_Estangeiro,
     },
 ];

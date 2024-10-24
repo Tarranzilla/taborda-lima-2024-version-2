@@ -1,3 +1,123 @@
+export const Servicos_Mercado_Capitais_Estangeiro = [
+    {
+        title: "Vistos de Investimento",
+        description:
+            "Auxiliamos estrangeiros que desejam obter permanência no Brasil por meio de investimentos. Nosso escritório presta suporte completo na abertura de empresas, garantindo que todas as etapas legais sejam cumpridas.",
+        full_description: [
+            "Auxiliamos estrangeiros que desejam obter permanência no Brasil por meio de investimentos. Nosso escritório presta suporte completo na abertura de empresas, garantindo que todas as etapas legais sejam cumpridas.",
+            "Além disso, realizamos o Registro de Investimentos Estrangeiros no Banco Central, assegurando a conformidade com a legislação brasileira e facilitando o processo para investidores que desejam estabelecer ou expandir seus negócios no país.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-investimento",
+        slug: "vistos-investimento",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+    {
+        title: "Vistos de Reunião Familiar",
+        description: "Para estrangeiros que buscam permanecer no Brasil em razão de casamento, união estável ou filhos.",
+        full_description: [
+            "Acompanhamos todas as fases do processo, desde o planejamento até a preparação da documentação necessária. Também representamos nossos clientes em recursos administrativos, garantindo que seus direitos sejam assegurados, e proporcionando a tranquilidade necessária para manter suas famílias unidas.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-reuniao-familiar",
+        slug: "vistos-reuniao-familiar",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+    {
+        title: "Vistos de Trabalho",
+        description:
+            "Nosso escritório oferece consultoria completa para empresas brasileiras e funcionários estrangeiros na obtenção de vistos de trabalho.",
+        full_description: [
+            "Garantimos que todas as exigências legais sejam cumpridas, orientando as empresas sobre os requisitos para contratação de estrangeiros e auxiliando na preparação de toda a documentação. Nosso objetivo é facilitar o processo para que estrangeiros possam trabalhar legalmente no Brasil sem obstáculos burocráticos.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-de-trabalho",
+        slug: "vistos-de-trabalho",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+    {
+        title: "Outros Tipos de Vistos",
+        description:
+            "Prestamos suporte jurídico para estrangeiros que buscam diferentes tipos de vistos, seja por aposentadoria, estudos ou atividades técnicas.",
+        full_description: [
+            "Nosso time acompanha de perto o processo de imigração, oferecendo consultoria personalizada para cada situação. Analisamos as melhores opções para atender às necessidades de cada cliente, buscando a permanência legal no Brasil, seja de forma provisória ou permanente.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/outros-vistos",
+        slug: "outros-vistos",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+    {
+        title: "Naturalização Brasileira",
+        description: "Nosso escritório oferece assessoria completa para estrangeiros que desejam se naturalizar brasileiros.",
+        full_description: [
+            "Oferecemos orientações sobre os requisitos legais e atua diretamente junto ao Ministério da Justiça para conduzir o processo de forma eficiente. Além disso, representamos clientes em casos de opção de nacionalidade e na reversão de perda de nacionalidade, garantindo uma condução adequada de processos complexos e sensíveis.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/naturalizacao-brasileira",
+        slug: "naturalizacao-brasileira",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+    {
+        title: "Deportação, Extradição e Asilo",
+        description: "Atuamos na defesa de estrangeiros em processos de deportação, extradição e pedidos de asilo no Brasil.",
+        full_description: [
+            "Especializados no atendimento a clientes francófonos, oferecemos um suporte jurídico eficaz e personalizado para garantir a proteção dos direitos dos nossos clientes. Nossos advogados trabalham com dedicação para evitar a expulsão ou extradição de indivíduos, buscando alternativas legais para garantir sua permanência no país.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/deportacao-extradicao-asilo",
+        slug: "deportacao-extradicao-asilo",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+    {
+        title: "Assessoria na Compra de Imóveis",
+        description:
+            "A compra de imóveis no Brasil por estrangeiros exige cuidados jurídicos específicos, e nós oferecemos uma assessoria completa em todas as fases desse processo.",
+        full_description: [
+            "Realizamos a análise minuciosa de documentos, a elaboração de contratos de compra e venda, e a pesquisa de débitos tanto do imóvel quanto do proprietário. Além disso, orientamos sobre as etapas de remessa internacional de valores, assegurando uma compra segura e em conformidade com a legislação.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/assessoria-compra-imoveis",
+        slug: "assessoria-compra-imoveis",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+    {
+        title: "Suporte Geral ao Estrangeiro Residente no Brasil",
+        description:
+            "Oferecemos assistência ampla a estrangeiros que residem no Brasil, facilitando a obtenção de documentos necessários, regularização da aposentadoria e representação em processos judiciais.",
+        full_description: [
+            "A Taborda Lima Advogados também presta suporte a expatriados em questões como renovação de visto e regularização de sua situação no país, sempre garantindo que todos os trâmites legais sejam seguidos corretamente, para que possam viver com segurança e tranquilidade.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/suporte-geral-estrangeiro-residente-brasil",
+        slug: "suporte-geral-estrangeiro-residente-brasil",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+    {
+        title: "Investimento Estrangeiro",
+        description:
+            "Envolve a aplicação de capital em negócios ou projetos fora do país de origem do investidor, com o objetivo de diversificar fontes de receita e explorar novas oportunidades de mercado.",
+        full_description: [
+            "No Brasil, esse tipo de investimento é regulado por leis específicas, que buscam tanto proteger os investidores quanto garantir o desenvolvimento econômico local. O escritório Taborda Lima Advogados oferece suporte completo nesse processo, orientando investidores estrangeiros em questões como conformidade regulatória, tributação e estruturação de negócios.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/investimento-estrangeiro",
+        slug: "investimento-estrangeiro",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+    {
+        title: "Transações Cross-Border",
+        description: "Referem-se a operações financeiras ou comerciais realizadas entre empresas ou indivíduos de diferentes países.",
+        full_description: [
+            "Essas transações envolvem desafios legais e regulatórios específicos, como diferenças nas legislações de cada país, políticas de câmbio e acordos bilaterais. O escritório Taborda Lima Advogados atua para garantir que essas operações sejam realizadas de forma segura e eficiente, oferecendo consultoria jurídica em temas como contratos internacionais, financiamento de projetos e gestão de riscos em transações internacionais.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/transacoes-cross-border",
+        slug: "transacoes-cross-border",
+        category: "Mercado de Capitais e Investimento Estrangeiro",
+    },
+];
+
 export const Servicos_Entretenimento = [
     {
         title: "Direitos autorais, marcas registradas e direitos de publicidade",
@@ -910,5 +1030,12 @@ export const Exepertise_Data_PT = [
         head_title: "Direito do Entretenimento | Taborda Lima & Advogados Associados",
         head_description: "",
         expertises: Servicos_Entretenimento,
+    },
+    {
+        key: "mercado_de_capitais_e_invesimento_estrangeiro",
+        name: "Mercado de Capitais e Investimento Estrangeiro",
+        head_title: "Mercado de Capitais e Investimento Estrangeiro | Taborda Lima & Advogados Associados",
+        head_description: "",
+        expertises: Servicos_Mercado_Capitais_Estangeiro,
     },
 ];
