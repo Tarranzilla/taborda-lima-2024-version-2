@@ -44,6 +44,8 @@ export type WebStructure = {
         returnToCustomsLaw: string;
         returnToBusinessLaw: string;
         returnToSportsLaw: string;
+        returnToEntertainmentLaw: string;
+        returnToMarketLaw: string;
         customTitle: string;
         customDescription: string;
         customWebsiteURL: string;

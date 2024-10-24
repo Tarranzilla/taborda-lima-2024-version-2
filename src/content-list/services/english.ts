@@ -8,6 +8,93 @@ export type Expertise = {
     category: string;
 };
 
+export const Servicos_Entretenimento = [
+    {
+        title: "Copyrights, Trademarks, and Publicity Rights",
+        description:
+            "We protect your intellectual property rights, including trademark registration, copyrights, and image rights, ensuring that your work or brand is secure from misuse.",
+        full_description: [
+            "We protect your intellectual property rights, including trademark registration, copyrights, and image rights, ensuring that your work or brand is secure from misuse.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/direito-autoral-marcas-publicidade",
+        slug: "direito-autoral-marcas-publicidade",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Acquisition, Licensing, and Distribution of Intellectual Property",
+        description:
+            "We offer comprehensive legal advice on the acquisition, licensing, and distribution of audiovisual, musical, or digital content, ensuring that your rights are respected in contracts with third parties.",
+        full_description: [
+            "We offer comprehensive legal advice on the acquisition, licensing, and distribution of audiovisual, musical, or digital content, ensuring that your rights are respected in contracts with third parties.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/aquisicao-licenciamento-distribuicao-propriedade-intelectual",
+        slug: "aquisicao-licenciamento-distribuicao-propriedade-intelectual",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Intellectual Property Protection and Related Litigation",
+        description:
+            "We work to protect and defend your intellectual property rights, representing your interests in litigation cases, including copyright or trademark infringement actions.",
+        full_description: [
+            "We work to protect and defend your intellectual property rights, representing your interests in litigation cases, including copyright or trademark infringement actions.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/protecao-da-propriedade-intelectual",
+        slug: "protecao-da-propriedade-intelectual",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Artist Management and Endorsement Agreements",
+        description:
+            "We help artists and celebrities negotiate endorsement and management contracts, ensuring that the agreements benefit their careers and protect their public image.",
+        full_description: [
+            "We help artists and celebrities negotiate endorsement and management contracts, ensuring that the agreements benefit their careers and protect their public image.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/gestao-de-artistas-e-acordos-de-endosso",
+        slug: "gestao-de-artistas-e-acordos-de-endosso",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Audiovisual Productions and Licensing Dispute Resolution",
+        description:
+            "We provide legal support for audiovisual productions, from development to distribution, as well as resolve disputes involving the licensing of content across different platforms.",
+        full_description: [
+            "We provide legal support for audiovisual productions, from development to distribution, as well as resolve disputes involving the licensing of content across different platforms.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/producoes-audiovisuais-resolucao-disputas-licenciamento",
+        slug: "producoes-audiovisuais-resolucao-disputas-licenciamento",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Consulting on Data Privacy and Data Use in Advertising",
+        description:
+            "We advise our clients on complying with privacy regulations and the ethical use of data in advertising campaigns and digital marketing, ensuring compliance with national and international laws.",
+        full_description: [
+            "We advise our clients on complying with privacy regulations and the ethical use of data in advertising campaigns and digital marketing, ensuring compliance with national and international laws.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/consultoria-privacidade-dados-uso-dados-publicidade",
+        slug: "consultoria-privacidade-dados-uso-dados-publicidade",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Assistance with Film, Television, Music, and Live Event Agreements",
+        description:
+            "We negotiate and draft contracts for all aspects of the entertainment industry, such as film productions, TV shows, live events, and music tours, handling all legal details to ensure their success.",
+        full_description: [
+            "We negotiate and draft contracts for all aspects of the entertainment industry, such as film productions, TV shows, live events, and music tours, handling all legal details to ensure their success.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/assistencia-acordos-cinema-televisao-musica-eventos-ao-vivo",
+        slug: "assistencia-acordos-cinema-televisao-musica-eventos-ao-vivo",
+        category: "Entertainment Law",
+    },
+];
+
 export const Servicos_Civil = [
     {
         title: "Contract Law",
@@ -766,8 +853,8 @@ export const Servicos_Empresarial = [
 export const Exepertise_Data_EN = [
     {
         key: "civil",
-        name: "Serviços Civis",
-        head_title: "Direito Civil | Taborda Lima & Advogados Associados",
+        name: "Civil Law",
+        head_title: "Direito Civil | Taborda Lima & Associated Lawyers",
         head_description: "",
         expertises: Servicos_Civil,
     },
@@ -805,5 +892,12 @@ export const Exepertise_Data_EN = [
         head_title: "Business Law | Taborda Lima & Associated Lawyers",
         head_description: "",
         expertises: Servicos_Empresarial,
+    },
+    {
+        key: "entretenimento",
+        name: "Entertainment Law",
+        head_title: "Entertainment Law | Taborda Lima & Associated Lawyers",
+        head_description: "",
+        expertises: Servicos_Entretenimento,
     },
 ];

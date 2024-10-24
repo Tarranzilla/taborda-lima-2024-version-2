@@ -47,4 +47,11 @@ export const Banners_Data_EN = [
         image: "/general_assets/banner_direito_empresarial.png",
         link: "/direito-empresarial",
     },
+    {
+        title: "Capital Markets and Foreign Investment",
+        description:
+            "We offer specialized legal advice on capital market operations, including the issuance of shares and bonds, and support for foreign investments.",
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro",
+    },
 ];

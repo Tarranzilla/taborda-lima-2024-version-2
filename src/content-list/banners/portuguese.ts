@@ -48,4 +48,11 @@ export const Banners_Data_PT = [
         image: "/general_assets/banner_direito_empresarial.png",
         link: "/direito-empresarial",
     },
+    {
+        title: "Mercado de Capitais e Investimento Estrangeiro ",
+        description:
+            "Oferecemos consultoria jurídica especializada em operações no mercado de capitais, incluindo emissões de ações e títulos, e suporte em investimentos estrangeiros.",
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro",
+    },
 ];

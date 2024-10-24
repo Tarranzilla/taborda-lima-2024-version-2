@@ -14,7 +14,7 @@ const DireitoAduaneiro = () => {
     const t = useSimpleTranslation();
 
     const direito_aduaneiro = t.expertise_data[4];
-    const direito_aduaneiro_banner = t.landingPage.sections.expertise.expertiseBannerList[3];
+    const direito_aduaneiro_banner = t.landingPage.sections.expertise.expertiseBannerList[2];
     const expertises_direito_aduaneiro = t.expertise_data[4].expertises;
     return (
         <>

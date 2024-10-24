@@ -17,6 +17,8 @@ const english_web_structure: WebStructure = {
         returnToCustomsLaw: "Go to Customs Law",
         returnToBusinessLaw: "Go to Business Law",
         returnToSportsLaw: "Go to Sports Law",
+        returnToEntertainmentLaw: "Go to Entertainment Law",
+        returnToMarketLaw: "Go to Market Law",
         returnToMainPage: "Go to the Main Page",
         customTitle: "Taborda Lima | Advocacy and Legal Consultancy",
         customDescription:

@@ -18,6 +18,8 @@ const portuguese_web_structure: WebStructure = {
         returnToCustomsLaw: "Ir a Direito Aduaneiro",
         returnToBusinessLaw: "Ir a Direito Empresarial",
         returnToSportsLaw: "Ir a Direito Desportivo",
+        returnToEntertainmentLaw: "Ir a Direito do Entretenimento",
+        returnToMarketLaw: "Ir a Mercado de Capitais e Investimento Estrangeiro",
         customTitle: "Taborda Lima | Advocacia e Consultoria Legal",
         customDescription:
             "Escritório de advocacia em Curitiba, com mais de 30 anos de experiência no mercado e uma sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com o compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes.",

@@ -1,3 +1,90 @@
+export const Servicos_Entretenimento = [
+    {
+        title: "Direitos autorais, marcas registradas e direitos de publicidade",
+        description:
+            "Protegemos seus direitos de propriedade intelectual, incluindo registro de marcas, direitos autorais e direito de imagem, garantindo que sua obra ou marca esteja segura contra o uso indevido.",
+        full_description: [
+            "Protegemos seus direitos de propriedade intelectual, incluindo registro de marcas, direitos autorais e direito de imagem, garantindo que sua obra ou marca esteja segura contra o uso indevido.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/direito-autoral-marcas-publicidade",
+        slug: "direito-autoral-marcas-publicidade",
+        category: "Direito do Entretenimento",
+    },
+    {
+        title: "Aquisição, licenciamento e distribuição de propriedade intelectual",
+        description:
+            "Oferecemos assessoria jurídica completa na aquisição, licenciamento e distribuição de conteúdos audiovisuais, musicais ou digitais, assegurando que seus direitos sejam respeitados em contratos com terceiros.",
+        full_description: [
+            "Oferecemos assessoria jurídica completa na aquisição, licenciamento e distribuição de conteúdos audiovisuais, musicais ou digitais, assegurando que seus direitos sejam respeitados em contratos com terceiros.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/aquisicao-licenciamento-distribuicao-propriedade-intelectual",
+        slug: "aquisicao-licenciamento-distribuicao-propriedade-intelectual",
+        category: "Direito do Entretenimento",
+    },
+    {
+        title: "Proteção de direitos de propriedade intelectual e litígios relacionados",
+        description:
+            "Atuamos na proteção e defesa de seus direitos intelectuais, representando seus interesses em casos de litígios, inclusive em ações de violação de direitos autorais ou marcas.",
+        full_description: [
+            "Atuamos na proteção e defesa de seus direitos intelectuais, representando seus interesses em casos de litígios, inclusive em ações de violação de direitos autorais ou marcas.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/protecao-da-propriedade-intelectual",
+        slug: "protecao-da-propriedade-intelectual",
+        category: "Direito do Entretenimento",
+    },
+    {
+        title: "Gestão de artistas e acordos de endosso",
+        description:
+            "Ajudamos artistas e celebridades a negociar contratos de endosso e gestão, cuidando para que os acordos beneficiem suas carreiras e protejam sua imagem pública.",
+        full_description: [
+            "Ajudamos artistas e celebridades a negociar contratos de endosso e gestão, cuidando para que os acordos beneficiem suas carreiras e protejam sua imagem pública.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/gestao-de-artistas-e-acordos-de-endosso",
+        slug: "gestao-de-artistas-e-acordos-de-endosso",
+        category: "Direito do Entretenimento",
+    },
+    {
+        title: "Produções audiovisuais e resolução de disputas de licenciamento",
+        description:
+            "Oferecemos suporte jurídico para produções audiovisuais, desde o desenvolvimento até a distribuição, além de resolver disputas envolvendo o licenciamento de conteúdos para diferentes plataformas.",
+        full_description: [
+            "Oferecemos suporte jurídico para produções audiovisuais, desde o desenvolvimento até a distribuição, além de resolver disputas envolvendo o licenciamento de conteúdos para diferentes plataformas.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/producoes-audiovisuais-resolucao-disputas-licenciamento",
+        slug: "producoes-audiovisuais-resolucao-disputas-licenciamento",
+        category: "Direito do Entretenimento",
+    },
+    {
+        title: "Consultoria sobre privacidade de dados e uso de dados em publicidade",
+        description:
+            "Assessoramos nossos clientes no cumprimento de regulamentações de privacidade e no uso ético de dados em campanhas publicitárias e marketing digital, garantindo conformidade com leis nacionais e internacionais.",
+        full_description: [
+            "Assessoramos nossos clientes no cumprimento de regulamentações de privacidade e no uso ético de dados em campanhas publicitárias e marketing digital, garantindo conformidade com leis nacionais e internacionais.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/consultoria-privacidade-dados-uso-dados-publicidade",
+        slug: "consultoria-privacidade-dados-uso-dados-publicidade",
+        category: "Direito do Entretenimento",
+    },
+    {
+        title: "Assistência em acordos de cinema, televisão, música e eventos ao vivo",
+        description:
+            "Negociamos e elaboramos contratos para todos os aspectos da indústria do entretenimento, como produções de filmes, programas de TV, eventos ao vivo e turnês musicais, cuidando de todos os detalhes legais para garantir seu sucesso.",
+        full_description: [
+            "Negociamos e elaboramos contratos para todos os aspectos da indústria do entretenimento, como produções de filmes, programas de TV, eventos ao vivo e turnês musicais, cuidando de todos os detalhes legais para garantir seu sucesso.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/assistencia-acordos-cinema-televisao-musica-eventos-ao-vivo",
+        slug: "assistencia-acordos-cinema-televisao-musica-eventos-ao-vivo",
+        category: "Direito do Entretenimento",
+    },
+];
+
 export const Servicos_Civil = [
     {
         title: "Direito Contratual",
@@ -816,5 +903,12 @@ export const Exepertise_Data_PT = [
         head_title: "Direito Empresarial | Taborda Lima & Advogados Associados",
         head_description: "",
         expertises: Servicos_Empresarial,
+    },
+    {
+        key: "entretenimento",
+        name: "Direito do Entretenimento",
+        head_title: "Direito do Entretenimento | Taborda Lima & Advogados Associados",
+        head_description: "",
+        expertises: Servicos_Entretenimento,
     },
 ];
