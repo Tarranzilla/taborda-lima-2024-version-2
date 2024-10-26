@@ -32,7 +32,7 @@ export const Team_Data_PT = [
         role: "Advogado Sócio",
         slug: "cesar-augusto-taborda-lima",
         memberPage: "/sobre/cesar-augusto-taborda-lima",
-        linkedin: "https://www.linkedin.com/in/cesar-augusto-taborda-lima-7b1b1b1b1/",
+        linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 112654",
         oabLink: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=112654&tpinsc=A",
         bio: [
@@ -41,6 +41,42 @@ export const Team_Data_PT = [
             "Com uma carreira de tempo integral na Taborda Lima & Advogados Associados desde janeiro de 2017, acumulando mais de 7 anos e 2 meses de experiência, Cesar possui formação acadêmica em Direito e uma pós graduação em Direito Internacional pela Pontifícia Universidade Católica do Paraná.",
         ],
         image: "/team/equipe_cesar_01.png",
+    },
+    {
+        name: "Lilian Taborda",
+        role: "Advogada Sócia",
+        slug: "lilian-taborda",
+        memberPage: "/sobre/lilian-taborda",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Amanda Lazarotti Maciel",
+        role: "Controladoria",
+        slug: "amanda-lazarotti-maciel",
+        memberPage: "/sobre/amanda-lazarotti-maciel",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Juliana Prata",
+        role: "Compliance",
+        slug: "juliana-prata",
+        memberPage: "/sobre/juliana-prata",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_placeholder.png",
     },
     {
         name: "Daniella da Matta",

@@ -114,14 +114,7 @@ export default function Home() {
                             <MotionLink whileTap={{ scale: 0.95 }} href={"/sobre"} className="Page_Button">
                                 <p>{t.landingPage.sections.home.aboutUsBtn.title}</p> <span className="material-icons">arrow_forward</span>
                             </MotionLink>
-                            <MotionLink
-                                whileTap={{ scale: 0.95 }}
-                                href={"/#servicos"}
-                                className="Page_Button"
-                                onClick={() => {
-                                    handleWhatsApp_EN();
-                                }}
-                            >
+                            <MotionLink whileTap={{ scale: 0.95 }} href={"/mercado-de-capitais-e-investimento-estrangeiro"} className="Page_Button">
                                 <p>{t.landingPage.sections.home.internationalServicesBtn.title}</p>
                                 <span className="material-icons">arrow_forward</span>
                             </MotionLink>
@@ -168,28 +161,6 @@ export default function Home() {
                             ))}
                         </div>
 
-                        <m.button
-                            whileTap={{ scale: 0.95 }}
-                            onClick={() => {
-                                isEnglish ? handleScheduleWhatsApp_EN() : handleScheduleWhatsApp();
-                            }}
-                            className="Page_Button"
-                        >
-                            <p>{t.landingPage.sections.appointments.appointmentBtn.title}</p> <span className="material-icons">arrow_forward</span>
-                        </m.button>
-                    </div>
-                </section>
-
-                {/* Seção de Contato */}
-                <section id="contato">
-                    <div className="Container Container_Left Centered_Container Padded_Container">
-                        <div className="Coisa">
-                            <h1>{t.landingPage.sections.contact.title}</h1>
-                            {t.landingPage.sections.contact.paragraphs.map((paragraph, index) => (
-                                <p key={index}>{paragraph}</p>
-                            ))}
-                        </div>
-
                         <div className="Intro_Actions_Container">
                             {/*
                             
@@ -198,6 +169,22 @@ export default function Home() {
                             </button>
 
                             */}
+
+                            <MotionLink whileTap={{ scale: 0.95 }} href={"https://google.com"} className="Page_Button">
+                                <p>Rua Nilo Peçanha, nº648 - Centro Cívico - Curitiba - PR</p>
+                                <span className="material-icons">place</span>
+                            </MotionLink>
+
+                            <m.button
+                                whileTap={{ scale: 0.95 }}
+                                onClick={() => {
+                                    isEnglish ? handleScheduleWhatsApp_EN() : handleScheduleWhatsApp();
+                                }}
+                                className="Page_Button"
+                            >
+                                <p>{t.landingPage.sections.appointments.appointmentBtn.title}</p>{" "}
+                                <span className="material-icons">arrow_forward</span>
+                            </m.button>
 
                             <MotionLink whileTap={{ scale: 0.95 }} href={"mailto:contato@tabordalima.com"} className="Page_Button">
                                 <p>contato@tabordalima.com</p>
@@ -210,10 +197,6 @@ export default function Home() {
                                 <p>+55 41 3338 7611</p> <span className="material-icons">fax</span>
                             </MotionLink>
                         </div>
-                    </div>
-
-                    <div className="Container Container_Right Contact_Form_Container Dark_Container Unpadded_Container">
-                        <GoogleMap />
                     </div>
                 </section>
 

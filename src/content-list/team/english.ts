@@ -43,6 +43,42 @@ export const Team_Data_EN = [
         image: "/team/equipe_cesar_01.png",
     },
     {
+        name: "Lilian Taborda",
+        role: "Partner Lawyer",
+        slug: "lilian-taborda",
+        memberPage: "/sobre/lilian-taborda",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Amanda Lazarotti Maciel",
+        role: "Controllership",
+        slug: "amanda-lazarotti-maciel",
+        memberPage: "/sobre/amanda-lazarotti-maciel",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Juliana Prata",
+        role: "Compliance",
+        slug: "juliana-prata",
+        memberPage: "/sobre/juliana-prata",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_placeholder.png",
+    },
+    {
         name: "Daniella da Matta",
         role: "Controllership",
         slug: "daniella-da-matta",
