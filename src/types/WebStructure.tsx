@@ -1,11 +1,9 @@
 import { NavLink } from "./NavLink";
 import { Page } from "./Page";
-
 import ParagraphsWithTitle from "./ParagraphsWithTitle";
 
-import { TeamMember } from "./TeamMember";
 import { Expertise } from "./Expertise";
-import Banner from "./Banner";
+import { Expertise_Data } from "./Expertise_Data";
 
 // O site é definido como uma array de páginas, as páginas possuem uma estrutura recursiva de subpáginas
 export type WebStructure = {
@@ -215,7 +213,7 @@ export type WebStructure = {
                 };
             };
 
-            contact: {
+            contact?: {
                 key: string;
                 title: string;
 

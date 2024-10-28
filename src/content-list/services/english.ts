@@ -1,409 +1,175 @@
-export type Expertise = {
-    title: string;
-    description: string;
-    full_description: string[];
-    image: string;
-    link: string;
-    slug: string;
-    category: string;
-};
+import { Expertise } from "@/types/Expertise";
+import { Expertise_Data } from "@/types/Expertise_Data";
 
-export const Servicos_Mercado_Capitais_Estangeiro = [
+export const Servicos_Migratorio: Expertise[] = [
     {
-        title: "Investment Visas",
+        title: "L-1 Visa",
         description:
-            "We assist foreigners who wish to obtain residency in Brazil through investments. Our firm provides full support in establishing companies, ensuring that all legal steps are fulfilled.",
+            "A temporary authorization that allows companies to transfer executives, managers, or professionals with specialized knowledge from a foreign branch to a subsidiary or affiliate in the United States.",
         full_description: [
-            "We assist foreigners who wish to obtain residency in Brazil through investments. Our firm provides full support in establishing companies, ensuring that all legal steps are fulfilled.",
-            "Additionally, we handle the Registration of Foreign Investments with the Central Bank, ensuring compliance with Brazilian law and facilitating the process for investors looking to establish or expand their businesses in the country.",
+            "The L-1 visa is a temporary authorization that allows companies to transfer executives, managers, or professionals with specialized knowledge from a foreign branch to a subsidiary or affiliate in the United States.",
+            "It is ideal for companies looking to expand their operations in the country, facilitating the opening of new branches or subsidiaries. One of the major benefits of this visa is that it does not require a specific degree and can be a pathway for executives and managers to apply for a Green Card without going through the labor certification process.",
+            "The transfer can occur internally, when the company already has a branch in the U.S., or it can be used to establish a new operation in the country, with the executive in charge of the initial management. The L-1 visa offers a practical solution for companies seeking to expand their activities in the U.S. and transfer their key leaders or specialists to oversee the operation.",
         ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-investimento",
-        slug: "vistos-investimento",
-        category: "Capital Markets and Foreign Investment",
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-l-1",
+        slug: "visto-l-1",
+        category: "Immigration Law",
     },
     {
-        title: "Family Reunion Visas",
-        description: "For foreigners seeking to reside in Brazil due to marriage, stable union, or children.",
-        full_description: [
-            "We assist through all stages of the process, from planning to the preparation of necessary documentation. We also represent our clients in administrative appeals, ensuring their rights are upheld, providing peace of mind to keep their families together.",
-        ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-reuniao-familiar",
-        slug: "vistos-reuniao-familiar",
-        category: "Capital Markets and Foreign Investment",
-    },
-    {
-        title: "Work Visas",
-        description: "Our firm offers complete consultancy for Brazilian companies and foreign employees in obtaining work visas.",
-        full_description: [
-            "We ensure that all legal requirements are met, guiding companies through the requirements for hiring foreigners and assisting in the preparation of all documentation. Our goal is to facilitate the process for foreigners to work legally in Brazil without bureaucratic obstacles.",
-        ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-de-trabalho",
-        slug: "vistos-de-trabalho",
-        category: "Capital Markets and Foreign Investment",
-    },
-    {
-        title: "Other Types of Visas",
+        title: "E-1 Visa",
         description:
-            "We provide legal support for foreigners seeking different types of visas, whether for retirement, studies, or technical activities.",
+            "Designed for citizens of countries that have trade treaties with the United States, allowing them to substantially engage in the import and export of goods, services, or technology between the two countries.",
         full_description: [
-            "Our team closely follows the immigration process, offering personalized consultancy for each situation. We analyze the best options to meet the needs of each client, aiming for legal residency in Brazil, either temporarily or permanently.",
+            "The E-1 visa is designed for citizens of countries that have trade treaties with the United States, allowing them to substantially engage in the import and export of goods, services, or technology between the two countries.",
+            "To be eligible, you must be a citizen of one of these countries, be involved in substantial trade between the U.S. and the treaty country, and hold an essential position in the company, either as the principal operator or key employee.",
+            "The requirements include submitting the I-129 petition by the employer, documentation proving substantial trade transactions, completing the DS-160 form, and other supporting documents such as contracts and invoices. The E-1 visa allows import and export businesses to legally operate in the U.S., covering sectors such as technology, transportation, tourism, and financial services. Additionally, it can be renewed indefinitely as long as the requirements continue to be met.",
         ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/outros-vistos",
-        slug: "outros-vistos",
-        category: "Capital Markets and Foreign Investment",
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-e-1",
+        slug: "visto-e-1",
+        category: "Immigration Law",
     },
     {
-        title: "Brazilian Naturalization",
-        description: "Our firm offers full advisory services for foreigners who wish to become naturalized Brazilian citizens.",
-        full_description: [
-            "We provide guidance on the legal requirements and act directly with the Ministry of Justice to conduct the process efficiently. Additionally, we represent clients in nationality option cases and in reversing the loss of nationality, ensuring proper handling of complex and sensitive processes.",
-        ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/naturalizacao-brasileira",
-        slug: "naturalizacao-brasileira",
-        category: "Capital Markets and Foreign Investment",
-    },
-    {
-        title: "Deportation, Extradition, and Asylum",
-        description: "We represent foreigners in deportation, extradition, and asylum cases in Brazil.",
-        full_description: [
-            "Specializing in services for Francophone clients, we provide effective and personalized legal support to ensure the protection of our clients' rights. Our attorneys work with dedication to prevent the expulsion or extradition of individuals, seeking legal alternatives to ensure their stay in the country.",
-        ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/deportacao-extradicao-asilo",
-        slug: "deportacao-extradicao-asilo",
-        category: "Capital Markets and Foreign Investment",
-    },
-    {
-        title: "Real Estate Purchase Advisory",
+        title: "E-2 Visa",
         description:
-            "The purchase of real estate in Brazil by foreigners requires specific legal care, and we offer complete advisory throughout all phases of this process.",
+            "Allows citizens of countries with trade treaties with the United States to invest in a business in the country and temporarily reside while the business is operational.",
         full_description: [
-            "We conduct a thorough review of documents, draft purchase and sale contracts, and research debts related to both the property and the owner. In addition, we provide guidance on the stages of international fund transfers, ensuring a secure purchase in compliance with the law.",
+            "The E-2 visa allows citizens of countries with trade treaties with the United States to invest in a business in the country and temporarily reside while the business is operational.",
+            "This visa is ideal for entrepreneurs who wish to expand their businesses and live in the U.S. To be eligible, the applicant must be a citizen of a country with a Treaty of Trade and Navigation with the U.S., such as Spain, Germany, Italy, France, and Portugal.",
+            "Additionally, a detailed business plan must be presented to prove the feasibility and growth potential of the business in the U.S. This plan should include a description of the company, market strategies, and financial projections. The E-2 visa offers several advantages, such as the possibility of residing in the U.S. with family, indefinite renewal while the business remains active, and work authorization for the spouse.",
         ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/assessoria-compra-imoveis",
-        slug: "assessoria-compra-imoveis",
-        category: "Capital Markets and Foreign Investment",
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-e-2",
+        slug: "visto-e-2",
+        category: "Immigration Law",
     },
     {
-        title: "General Support for Foreign Residents in Brazil",
+        title: "Marriage Visa for the United States",
         description:
-            "We offer broad assistance to foreigners residing in Brazil, facilitating the acquisition of necessary documents, retirement regularization, and representation in legal proceedings.",
+            "This visa is requested when a U.S. citizen or permanent resident wishes to bring their foreign spouse to the U.S., either to live permanently or temporarily.",
         full_description: [
-            "Taborda Lima Advogados also provides support to expatriates in matters such as visa renewal and regularization of their status in the country, always ensuring that all legal procedures are properly followed, so they can live safely and peacefully.",
+            "This visa is requested when a U.S. citizen or permanent resident wishes to bring their foreign spouse to the U.S., either to live permanently or temporarily.",
+            "There are different types of marriage visas, such as the CR-1 (conditional resident) or IR-1 (immediate resident) visas for those already married, and the K-1 (fiancé) visa for those intending to marry in the U.S.",
+            "The process involves submitting specific petitions and documentation, as well as meeting the legal eligibility requirements established by U.S. immigration laws. The goal is to demonstrate the legitimacy of the relationship and ensure that the foreign spouse meets the criteria to legally live in the country.",
         ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/suporte-geral-estrangeiro-residente-brasil",
-        slug: "suporte-geral-estrangeiro-residente-brasil",
-        category: "Capital Markets and Foreign Investment",
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-de-casamento-eua",
+        slug: "visto-de-casamento-eua",
+        category: "Immigration Law",
     },
     {
-        title: "Foreign Investment",
+        title: "Pedidos de Waiver",
+        description: "Waivers allow individuals or companies to obtain exemptions from certain legal requirements that would otherwise be mandatory.",
+        full_description: [
+            "The importance of these requests lies in their ability to provide flexibility and relief in situations where strict compliance with the rules may be impractical or unfair. The waiver application process begins with a clear identification of the need and legal basis for the request.",
+            "Applicants must demonstrate compelling reasons why the waiver should be granted. This may involve presenting evidence of significant hardship, negative economic impact, or other mitigating circumstances. Preparing a waiver request requires a detailed analysis of the legal requirements and a deep understanding of the specific context of the application.",
+            "Once prepared, the waiver request must be submitted to the relevant authority, which may vary depending on the nature of the waiver and the jurisdiction. It could be a government agency, regulatory body, or international entity. The submission typically includes a formal petition accompanied by supporting documentation, such as sworn statements, financial reports, medical certificates, among others. The rigor and quality of the documentation are crucial to increasing the chances of approval.",
+            "The specifics of waiver requests vary significantly depending on the field of application. In immigration, for example, a waiver may be requested to overcome a barrier to admissibility to the United States, such as a previous immigration violation or criminal conviction. In a business context, waivers may be necessary to exempt certain regulatory requirements affecting the operation of international businesses. Each type of waiver has specific criteria and detailed procedures that must be strictly followed.",
+            "In summary, waiver requests are a vital tool for obtaining legal relief in complex and challenging situations. The importance of this service lies in the ability to flexibly apply the law, offering fair and practical solutions for individuals and businesses. With careful preparation, a deep understanding of the legal requirements, and meticulous presentation, lawyers can effectively advocate for their clients' interests and maximize the chances of success in obtaining waivers.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/pedidos-de-waiver",
+        slug: "pedidos-de-waiver",
+        category: "Immigration Law",
+    },
+    {
+        title: "EB-1 Visa",
         description:
-            "It involves the allocation of capital to businesses or projects outside the investor's home country, aiming to diversify revenue sources and explore new market opportunities.",
+            "Obtaining the EB-1 Visa is an essential service for individuals with extraordinary abilities who wish to reside and work in the United States.",
         full_description: [
-            "In Brazil, this type of investment is regulated by specific laws, which aim to both protect investors and ensure local economic development. Taborda Lima Advogados offers complete support in this process, guiding foreign investors on regulatory compliance, taxation, and business structuring.",
+            "Obtaining the EB-1 Visa is an essential service for individuals with extraordinary abilities who wish to reside and work in the United States. This visa is of great importance to distinguished professionals, including scientists, artists, educators, executives, and athletes, who have a proven track record of significant achievements in their respective fields. Expertise in immigration law is crucial to navigate the complex requirements of this visa, ensuring that qualified candidates can take advantage of the unique opportunities offered by this immigration program.",
+            "The process of obtaining the EB-1 Visa begins with the preparation and submission of an immigrant petition, known as Form I-140, to the United States Citizenship and Immigration Services (USCIS). This petition must be accompanied by substantial evidence demonstrating the candidate's extraordinary ability, such as international awards, publications, significant contributions to the field, and recognition by organizations and peers. Additionally, the candidate must demonstrate that they will continue to work in their area of expertise in the United States. Presenting a well-documented and convincing petition is crucial to success in the EB-1 Visa process.",
+            "A peculiarity of the EB-1 Visa is that it does not require a job offer in the United States, unlike many other types of work visas. This means that individuals with extraordinary abilities can apply on their own, based solely on their accomplishments and potential to continue making significant contributions in their fields. Additionally, the EB-1 Visa offers a fast track to permanent residency (green card), allowing beneficiaries and their families to settle in the United States more quickly compared to other employment-based visas.",
+            "The importance of the EB-1 Visa lies in its ability to attract and retain exceptional talent from around the world, strengthening the environment of innovation and excellence in the United States. This visa not only benefits the individuals who receive it but also contributes to the advancement of industries, academia, science, and culture in the country. Immigration law specialists play a crucial role in guiding candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and strategically.",
+            "In summary, the EB-1 Visa is a vital component of immigration law that allows individuals with extraordinary abilities to reside and work in the United States. This service ensures that qualified candidates can take advantage of the unique opportunities offered by this immigration program, significantly contributing to advancement and innovation in various fields. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-1 Visa.",
         ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/investimento-estrangeiro",
-        slug: "investimento-estrangeiro",
-        category: "Capital Markets and Foreign Investment",
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-eb-1",
+        slug: "visto-eb-1",
+        category: "Immigration Law",
     },
     {
-        title: "Cross-Border Transactions",
-        description: "These refer to financial or commercial operations carried out between companies or individuals from different countries.",
+        title: "EB-2 Visa",
+        description:
+            "Obtaining the EB-2 Visa is an essential service for professionals with exceptional abilities or advanced degrees who wish to reside and work in the United States.",
         full_description: [
-            "These transactions involve specific legal and regulatory challenges, such as differences in each country's laws, exchange policies, and bilateral agreements. Taborda Lima Advogados works to ensure these operations are carried out safely and efficiently, offering legal consultancy on topics like international contracts, project financing, and risk management in international transactions.",
+            "Obtaining the EB-2 Visa is an essential service for professionals with exceptional abilities or advanced degrees who wish to reside and work in the United States. This visa is of great importance to specialists in various fields, including science, business, arts, and education, allowing them to contribute significantly to the country's economy and technological development. Expertise in immigration law is crucial to navigate the complex requirements of this visa, ensuring that qualified candidates can maximize their chances of success.",
+            "The process of obtaining the EB-2 Visa begins with the preparation and submission of an immigrant petition, Form I-140, to the United States Citizenship and Immigration Services (USCIS). There are two main subcategories for the EB-2 Visa: EB-2(a), for individuals with advanced degrees, and EB-2(b), for those with exceptional abilities. Additionally, there is the EB-2(c) subcategory for the National Interest Waiver (NIW), which allows certain candidates to qualify without the need for a job offer if they can demonstrate that their presence in the U.S. would be of significant benefit to the country. Each of these subcategories requires meticulous and detailed documentation to prove the candidate's eligibility.",
+            "A peculiarity of the EB-2 Visa is the possibility of the National Interest Waiver (NIW), which allows candidates with exceptional abilities or advanced degrees to request a waiver of the job offer requirement if they can prove that their admission is in the national interest of the United States. This is particularly relevant for professionals whose skills or work are considered critical to the economic, educational, cultural, or scientific development of the U.S. This process requires a well-founded petition, demonstrating how the candidate's presence in the U.S. will substantially benefit the country.",
+            "The importance of the EB-2 Visa lies in its ability to attract highly qualified professionals with exceptional abilities who can contribute significantly to innovation, research, and development in various fields in the United States. This visa not only benefits the individuals who receive it but also strengthens the U.S.'s competitiveness and leadership in various industries and fields of study. Immigration law specialists play a crucial role in guiding candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and convincingly.",
+            "In summary, the EB-2 Visa is a vital component of immigration law that allows professionals with exceptional abilities or advanced degrees to reside and work in the United States. This service ensures that qualified candidates can take advantage of the opportunities offered by this immigration program, significantly contributing to advancement and innovation in various fields. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-2 Visa.",
         ],
-        image: "/general_assets/banner_mercado_capital.jpg",
-        link: "/mercado-de-capitais-e-investimento-estrangeiro/transacoes-cross-border",
-        slug: "transacoes-cross-border",
-        category: "Capital Markets and Foreign Investment",
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-eb-2",
+        slug: "visto-eb-2",
+        category: "Immigration Law",
+    },
+    {
+        title: "EB-3 Visa",
+        description:
+            "Obtaining the EB-3 Visa is crucial for skilled workers, professionals, and other workers who wish to reside and work in the United States.",
+        full_description: [
+            "Obtaining the EB-3 Visa is crucial for skilled workers, professionals, and other workers who wish to reside and work in the United States. This visa is of great importance for individuals who possess specific skills or professional experience that are highly demanded by the American labor market. Expertise in immigration law is essential to guide candidates through the necessary requirements and procedures to obtain this visa, ensuring they can take advantage of the opportunities offered by the immigration program.",
+            "The process of obtaining the EB-3 Visa begins with securing a job offer from a U.S. employer who must be willing to sponsor the candidate. The employer must initiate the process by requesting a Labor Certification from the U.S. Department of Labor, demonstrating that there are no qualified, available, and willing American workers to fill the offered position. Once the certification is obtained, the employer can then submit an immigrant petition, known as Form I-140, to the United States Citizenship and Immigration Services (USCIS). This petition must include evidence of the candidate's qualifications and the genuineness of the job offer.",
+            "A peculiarity of the EB-3 Visa is that it is subdivided into three categories: skilled workers, professionals, and other workers. Skilled workers are those who have at least two years of experience or training in the specified occupation. Professionals are those who have a bachelor's degree or its equivalent in the relevant field. Other workers include occupations that require less than two years of experience or training. Each subcategory has its specific requirements and priority levels, which can affect processing times and visa availability.",
+            "The importance of the EB-3 Visa lies in its ability to fill critical gaps in the U.S. labor market, allowing employers to access qualified foreign talent to meet their labor needs. This visa not only benefits employers by fulfilling the demand for skilled workers but also offers candidates the opportunity to build a new life in the United States, contributing to the country's economy and society. Immigration law specialists play a crucial role in guiding employers and candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and convincingly.",
+            "In summary, the EB-3 Visa is a vital component of immigration law that allows skilled workers, professionals, and other workers to reside and work in the United States. This service ensures that qualified candidates can take advantage of the opportunities offered by this immigration program, significantly contributing to the country's economic and social development. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-3 Visa.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-eb-3",
+        slug: "visto-eb-3",
+        category: "Immigration Law",
+    },
+    {
+        title: "EB-4 Visa",
+        description:
+            "This visa is of great importance to a variety of individuals, including religious workers, employees of international organizations, physicians, U.S. government translators, among others.",
+        full_description: [
+            "Obtaining the EB-4 Visa is essential for certain categories of special immigrants who wish to reside and work in the United States. This visa is of great importance to a variety of individuals, including religious workers, employees of international organizations, physicians, U.S. government translators, among others. Expertise in immigration law is fundamental to navigate the specific requirements of this visa, ensuring that qualified candidates can maximize their chances of success.",
+            "The process of obtaining the EB-4 Visa begins with determining the candidate's eligibility according to one of the special immigrant subcategories. The employer or the candidate must submit an immigrant petition, known as Form I-360, to the United States Citizenship and Immigration Services (USCIS). Each subcategory has specific requirements that must be met and documented, such as proof of continuous employment for religious workers or qualified service for Iraq or Afghan translators who worked with the U.S. government. After the petition is approved, candidates can apply for an immigrant visa through the U.S. consulate or adjust their status if they are already in the United States.",
+            "A peculiarity of the EB-4 Visa is the wide range of categories it covers, each with its own requirements and qualification processes. For example, religious workers must demonstrate that they have been members of a religious denomination for at least two years and that they will continue to work in a religious capacity in the United States. Foreign physicians who have committed to working in underserved areas in the U.S. must also provide evidence of their commitment and qualifications. Due to the diversity of categories, specialized lawyers need to have a deep knowledge of the various requirements and be able to adapt their strategies accordingly.",
+            "The importance of the EB-4 Visa lies in its ability to facilitate the immigration of individuals who provide essential services and significant contributions to American society. This visa not only benefits the individuals who receive it but also supports the communities and organizations that depend on their services. The presence of these professionals and specialized workers strengthens the social and economic fabric of the United States, promoting diversity and inclusion. Immigration law specialists play a crucial role in guiding candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and convincingly.",
+            "In summary, the EB-4 Visa is a vital component of immigration law that allows special immigrants to reside and work in the United States. This service ensures that qualified candidates can take advantage of the opportunities offered by this immigration program, significantly contributing to American society. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-4 Visa.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-eb-4",
+        slug: "visto-eb-4",
+        category: "Immigration Law",
+    },
+    {
+        title: "EB-5 Visa",
+        description: "EB-5 Visa is highly sought after by foreign investors who wish to reside permanently in the United States.",
+        full_description: [
+            "Obtaining the EB-5 Visa is highly sought after by foreign investors who wish to reside permanently in the United States. This visa is of great importance to individuals and their families seeking business opportunities and residency in the U.S. through investment in commercial projects. Expertise in immigration law is essential to guide investors through the complex requirements and procedures necessary to obtain this visa, ensuring they can take advantage of the opportunities offered by the EB-5 program.",
+            "The process of obtaining the EB-5 Visa involves making a substantial investment in a commercial project in the United States that creates jobs and promotes economic growth. Investors must invest at least $1.8 million in a general commercial project or at least $900,000 in designated high-unemployment or rural areas, known as Targeted Employment Areas (TEAs). Additionally, the investment must result in the creation of at least 10 full-time jobs for qualified American workers. Immigration law specialists play a crucial role in guiding investors in identifying eligible projects and meeting all EB-5 program requirements.",
+            "A peculiarity of the EB-5 Visa is that it offers a relatively direct route to permanent residency in the United States, without the need for a job offer or employer sponsorship. This provides investors and their families with greater flexibility and control over their immigration status and allows them to pursue business and educational opportunities in the U.S. However, the process of obtaining the EB-5 Visa can be complex and lengthy, and investors must be prepared to face challenges such as selecting suitable projects, analyzing financial risks, and complying with EB-5 program regulations.",
+            "The importance of the EB-5 Visa lies in its ability to attract foreign investment to the United States, promoting economic development and job creation in the country. This visa not only benefits the investors and their families but also supports local communities and the American economy as a whole. The EB-5 program plays a crucial role in funding a variety of commercial projects, from real estate developments to infrastructure and regional development. Immigration law specialists play a fundamental role in guiding investors through the complex application process, ensuring all requirements are met and the investment is made legally and effectively.",
+            "In summary, the EB-5 Visa is a vital component of immigration law that offers foreign investors a unique opportunity to reside permanently in the United States through investment in commercial projects. This service ensures that qualified investors can take advantage of the opportunities offered by the EB-5 program, contributing to economic growth and community development in the U.S. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring investors make successful investments and meet all EB-5 program requirements.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-eb-5",
+        slug: "visto-eb-5",
+        category: "Immigration Law",
+    },
+    {
+        title: "Artist Visa (O-1 Visa)",
+        description: "Indicated for talented artists and creative professionals who wish to work temporarily in the United States.",
+        full_description: [
+            "Obtaining the Artist Visa, known as the O-1 Visa, is essential for talented artists and creative professionals who wish to work temporarily in the United States. This visa is of great importance to individuals who possess extraordinary abilities in the fields of visual arts, music, film, television, theater, and more, and who wish to contribute to the American cultural industry. Expertise in immigration law is crucial to guide artists through the complex requirements and procedures necessary to obtain this visa, ensuring they can take advantage of the opportunities offered by the O-1 program.",
+            "The process of obtaining the O-1 Visa involves submitting a nonimmigrant petition, known as Form I-129, to the United States Citizenship and Immigration Services (USCIS). Candidates must prove their extraordinary ability or notable achievements in their field, through recognized national or international awards, participation in prominent events, positive reviews of their work, or evidence of exceptional remuneration for their services. Additionally, candidates must demonstrate that they have a job offer in the United States to perform activities related to their field.",
+            "A peculiarity of the O-1 Visa is that it is intended for individuals who excel in their respective fields, whether in the arts, entertainment, sports, or business. Beneficiaries of the O-1 Visa can include artists, musicians, actors, directors, screenwriters, designers, and other creative professionals who have achieved a high level of recognition and excellence in their careers. This visa offers artists the opportunity to work temporarily in the United States, collaborate with other talented professionals, and contribute to the cultural diversity of the country.",
+            "The importance of the O-1 Visa lies in its ability to attract extraordinary talent to the United States, enriching the country's cultural and artistic industry. This visa not only benefits the artists who receive it but also contributes to the growth and diversity of the arts in the U.S., promoting innovation and excellence in various fields. The O-1 program plays a crucial role in strengthening the United States' position as a global center of creativity and artistic expression. Immigration law specialists play a fundamental role in guiding artists through the complex application process, ensuring all requirements are met and the petition is presented accurately and convincingly.",
+            "In summary, the Artist Visa (O-1 Visa) is a vital component of immigration law that offers talented artists a unique opportunity to work temporarily in the United States. This service ensures that qualified artists can take advantage of the opportunities offered by the O-1 program, significantly contributing to the American cultural and artistic industry. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that artists present well-documented and convincing petitions, increasing their chances of success in obtaining the O-1 Visa.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-artista-o-1",
+        slug: "visto-artista-o-1",
+        category: "Immigration Law",
     },
 ];
 
-export const Servicos_Entretenimento = [
-    {
-        title: "Copyrights, Trademarks, and Publicity Rights",
-        description:
-            "We protect your intellectual property rights, including trademark registration, copyrights, and image rights, ensuring that your work or brand is secure from misuse.",
-        full_description: [
-            "We protect your intellectual property rights, including trademark registration, copyrights, and image rights, ensuring that your work or brand is secure from misuse.",
-        ],
-        image: "/general_assets/banner_direito_entretenimento.jpg",
-        link: "/direito-entretenimento/direito-autoral-marcas-publicidade",
-        slug: "direito-autoral-marcas-publicidade",
-        category: "Entertainment Law",
-    },
-    {
-        title: "Acquisition, Licensing, and Distribution of Intellectual Property",
-        description:
-            "We offer comprehensive legal advice on the acquisition, licensing, and distribution of audiovisual, musical, or digital content, ensuring that your rights are respected in contracts with third parties.",
-        full_description: [
-            "We offer comprehensive legal advice on the acquisition, licensing, and distribution of audiovisual, musical, or digital content, ensuring that your rights are respected in contracts with third parties.",
-        ],
-        image: "/general_assets/banner_direito_entretenimento.jpg",
-        link: "/direito-entretenimento/aquisicao-licenciamento-distribuicao-propriedade-intelectual",
-        slug: "aquisicao-licenciamento-distribuicao-propriedade-intelectual",
-        category: "Entertainment Law",
-    },
-    {
-        title: "Intellectual Property Protection and Related Litigation",
-        description:
-            "We work to protect and defend your intellectual property rights, representing your interests in litigation cases, including copyright or trademark infringement actions.",
-        full_description: [
-            "We work to protect and defend your intellectual property rights, representing your interests in litigation cases, including copyright or trademark infringement actions.",
-        ],
-        image: "/general_assets/banner_direito_entretenimento.jpg",
-        link: "/direito-entretenimento/protecao-da-propriedade-intelectual",
-        slug: "protecao-da-propriedade-intelectual",
-        category: "Entertainment Law",
-    },
-    {
-        title: "Artist Management and Endorsement Agreements",
-        description:
-            "We help artists and celebrities negotiate endorsement and management contracts, ensuring that the agreements benefit their careers and protect their public image.",
-        full_description: [
-            "We help artists and celebrities negotiate endorsement and management contracts, ensuring that the agreements benefit their careers and protect their public image.",
-        ],
-        image: "/general_assets/banner_direito_entretenimento.jpg",
-        link: "/direito-entretenimento/gestao-de-artistas-e-acordos-de-endosso",
-        slug: "gestao-de-artistas-e-acordos-de-endosso",
-        category: "Entertainment Law",
-    },
-    {
-        title: "Audiovisual Productions and Licensing Dispute Resolution",
-        description:
-            "We provide legal support for audiovisual productions, from development to distribution, as well as resolve disputes involving the licensing of content across different platforms.",
-        full_description: [
-            "We provide legal support for audiovisual productions, from development to distribution, as well as resolve disputes involving the licensing of content across different platforms.",
-        ],
-        image: "/general_assets/banner_direito_entretenimento.jpg",
-        link: "/direito-entretenimento/producoes-audiovisuais-resolucao-disputas-licenciamento",
-        slug: "producoes-audiovisuais-resolucao-disputas-licenciamento",
-        category: "Entertainment Law",
-    },
-    {
-        title: "Consulting on Data Privacy and Data Use in Advertising",
-        description:
-            "We advise our clients on complying with privacy regulations and the ethical use of data in advertising campaigns and digital marketing, ensuring compliance with national and international laws.",
-        full_description: [
-            "We advise our clients on complying with privacy regulations and the ethical use of data in advertising campaigns and digital marketing, ensuring compliance with national and international laws.",
-        ],
-        image: "/general_assets/banner_direito_entretenimento.jpg",
-        link: "/direito-entretenimento/consultoria-privacidade-dados-uso-dados-publicidade",
-        slug: "consultoria-privacidade-dados-uso-dados-publicidade",
-        category: "Entertainment Law",
-    },
-    {
-        title: "Assistance with Film, Television, Music, and Live Event Agreements",
-        description:
-            "We negotiate and draft contracts for all aspects of the entertainment industry, such as film productions, TV shows, live events, and music tours, handling all legal details to ensure their success.",
-        full_description: [
-            "We negotiate and draft contracts for all aspects of the entertainment industry, such as film productions, TV shows, live events, and music tours, handling all legal details to ensure their success.",
-        ],
-        image: "/general_assets/banner_direito_entretenimento.jpg",
-        link: "/direito-entretenimento/assistencia-acordos-cinema-televisao-musica-eventos-ao-vivo",
-        slug: "assistencia-acordos-cinema-televisao-musica-eventos-ao-vivo",
-        category: "Entertainment Law",
-    },
-];
-
-export const Servicos_Civil = [
-    {
-        title: "Contract Law",
-        description:
-            "We operate in various areas of civil law, encompassing Banking Law, Consumer Law, Contract Law, Real Estate Law, Family and Inheritance Law, Indemnities, Arbitrations, and Mediations.",
-        full_description: [
-            "Contract Law is essential for regulating the legal relationships established by contracts, ensuring legal security and predictability. It is based on principles such as autonomy of will and objective good faith, which guide the formation and execution of contracts.",
-            "There are various types of contracts, each with its own peculiarities and regulations, such as purchase and sale contracts, lease agreements, and service contracts. The form of contracts, preferably written, is important to avoid ambiguities and future disputes.",
-            "Contract Law also provides mechanisms to resolve conflicts and breaches, allowing parties to resort to the judiciary to demand compliance or termination of the contract, as well as compensation for damages.",
-            "The field is constantly evolving to adapt to new realities, such as electronic and international contracts, ensuring legal security in modern contractual relationships.",
-        ],
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil/direito-contratual",
-        slug: "direito-contratual",
-        category: "Civil Law",
-    },
-    {
-        title: "Banking Law",
-        description: "Banking Law regulates the activities of financial institutions, ensuring stability and confidence in the financial system.",
-        full_description: [
-            "Banking Law regulates the activities of financial institutions, ensuring stability and confidence in the financial system. It includes supervision by regulatory bodies such as the Central Bank, monitoring the solvency and liquidity of banks.",
-            "The regulation of banking contracts, such as credit and financing agreements, ensures transparency and consumer protection, preventing abuses. Banking Law also combats financial crimes, requiring institutions to adopt measures against money laundering and terrorism financing.",
-            "Finally, this area of law constantly adapts to technological innovations, regulating fintechs, cryptocurrencies, and new payment platforms to maintain the security and efficiency of the financial system.",
-        ],
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil/direito-bancario",
-        slug: "direito-bancario",
-        category: "Civil Law",
-    },
-    {
-        title: "Consumer Law",
-        description:
-            "Consumer Law protects the interests of consumers in consumer relations, establishing principles such as the protection of life, health, and safety, and the need for clear information about products and services.",
-        full_description: [
-            "Consumer Law protects the interests of consumers in consumer relations, establishing principles such as the protection of life, health, and safety, and the need for clear information about products and services. It aims to balance the relationship between suppliers and consumers, ensuring that consumers have access to accurate information and can make informed decisions.",
-            "Additionally, it regulates advertising and commercial practices, prohibiting misleading and abusive advertisements. It ensures the quality and safety of products, allowing consumers to demand repairs, replacements, or returns in case of problems. This protects consumers against fraud and unfair practices.",
-            "Consumer Law also offers conflict resolution mechanisms, such as consumer protection agencies and small claims courts. It is constantly evolving to keep up with market changes and new forms of consumption, such as e-commerce, ensuring consumer protection in all transactions.",
-        ],
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil/direito-consumidor",
-        slug: "direito-consumidor",
-        category: "Civil Law",
-    },
-    {
-        title: "Real Estate Law",
-        description:
-            "Real Estate Law is a branch of law that regulates transactions and legal relationships related to real estate. Its importance lies in ensuring legal security and organizing the negotiations for the purchase, sale, lease, and use of properties.",
-        full_description: [
-            "Real Estate Law is a branch of law that regulates transactions and legal relationships related to real estate. Its importance lies in ensuring legal security and organizing the negotiations for the purchase, sale, lease, and use of properties. This field covers everything from registration and documentation issues to the resolution of conflicts between owners and tenants.",
-            "Firstly, Real Estate Law establishes rules for the regularization of properties, including property registration in notary offices, obtaining certificates, and verifying the necessary documentation for real estate transactions. This process ensures that negotiations are transparent and that property rights are duly recognized and protected.",
-            "Additionally, Real Estate Law regulates purchase and sale contracts, leases, and other forms of property use. It defines the rights and duties of the parties involved, such as owners, tenants, and intermediaries, ensuring that contractual clauses are fulfilled and that possible disputes are resolved fairly. This area of law also keeps pace with changes in the real estate market, adapting to new realities and social demands, such as housing needs and property valuation.",
-            "In summary, Real Estate Law ensures legal security in real estate transactions, regulates the regularization of properties and necessary documentation, and defines rights and duties in purchase, sale, and lease contracts. It is constantly evolving to meet new market demands and ensure the protection of property rights.",
-        ],
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil/direito-imobiliario",
-        slug: "direito-imobiliario",
-        category: "Civil Law",
-    },
-    {
-        title: "National and International Family and Succession Law",
-        description:
-            "O Direito de Família e Sucessões protege os direitos dos membros da família e assegura a distribuição justa do patrimônio. Regula as relações familiares, incluindo casamento, divórcio e guarda de filhos, e trata da transferência de bens após a morte.",
-        full_description: [
-            "Family and Succession Law is a branch of law that regulates family relationships and the transfer of assets after a person's death. Its importance lies in ensuring the protection of family members' rights and the proper distribution of the estate. This area of law deals with issues such as marriage, divorce, child custody, and inheritance, both nationally and internationally.",
-            "Firstly, Family Law establishes norms for family relationships, including marriage, stable unions, divorce, and child custody. It defines the rights and duties of spouses and parents, aiming to protect the interests of children and ensure justice in family relations. Internationally, it addresses issues such as transnational marriages and custody disputes involving different countries, applying treaties and international conventions to resolve conflicts.",
-            "Additionally, Succession Law deals with the transfer of assets and rights after a person's death. It regulates the drafting of wills, legitimate succession, and disputes among heirs, ensuring that the deceased's wishes are respected and that assets are distributed according to the law. In the international context, it involves the succession of assets located in different countries, requiring the application of private international law norms and cooperation between jurisdictions.",
-            "In summary, Family and Succession Law protects the rights of family members and ensures the fair distribution of assets. It regulates family relationships, including marriage, divorce, and child custody, and deals with the transfer of assets after death. Internationally, it applies treaties and conventions to resolve transnational conflicts, ensuring the protection of rights and justice in family and succession matters.",
-        ],
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil/direito-familia-sucessoes",
-        slug: "direito-familia-sucessoes",
-        category: "Civil Law",
-    },
-    {
-        title: "Indemnities",
-        description:
-            "Indemnity Law is a branch of law aimed at the reparation of damages caused to a person or property. Its importance lies in the protection of individual rights and the guarantee that victims of damages can obtain fair compensation.",
-        full_description: [
-            "Indemnity Law is a branch of law aimed at the reparation of damages caused to a person or property. Its importance lies in the protection of individual rights and the guarantee that victims of damages can obtain fair compensation. This area covers various types of indemnities, including material, moral, and aesthetic damages, and applies both nationally and internationally.",
-            "Firstly, Indemnity Law establishes that anyone who causes damage to another, whether by action or omission, has the obligation to repair it. This includes material damages, which directly affect the victim's assets, and moral damages, which involve suffering, humiliation, or psychological distress. The norms define the criteria for the evaluation and quantification of these damages, ensuring that compensation is proportional to the harm suffered.",
-            "Additionally, Indemnity Law covers specific situations such as traffic accidents, medical errors, and environmental damages. In each case, it is necessary to prove the existence of the damage, the fault or responsibility of the perpetrator, and the causal link between the action and the damage. Internationally, it deals with cases involving parties from different countries, applying treaties and international conventions to resolve disputes and ensure adequate reparation.",
-            "In summary, Indemnity Law protects the rights of damage victims, guaranteeing fair compensation for material and moral damages. It establishes the obligation of reparation for those who cause damage and defines criteria for the evaluation and quantification of the harm. In an international context, it applies norms and treaties to resolve transnational disputes and ensure adequate reparation.",
-        ],
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil/direito-indenizacoes",
-        slug: "direito-indenizacoes",
-        category: "Civil Law",
-    },
-];
-
-export const Servicos_Desportivo = [
-    {
-        title: "Negotiation and Drafting of Athlete Transfer Contracts",
-        description:
-            "The negotiation and drafting of athlete transfer contracts are essential activities that ensure the integrity and transparency of movements between clubs. This service is vital to protect the interests of athletes, clubs, and all parties involved, ensuring that transfers are carried out in accordance with current regulations and international agreements.",
-        full_description: [
-            "The negotiation and drafting of athlete transfer contracts are essential activities that ensure the integrity and transparency of movements between clubs. This service is vital to protect the interests of athletes, clubs, and all parties involved, ensuring that transfers are carried out in accordance with current regulations and international agreements. Expertise in Sports Law is crucial to navigate the complex legal and regulatory requirements that govern these transactions.",
-            "The process of negotiating and drafting athlete transfer contracts is detailed and involves several critical stages. Initially, specialized lawyers conduct a thorough analysis of the proposed terms and conditions, ensuring compliance with national and international sports laws, as well as the guidelines of regulatory entities such as FIFA. Negotiation involves defining financial aspects, such as transfer fees, termination clauses, bonuses, and other compensations. The contract drafting must be precise, covering all responsibilities and rights of the parties involved, ensuring the clarity and legal enforceability of the agreement.",
-            "A peculiarity of this service is the need to consider multiple jurisdictions and specific sports regulations, which can vary significantly between countries and leagues. Additionally, negotiating athlete transfer contracts often involves not only financial aspects but also issues related to the athletes' well-being, such as working conditions, housing, and professional development opportunities. Lawyers must be attentive to the specific needs of athletes, as well as the expectations of clubs, to ensure a balanced and beneficial agreement for all parties.",
-            "The importance of negotiating and drafting athlete transfer contracts lies in protecting the rights and interests of athletes, ensuring that transfers are fair and transparent. This service contributes to the stability and sustainability of the sports environment, preventing disputes and conflicts that may arise from poorly formulated or inadequately negotiated agreements. Specialized Sports Law attorneys play a crucial role in mediating these complex transactions, ensuring that all legal and regulatory aspects are rigorously observed.",
-            "In summary, negotiating and drafting athlete transfer contracts in Sports Law are complex and essential processes that require a deep understanding of sports and legal regulations. This service ensures that transfers are conducted fairly, protecting the interests of athletes and clubs, and promoting integrity and transparency in sports. The expertise of specialized lawyers is crucial to navigate the challenges and peculiarities of these transactions, ensuring solid and legally valid agreements that benefit all parties involved.",
-        ],
-        image: "/general_assets/banner_direito_desportivo.png",
-        link: "/direito-desportivo/negociacao-contratos-transferencia-atletas",
-        slug: "negociacao-contratos-transferencia-atletas",
-        category: "Sports Law",
-    },
-    {
-        title: "Licensing of Athletes and Agents",
-        description:
-            "The licensing of athletes and agents is an essential aspect that ensures the regulation and integrity of professional relationships in sports. This service is crucial to ensure that all involved, from athletes to agents, are properly qualified and authorized to operate within the norms established by regulatory entities.",
-        full_description: [
-            "The licensing of athletes and agents is an essential aspect that ensures the regulation and integrity of professional relationships in sports. This service is crucial to ensure that all involved, from athletes to agents, are properly qualified and authorized to operate within the norms established by regulatory entities. Expertise in Sports Law is vital to navigate the complex rules and requirements imposed by these entities, promoting a fair and transparent sports environment.",
-            "This process involves several detailed and rigorous stages. For athletes, this may include eligibility verification, compliance with league and competition registration requirements, and analysis of contracts and sponsorship agreements. For agents, the process is even more complex, requiring the obtaining of specific certifications, adherence to professional codes of conduct, and often passing exams or training courses recognized by sports entities. Compliance with these requirements is essential to ensure the validity and legality of representations and negotiations conducted by agents.",
-            "A peculiarity of this service is the need for constant updating and adaptation to changes in sports regulations, which can vary significantly between different countries and leagues. Additionally, licensing is not a one-time process; it requires periodic renewals and continuous compliance with training and conduct requirements. Specialized Sports Law attorneys play a crucial role in monitoring these changes and ensuring that athletes and agents maintain their license status in good standing, avoiding penalties and sanctions that could harm their careers.",
-            "The importance of licensing athletes and agents lies in protecting integrity and ethics in sports. By ensuring that all participants are properly licensed, the service promotes transparency and fairness in contractual and commercial relationships, preventing fraudulent and abusive practices. Additionally, proper licensing protects the rights and interests of athletes, ensuring that they are represented by qualified and competent agents who act in accordance with the legal and ethical norms of sports.",
-            "In summary, the licensing of athletes and agents is a vital component of Sports Law that ensures the regulation and integrity of professional activities in sports. This service ensures that all participants are properly qualified and authorized, promoting a fair and transparent environment. The expertise of specialized lawyers is crucial to navigate the complex regulatory requirements and ensure continuous compliance, protecting the interests of athletes and agents and contributing to integrity and ethics in the sports world.",
-        ],
-        image: "/general_assets/banner_direito_desportivo.png",
-        link: "/direito-desportivo/licenciamento-atletas-agentes",
-        slug: "licenciamento-atletas-agentes",
-        category: "Sports Law",
-    },
-    {
-        title: "Representation in Sports Litigation Cases",
-        description:
-            "Representation in sports litigation cases is an essential service that ensures the protection of the rights and interests of athletes, clubs, leagues, and other entities involved in sports. This service is crucial for resolving disputes that may arise in various areas, such as contracts, transfers, discipline, doping, and regulatory issues.",
-        full_description: [
-            "Representation in sports litigation cases is an essential service that ensures the protection of the rights and interests of athletes, clubs, leagues, and other entities involved in sports. This service is crucial for resolving disputes that may arise in various areas, such as contracts, transfers, discipline, doping, and regulatory issues. Expertise in Sports Law is fundamental for handling these litigations efficiently and effectively, ensuring fair and balanced decisions.",
-            "The process of representation in sports litigation involves several complex stages and requires a strategic and well-founded approach. Initially, specialized lawyers conduct a detailed analysis of the case, gathering all relevant evidence and information. They then develop a personalized legal strategy, considering the specific sports regulations, the norms of regulatory entities, and relevant jurisprudence. Representation can include negotiations for out-of-court settlements, as well as defense in sports tribunals, such as the Court of Arbitration for Sport (CAS), or in civil and administrative courts.",
-            "A peculiarity of this service is the need for deep knowledge of the specific rules and regulations of the sport in question, which can vary significantly between different disciplines and organizations. Additionally, sports litigation often involves strict deadlines and specific procedures that require quick and precise responses. Specialized lawyers must be prepared to handle a variety of complex issues, from contractual interpretations to allegations of misconduct or doping violations, ensuring a robust and well-informed defense.",
-            "The importance of representation in sports litigation lies in protecting the integrity of the sport and ensuring that disputes are resolved fairly and transparently. This service not only protects the rights of the parties involved but also contributes to maintaining public trust in competitions and sports entities. Specialized Sports Law attorneys play a crucial role in mediating and resolving disputes, promoting compliance with norms and justice in sports.",
-            "In summary, representation in sports litigation cases is a vital component of Sports Law, ensuring that disputes are resolved fairly and efficiently. This service protects the rights and interests of athletes, clubs, and other entities, promoting integrity and transparency in sports. The expertise of specialized lawyers is crucial for navigating the complexities and peculiarities of sports litigation, ensuring effective defense and equitable resolution of disputes.",
-        ],
-        image: "/general_assets/banner_direito_desportivo.png",
-        link: "/direito-desportivo/representacao-litigios-desportivos",
-        slug: "representacao-litigios-desportivos",
-        category: "Sports Law",
-    },
-    {
-        title: "Regulatory and Compliance Consulting",
-        description:
-            "An essential service that ensures athletes, clubs, leagues, and other entities involved in sports operate within established norms. This service is crucial to avoid penalties, sanctions, and other legal issues that may arise from non-compliance with national and international sports regulations.",
-        full_description: [
-            "Regulatory and compliance consulting in Sports Law is an essential service that ensures athletes, clubs, leagues, and other entities involved in sports operate within established norms. This service is crucial to avoid penalties, sanctions, and other legal issues that may arise from non-compliance with national and international sports regulations. Expertise in Sports Law is fundamental for navigating the complex and dynamic regulatory requirements, ensuring continuous compliance and the integrity of sports operations.",
-            "The process of regulatory and compliance consulting involves a detailed analysis of applicable regulations, identifying risk areas, and implementing compliance measures. Initially, specialized lawyers review relevant regulations, including the statutes of sports entities, national laws, and international guidelines. They then work closely with clients to develop internal policies and procedures that ensure compliance. This can include training and capacity building for staff, creating monitoring systems, and conducting regular internal audits.",
-            "A peculiarity of this service is the need for constant updating and adaptation to changes in sports regulations. Rules and guidelines can vary significantly between different sports and jurisdictions and are frequently updated to reflect new practices and standards. Additionally, regulatory compliance in sports can cover a wide range of issues, from licensing and registration requirements to anti-doping norms and financial fair play guidelines. Specialized lawyers must always be informed about the latest regulatory changes and be able to quickly adjust clients' compliance policies.",
-            "The importance of regulatory and compliance consulting lies in protecting the reputation and operations of sports entities. This service not only helps to avoid penalties and sanctions but also promotes trust and credibility in the sports environment. Rigorous compliance with regulations demonstrates a commitment to integrity and ethics, creating a fair and transparent environment for all participants. Specialized Sports Law attorneys play a crucial role in guiding and supporting their clients in navigating these regulatory complexities.",
-            "In summary, regulatory and compliance consulting in Sports Law is a vital service that ensures athletes, clubs, and other entities operate within established norms. This service protects against penalties and promotes integrity and transparency in sports. The expertise of specialized lawyers is essential for maintaining continuous compliance and quickly adapting to regulatory changes, ensuring that sports operations are conducted ethically and legally.",
-        ],
-        image: "/general_assets/banner_direito_desportivo.png",
-        link: "/direito-desportivo/consultoria-questoes-regulatorias-conformidade",
-        slug: "consultoria-questoes-regulatorias-conformidade",
-        category: "Sports Law",
-    },
-    {
-        title: "Doping and Anti-Doping Consulting",
-        description:
-            "Doping and anti-doping consulting is an essential service that ensures integrity and ethics in sports. This service is crucial for athletes, coaches, clubs, and federations, ensuring that all involved understand and comply with strict anti-doping regulations.",
-        full_description: [
-            "Doping and anti-doping consulting is an essential service that ensures integrity and ethics in sports. This service is crucial for athletes, coaches, clubs, and federations, ensuring that all involved understand and comply with strict anti-doping regulations. Expertise in Sports Law is fundamental for handling the complex legal and regulatory aspects related to doping, protecting athletes' rights, and promoting a fair and competitive sports environment.",
-            "The process of doping and anti-doping consulting involves several critical stages, starting with education and awareness about anti-doping regulations. Specialized lawyers provide guidance on prohibited substances, doping control procedures, and the consequences of violations. Additionally, they offer support in implementing anti-doping compliance programs within clubs and federations, including drafting internal policies and conducting regular training. When a doping allegation occurs, lawyers work on the athlete's defense, ensuring that all procedures are correctly followed and that the athlete's rights are respected.",
-            "A peculiarity of this service is the need for deep and up-to-date knowledge of anti-doping regulations, which are frequently revised and updated by international bodies such as the World Anti-Doping Agency (WADA). Additionally, doping cases can involve complex scientific aspects, such as biological sample analysis and laboratory result interpretation. Specialized lawyers must be able to collaborate with technical and medical experts to build a robust and well-founded defense.",
-            "The importance of doping and anti-doping consulting lies in protecting athletes' rights and promoting integrity in sports. This service not only helps prevent the use of prohibited substances but also ensures that athletes are treated fairly and transparently in doping allegations. Compliance with anti-doping regulations is vital for the credibility of sports competitions and for public trust in sports. Specialized lawyers play a crucial role in ensuring that all involved are aware of their responsibilities and in providing competent defense in doping cases.",
-            "In summary, doping and anti-doping consulting in Sports Law is a vital service that ensures integrity and fairness in sports. This service protects athletes' rights and promotes compliance with strict anti-doping regulations, contributing to an ethical and competitive sports environment. The expertise of specialized lawyers is essential for navigating the complex legal and technical aspects of doping cases, ensuring effective defense and promoting fair and transparent sports practices.",
-        ],
-        image: "/general_assets/banner_direito_desportivo.png",
-        link: "/direito-desportivo/assessoria-doping-antidoping",
-        slug: "assessoria-doping-antidoping",
-        category: "Sports Law",
-    },
-    {
-        title: "Conflict Resolution in Sports Arbitrations",
-        description:
-            "Conflict resolution through sports arbitrations is a fundamental service that provides an efficient and specialized alternative for resolving disputes in sports. This service is essential for athletes, clubs, leagues, and federations, offering a quicker and less formal means than the traditional judicial system.",
-        full_description: [
-            "Conflict resolution through sports arbitrations is a fundamental service that provides an efficient and specialized alternative for resolving disputes in sports. This service is essential for athletes, clubs, leagues, and federations, offering a quicker and less formal means than the traditional judicial system. Expertise in Sports Law is crucial for navigating the specific and complex procedures of sports arbitration, ensuring fair decisions tailored to the particularities of the sports context.",
-            "The process of conflict resolution in sports arbitrations begins with choosing an appropriate arbitration tribunal, such as the Court of Arbitration for Sport (CAS), which is widely recognized for its competence in resolving sports disputes. Specialized lawyers assist their clients in preparing and presenting their claims or defenses, ensuring that all relevant arguments and evidence are presented clearly and convincingly. The arbitration process involves formal hearings where parties can present their cases, followed by the arbitrators' deliberation and decision, which is generally final and binding.",
-            "A peculiarity of this service is the need for deep knowledge of specific sports rules and regulations, as well as the procedural rules of sports arbitration. Additionally, sports arbitration often involves interpreting sports contracts, competition regulations, anti-doping rules, and other technical issues that require a specialized approach. Lawyers must be prepared to handle a wide range of complex issues and provide effective and strategic representation.",
-            "The importance of conflict resolution in sports arbitrations lies in its ability to offer a quick, specialized, and confidential solution for sports disputes. This service promotes fairness and equity, allowing the involved parties to resolve their conflicts without the long delays and costs associated with traditional judicial processes. Additionally, sports arbitration contributes to the stability and integrity of the sports environment, ensuring that disputes are resolved according to the norms and values of sports.",
-            "In summary, conflict resolution in sports arbitrations is a vital component of Sports Law, providing an efficient and specialized means to resolve disputes. This service ensures that athletes, clubs, and other entities can resolve their conflicts fairly and quickly, promoting integrity and stability in sports. The expertise of specialized lawyers is essential for navigating the complex procedures of sports arbitration, ensuring effective representation and fair decisions that respect the particularities and values of the sports context.",
-        ],
-        image: "/general_assets/banner_direito_desportivo.png",
-        link: "/direito-desportivo/resolucao-conflitos-arbitragens-desportivas",
-        slug: "resolucao-conflitos-arbitragens-desportivas",
-        category: "Sports Law",
-    },
-];
-
-export const Servicos_Internacional = [
+export const Servicos_Internacional: Expertise[] = [
     {
         title: "International Trade",
         description:
@@ -588,175 +354,7 @@ export const Servicos_Internacional = [
     },
 ];
 
-export const Servicos_Migratorio = [
-    {
-        title: "L-1 Visa",
-        description:
-            "A temporary authorization that allows companies to transfer executives, managers, or professionals with specialized knowledge from a foreign branch to a subsidiary or affiliate in the United States.",
-        full_description: [
-            "The L-1 visa is a temporary authorization that allows companies to transfer executives, managers, or professionals with specialized knowledge from a foreign branch to a subsidiary or affiliate in the United States.",
-            "It is ideal for companies looking to expand their operations in the country, facilitating the opening of new branches or subsidiaries. One of the major benefits of this visa is that it does not require a specific degree and can be a pathway for executives and managers to apply for a Green Card without going through the labor certification process.",
-            "The transfer can occur internally, when the company already has a branch in the U.S., or it can be used to establish a new operation in the country, with the executive in charge of the initial management. The L-1 visa offers a practical solution for companies seeking to expand their activities in the U.S. and transfer their key leaders or specialists to oversee the operation.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-l-1",
-        slug: "visto-l-1",
-        category: "Immigration Law",
-    },
-    {
-        title: "E-1 Visa",
-        description:
-            "Designed for citizens of countries that have trade treaties with the United States, allowing them to substantially engage in the import and export of goods, services, or technology between the two countries.",
-        full_description: [
-            "The E-1 visa is designed for citizens of countries that have trade treaties with the United States, allowing them to substantially engage in the import and export of goods, services, or technology between the two countries.",
-            "To be eligible, you must be a citizen of one of these countries, be involved in substantial trade between the U.S. and the treaty country, and hold an essential position in the company, either as the principal operator or key employee.",
-            "The requirements include submitting the I-129 petition by the employer, documentation proving substantial trade transactions, completing the DS-160 form, and other supporting documents such as contracts and invoices. The E-1 visa allows import and export businesses to legally operate in the U.S., covering sectors such as technology, transportation, tourism, and financial services. Additionally, it can be renewed indefinitely as long as the requirements continue to be met.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-e-1",
-        slug: "visto-e-1",
-        category: "Immigration Law",
-    },
-    {
-        title: "E-2 Visa",
-        description:
-            "Allows citizens of countries with trade treaties with the United States to invest in a business in the country and temporarily reside while the business is operational.",
-        full_description: [
-            "The E-2 visa allows citizens of countries with trade treaties with the United States to invest in a business in the country and temporarily reside while the business is operational.",
-            "This visa is ideal for entrepreneurs who wish to expand their businesses and live in the U.S. To be eligible, the applicant must be a citizen of a country with a Treaty of Trade and Navigation with the U.S., such as Spain, Germany, Italy, France, and Portugal.",
-            "Additionally, a detailed business plan must be presented to prove the feasibility and growth potential of the business in the U.S. This plan should include a description of the company, market strategies, and financial projections. The E-2 visa offers several advantages, such as the possibility of residing in the U.S. with family, indefinite renewal while the business remains active, and work authorization for the spouse.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-e-2",
-        slug: "visto-e-2",
-        category: "Immigration Law",
-    },
-    {
-        title: "Marriage Visa for the United States",
-        description:
-            "This visa is requested when a U.S. citizen or permanent resident wishes to bring their foreign spouse to the U.S., either to live permanently or temporarily.",
-        full_description: [
-            "This visa is requested when a U.S. citizen or permanent resident wishes to bring their foreign spouse to the U.S., either to live permanently or temporarily.",
-            "There are different types of marriage visas, such as the CR-1 (conditional resident) or IR-1 (immediate resident) visas for those already married, and the K-1 (fiancé) visa for those intending to marry in the U.S.",
-            "The process involves submitting specific petitions and documentation, as well as meeting the legal eligibility requirements established by U.S. immigration laws. The goal is to demonstrate the legitimacy of the relationship and ensure that the foreign spouse meets the criteria to legally live in the country.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-de-casamento-eua",
-        slug: "visto-de-casamento-eua",
-        category: "Immigration Law",
-    },
-    {
-        title: "Pedidos de Waiver",
-        description: "Waivers allow individuals or companies to obtain exemptions from certain legal requirements that would otherwise be mandatory.",
-        full_description: [
-            "The importance of these requests lies in their ability to provide flexibility and relief in situations where strict compliance with the rules may be impractical or unfair. The waiver application process begins with a clear identification of the need and legal basis for the request.",
-            "Applicants must demonstrate compelling reasons why the waiver should be granted. This may involve presenting evidence of significant hardship, negative economic impact, or other mitigating circumstances. Preparing a waiver request requires a detailed analysis of the legal requirements and a deep understanding of the specific context of the application.",
-            "Once prepared, the waiver request must be submitted to the relevant authority, which may vary depending on the nature of the waiver and the jurisdiction. It could be a government agency, regulatory body, or international entity. The submission typically includes a formal petition accompanied by supporting documentation, such as sworn statements, financial reports, medical certificates, among others. The rigor and quality of the documentation are crucial to increasing the chances of approval.",
-            "The specifics of waiver requests vary significantly depending on the field of application. In immigration, for example, a waiver may be requested to overcome a barrier to admissibility to the United States, such as a previous immigration violation or criminal conviction. In a business context, waivers may be necessary to exempt certain regulatory requirements affecting the operation of international businesses. Each type of waiver has specific criteria and detailed procedures that must be strictly followed.",
-            "In summary, waiver requests are a vital tool for obtaining legal relief in complex and challenging situations. The importance of this service lies in the ability to flexibly apply the law, offering fair and practical solutions for individuals and businesses. With careful preparation, a deep understanding of the legal requirements, and meticulous presentation, lawyers can effectively advocate for their clients' interests and maximize the chances of success in obtaining waivers.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/pedidos-de-waiver",
-        slug: "pedidos-de-waiver",
-        category: "Immigration Law",
-    },
-    {
-        title: "EB-1 Visa",
-        description:
-            "Obtaining the EB-1 Visa is an essential service for individuals with extraordinary abilities who wish to reside and work in the United States.",
-        full_description: [
-            "Obtaining the EB-1 Visa is an essential service for individuals with extraordinary abilities who wish to reside and work in the United States. This visa is of great importance to distinguished professionals, including scientists, artists, educators, executives, and athletes, who have a proven track record of significant achievements in their respective fields. Expertise in immigration law is crucial to navigate the complex requirements of this visa, ensuring that qualified candidates can take advantage of the unique opportunities offered by this immigration program.",
-            "The process of obtaining the EB-1 Visa begins with the preparation and submission of an immigrant petition, known as Form I-140, to the United States Citizenship and Immigration Services (USCIS). This petition must be accompanied by substantial evidence demonstrating the candidate's extraordinary ability, such as international awards, publications, significant contributions to the field, and recognition by organizations and peers. Additionally, the candidate must demonstrate that they will continue to work in their area of expertise in the United States. Presenting a well-documented and convincing petition is crucial to success in the EB-1 Visa process.",
-            "A peculiarity of the EB-1 Visa is that it does not require a job offer in the United States, unlike many other types of work visas. This means that individuals with extraordinary abilities can apply on their own, based solely on their accomplishments and potential to continue making significant contributions in their fields. Additionally, the EB-1 Visa offers a fast track to permanent residency (green card), allowing beneficiaries and their families to settle in the United States more quickly compared to other employment-based visas.",
-            "The importance of the EB-1 Visa lies in its ability to attract and retain exceptional talent from around the world, strengthening the environment of innovation and excellence in the United States. This visa not only benefits the individuals who receive it but also contributes to the advancement of industries, academia, science, and culture in the country. Immigration law specialists play a crucial role in guiding candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and strategically.",
-            "In summary, the EB-1 Visa is a vital component of immigration law that allows individuals with extraordinary abilities to reside and work in the United States. This service ensures that qualified candidates can take advantage of the unique opportunities offered by this immigration program, significantly contributing to advancement and innovation in various fields. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-1 Visa.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-eb-1",
-        slug: "visto-eb-1",
-        category: "Immigration Law",
-    },
-    {
-        title: "EB-2 Visa",
-        description:
-            "Obtaining the EB-2 Visa is an essential service for professionals with exceptional abilities or advanced degrees who wish to reside and work in the United States.",
-        full_description: [
-            "Obtaining the EB-2 Visa is an essential service for professionals with exceptional abilities or advanced degrees who wish to reside and work in the United States. This visa is of great importance to specialists in various fields, including science, business, arts, and education, allowing them to contribute significantly to the country's economy and technological development. Expertise in immigration law is crucial to navigate the complex requirements of this visa, ensuring that qualified candidates can maximize their chances of success.",
-            "The process of obtaining the EB-2 Visa begins with the preparation and submission of an immigrant petition, Form I-140, to the United States Citizenship and Immigration Services (USCIS). There are two main subcategories for the EB-2 Visa: EB-2(a), for individuals with advanced degrees, and EB-2(b), for those with exceptional abilities. Additionally, there is the EB-2(c) subcategory for the National Interest Waiver (NIW), which allows certain candidates to qualify without the need for a job offer if they can demonstrate that their presence in the U.S. would be of significant benefit to the country. Each of these subcategories requires meticulous and detailed documentation to prove the candidate's eligibility.",
-            "A peculiarity of the EB-2 Visa is the possibility of the National Interest Waiver (NIW), which allows candidates with exceptional abilities or advanced degrees to request a waiver of the job offer requirement if they can prove that their admission is in the national interest of the United States. This is particularly relevant for professionals whose skills or work are considered critical to the economic, educational, cultural, or scientific development of the U.S. This process requires a well-founded petition, demonstrating how the candidate's presence in the U.S. will substantially benefit the country.",
-            "The importance of the EB-2 Visa lies in its ability to attract highly qualified professionals with exceptional abilities who can contribute significantly to innovation, research, and development in various fields in the United States. This visa not only benefits the individuals who receive it but also strengthens the U.S.'s competitiveness and leadership in various industries and fields of study. Immigration law specialists play a crucial role in guiding candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and convincingly.",
-            "In summary, the EB-2 Visa is a vital component of immigration law that allows professionals with exceptional abilities or advanced degrees to reside and work in the United States. This service ensures that qualified candidates can take advantage of the opportunities offered by this immigration program, significantly contributing to advancement and innovation in various fields. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-2 Visa.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-eb-2",
-        slug: "visto-eb-2",
-        category: "Immigration Law",
-    },
-    {
-        title: "EB-3 Visa",
-        description:
-            "Obtaining the EB-3 Visa is crucial for skilled workers, professionals, and other workers who wish to reside and work in the United States.",
-        full_description: [
-            "Obtaining the EB-3 Visa is crucial for skilled workers, professionals, and other workers who wish to reside and work in the United States. This visa is of great importance for individuals who possess specific skills or professional experience that are highly demanded by the American labor market. Expertise in immigration law is essential to guide candidates through the necessary requirements and procedures to obtain this visa, ensuring they can take advantage of the opportunities offered by the immigration program.",
-            "The process of obtaining the EB-3 Visa begins with securing a job offer from a U.S. employer who must be willing to sponsor the candidate. The employer must initiate the process by requesting a Labor Certification from the U.S. Department of Labor, demonstrating that there are no qualified, available, and willing American workers to fill the offered position. Once the certification is obtained, the employer can then submit an immigrant petition, known as Form I-140, to the United States Citizenship and Immigration Services (USCIS). This petition must include evidence of the candidate's qualifications and the genuineness of the job offer.",
-            "A peculiarity of the EB-3 Visa is that it is subdivided into three categories: skilled workers, professionals, and other workers. Skilled workers are those who have at least two years of experience or training in the specified occupation. Professionals are those who have a bachelor's degree or its equivalent in the relevant field. Other workers include occupations that require less than two years of experience or training. Each subcategory has its specific requirements and priority levels, which can affect processing times and visa availability.",
-            "The importance of the EB-3 Visa lies in its ability to fill critical gaps in the U.S. labor market, allowing employers to access qualified foreign talent to meet their labor needs. This visa not only benefits employers by fulfilling the demand for skilled workers but also offers candidates the opportunity to build a new life in the United States, contributing to the country's economy and society. Immigration law specialists play a crucial role in guiding employers and candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and convincingly.",
-            "In summary, the EB-3 Visa is a vital component of immigration law that allows skilled workers, professionals, and other workers to reside and work in the United States. This service ensures that qualified candidates can take advantage of the opportunities offered by this immigration program, significantly contributing to the country's economic and social development. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-3 Visa.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-eb-3",
-        slug: "visto-eb-3",
-        category: "Immigration Law",
-    },
-    {
-        title: "EB-4 Visa",
-        description:
-            "This visa is of great importance to a variety of individuals, including religious workers, employees of international organizations, physicians, U.S. government translators, among others.",
-        full_description: [
-            "Obtaining the EB-4 Visa is essential for certain categories of special immigrants who wish to reside and work in the United States. This visa is of great importance to a variety of individuals, including religious workers, employees of international organizations, physicians, U.S. government translators, among others. Expertise in immigration law is fundamental to navigate the specific requirements of this visa, ensuring that qualified candidates can maximize their chances of success.",
-            "The process of obtaining the EB-4 Visa begins with determining the candidate's eligibility according to one of the special immigrant subcategories. The employer or the candidate must submit an immigrant petition, known as Form I-360, to the United States Citizenship and Immigration Services (USCIS). Each subcategory has specific requirements that must be met and documented, such as proof of continuous employment for religious workers or qualified service for Iraq or Afghan translators who worked with the U.S. government. After the petition is approved, candidates can apply for an immigrant visa through the U.S. consulate or adjust their status if they are already in the United States.",
-            "A peculiarity of the EB-4 Visa is the wide range of categories it covers, each with its own requirements and qualification processes. For example, religious workers must demonstrate that they have been members of a religious denomination for at least two years and that they will continue to work in a religious capacity in the United States. Foreign physicians who have committed to working in underserved areas in the U.S. must also provide evidence of their commitment and qualifications. Due to the diversity of categories, specialized lawyers need to have a deep knowledge of the various requirements and be able to adapt their strategies accordingly.",
-            "The importance of the EB-4 Visa lies in its ability to facilitate the immigration of individuals who provide essential services and significant contributions to American society. This visa not only benefits the individuals who receive it but also supports the communities and organizations that depend on their services. The presence of these professionals and specialized workers strengthens the social and economic fabric of the United States, promoting diversity and inclusion. Immigration law specialists play a crucial role in guiding candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and convincingly.",
-            "In summary, the EB-4 Visa is a vital component of immigration law that allows special immigrants to reside and work in the United States. This service ensures that qualified candidates can take advantage of the opportunities offered by this immigration program, significantly contributing to American society. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-4 Visa.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-eb-4",
-        slug: "visto-eb-4",
-        category: "Immigration Law",
-    },
-    {
-        title: "EB-5 Visa",
-        description: "EB-5 Visa is highly sought after by foreign investors who wish to reside permanently in the United States.",
-        full_description: [
-            "Obtaining the EB-5 Visa is highly sought after by foreign investors who wish to reside permanently in the United States. This visa is of great importance to individuals and their families seeking business opportunities and residency in the U.S. through investment in commercial projects. Expertise in immigration law is essential to guide investors through the complex requirements and procedures necessary to obtain this visa, ensuring they can take advantage of the opportunities offered by the EB-5 program.",
-            "The process of obtaining the EB-5 Visa involves making a substantial investment in a commercial project in the United States that creates jobs and promotes economic growth. Investors must invest at least $1.8 million in a general commercial project or at least $900,000 in designated high-unemployment or rural areas, known as Targeted Employment Areas (TEAs). Additionally, the investment must result in the creation of at least 10 full-time jobs for qualified American workers. Immigration law specialists play a crucial role in guiding investors in identifying eligible projects and meeting all EB-5 program requirements.",
-            "A peculiarity of the EB-5 Visa is that it offers a relatively direct route to permanent residency in the United States, without the need for a job offer or employer sponsorship. This provides investors and their families with greater flexibility and control over their immigration status and allows them to pursue business and educational opportunities in the U.S. However, the process of obtaining the EB-5 Visa can be complex and lengthy, and investors must be prepared to face challenges such as selecting suitable projects, analyzing financial risks, and complying with EB-5 program regulations.",
-            "The importance of the EB-5 Visa lies in its ability to attract foreign investment to the United States, promoting economic development and job creation in the country. This visa not only benefits the investors and their families but also supports local communities and the American economy as a whole. The EB-5 program plays a crucial role in funding a variety of commercial projects, from real estate developments to infrastructure and regional development. Immigration law specialists play a fundamental role in guiding investors through the complex application process, ensuring all requirements are met and the investment is made legally and effectively.",
-            "In summary, the EB-5 Visa is a vital component of immigration law that offers foreign investors a unique opportunity to reside permanently in the United States through investment in commercial projects. This service ensures that qualified investors can take advantage of the opportunities offered by the EB-5 program, contributing to economic growth and community development in the U.S. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring investors make successful investments and meet all EB-5 program requirements.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-eb-5",
-        slug: "visto-eb-5",
-        category: "Immigration Law",
-    },
-    {
-        title: "Artist Visa (O-1 Visa)",
-        description: "Indicated for talented artists and creative professionals who wish to work temporarily in the United States.",
-        full_description: [
-            "Obtaining the Artist Visa, known as the O-1 Visa, is essential for talented artists and creative professionals who wish to work temporarily in the United States. This visa is of great importance to individuals who possess extraordinary abilities in the fields of visual arts, music, film, television, theater, and more, and who wish to contribute to the American cultural industry. Expertise in immigration law is crucial to guide artists through the complex requirements and procedures necessary to obtain this visa, ensuring they can take advantage of the opportunities offered by the O-1 program.",
-            "The process of obtaining the O-1 Visa involves submitting a nonimmigrant petition, known as Form I-129, to the United States Citizenship and Immigration Services (USCIS). Candidates must prove their extraordinary ability or notable achievements in their field, through recognized national or international awards, participation in prominent events, positive reviews of their work, or evidence of exceptional remuneration for their services. Additionally, candidates must demonstrate that they have a job offer in the United States to perform activities related to their field.",
-            "A peculiarity of the O-1 Visa is that it is intended for individuals who excel in their respective fields, whether in the arts, entertainment, sports, or business. Beneficiaries of the O-1 Visa can include artists, musicians, actors, directors, screenwriters, designers, and other creative professionals who have achieved a high level of recognition and excellence in their careers. This visa offers artists the opportunity to work temporarily in the United States, collaborate with other talented professionals, and contribute to the cultural diversity of the country.",
-            "The importance of the O-1 Visa lies in its ability to attract extraordinary talent to the United States, enriching the country's cultural and artistic industry. This visa not only benefits the artists who receive it but also contributes to the growth and diversity of the arts in the U.S., promoting innovation and excellence in various fields. The O-1 program plays a crucial role in strengthening the United States' position as a global center of creativity and artistic expression. Immigration law specialists play a fundamental role in guiding artists through the complex application process, ensuring all requirements are met and the petition is presented accurately and convincingly.",
-            "In summary, the Artist Visa (O-1 Visa) is a vital component of immigration law that offers talented artists a unique opportunity to work temporarily in the United States. This service ensures that qualified artists can take advantage of the opportunities offered by the O-1 program, significantly contributing to the American cultural and artistic industry. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that artists present well-documented and convincing petitions, increasing their chances of success in obtaining the O-1 Visa.",
-        ],
-        image: "/general_assets/banner_direito_migratorio.png",
-        link: "/direito-migratorio/visto-artista-o-1",
-        slug: "visto-artista-o-1",
-        category: "Immigration Law",
-    },
-];
-
-export const Servicos_Aduaneiro = [
+export const Servicos_Aduaneiro: Expertise[] = [
     {
         title: "Contract Analysis and Drafting",
         description:
@@ -876,7 +474,283 @@ export const Servicos_Aduaneiro = [
     },
 ];
 
-export const Servicos_Empresarial = [
+export const Servicos_Desportivo: Expertise[] = [
+    {
+        title: "Negotiation and Drafting of Athlete Transfer Contracts",
+        description:
+            "The negotiation and drafting of athlete transfer contracts are essential activities that ensure the integrity and transparency of movements between clubs. This service is vital to protect the interests of athletes, clubs, and all parties involved, ensuring that transfers are carried out in accordance with current regulations and international agreements.",
+        full_description: [
+            "The negotiation and drafting of athlete transfer contracts are essential activities that ensure the integrity and transparency of movements between clubs. This service is vital to protect the interests of athletes, clubs, and all parties involved, ensuring that transfers are carried out in accordance with current regulations and international agreements. Expertise in Sports Law is crucial to navigate the complex legal and regulatory requirements that govern these transactions.",
+            "The process of negotiating and drafting athlete transfer contracts is detailed and involves several critical stages. Initially, specialized lawyers conduct a thorough analysis of the proposed terms and conditions, ensuring compliance with national and international sports laws, as well as the guidelines of regulatory entities such as FIFA. Negotiation involves defining financial aspects, such as transfer fees, termination clauses, bonuses, and other compensations. The contract drafting must be precise, covering all responsibilities and rights of the parties involved, ensuring the clarity and legal enforceability of the agreement.",
+            "A peculiarity of this service is the need to consider multiple jurisdictions and specific sports regulations, which can vary significantly between countries and leagues. Additionally, negotiating athlete transfer contracts often involves not only financial aspects but also issues related to the athletes' well-being, such as working conditions, housing, and professional development opportunities. Lawyers must be attentive to the specific needs of athletes, as well as the expectations of clubs, to ensure a balanced and beneficial agreement for all parties.",
+            "The importance of negotiating and drafting athlete transfer contracts lies in protecting the rights and interests of athletes, ensuring that transfers are fair and transparent. This service contributes to the stability and sustainability of the sports environment, preventing disputes and conflicts that may arise from poorly formulated or inadequately negotiated agreements. Specialized Sports Law attorneys play a crucial role in mediating these complex transactions, ensuring that all legal and regulatory aspects are rigorously observed.",
+            "In summary, negotiating and drafting athlete transfer contracts in Sports Law are complex and essential processes that require a deep understanding of sports and legal regulations. This service ensures that transfers are conducted fairly, protecting the interests of athletes and clubs, and promoting integrity and transparency in sports. The expertise of specialized lawyers is crucial to navigate the challenges and peculiarities of these transactions, ensuring solid and legally valid agreements that benefit all parties involved.",
+        ],
+        image: "/general_assets/banner_direito_desportivo.png",
+        link: "/direito-desportivo/negociacao-contratos-transferencia-atletas",
+        slug: "negociacao-contratos-transferencia-atletas",
+        category: "Sports Law",
+    },
+    {
+        title: "Licensing of Athletes and Agents",
+        description:
+            "The licensing of athletes and agents is an essential aspect that ensures the regulation and integrity of professional relationships in sports. This service is crucial to ensure that all involved, from athletes to agents, are properly qualified and authorized to operate within the norms established by regulatory entities.",
+        full_description: [
+            "The licensing of athletes and agents is an essential aspect that ensures the regulation and integrity of professional relationships in sports. This service is crucial to ensure that all involved, from athletes to agents, are properly qualified and authorized to operate within the norms established by regulatory entities. Expertise in Sports Law is vital to navigate the complex rules and requirements imposed by these entities, promoting a fair and transparent sports environment.",
+            "This process involves several detailed and rigorous stages. For athletes, this may include eligibility verification, compliance with league and competition registration requirements, and analysis of contracts and sponsorship agreements. For agents, the process is even more complex, requiring the obtaining of specific certifications, adherence to professional codes of conduct, and often passing exams or training courses recognized by sports entities. Compliance with these requirements is essential to ensure the validity and legality of representations and negotiations conducted by agents.",
+            "A peculiarity of this service is the need for constant updating and adaptation to changes in sports regulations, which can vary significantly between different countries and leagues. Additionally, licensing is not a one-time process; it requires periodic renewals and continuous compliance with training and conduct requirements. Specialized Sports Law attorneys play a crucial role in monitoring these changes and ensuring that athletes and agents maintain their license status in good standing, avoiding penalties and sanctions that could harm their careers.",
+            "The importance of licensing athletes and agents lies in protecting integrity and ethics in sports. By ensuring that all participants are properly licensed, the service promotes transparency and fairness in contractual and commercial relationships, preventing fraudulent and abusive practices. Additionally, proper licensing protects the rights and interests of athletes, ensuring that they are represented by qualified and competent agents who act in accordance with the legal and ethical norms of sports.",
+            "In summary, the licensing of athletes and agents is a vital component of Sports Law that ensures the regulation and integrity of professional activities in sports. This service ensures that all participants are properly qualified and authorized, promoting a fair and transparent environment. The expertise of specialized lawyers is crucial to navigate the complex regulatory requirements and ensure continuous compliance, protecting the interests of athletes and agents and contributing to integrity and ethics in the sports world.",
+        ],
+        image: "/general_assets/banner_direito_desportivo.png",
+        link: "/direito-desportivo/licenciamento-atletas-agentes",
+        slug: "licenciamento-atletas-agentes",
+        category: "Sports Law",
+    },
+    {
+        title: "Representation in Sports Litigation Cases",
+        description:
+            "Representation in sports litigation cases is an essential service that ensures the protection of the rights and interests of athletes, clubs, leagues, and other entities involved in sports. This service is crucial for resolving disputes that may arise in various areas, such as contracts, transfers, discipline, doping, and regulatory issues.",
+        full_description: [
+            "Representation in sports litigation cases is an essential service that ensures the protection of the rights and interests of athletes, clubs, leagues, and other entities involved in sports. This service is crucial for resolving disputes that may arise in various areas, such as contracts, transfers, discipline, doping, and regulatory issues. Expertise in Sports Law is fundamental for handling these litigations efficiently and effectively, ensuring fair and balanced decisions.",
+            "The process of representation in sports litigation involves several complex stages and requires a strategic and well-founded approach. Initially, specialized lawyers conduct a detailed analysis of the case, gathering all relevant evidence and information. They then develop a personalized legal strategy, considering the specific sports regulations, the norms of regulatory entities, and relevant jurisprudence. Representation can include negotiations for out-of-court settlements, as well as defense in sports tribunals, such as the Court of Arbitration for Sport (CAS), or in civil and administrative courts.",
+            "A peculiarity of this service is the need for deep knowledge of the specific rules and regulations of the sport in question, which can vary significantly between different disciplines and organizations. Additionally, sports litigation often involves strict deadlines and specific procedures that require quick and precise responses. Specialized lawyers must be prepared to handle a variety of complex issues, from contractual interpretations to allegations of misconduct or doping violations, ensuring a robust and well-informed defense.",
+            "The importance of representation in sports litigation lies in protecting the integrity of the sport and ensuring that disputes are resolved fairly and transparently. This service not only protects the rights of the parties involved but also contributes to maintaining public trust in competitions and sports entities. Specialized Sports Law attorneys play a crucial role in mediating and resolving disputes, promoting compliance with norms and justice in sports.",
+            "In summary, representation in sports litigation cases is a vital component of Sports Law, ensuring that disputes are resolved fairly and efficiently. This service protects the rights and interests of athletes, clubs, and other entities, promoting integrity and transparency in sports. The expertise of specialized lawyers is crucial for navigating the complexities and peculiarities of sports litigation, ensuring effective defense and equitable resolution of disputes.",
+        ],
+        image: "/general_assets/banner_direito_desportivo.png",
+        link: "/direito-desportivo/representacao-litigios-desportivos",
+        slug: "representacao-litigios-desportivos",
+        category: "Sports Law",
+    },
+    {
+        title: "Regulatory and Compliance Consulting",
+        description:
+            "An essential service that ensures athletes, clubs, leagues, and other entities involved in sports operate within established norms. This service is crucial to avoid penalties, sanctions, and other legal issues that may arise from non-compliance with national and international sports regulations.",
+        full_description: [
+            "Regulatory and compliance consulting in Sports Law is an essential service that ensures athletes, clubs, leagues, and other entities involved in sports operate within established norms. This service is crucial to avoid penalties, sanctions, and other legal issues that may arise from non-compliance with national and international sports regulations. Expertise in Sports Law is fundamental for navigating the complex and dynamic regulatory requirements, ensuring continuous compliance and the integrity of sports operations.",
+            "The process of regulatory and compliance consulting involves a detailed analysis of applicable regulations, identifying risk areas, and implementing compliance measures. Initially, specialized lawyers review relevant regulations, including the statutes of sports entities, national laws, and international guidelines. They then work closely with clients to develop internal policies and procedures that ensure compliance. This can include training and capacity building for staff, creating monitoring systems, and conducting regular internal audits.",
+            "A peculiarity of this service is the need for constant updating and adaptation to changes in sports regulations. Rules and guidelines can vary significantly between different sports and jurisdictions and are frequently updated to reflect new practices and standards. Additionally, regulatory compliance in sports can cover a wide range of issues, from licensing and registration requirements to anti-doping norms and financial fair play guidelines. Specialized lawyers must always be informed about the latest regulatory changes and be able to quickly adjust clients' compliance policies.",
+            "The importance of regulatory and compliance consulting lies in protecting the reputation and operations of sports entities. This service not only helps to avoid penalties and sanctions but also promotes trust and credibility in the sports environment. Rigorous compliance with regulations demonstrates a commitment to integrity and ethics, creating a fair and transparent environment for all participants. Specialized Sports Law attorneys play a crucial role in guiding and supporting their clients in navigating these regulatory complexities.",
+            "In summary, regulatory and compliance consulting in Sports Law is a vital service that ensures athletes, clubs, and other entities operate within established norms. This service protects against penalties and promotes integrity and transparency in sports. The expertise of specialized lawyers is essential for maintaining continuous compliance and quickly adapting to regulatory changes, ensuring that sports operations are conducted ethically and legally.",
+        ],
+        image: "/general_assets/banner_direito_desportivo.png",
+        link: "/direito-desportivo/consultoria-questoes-regulatorias-conformidade",
+        slug: "consultoria-questoes-regulatorias-conformidade",
+        category: "Sports Law",
+    },
+    {
+        title: "Doping and Anti-Doping Consulting",
+        description:
+            "Doping and anti-doping consulting is an essential service that ensures integrity and ethics in sports. This service is crucial for athletes, coaches, clubs, and federations, ensuring that all involved understand and comply with strict anti-doping regulations.",
+        full_description: [
+            "Doping and anti-doping consulting is an essential service that ensures integrity and ethics in sports. This service is crucial for athletes, coaches, clubs, and federations, ensuring that all involved understand and comply with strict anti-doping regulations. Expertise in Sports Law is fundamental for handling the complex legal and regulatory aspects related to doping, protecting athletes' rights, and promoting a fair and competitive sports environment.",
+            "The process of doping and anti-doping consulting involves several critical stages, starting with education and awareness about anti-doping regulations. Specialized lawyers provide guidance on prohibited substances, doping control procedures, and the consequences of violations. Additionally, they offer support in implementing anti-doping compliance programs within clubs and federations, including drafting internal policies and conducting regular training. When a doping allegation occurs, lawyers work on the athlete's defense, ensuring that all procedures are correctly followed and that the athlete's rights are respected.",
+            "A peculiarity of this service is the need for deep and up-to-date knowledge of anti-doping regulations, which are frequently revised and updated by international bodies such as the World Anti-Doping Agency (WADA). Additionally, doping cases can involve complex scientific aspects, such as biological sample analysis and laboratory result interpretation. Specialized lawyers must be able to collaborate with technical and medical experts to build a robust and well-founded defense.",
+            "The importance of doping and anti-doping consulting lies in protecting athletes' rights and promoting integrity in sports. This service not only helps prevent the use of prohibited substances but also ensures that athletes are treated fairly and transparently in doping allegations. Compliance with anti-doping regulations is vital for the credibility of sports competitions and for public trust in sports. Specialized lawyers play a crucial role in ensuring that all involved are aware of their responsibilities and in providing competent defense in doping cases.",
+            "In summary, doping and anti-doping consulting in Sports Law is a vital service that ensures integrity and fairness in sports. This service protects athletes' rights and promotes compliance with strict anti-doping regulations, contributing to an ethical and competitive sports environment. The expertise of specialized lawyers is essential for navigating the complex legal and technical aspects of doping cases, ensuring effective defense and promoting fair and transparent sports practices.",
+        ],
+        image: "/general_assets/banner_direito_desportivo.png",
+        link: "/direito-desportivo/assessoria-doping-antidoping",
+        slug: "assessoria-doping-antidoping",
+        category: "Sports Law",
+    },
+    {
+        title: "Conflict Resolution in Sports Arbitrations",
+        description:
+            "Conflict resolution through sports arbitrations is a fundamental service that provides an efficient and specialized alternative for resolving disputes in sports. This service is essential for athletes, clubs, leagues, and federations, offering a quicker and less formal means than the traditional judicial system.",
+        full_description: [
+            "Conflict resolution through sports arbitrations is a fundamental service that provides an efficient and specialized alternative for resolving disputes in sports. This service is essential for athletes, clubs, leagues, and federations, offering a quicker and less formal means than the traditional judicial system. Expertise in Sports Law is crucial for navigating the specific and complex procedures of sports arbitration, ensuring fair decisions tailored to the particularities of the sports context.",
+            "The process of conflict resolution in sports arbitrations begins with choosing an appropriate arbitration tribunal, such as the Court of Arbitration for Sport (CAS), which is widely recognized for its competence in resolving sports disputes. Specialized lawyers assist their clients in preparing and presenting their claims or defenses, ensuring that all relevant arguments and evidence are presented clearly and convincingly. The arbitration process involves formal hearings where parties can present their cases, followed by the arbitrators' deliberation and decision, which is generally final and binding.",
+            "A peculiarity of this service is the need for deep knowledge of specific sports rules and regulations, as well as the procedural rules of sports arbitration. Additionally, sports arbitration often involves interpreting sports contracts, competition regulations, anti-doping rules, and other technical issues that require a specialized approach. Lawyers must be prepared to handle a wide range of complex issues and provide effective and strategic representation.",
+            "The importance of conflict resolution in sports arbitrations lies in its ability to offer a quick, specialized, and confidential solution for sports disputes. This service promotes fairness and equity, allowing the involved parties to resolve their conflicts without the long delays and costs associated with traditional judicial processes. Additionally, sports arbitration contributes to the stability and integrity of the sports environment, ensuring that disputes are resolved according to the norms and values of sports.",
+            "In summary, conflict resolution in sports arbitrations is a vital component of Sports Law, providing an efficient and specialized means to resolve disputes. This service ensures that athletes, clubs, and other entities can resolve their conflicts fairly and quickly, promoting integrity and stability in sports. The expertise of specialized lawyers is essential for navigating the complex procedures of sports arbitration, ensuring effective representation and fair decisions that respect the particularities and values of the sports context.",
+        ],
+        image: "/general_assets/banner_direito_desportivo.png",
+        link: "/direito-desportivo/resolucao-conflitos-arbitragens-desportivas",
+        slug: "resolucao-conflitos-arbitragens-desportivas",
+        category: "Sports Law",
+    },
+];
+
+export const Servicos_Entretenimento: Expertise[] = [
+    {
+        title: "Copyrights, Trademarks, and Publicity Rights",
+        description:
+            "We protect your intellectual property rights, including trademark registration, copyrights, and image rights, ensuring that your work or brand is secure from misuse.",
+        full_description: [
+            "We protect your intellectual property rights, including trademark registration, copyrights, and image rights, ensuring that your work or brand is secure from misuse.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/direito-autoral-marcas-publicidade",
+        slug: "direito-autoral-marcas-publicidade",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Acquisition, Licensing, and Distribution of Intellectual Property",
+        description:
+            "We offer comprehensive legal advice on the acquisition, licensing, and distribution of audiovisual, musical, or digital content, ensuring that your rights are respected in contracts with third parties.",
+        full_description: [
+            "We offer comprehensive legal advice on the acquisition, licensing, and distribution of audiovisual, musical, or digital content, ensuring that your rights are respected in contracts with third parties.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/aquisicao-licenciamento-distribuicao-propriedade-intelectual",
+        slug: "aquisicao-licenciamento-distribuicao-propriedade-intelectual",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Intellectual Property Protection and Related Litigation",
+        description:
+            "We work to protect and defend your intellectual property rights, representing your interests in litigation cases, including copyright or trademark infringement actions.",
+        full_description: [
+            "We work to protect and defend your intellectual property rights, representing your interests in litigation cases, including copyright or trademark infringement actions.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/protecao-da-propriedade-intelectual",
+        slug: "protecao-da-propriedade-intelectual",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Artist Management and Endorsement Agreements",
+        description:
+            "We help artists and celebrities negotiate endorsement and management contracts, ensuring that the agreements benefit their careers and protect their public image.",
+        full_description: [
+            "We help artists and celebrities negotiate endorsement and management contracts, ensuring that the agreements benefit their careers and protect their public image.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/gestao-de-artistas-e-acordos-de-endosso",
+        slug: "gestao-de-artistas-e-acordos-de-endosso",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Audiovisual Productions and Licensing Dispute Resolution",
+        description:
+            "We provide legal support for audiovisual productions, from development to distribution, as well as resolve disputes involving the licensing of content across different platforms.",
+        full_description: [
+            "We provide legal support for audiovisual productions, from development to distribution, as well as resolve disputes involving the licensing of content across different platforms.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/producoes-audiovisuais-resolucao-disputas-licenciamento",
+        slug: "producoes-audiovisuais-resolucao-disputas-licenciamento",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Consulting on Data Privacy and Data Use in Advertising",
+        description:
+            "We advise our clients on complying with privacy regulations and the ethical use of data in advertising campaigns and digital marketing, ensuring compliance with national and international laws.",
+        full_description: [
+            "We advise our clients on complying with privacy regulations and the ethical use of data in advertising campaigns and digital marketing, ensuring compliance with national and international laws.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/consultoria-privacidade-dados-uso-dados-publicidade",
+        slug: "consultoria-privacidade-dados-uso-dados-publicidade",
+        category: "Entertainment Law",
+    },
+    {
+        title: "Assistance with Film, Television, Music, and Live Event Agreements",
+        description:
+            "We negotiate and draft contracts for all aspects of the entertainment industry, such as film productions, TV shows, live events, and music tours, handling all legal details to ensure their success.",
+        full_description: [
+            "We negotiate and draft contracts for all aspects of the entertainment industry, such as film productions, TV shows, live events, and music tours, handling all legal details to ensure their success.",
+        ],
+        image: "/general_assets/banner_direito_entretenimento.jpg",
+        link: "/direito-entretenimento/assistencia-acordos-cinema-televisao-musica-eventos-ao-vivo",
+        slug: "assistencia-acordos-cinema-televisao-musica-eventos-ao-vivo",
+        category: "Entertainment Law",
+    },
+];
+
+export const Servicos_Civil: Expertise[] = [
+    {
+        title: "Contract Law",
+        description:
+            "We operate in various areas of civil law, encompassing Banking Law, Consumer Law, Contract Law, Real Estate Law, Family and Inheritance Law, Indemnities, Arbitrations, and Mediations.",
+        full_description: [
+            "Contract Law is essential for regulating the legal relationships established by contracts, ensuring legal security and predictability. It is based on principles such as autonomy of will and objective good faith, which guide the formation and execution of contracts.",
+            "There are various types of contracts, each with its own peculiarities and regulations, such as purchase and sale contracts, lease agreements, and service contracts. The form of contracts, preferably written, is important to avoid ambiguities and future disputes.",
+            "Contract Law also provides mechanisms to resolve conflicts and breaches, allowing parties to resort to the judiciary to demand compliance or termination of the contract, as well as compensation for damages.",
+            "The field is constantly evolving to adapt to new realities, such as electronic and international contracts, ensuring legal security in modern contractual relationships.",
+        ],
+        image: "/general_assets/banner_direito_civil.png",
+        link: "/direito-civil/direito-contratual",
+        slug: "direito-contratual",
+        category: "Civil Law",
+    },
+    {
+        title: "Banking Law",
+        description: "Banking Law regulates the activities of financial institutions, ensuring stability and confidence in the financial system.",
+        full_description: [
+            "Banking Law regulates the activities of financial institutions, ensuring stability and confidence in the financial system. It includes supervision by regulatory bodies such as the Central Bank, monitoring the solvency and liquidity of banks.",
+            "The regulation of banking contracts, such as credit and financing agreements, ensures transparency and consumer protection, preventing abuses. Banking Law also combats financial crimes, requiring institutions to adopt measures against money laundering and terrorism financing.",
+            "Finally, this area of law constantly adapts to technological innovations, regulating fintechs, cryptocurrencies, and new payment platforms to maintain the security and efficiency of the financial system.",
+        ],
+        image: "/general_assets/banner_direito_civil.png",
+        link: "/direito-civil/direito-bancario",
+        slug: "direito-bancario",
+        category: "Civil Law",
+    },
+    {
+        title: "Consumer Law",
+        description:
+            "Consumer Law protects the interests of consumers in consumer relations, establishing principles such as the protection of life, health, and safety, and the need for clear information about products and services.",
+        full_description: [
+            "Consumer Law protects the interests of consumers in consumer relations, establishing principles such as the protection of life, health, and safety, and the need for clear information about products and services. It aims to balance the relationship between suppliers and consumers, ensuring that consumers have access to accurate information and can make informed decisions.",
+            "Additionally, it regulates advertising and commercial practices, prohibiting misleading and abusive advertisements. It ensures the quality and safety of products, allowing consumers to demand repairs, replacements, or returns in case of problems. This protects consumers against fraud and unfair practices.",
+            "Consumer Law also offers conflict resolution mechanisms, such as consumer protection agencies and small claims courts. It is constantly evolving to keep up with market changes and new forms of consumption, such as e-commerce, ensuring consumer protection in all transactions.",
+        ],
+        image: "/general_assets/banner_direito_civil.png",
+        link: "/direito-civil/direito-consumidor",
+        slug: "direito-consumidor",
+        category: "Civil Law",
+    },
+    {
+        title: "Real Estate Law",
+        description:
+            "Real Estate Law is a branch of law that regulates transactions and legal relationships related to real estate. Its importance lies in ensuring legal security and organizing the negotiations for the purchase, sale, lease, and use of properties.",
+        full_description: [
+            "Real Estate Law is a branch of law that regulates transactions and legal relationships related to real estate. Its importance lies in ensuring legal security and organizing the negotiations for the purchase, sale, lease, and use of properties. This field covers everything from registration and documentation issues to the resolution of conflicts between owners and tenants.",
+            "Firstly, Real Estate Law establishes rules for the regularization of properties, including property registration in notary offices, obtaining certificates, and verifying the necessary documentation for real estate transactions. This process ensures that negotiations are transparent and that property rights are duly recognized and protected.",
+            "Additionally, Real Estate Law regulates purchase and sale contracts, leases, and other forms of property use. It defines the rights and duties of the parties involved, such as owners, tenants, and intermediaries, ensuring that contractual clauses are fulfilled and that possible disputes are resolved fairly. This area of law also keeps pace with changes in the real estate market, adapting to new realities and social demands, such as housing needs and property valuation.",
+            "In summary, Real Estate Law ensures legal security in real estate transactions, regulates the regularization of properties and necessary documentation, and defines rights and duties in purchase, sale, and lease contracts. It is constantly evolving to meet new market demands and ensure the protection of property rights.",
+        ],
+        image: "/general_assets/banner_direito_civil.png",
+        link: "/direito-civil/direito-imobiliario",
+        slug: "direito-imobiliario",
+        category: "Civil Law",
+    },
+    {
+        title: "National and International Family and Succession Law",
+        description:
+            "O Direito de Família e Sucessões protege os direitos dos membros da família e assegura a distribuição justa do patrimônio. Regula as relações familiares, incluindo casamento, divórcio e guarda de filhos, e trata da transferência de bens após a morte.",
+        full_description: [
+            "Family and Succession Law is a branch of law that regulates family relationships and the transfer of assets after a person's death. Its importance lies in ensuring the protection of family members' rights and the proper distribution of the estate. This area of law deals with issues such as marriage, divorce, child custody, and inheritance, both nationally and internationally.",
+            "Firstly, Family Law establishes norms for family relationships, including marriage, stable unions, divorce, and child custody. It defines the rights and duties of spouses and parents, aiming to protect the interests of children and ensure justice in family relations. Internationally, it addresses issues such as transnational marriages and custody disputes involving different countries, applying treaties and international conventions to resolve conflicts.",
+            "Additionally, Succession Law deals with the transfer of assets and rights after a person's death. It regulates the drafting of wills, legitimate succession, and disputes among heirs, ensuring that the deceased's wishes are respected and that assets are distributed according to the law. In the international context, it involves the succession of assets located in different countries, requiring the application of private international law norms and cooperation between jurisdictions.",
+            "In summary, Family and Succession Law protects the rights of family members and ensures the fair distribution of assets. It regulates family relationships, including marriage, divorce, and child custody, and deals with the transfer of assets after death. Internationally, it applies treaties and conventions to resolve transnational conflicts, ensuring the protection of rights and justice in family and succession matters.",
+        ],
+        image: "/general_assets/banner_direito_civil.png",
+        link: "/direito-civil/direito-familia-sucessoes",
+        slug: "direito-familia-sucessoes",
+        category: "Civil Law",
+    },
+    {
+        title: "Indemnities",
+        description:
+            "Indemnity Law is a branch of law aimed at the reparation of damages caused to a person or property. Its importance lies in the protection of individual rights and the guarantee that victims of damages can obtain fair compensation.",
+        full_description: [
+            "Indemnity Law is a branch of law aimed at the reparation of damages caused to a person or property. Its importance lies in the protection of individual rights and the guarantee that victims of damages can obtain fair compensation. This area covers various types of indemnities, including material, moral, and aesthetic damages, and applies both nationally and internationally.",
+            "Firstly, Indemnity Law establishes that anyone who causes damage to another, whether by action or omission, has the obligation to repair it. This includes material damages, which directly affect the victim's assets, and moral damages, which involve suffering, humiliation, or psychological distress. The norms define the criteria for the evaluation and quantification of these damages, ensuring that compensation is proportional to the harm suffered.",
+            "Additionally, Indemnity Law covers specific situations such as traffic accidents, medical errors, and environmental damages. In each case, it is necessary to prove the existence of the damage, the fault or responsibility of the perpetrator, and the causal link between the action and the damage. Internationally, it deals with cases involving parties from different countries, applying treaties and international conventions to resolve disputes and ensure adequate reparation.",
+            "In summary, Indemnity Law protects the rights of damage victims, guaranteeing fair compensation for material and moral damages. It establishes the obligation of reparation for those who cause damage and defines criteria for the evaluation and quantification of the harm. In an international context, it applies norms and treaties to resolve transnational disputes and ensure adequate reparation.",
+        ],
+        image: "/general_assets/banner_direito_civil.png",
+        link: "/direito-civil/direito-indenizacoes",
+        slug: "direito-indenizacoes",
+        category: "Civil Law",
+    },
+];
+
+export const Servicos_Empresarial: Expertise[] = [
     {
         title: "Appraisal of Withdrawing Partner’s Share",
         description:
@@ -969,6 +843,219 @@ export const Servicos_Empresarial = [
     },
 ];
 
+export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
+    {
+        title: "Investment Visas",
+        description:
+            "We assist foreigners who wish to obtain residency in Brazil through investments. Our firm provides full support in establishing companies, ensuring that all legal steps are fulfilled.",
+        full_description: [
+            "We assist foreigners who wish to obtain residency in Brazil through investments. Our firm provides full support in establishing companies, ensuring that all legal steps are fulfilled.",
+            "Additionally, we handle the Registration of Foreign Investments with the Central Bank, ensuring compliance with Brazilian law and facilitating the process for investors looking to establish or expand their businesses in the country.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-investimento",
+        slug: "vistos-investimento",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Family Reunion Visas",
+        description: "For foreigners seeking to reside in Brazil due to marriage, stable union, or children.",
+        full_description: [
+            "We assist through all stages of the process, from planning to the preparation of necessary documentation. We also represent our clients in administrative appeals, ensuring their rights are upheld, providing peace of mind to keep their families together.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-reuniao-familiar",
+        slug: "vistos-reuniao-familiar",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Work Visas",
+        description: "Our firm offers complete consultancy for Brazilian companies and foreign employees in obtaining work visas.",
+        full_description: [
+            "We ensure that all legal requirements are met, guiding companies through the requirements for hiring foreigners and assisting in the preparation of all documentation. Our goal is to facilitate the process for foreigners to work legally in Brazil without bureaucratic obstacles.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-de-trabalho",
+        slug: "vistos-de-trabalho",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Other Types of Visas",
+        description:
+            "We provide legal support for foreigners seeking different types of visas, whether for retirement, studies, or technical activities.",
+        full_description: [
+            "Our team closely follows the immigration process, offering personalized consultancy for each situation. We analyze the best options to meet the needs of each client, aiming for legal residency in Brazil, either temporarily or permanently.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/outros-vistos",
+        slug: "outros-vistos",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Brazilian Naturalization",
+        description: "Our firm offers full advisory services for foreigners who wish to become naturalized Brazilian citizens.",
+        full_description: [
+            "We provide guidance on the legal requirements and act directly with the Ministry of Justice to conduct the process efficiently. Additionally, we represent clients in nationality option cases and in reversing the loss of nationality, ensuring proper handling of complex and sensitive processes.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/naturalizacao-brasileira",
+        slug: "naturalizacao-brasileira",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Deportation, Extradition, and Asylum",
+        description: "We represent foreigners in deportation, extradition, and asylum cases in Brazil.",
+        full_description: [
+            "Specializing in services for Francophone clients, we provide effective and personalized legal support to ensure the protection of our clients' rights. Our attorneys work with dedication to prevent the expulsion or extradition of individuals, seeking legal alternatives to ensure their stay in the country.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/deportacao-extradicao-asilo",
+        slug: "deportacao-extradicao-asilo",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Real Estate Purchase Advisory",
+        description:
+            "The purchase of real estate in Brazil by foreigners requires specific legal care, and we offer complete advisory throughout all phases of this process.",
+        full_description: [
+            "We conduct a thorough review of documents, draft purchase and sale contracts, and research debts related to both the property and the owner. In addition, we provide guidance on the stages of international fund transfers, ensuring a secure purchase in compliance with the law.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/assessoria-compra-imoveis",
+        slug: "assessoria-compra-imoveis",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "General Support for Foreign Residents in Brazil",
+        description:
+            "We offer broad assistance to foreigners residing in Brazil, facilitating the acquisition of necessary documents, retirement regularization, and representation in legal proceedings.",
+        full_description: [
+            "Taborda Lima Advogados also provides support to expatriates in matters such as visa renewal and regularization of their status in the country, always ensuring that all legal procedures are properly followed, so they can live safely and peacefully.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/suporte-geral-estrangeiro-residente-brasil",
+        slug: "suporte-geral-estrangeiro-residente-brasil",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Foreign Investment",
+        description:
+            "It involves the allocation of capital to businesses or projects outside the investor's home country, aiming to diversify revenue sources and explore new market opportunities.",
+        full_description: [
+            "In Brazil, this type of investment is regulated by specific laws, which aim to both protect investors and ensure local economic development. Taborda Lima Advogados offers complete support in this process, guiding foreign investors on regulatory compliance, taxation, and business structuring.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/investimento-estrangeiro",
+        slug: "investimento-estrangeiro",
+        category: "Capital Markets and Foreign Investment",
+    },
+    {
+        title: "Cross-Border Transactions",
+        description: "These refer to financial or commercial operations carried out between companies or individuals from different countries.",
+        full_description: [
+            "These transactions involve specific legal and regulatory challenges, such as differences in each country's laws, exchange policies, and bilateral agreements. Taborda Lima Advogados works to ensure these operations are carried out safely and efficiently, offering legal consultancy on topics like international contracts, project financing, and risk management in international transactions.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/mercado-de-capitais-e-investimento-estrangeiro/transacoes-cross-border",
+        slug: "transacoes-cross-border",
+        category: "Capital Markets and Foreign Investment",
+    },
+];
+
+/* Ordem:  Immigration - 0, International - 1, Customs - 2, Sports - 3, Entertainment - 4, Civil - 5, Business - 6, Foreign - 7  */
+
+export const direito_migratorio_EN: Expertise_Data = {
+    key: "direito-migratorio",
+    slug: "/direito-migratorio",
+    name: "Immigration Law",
+    head_title: "International Law | Taborda Lima & Associated Lawyers",
+    head_description: "Specialized support in obtaining visas, enabling individuals to conduct their business or be employed in the United States.",
+    expertises: Servicos_Migratorio,
+    image: "/general_assets/banner_direito_migratorio.png",
+};
+
+export const direito_internacional_EN: Expertise_Data = {
+    key: "direito-internacional",
+    slug: "/direito-internacional",
+    name: "International Law",
+    head_title: "International Law | Taborda Lima & Associated Lawyers",
+    head_description: "Legal support for international transactions, ensuring compliance with laws and regulations in different countries.",
+    expertises: Servicos_Internacional,
+    image: "/general_assets/banner_direito_internacional.png",
+};
+
+export const direito_aduaneiro_EN: Expertise_Data = {
+    key: "direito-aduaneiro",
+    slug: "/direito-aduaneiro",
+    name: "Customs Law",
+    head_title: "Customs Law | Taborda Lima & Associated Lawyers",
+    head_description: "Legal advice on customs regulations and procedures, facilitating international trade operations.",
+    expertises: Servicos_Aduaneiro,
+    image: "/general_assets/banner_direito_aduaneiro.png",
+};
+
+export const direito_desportivo_EN: Expertise_Data = {
+    key: "direito-desportivo",
+    slug: "/direito-desportivo",
+    name: "Sports Law",
+    head_title: "Sports Law | Taborda Lima & Associated Lawyers",
+    head_description: "Legal support for athletes, clubs, and sports organizations, ensuring compliance with sports regulations.",
+    expertises: Servicos_Desportivo,
+    image: "/general_assets/banner_direito_desportivo.png",
+};
+
+export const direito_entretenimento_EN: Expertise_Data = {
+    key: "direito-entretenimento",
+    slug: "/direito-entretenimento",
+    name: "Entertainment Law",
+    head_title: "Entertainment Law | Taborda Lima & Associated Lawyers",
+    head_description: "Legal advice for artists, producers, and entertainment companies, ensuring compliance with industry regulations.",
+    expertises: Servicos_Entretenimento,
+    image: "/general_assets/banner_direito_entretenimento.jpg",
+};
+
+export const direito_civil_EN: Expertise_Data = {
+    key: "direito-civil",
+    slug: "/direito-civil",
+    name: "Civil Law",
+    head_title: "Civil Law | Taborda Lima & Associated Lawyers",
+    head_description: "Legal support for individuals and companies in civil matters, ensuring compliance with the Civil Code.",
+    expertises: Servicos_Civil,
+    image: "/general_assets/banner_direito_civil.png",
+};
+
+export const direito_empresarial_EN: Expertise_Data = {
+    key: "direito-empresarial",
+    slug: "/direito-empresarial",
+    name: "Business Law",
+    head_title: "Business Law | Taborda Lima & Associated Lawyers",
+    head_description: "Legal advice for companies and entrepreneurs, ensuring compliance with commercial regulations.",
+    expertises: Servicos_Empresarial,
+    image: "/general_assets/banner_direito_empresarial.png",
+};
+
+export const mercado_capitais_investimento_estrangeiro_EN: Expertise_Data = {
+    key: "mercado-de-capitais-e-investimento-estrangeiro",
+    slug: "/mercado-de-capitais-e-investimento-estrangeiro",
+    name: "Capital Market and Foreign Investment",
+    head_title: "Capital Market and Foreign Investment | Taborda Lima & Associated Lawyers",
+    head_description: "Legal advice for investors and companies in capital market operations and foreign investments.",
+    expertises: Servicos_Mercado_Capitais_Estangeiro,
+    image: "/general_assets/banner_mercado_capitais_investimento_estrangeiro.jpg",
+};
+
+export const expertise_data_EN: Expertise_Data[] = [
+    direito_migratorio_EN,
+    direito_internacional_EN,
+    direito_aduaneiro_EN,
+    direito_desportivo_EN,
+    direito_entretenimento_EN,
+    direito_civil_EN,
+    direito_empresarial_EN,
+    mercado_capitais_investimento_estrangeiro_EN,
+];
+
+// Outdated
 export const Exepertise_Data_EN = [
     {
         key: "civil",

@@ -13,9 +13,9 @@ import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 const DireitoDesportivo = () => {
     const t = useSimpleTranslation();
 
-    const direito_desportivo = t.expertise_data[1];
+    const direito_desportivo = t.expertise_data[3];
     const direito_desportivo_banner = t.landingPage.sections.expertise.expertiseBannerList[3];
-    const expertises_direito_desportivo = t.expertise_data[1].expertises;
+    const expertises_direito_desportivo = t.expertise_data[3].expertises;
 
     return (
         <>

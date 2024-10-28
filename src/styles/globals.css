@@ -1868,7 +1868,7 @@ footer > img {
     padding: var(--medium-gap);
     outline: 1px solid var(--brand-color-beige);
     flex-grow: 1;
-    flex-basis: 60ch;
+    flex-basis: 100ch;
     border-radius: var(--default-border-radius);
 
     scroll-snap-align: start;

@@ -10,16 +10,16 @@ import { commonTransition } from "@/utils/Animations";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 
-import { Exepertise_Data_EN } from "@/content-list/services/english";
-import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
+import { direito_civil_EN } from "@/content-list/services/english";
+import { direito_civil_PT } from "@/content-list/services/portuguese";
 
 import { useSimpleTranslation } from "@/international/use_translation";
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths: { params: { expertise_key: string }; locale: string }[] = [];
 
-    const expertises_PT = Exepertise_Data_PT[0].expertises;
-    const expertises_EN = Exepertise_Data_EN[0].expertises;
+    const expertises_PT = direito_civil_PT.expertises;
+    const expertises_EN = direito_civil_EN.expertises;
 
     console.log("expertises_PT:", expertises_PT);
     console.log("expertises_EN:", expertises_EN);
@@ -116,8 +116,8 @@ const ServicePage = ({ expertise }: { expertise: Service_Data | null }) => {
 export async function getStaticProps({ params, locale }: { params: { expertise_key: string }; locale: string }) {
     console.log(`getStaticProps called for locale: ${locale}, expertise_key: ${params.expertise_key}`);
 
-    const expertises_PT = Exepertise_Data_PT[0].expertises;
-    const expertises_EN = Exepertise_Data_EN[0].expertises;
+    const expertises_PT = direito_civil_PT.expertises;
+    const expertises_EN = direito_civil_EN.expertises;
 
     // Log the params and locale
     console.log("params:", params);

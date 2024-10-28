@@ -19,7 +19,8 @@ import { handleScheduleWhatsApp_EN, handleWhatsApp_EN } from "@/utils/WhatsApp_e
 import NewInstaFeed from "@/components/NewInstaFeed";
 import NewBannerSlider from "@/components/NewBannerSlider";
 import ExpertiseSlider from "@/components/ExpertiseSlider";
-import { Expertise_Group, Expertise } from "@/content-list/services/portuguese";
+import { Expertise } from "@/types/Expertise";
+import { Expertise_Data } from "@/types/Expertise_Data";
 import { faNewspaper } from "@fortawesome/free-regular-svg-icons";
 
 const officePictures = [
@@ -250,7 +251,7 @@ export default function Home() {
 
                 {/* Rodapé dos Links */}
                 <div className="expertise_footer">
-                    {t.expertise_data.map((expertise: Expertise_Group, index: number) => (
+                    {t.expertise_data.map((expertise: Expertise_Data, index: number) => (
                         <div className="expertise_footer_group" key={index}>
                             <h2 className="expertise_footer_group_title">{expertise.name}</h2>
                             <div className="expertise_footer_group_list">

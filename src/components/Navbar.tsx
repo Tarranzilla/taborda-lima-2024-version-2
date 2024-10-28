@@ -12,9 +12,9 @@ import { motion as m } from "framer-motion";
 
 import { useSimpleTranslation } from "@/international/use_translation";
 
-import { Exepertise_Data_EN } from "@/content-list/services/english";
-import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
-import { Expertise } from "@/content-list/services/english";
+import { expertise_data_EN } from "@/content-list/services/english";
+import { expertise_data_PT } from "@/content-list/services/portuguese";
+import { Expertise } from "@/types/Expertise";
 
 import DragAndCloseModal from "@/components/DragAndCloseModal";
 
@@ -51,7 +51,7 @@ const Navbar = () => {
     const searchIsEmpty = searchTerm === "";
 
     const searchExpertises = (searchTerm: string) => {
-        const expertise_list = isEnglish ? Exepertise_Data_EN : Exepertise_Data_PT;
+        const expertise_list = isEnglish ? expertise_data_EN : expertise_data_PT;
 
         return expertise_list.flatMap((expertise) =>
             expertise.expertises.filter((sub_expertise) => sub_expertise.title.toLowerCase().includes(searchTerm.toLowerCase()))

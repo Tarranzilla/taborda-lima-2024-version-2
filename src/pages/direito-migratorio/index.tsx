@@ -13,9 +13,9 @@ import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 const DireitoMigratorio = () => {
     const t = useSimpleTranslation();
 
-    const direito_migratório = t.expertise_data[3];
+    const direito_migratório = t.expertise_data[0];
     const direito_migratorio_banner = t.landingPage.sections.expertise.expertiseBannerList[0];
-    const expertises_direito_migratorio = t.expertise_data[3].expertises;
+    const expertises_direito_migratorio = t.expertise_data[0].expertises;
 
     return (
         <>

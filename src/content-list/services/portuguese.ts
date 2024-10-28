@@ -1,4 +1,7 @@
-export const Servicos_Mercado_Capitais_Estangeiro = [
+import { Expertise } from "@/types/Expertise";
+import { Expertise_Data } from "@/types/Expertise_Data";
+
+export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     {
         title: "Vistos de Investimento",
         description:
@@ -118,7 +121,7 @@ export const Servicos_Mercado_Capitais_Estangeiro = [
     },
 ];
 
-export const Servicos_Entretenimento = [
+export const Servicos_Entretenimento: Expertise[] = [
     {
         title: "Direitos autorais, marcas registradas e direitos de publicidade",
         description:
@@ -205,7 +208,7 @@ export const Servicos_Entretenimento = [
     },
 ];
 
-export const Servicos_Civil = [
+export const Servicos_Civil: Expertise[] = [
     {
         title: "Direito Contratual",
         description:
@@ -297,7 +300,7 @@ export const Servicos_Civil = [
     },
 ];
 
-export const Servicos_Desportivo = [
+export const Servicos_Desportivo: Expertise[] = [
     {
         title: "Negociação e Elaboração de Contratos de Transferência de Atletas",
         description:
@@ -397,7 +400,7 @@ export const Servicos_Desportivo = [
     },
 ];
 
-export const Servicos_Internacional = [
+export const Servicos_Internacional: Expertise[] = [
     {
         title: "Comércio Internacional",
         description:
@@ -581,7 +584,7 @@ export const Servicos_Internacional = [
     },
 ];
 
-export const Servicos_Migratorio = [
+export const Servicos_Migratorio: Expertise[] = [
     {
         title: "Visto L-1",
         description:
@@ -749,7 +752,7 @@ export const Servicos_Migratorio = [
     },
 ];
 
-export const Servicos_Aduaneiro = [
+export const Servicos_Aduaneiro: Expertise[] = [
     {
         title: "Análise e Elaboração de Contratos",
         description:
@@ -869,7 +872,7 @@ export const Servicos_Aduaneiro = [
     },
 ];
 
-export const Servicos_Empresarial = [
+export const Servicos_Empresarial: Expertise[] = [
     {
         title: "Apuração de Haveres do Sócio Retirante",
         description:
@@ -963,24 +966,108 @@ export const Servicos_Empresarial = [
     },
 ];
 
-export type Expertise = {
-    title: string;
-    description: string;
-    full_description: string[];
-    image: string;
-    link: string;
-    slug: string;
-    category: string;
+/* Ordem:  Immigration - 0, International - 1, Customs - 2, Sports - 3, Entertainment - 4, Civil - 5, Business - 6, Foreign - 7  */
+
+export const direito_migratorio_PT: Expertise_Data = {
+    key: "direito-migratorio",
+    slug: "/direito-migratorio",
+    name: "Direito Migratório",
+    head_title: "Direito Migratório | Taborda Lima & Advogados Associados",
+    head_description:
+        "Suporte especializado na obtenção de vistos, possibilitando que indivíduos conduzam seus negócios ou sejam empregados nos Estados Unidos.",
+    expertises: Servicos_Migratorio,
+    image: "/general_assets/banner_direito_migratorio.png",
 };
 
-export type Expertise_Group = {
-    key: string;
-    name: string;
-    head_title: string;
-    head_description: string;
-    expertises: Expertise[];
+export const direito_internacional_PT: Expertise_Data = {
+    key: "direito-internacional",
+    slug: "/direito-internacional",
+    name: "Direito Internacional",
+    head_title: "Direito Internacional | Taborda Lima & Advogados Associados",
+    head_description:
+        "Atendemos estrangeiros no Brasil, oferecendo suporte em inglês nativo, espanhol, italiano e português. Assessoramos investimentos, transações comerciais, propriedade intelectual e administração, alinhando interesses de brasileiros no exterior e estrangeiros no Brasil.",
+    expertises: Servicos_Internacional,
+    image: "/general_assets/banner_direito_internacional.png",
 };
 
+export const direito_aduaneiro_PT: Expertise_Data = {
+    key: "direito-aduaneiro",
+    slug: "/direito-aduaneiro",
+    name: "Direito Aduaneiro",
+    head_title: "Customs Law | Taborda Lima & Advogados Associados",
+    head_description:
+        "Oferecemos assistência em importação e exportação, com planejamento tributário especializado para transações de Comércio Exterior. Incluímos concessão de regimes aduaneiros especiais, identificação de benefícios fiscais e conformidade legal no Direito Aduaneiro.",
+    expertises: Servicos_Aduaneiro,
+    image: "/general_assets/banner_direito_aduaneiro.png",
+};
+
+export const direito_desportivo_PT: Expertise_Data = {
+    key: "direito-desportivo",
+    slug: "/direito-desportivo",
+    name: "Direito Desportivo",
+    head_title: "Direito Desportivo | Taborda Lima & Advogados Associados",
+    head_description:
+        "Elaboração e negociação de contratos, patrocínios, direitos de imagem e de arena, proteção de marcas e assessoria em questões trabalhistas específicas do esporte, além de questões como controle antidoping, licenciamento e métodos alternativos para a resolução de conflitos jurídico-desportivos.",
+    expertises: Servicos_Desportivo,
+    image: "/general_assets/banner_direito_desportivo.png",
+};
+
+export const direito_entretenimento_PT: Expertise_Data = {
+    key: "direito-entretenimento",
+    slug: "/direito-entretenimento",
+    name: "Direito do Entretenimento",
+    head_title: "Direito do Entretenimento | Taborda Lima & Advogados Associados",
+    head_description:
+        "Elaboração e negociação de contratos, patrocínios, direitos de imagem e autorais, proteção de marcas e assessoria em questões trabalhistas específicas do entretenimento.",
+    expertises: Servicos_Entretenimento,
+    image: "/general_assets/banner_direito_entretenimento.jpg",
+};
+
+export const direito_civil_PT: Expertise_Data = {
+    key: "direito-civil",
+    slug: "/direito-civil",
+    name: "Direito Cível",
+    head_title: "Direito Cível | Taborda Lima & Advogados Associados",
+    head_description:
+        "Atuamos em diversas áreas do direito civil, abrangendo Direito Bancário, Direito do Consumidor, Direito Contratual, Direito Imobiliário, Direito de Família e Sucessões, Indenizações, Arbitragens e Mediações.",
+    expertises: Servicos_Civil,
+    image: "/general_assets/banner_direito_civil.png",
+};
+
+export const direito_empresarial_PT: Expertise_Data = {
+    key: "direito-empresarial",
+    slug: "/direito-empresarial",
+    name: "Direito Empresarial",
+    head_title: "Direito Empresarial | Taborda Lima & Advogados Associados",
+    head_description:
+        "Atuamos em diversas áreas do Direito Empresarial, incluindo Direito Societário, Direito Contratual, Direito Tributário, Direito do Trabalho, Direito da Concorrência, Direito do Consumidor, Direito Ambiental e Direito Internacional.",
+    expertises: Servicos_Empresarial,
+    image: "/general_assets/banner_direito_empresarial.png",
+};
+
+export const mercado_capitais_investimento_estrangeiro_PT: Expertise_Data = {
+    key: "mercado-de-capitais-e-investimento-estrangeiro",
+    slug: "/mercado-de-capitais-e-investimento-estrangeiro",
+    name: "Mercado de Capitais e Investimento Estrangeiro",
+    head_title: "Mercado de Capitais e Investimento Estrangeiro | Taborda Lima & Advogados Associados",
+    head_description:
+        "Oferecemos consultoria jurídica especializada em operações no mercado de capitais, incluindo emissões de ações e títulos, e suporte em investimentos estrangeiros.",
+    expertises: Servicos_Mercado_Capitais_Estangeiro,
+    image: "/general_assets/banner_mercado_capitais_investimento_estrangeiro.jpg",
+};
+
+export const expertise_data_PT: Expertise_Data[] = [
+    direito_migratorio_PT,
+    direito_internacional_PT,
+    direito_aduaneiro_PT,
+    direito_desportivo_PT,
+    direito_entretenimento_PT,
+    direito_civil_PT,
+    direito_empresarial_PT,
+    mercado_capitais_investimento_estrangeiro_PT,
+];
+
+// Outdated
 export const Exepertise_Data_PT = [
     {
         key: "civil",

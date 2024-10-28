@@ -2,6 +2,9 @@ import { WebStructure } from "@/types/WebStructure";
 
 import { Exepertise_Data_EN } from "@/content-list/services/english";
 import { Banners_Data_EN } from "@/content-list/banners/english";
+
+import { expertise_data_EN } from "@/content-list/services/english";
+
 import { About_Data_EN } from "@/content-list/about/english";
 import { Team_Data_EN } from "@/content-list/team/english";
 import Privacy_Data_EN from "@/content-list/privacy/english";
@@ -40,7 +43,7 @@ const english_web_structure: WebStructure = {
         },
     },
 
-    expertise_data: Exepertise_Data_EN,
+    expertise_data: expertise_data_EN,
     team_data: Team_Data_EN,
     about_data: About_Data_EN,
 
@@ -69,10 +72,6 @@ const english_web_structure: WebStructure = {
             {
                 path: "/#consulta",
                 name: "Appointments",
-            },
-            {
-                path: "/#contato",
-                name: "Contact",
             },
             {
                 path: "/#novidades",
@@ -110,10 +109,6 @@ const english_web_structure: WebStructure = {
             {
                 path: "/#consulta",
                 name: "Appointments",
-            },
-            {
-                path: "/#contato",
-                name: "Contact",
             },
             {
                 path: "/#novidades",
@@ -216,7 +211,7 @@ const english_web_structure: WebStructure = {
                     "Our commitment to excellence and integrity is essential in every aspect of our work. Not only do we vigorously defend our clients' interests, but we also do so within the highest ethical standards.",
                 ],
 
-                expertiseList: Exepertise_Data_EN,
+                expertiseList: expertise_data_EN,
                 expertiseBannerList: Banners_Data_EN,
                 bannerMoreInfoBtn: {
                     title: "Know More",

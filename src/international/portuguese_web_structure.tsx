@@ -2,6 +2,9 @@ import { WebStructure } from "@/types/WebStructure";
 
 import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
 import { Banners_Data_PT } from "@/content-list/banners/portuguese";
+
+import { expertise_data_PT } from "@/content-list/services/portuguese";
+
 import { About_Data_PT } from "@/content-list/about/portuguese";
 import { Team_Data_PT } from "@/content-list/team/portuguese";
 import Privacy_Data_PT from "@/content-list/privacy/portuguese";
@@ -12,7 +15,7 @@ const portuguese_web_structure: WebStructure = {
         customScheduleText: "Agende uma Consulta",
         returnToAreasOfExpertise: "Áreas de Expertise",
         returnToMainPage: "Ir a Página Principal",
-        returnToImmigrationLaw: "Ir a Direito Imigratório",
+        returnToImmigrationLaw: "Ir a Direito Migratório",
         returnToInternationalLaw: "Ir a Direito Internacional",
         returnToCivilLaw: "Ir a Direito Civil",
         returnToCustomsLaw: "Ir a Direito Aduaneiro",
@@ -40,7 +43,7 @@ const portuguese_web_structure: WebStructure = {
         },
     },
 
-    expertise_data: Exepertise_Data_PT,
+    expertise_data: expertise_data_PT,
     team_data: Team_Data_PT,
     about_data: About_Data_PT,
 
@@ -69,10 +72,6 @@ const portuguese_web_structure: WebStructure = {
             {
                 path: "/#consulta",
                 name: "Consultas",
-            },
-            {
-                path: "/#contato",
-                name: "Contato",
             },
             {
                 path: "/#novidades",
@@ -110,10 +109,6 @@ const portuguese_web_structure: WebStructure = {
             {
                 path: "/#consulta",
                 name: "Consultas",
-            },
-            {
-                path: "/#contato",
-                name: "Contato",
             },
             {
                 path: "/#novidades",
@@ -214,7 +209,7 @@ const portuguese_web_structure: WebStructure = {
                     "Nosso compromisso com a excelência e a integridade é essencial em cada aspecto de nosso trabalho. Não apenas defendemos os interesses de nossos clientes de forma vigorosa, mas também o fazemos dentro dos mais altos padrões éticos.",
                 ],
 
-                expertiseList: Exepertise_Data_PT,
+                expertiseList: expertise_data_PT,
                 expertiseBannerList: Banners_Data_PT,
                 bannerMoreInfoBtn: {
                     title: "Mais Informações",
@@ -278,8 +273,8 @@ const portuguese_web_structure: WebStructure = {
             },
 
             updates: {
-                key: "atualizacoes",
-                title: "Atualizações",
+                key: "novidades",
+                title: "Novidades",
 
                 paragraphs: [
                     "Nos siga nas redes sociais e confira as últimas atualizações sobre as peculiaridades das nossas áreas de atuação, assim como notícias e informações sobre a advocacia no Brasil e no mundo!",

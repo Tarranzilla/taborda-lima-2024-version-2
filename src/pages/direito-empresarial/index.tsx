@@ -13,9 +13,9 @@ import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 const DireitoEmpresarial = () => {
     const t = useSimpleTranslation();
 
-    const direito_empresarial = t.expertise_data[5];
+    const direito_empresarial = t.expertise_data[6];
     const direito_empresarial_banner = t.landingPage.sections.expertise.expertiseBannerList[6];
-    const expertises_direito_empresarial = t.expertise_data[5].expertises;
+    const expertises_direito_empresarial = t.expertise_data[6].expertises;
 
     return (
         <>
