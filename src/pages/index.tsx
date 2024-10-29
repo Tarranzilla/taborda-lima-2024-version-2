@@ -113,14 +113,16 @@ export default function Home() {
 
                         <div className="Intro_Actions_Container">
                             <MotionLink whileTap={{ scale: 0.95 }} href={"/sobre"} className="Page_Button">
-                                <p>{t.landingPage.sections.home.aboutUsBtn.title}</p> <span className="material-icons">arrow_forward</span>
+                                <p className="Page_Button_Main_Text">{t.landingPage.sections.home.aboutUsBtn.title}</p>{" "}
+                                <span className="material-icons">arrow_forward</span>
                             </MotionLink>
                             <MotionLink whileTap={{ scale: 0.95 }} href={"/mercado-de-capitais-e-investimento-estrangeiro"} className="Page_Button">
-                                <p>{t.landingPage.sections.home.internationalServicesBtn.title}</p>
+                                <p className="Page_Button_Main_Text">{t.landingPage.sections.home.internationalServicesBtn.title}</p>
                                 <span className="material-icons">arrow_forward</span>
                             </MotionLink>
                             <MotionLink whileTap={{ scale: 0.95 }} href={"/#consulta"} className="Page_Button">
-                                <p>{t.landingPage.sections.home.scheduleBtn.title}</p> <span className="material-icons">arrow_forward</span>
+                                <p className="Page_Button_Main_Text">{t.landingPage.sections.home.scheduleBtn.title}</p>{" "}
+                                <span className="material-icons">arrow_forward</span>
                             </MotionLink>
                         </div>
                     </div>
