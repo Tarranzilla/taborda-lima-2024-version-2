@@ -163,19 +163,6 @@ export default function Home() {
                         </div>
 
                         <div className="Intro_Actions_Container">
-                            {/*
-                            
-                            <button className="Page_Button">
-                                <p>Rua Nilo Peçanha, nº648 - Centro Cívico - Curitiba - PR</p> <span className="material-icons">place</span>
-                            </button>
-
-                            */}
-
-                            <MotionLink whileTap={{ scale: 0.95 }} href={"https://google.com"} className="Page_Button">
-                                <p>Rua Nilo Peçanha, nº648 - Centro Cívico - Curitiba - PR</p>
-                                <span className="material-icons">place</span>
-                            </MotionLink>
-
                             <m.button
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => {
@@ -183,19 +170,25 @@ export default function Home() {
                                 }}
                                 className="Page_Button"
                             >
-                                <p>{t.landingPage.sections.appointments.appointmentBtn.title}</p>{" "}
-                                <span className="material-icons">arrow_forward</span>
+                                <p className="Page_Button_Main_Text">{t.landingPage.sections.appointments.appointmentBtn.title}</p>
+                                <p className="Page_Button_Detail">+55 41 992 416 343</p>
+                                <span className="material-icons">phone_forwarded</span>
                             </m.button>
 
                             <MotionLink whileTap={{ scale: 0.95 }} href={"mailto:contato@tabordalima.com"} className="Page_Button">
-                                <p>contato@tabordalima.com</p>
+                                <p className="Page_Button_Main_Text">Envie um Email</p>
+                                <p className="Page_Button_Detail">contato@tabordalima.com</p>
                                 <span className="material-icons">email</span>
                             </MotionLink>
-                            <MotionLink whileTap={{ scale: 0.95 }} href={"tel:+5541992416343"} className="Page_Button">
-                                <p>+55 41 992 416 343</p> <span className="material-icons">phone_forwarded</span>
-                            </MotionLink>
                             <MotionLink whileTap={{ scale: 0.95 }} href={"tel:+554133387611"} className="Page_Button">
-                                <p>+55 41 3338 7611</p> <span className="material-icons">fax</span>
+                                <p className="Page_Button_Main_Text">Ligue pelo Telefone</p>
+                                <p className="Page_Button_Detail">+55 41 3338 7611</p> <span className="material-icons">fax</span>
+                            </MotionLink>
+
+                            <MotionLink whileTap={{ scale: 0.95 }} href={"https://google.com"} className="Page_Button">
+                                <p className="Page_Button_Main_Text">Visite o Escritório</p>
+                                <p className="Page_Button_Detail">Rua Nilo Peçanha, nº648 - Centro Cívico - Curitiba - PR</p>
+                                <span className="material-icons">place</span>
                             </MotionLink>
                         </div>
                     </div>

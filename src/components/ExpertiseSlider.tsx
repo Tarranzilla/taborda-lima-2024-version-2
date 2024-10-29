@@ -58,8 +58,9 @@ export default function ExpertiseSlider({ padded }: { padded?: boolean }) {
                     <div key={index} className={padded ? "Expertise_Banner_Slide Padded" : "Expertise_Banner_Slide"}>
                         <h2 className="Banner_Title">{expertise_banner.title}</h2>
                         <p className="Banner_Description">{expertise_banner.description}</p>
-                        <MotionLink whileTap={{ scale: 0.95 }} href={expertise_banner.link} className="Banner_Btn Page_Button">
+                        <MotionLink whileTap={{ scale: 0.95 }} href={expertise_banner.link} className="Banner_Btn">
                             <p>{t.landingPage.sections.expertise.bannerMoreInfoBtn.title}</p>
+                            <span className="material-icons">arrow_forward</span>
                         </MotionLink>
                         <Image className="Banner_Img" src={expertise_banner.image} width={800} height={800} alt={expertise_banner.title} />
                     </div>
