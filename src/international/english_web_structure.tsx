@@ -13,6 +13,13 @@ import Terms_Data_EN from "@/content-list/terms/english";
 const english_web_structure: WebStructure = {
     common: {
         customScheduleText: "Schedule an Appointment",
+        sendEmailText: "Send us an Email",
+        callTelephoneText: "Call us on Telephone",
+        visitOfficeText: "Visit our Office",
+        signNewsletterText: "Subscribe to our Newsletter",
+        accessInstagramText: "Visit our Instagram",
+        accessLinkedinText: "Visit our LinkedIn",
+
         returnToAreasOfExpertise: "Areas of Expertise",
         returnToImmigrationLaw: "Go to Immigration Law",
         returnToInternationalLaw: "Go to International Law",

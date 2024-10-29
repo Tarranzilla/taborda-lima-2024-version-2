@@ -114,15 +114,15 @@ export default function Home() {
                         <div className="Intro_Actions_Container">
                             <MotionLink whileTap={{ scale: 0.95 }} href={"/sobre"} className="Page_Button">
                                 <p className="Page_Button_Main_Text">{t.landingPage.sections.home.aboutUsBtn.title}</p>{" "}
-                                <span className="material-icons">arrow_forward</span>
+                                <span className="material-icons">foundation</span>
                             </MotionLink>
                             <MotionLink whileTap={{ scale: 0.95 }} href={"/mercado-de-capitais-e-investimento-estrangeiro"} className="Page_Button">
                                 <p className="Page_Button_Main_Text">{t.landingPage.sections.home.internationalServicesBtn.title}</p>
-                                <span className="material-icons">arrow_forward</span>
+                                <span className="material-icons">public</span>
                             </MotionLink>
                             <MotionLink whileTap={{ scale: 0.95 }} href={"/#consulta"} className="Page_Button">
                                 <p className="Page_Button_Main_Text">{t.landingPage.sections.home.scheduleBtn.title}</p>{" "}
-                                <span className="material-icons">arrow_forward</span>
+                                <span className="material-icons">arrow_downward</span>
                             </MotionLink>
                         </div>
                     </div>
@@ -178,17 +178,17 @@ export default function Home() {
                             </m.button>
 
                             <MotionLink whileTap={{ scale: 0.95 }} href={"mailto:contato@tabordalima.com"} className="Page_Button">
-                                <p className="Page_Button_Main_Text">Envie um Email</p>
+                                <p className="Page_Button_Main_Text">{t.common.sendEmailText}</p>
                                 <p className="Page_Button_Detail">contato@tabordalima.com</p>
                                 <span className="material-icons">email</span>
                             </MotionLink>
                             <MotionLink whileTap={{ scale: 0.95 }} href={"tel:+554133387611"} className="Page_Button">
-                                <p className="Page_Button_Main_Text">Ligue pelo Telefone</p>
+                                <p className="Page_Button_Main_Text">{t.common.callTelephoneText}</p>
                                 <p className="Page_Button_Detail">+55 41 3338 7611</p> <span className="material-icons">fax</span>
                             </MotionLink>
 
                             <MotionLink whileTap={{ scale: 0.95 }} href={"https://google.com"} className="Page_Button">
-                                <p className="Page_Button_Main_Text">Visite o Escritório</p>
+                                <p className="Page_Button_Main_Text">{t.common.visitOfficeText}</p>
                                 <p className="Page_Button_Detail">Rua Nilo Peçanha, nº648 - Centro Cívico - Curitiba - PR</p>
                                 <span className="material-icons">place</span>
                             </MotionLink>
@@ -218,7 +218,7 @@ export default function Home() {
                                 rel="noopener noreferrer"
                                 className="Page_Button"
                             >
-                                <p>Assine a Newsletter</p> <FontAwesomeIcon icon={faNewspaper} />
+                                <p className="Page_Button_Main_Text">{t.common.signNewsletterText}</p> <FontAwesomeIcon icon={faNewspaper} />
                             </MotionLink>
 
                             <MotionLink
@@ -228,7 +228,7 @@ export default function Home() {
                                 rel="noopener noreferrer"
                                 className="Page_Button"
                             >
-                                <p>Instagram</p> <FontAwesomeIcon icon={faInstagram} />
+                                <p className="Page_Button_Main_Text">{t.common.accessInstagramText}</p> <FontAwesomeIcon icon={faInstagram} />
                             </MotionLink>
 
                             <MotionLink
@@ -238,7 +238,7 @@ export default function Home() {
                                 rel="noopener noreferrer"
                                 className="Page_Button"
                             >
-                                <p>LinkedIn</p> <FontAwesomeIcon icon={faLinkedin} />
+                                <p className="Page_Button_Main_Text">{t.common.accessLinkedinText}</p> <FontAwesomeIcon icon={faLinkedin} />
                             </MotionLink>
                         </div>
                     </div>

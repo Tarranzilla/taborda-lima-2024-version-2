@@ -181,12 +181,12 @@ label {
 .Banner_Btn > span,
 .Page_Button > span {
     color: var(--alt-text-color);
-    transition: padding 0.2s ease-in-out;
+    transition: scale 0.2s ease-in-out;
     margin-left: auto;
 }
 
 .Page_Button:hover > span {
-    padding-left: 1rem;
+    scale: 1.2;
 }
 
 .Page_Button > svg {
@@ -194,12 +194,13 @@ label {
     height: 1.5rem;
     fill: var(--alt-text-color);
     flex-shrink: 0;
+    margin-left: auto;
 
-    transition: margin 0.2s ease-in-out;
+    transition: scale 0.3s ease-in-out;
 }
 
 .Page_Button:hover > svg {
-    margin-left: 1rem;
+    scale: 1.2;
 }
 
 main {

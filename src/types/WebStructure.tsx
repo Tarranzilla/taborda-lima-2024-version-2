@@ -34,6 +34,13 @@ export type WebStructure = {
         };
 
         customScheduleText: string;
+        sendEmailText: string;
+        callTelephoneText: string;
+        visitOfficeText: string;
+        signNewsletterText: string;
+        accessInstagramText: string;
+        accessLinkedinText: string;
+
         returnToAreasOfExpertise: string;
         returnToMainPage: string;
         returnToImmigrationLaw: string;
@@ -44,6 +51,7 @@ export type WebStructure = {
         returnToSportsLaw: string;
         returnToEntertainmentLaw: string;
         returnToMarketLaw: string;
+
         customTitle: string;
         customDescription: string;
         customWebsiteURL: string;
