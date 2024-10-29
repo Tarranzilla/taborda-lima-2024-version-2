@@ -17,6 +17,7 @@ const portuguese_web_structure: WebStructure = {
         callTelephoneText: "Ligue pelo Telefone",
         visitOfficeText: "Visite o Escritório",
         signNewsletterText: "Assine a Newsletter",
+        signNewsletterSubscribeText: "Registrar",
         accessInstagramText: "Visite nosso Instagram",
         accessLinkedinText: "Visite nosso LinkedIn",
 
@@ -229,8 +230,7 @@ const portuguese_web_structure: WebStructure = {
                 title: "Consulta",
 
                 paragraphs: [
-                    "Estamos à disposição para esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o seu caso.",
-                    "Entre em contato conosco e agende uma consulta em poucos minutos!",
+                    "Nossa equipe está sempre disponível para atender você da maneira mais conveniente. Seja para esclarecer dúvidas, agendar uma consulta ou discutir os detalhes do seu caso, oferecemos diversas formas de contato para facilitar a comunicação.",
                 ],
 
                 appointmentBtn: {
@@ -244,7 +244,7 @@ const portuguese_web_structure: WebStructure = {
                 title: "Contato",
 
                 paragraphs: [
-                    "Estamos à disposição para agendar consultas, esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para o seu caso.",
+                    "Nossa equipe está sempre disponível para atender você da maneira mais conveniente. Seja para esclarecer dúvidas, agendar uma consulta ou discutir os detalhes do seu caso, oferecemos diversas formas de contato para facilitar a comunicação.",
                 ],
 
                 email: {

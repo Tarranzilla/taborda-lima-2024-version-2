@@ -17,6 +17,7 @@ const english_web_structure: WebStructure = {
         callTelephoneText: "Call us on Telephone",
         visitOfficeText: "Visit our Office",
         signNewsletterText: "Subscribe to our Newsletter",
+        signNewsletterSubscribeText: "Register",
         accessInstagramText: "Visit our Instagram",
         accessLinkedinText: "Visit our LinkedIn",
 
@@ -231,8 +232,7 @@ const english_web_structure: WebStructure = {
                 title: "Appointments",
 
                 paragraphs: [
-                    "We are available to clarify your doubts and help you find the best solution for your case.",
-                    "Contact us and schedule an appointment in just a few minutes!",
+                    "Our team is always available to assist you in the most convenient way. Whether to answer questions, schedule an appointment, or discuss the details of your case, we offer multiple contact options to make communication easier.",
                 ],
 
                 appointmentBtn: {

@@ -1946,6 +1946,45 @@ footer > img {
     color: var(--brand-color-beige);
 }
 
+.newsletter-form,
+.subscription_input_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--small-gap);
+    position: relative;
+    background-color: var(--brand-color-white);
+    border-radius: var(--small-gap);
+    padding-right: 0.25rem;
+}
+
+.newsletter-form > label,
+.subscription_input_container > label {
+    font-size: 0.8rem;
+    border-right: 1px solid var(--brand-color-beige);
+    padding-inline: var(--small-gap);
+    padding-block: 0.25rem;
+    color: var(--brand-color-beige);
+}
+
+.newsletter-form > .newsletter-form-input,
+.subscription_input_container > input {
+    border: none;
+    min-width: 20ch;
+    flex-grow: 1;
+}
+
+.newsletter-form-button {
+    background-color: var(--brand-color-beige);
+    border: none;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    margin-block: 0.25rem;
+    padding-inline: 0.5rem;
+    color: var(--brand-color-white);
+    cursor: pointer;
+}
+
 .Mobile_Only {
     display: none;
 }

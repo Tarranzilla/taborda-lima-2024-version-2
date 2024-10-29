@@ -38,6 +38,7 @@ export type WebStructure = {
         callTelephoneText: string;
         visitOfficeText: string;
         signNewsletterText: string;
+        signNewsletterSubscribeText: string;
         accessInstagramText: string;
         accessLinkedinText: string;
 

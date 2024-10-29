@@ -19,6 +19,9 @@ import { handleScheduleWhatsApp_EN, handleWhatsApp_EN } from "@/utils/WhatsApp_e
 import NewInstaFeed from "@/components/NewInstaFeed";
 import NewBannerSlider from "@/components/NewBannerSlider";
 import ExpertiseSlider from "@/components/ExpertiseSlider";
+
+import NewsletterForm from "@/components/NewsletterForm";
+
 import { Expertise } from "@/types/Expertise";
 import { Expertise_Data } from "@/types/Expertise_Data";
 import { faNewspaper } from "@fortawesome/free-regular-svg-icons";
@@ -211,15 +214,12 @@ export default function Home() {
                         </div>
 
                         <div className="Intro_Actions_Container">
-                            <MotionLink
-                                whileTap={{ scale: 0.95 }}
-                                href={"https://mailchi.mp/eccc85dd3b44/assine-nossa-newsletter"}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="Page_Button"
-                            >
-                                <p className="Page_Button_Main_Text">{t.common.signNewsletterText}</p> <FontAwesomeIcon icon={faNewspaper} />
-                            </MotionLink>
+                            <m.button whileTap={{ scale: 0.95 }} onClick={() => {}} rel="noopener noreferrer" className="Page_Button">
+                                <p className="Page_Button_Main_Text">{t.common.signNewsletterText}</p>
+                                <NewsletterForm />
+
+                                <FontAwesomeIcon icon={faNewspaper} />
+                            </m.button>
 
                             <MotionLink
                                 whileTap={{ scale: 0.95 }}
