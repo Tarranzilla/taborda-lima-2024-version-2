@@ -146,6 +146,13 @@ const Navbar = () => {
                                 height={32}
                                 alt="Language Selector"
                             />
+                            <Image
+                                src={"/general_assets/navbar_lang_btn_es.png"}
+                                className={isEnglish ? "Language_Flag_Img Active" : "Language_Flag_Img"}
+                                width={32}
+                                height={32}
+                                alt="Language Selector"
+                            />
                         </div>
                     </m.button>
                     <m.button

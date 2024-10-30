@@ -170,7 +170,8 @@ label {
 }
 
 .Page_Button_Main_Text {
-    font-weight: 600 !important;
+    font-weight: 500 !important;
+    text-align: start;
 }
 
 .Page_Button_Detail {
