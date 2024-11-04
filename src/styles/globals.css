@@ -755,6 +755,7 @@ section {
 }
 
 .Services_List_Item_Button {
+    width: unset;
     margin-top: auto;
     margin-left: auto;
     padding: var(--medium-gap) var(--large-gap);
