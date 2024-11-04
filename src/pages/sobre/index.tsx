@@ -7,7 +7,7 @@ import Link from "next/link";
 import { motion as m, useMotionValue, useTransform } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
 
-import { TeamMember } from "@/data/Team_Members";
+import { TeamMember } from "@/types/TeamMember";
 import { useSimpleTranslation } from "@/international/use_translation";
 
 const MotionLink = m(Link);

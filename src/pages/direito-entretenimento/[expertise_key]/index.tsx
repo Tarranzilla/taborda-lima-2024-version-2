@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Service_Data } from "@/data/Expertises";
+import { Expertise } from "@/types/Expertise";
 
 import { motion as m } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
@@ -14,15 +14,14 @@ import { direito_entretenimento_EN } from "@/content-list/services/english";
 import { direito_entretenimento_PT } from "@/content-list/services/portuguese";
 
 import { useSimpleTranslation } from "@/international/use_translation";
+import { direito_entretenimento_ES } from "@/content-list/services/spanish";
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths: { params: { expertise_key: string }; locale: string }[] = [];
 
     const expertises_PT = direito_entretenimento_PT.expertises;
     const expertises_EN = direito_entretenimento_EN.expertises;
-
-    // console.log("expertises_PT:", expertises_PT);
-    // console.log("expertises_EN:", expertises_EN);
+    const expertises_ES = direito_entretenimento_ES.expertises;
 
     // Add Portuguese paths
     expertises_PT.forEach((expertise) => {
@@ -42,6 +41,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
         }
     });
 
+    // Add Spanish paths
+    expertises_ES.forEach((expertise) => {
+        if (expertise.slug) {
+            paths.push({ params: { expertise_key: expertise.slug }, locale: "es" });
+        } else {
+            console.error("Missing Slug in Spanish expertise:", expertise);
+        }
+    });
+
     console.log("paths:", paths);
 
     return {
@@ -50,7 +58,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     };
 };
 
-const ServicePage = ({ expertise }: { expertise: Service_Data | null }) => {
+const ServicePage = ({ expertise }: { expertise: Expertise | null }) => {
     const t = useSimpleTranslation();
 
     if (!expertise) {
@@ -124,19 +132,27 @@ export async function getStaticProps({ params, locale }: { params: { expertise_k
 
     const expertises_PT = direito_entretenimento_PT.expertises;
     const expertises_EN = direito_entretenimento_EN.expertises;
-
-    // Log the params and locale
-    console.log("params:", params);
-    console.log("locale:", locale);
+    const expertises_ES = direito_entretenimento_ES.expertises;
 
     // Get the data for this page based on params
     const expertise_key = params.expertise_key;
-    const list = locale === "pt-BR" ? expertises_PT : expertises_EN;
-    console.log("expertise key:", expertise_key);
 
-    // Log the expertise lists
-    //console.log("expertiseList:", expertises_PT);
-    //console.log("expertiseList_EN:", expertises_EN);
+    let list;
+
+    switch (locale) {
+        case "pt-BR":
+            list = expertises_PT;
+            break;
+        case "es":
+            list = expertises_ES;
+            break;
+        case "en":
+            list = expertises_EN;
+            break;
+        default:
+            list = expertises_EN; // Fallback para inglês se o idioma não for reconhecido
+            break;
+    }
 
     const expertise = list.find((expertise) => expertise.slug === expertise_key);
 

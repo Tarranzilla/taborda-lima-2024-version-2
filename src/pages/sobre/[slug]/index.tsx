@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion as m } from "framer-motion";
 import { commonTransition } from "@/utils/Animations";
 
-import { teamMembers, TeamMember } from "@/data/Team_Members";
+import { TeamMember } from "@/types/TeamMember";
 
 import { Team_Data_EN } from "@/content-list/team/english";
 import { Team_Data_PT } from "@/content-list/team/portuguese";
