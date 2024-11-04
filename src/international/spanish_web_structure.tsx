@@ -1,14 +1,12 @@
 import { WebStructure } from "@/types/WebStructure";
 
-import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
-import { Banners_Data_PT } from "@/content-list/banners/portuguese";
+import { expertise_data_ES } from "@/content-list/services/spanish";
 
-import { expertise_data_PT } from "@/content-list/services/portuguese";
-
-import { About_Data_PT } from "@/content-list/about/portuguese";
-import { Team_Data_PT } from "@/content-list/team/portuguese";
-import Privacy_Data_PT from "@/content-list/privacy/portuguese";
-import Terms_Data_PT from "@/content-list/terms/portuguese";
+import { About_Data_ES } from "@/content-list/about/spanish";
+import { Team_Data_ES } from "@/content-list/team/spanish";
+import Privacy_Data_ES from "@/content-list/privacy/spanish";
+import Terms_Data_ES from "@/content-list/terms/spanish";
+import { Banners_Data_ES } from "@/content-list/banners/spanish";
 
 const spanish_web_structure: WebStructure = {
     common: {
@@ -52,9 +50,9 @@ const spanish_web_structure: WebStructure = {
         },
     },
 
-    expertise_data: expertise_data_PT,
-    team_data: Team_Data_PT,
-    about_data: About_Data_PT,
+    expertise_data: expertise_data_ES,
+    team_data: Team_Data_ES,
+    about_data: About_Data_ES,
 
     navbar: {
         logo: {
@@ -163,12 +161,12 @@ const spanish_web_structure: WebStructure = {
 
     privacy: {
         title: "Política de Privacidad",
-        paragraphs: Privacy_Data_PT,
+        paragraphs: Privacy_Data_ES,
     },
 
     terms: {
         title: "Términos de Uso",
-        paragraphs: Terms_Data_PT,
+        paragraphs: Terms_Data_ES,
     },
 
     landingPage: {
@@ -218,8 +216,8 @@ const spanish_web_structure: WebStructure = {
                     "Nuestro compromiso con la excelencia y la integridad es esencial en cada aspecto de nuestro trabajo. No solo defendemos los intereses de nuestros clientes de manera vigorosa, sino que también lo hacemos dentro de los más altos estándares éticos.",
                 ],
 
-                expertiseList: expertise_data_PT,
-                expertiseBannerList: Banners_Data_PT,
+                expertiseList: expertise_data_ES,
+                expertiseBannerList: Banners_Data_ES,
                 bannerMoreInfoBtn: {
                     title: "Más Información",
                     label: "Conozca Más",

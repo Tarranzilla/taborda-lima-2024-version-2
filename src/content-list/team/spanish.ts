@@ -1,0 +1,111 @@
+export type TeamMember = {
+    name: string;
+    role: string;
+    slug: string;
+    memberPage: string;
+    linkedin: string;
+    oab: string;
+    oabLink: string;
+    bio: string[];
+    image: string;
+};
+
+export const Team_Data_ES = [
+    {
+        name: "Liana Taborda Lima",
+        role: "Abogada Senior",
+        slug: "liana-taborda-lima",
+        memberPage: "/sobre/liana-taborda-lima",
+        linkedin: "https://www.linkedin.com/in/liana-taborda-lima-7b1b1b1b1/",
+        oab: "OAB/PR 18983",
+        oabLink: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=18983&tpinsc=A",
+        bio: [
+            "Abogada experimentada y socia fundadora del despacho Taborda Lima & Advogados Associados, con sede en Curitiba. Con más de veinte años de experiencia en el mercado jurídico, Liana se destaca en el área internacional, centrándose en Comercio Internacional, Derecho Aduanero e Inmigración de EE.UU.",
+            "Además de poseer una maestría en Derecho Internacional por la Pontificia Universidad Católica de Paraná, Liana también tiene una maestría en Derecho Empresarial y Ciudadanía por el Centro Universitario de Curitiba, en 2015.",
+            "Actuando en el área internacional, Liana tiene experiencia en Comercio Internacional, Derecho Aduanero e Inmigración para EE.UU., Europa y varios otros países.",
+            "Con su sólida formación académica y vasta experiencia práctica, Liana es una referencia respetada en el ámbito jurídico, proporcionando asesoría jurídica confiable y estratégica a sus clientes.",
+        ],
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Cesar Augusto Taborda Lima",
+        role: "Abogado Socio",
+        slug: "cesar-augusto-taborda-lima",
+        memberPage: "/sobre/cesar-augusto-taborda-lima",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 112654",
+        oabLink: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=112654&tpinsc=A",
+        bio: [
+            "Cesar Augusto Taborda Lima es socio del despacho Taborda Lima y actúa como Head of Immigration and International Law en Taborda Lima & Advogados Associados.",
+            "Con experiencia en las áreas de Inmigración/Migración y Derecho Internacional, sus servicios incluyen asesoría jurídica, derecho de propiedad intelectual, derecho del entretenimiento, derecho de inmigración y derecho societario.",
+            "Con una carrera de tiempo completo en Taborda Lima & Advogados Associados desde enero de 2017, acumulando más de 7 años y 2 meses de experiencia, Cesar tiene una formación académica en Derecho y una posgrado en Derecho Internacional por la Pontificia Universidad Católica de Paraná.",
+        ],
+        image: "/team/equipe_cesar_01.png",
+    },
+    {
+        name: "Lilian Taborda",
+        role: "Abogada Socia",
+        slug: "lilian-taborda",
+        memberPage: "/sobre/lilian-taborda",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Amanda Lazarotti Maciel",
+        role: "Controladoria",
+        slug: "amanda-lazarotti-maciel",
+        memberPage: "/sobre/amanda-lazarotti-maciel",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Juliana Prata",
+        role: "Compliance",
+        slug: "juliana-prata",
+        memberPage: "/sobre/juliana-prata",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Daniella da Matta",
+        role: "Controladoria",
+        slug: "daniella-da-matta",
+        memberPage: "/sobre/daniella-da-matta",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Rafael Weiss Brandt",
+        role: "Controladoria",
+        slug: "rafael-weiss-brandt",
+        memberPage: "/sobre/rafael-weiss-brandt",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Susan Petza",
+        role: "Controladoria",
+        slug: "susan-petza",
+        memberPage: "/sobre/susan-petza",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+        image: "/team/equipe_placeholder.png",
+    },
+];
