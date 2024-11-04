@@ -88,9 +88,9 @@ const english_web_structure: WebStructure = {
         ],
 
         langBtn: {
-            text: "Mudar o Idioma para Português",
-            label: "Change the Language to Portuguese",
-            availableLangs: ["en", "pt-BR"],
+            text: "Mudar o Idioma",
+            label: "Change the Language",
+            availableLangs: ["en", "pt-BR", "es"],
         },
 
         menuBtn: {
@@ -143,9 +143,9 @@ const english_web_structure: WebStructure = {
         },
 
         langBtn: {
-            text: "Mudar o Idioma para Português",
-            label: "Change the Language to Portuguese",
-            availableLangs: ["en", "pt-BR"],
+            text: "Change the Language",
+            label: "Change the Language",
+            availableLangs: ["en", "pt-BR", "es"],
         },
 
         copyRight: "© 2024 | Taborda Lima",
@@ -171,7 +171,7 @@ const english_web_structure: WebStructure = {
     },
 
     landingPage: {
-        title: "Taborda Lima | Advocacy and Legal Consultancy",
+        title: "Taborda Lima & Associated Lawyers",
         description:
             "Recognized for excellence and agility in providing legal services, we have a history of nearly 30 years dedicated exclusively to law practice. With operations both in Brazil and abroad, our firm offers personalized and efficient services in matters of International Law and Immigration.",
         sections: {

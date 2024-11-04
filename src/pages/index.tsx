@@ -15,7 +15,8 @@ import GoogleMap from "@/components/GoogleMap";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 
 import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
-import { handleScheduleWhatsApp_EN, handleWhatsApp_EN } from "@/utils/WhatsApp_en";
+import { handleScheduleWhatsApp_EN } from "@/utils/WhatsApp_en";
+import { handleScheduleWhatsApp_ES } from "@/utils/WhatsApp_es";
 import NewInstaFeed from "@/components/NewInstaFeed";
 import NewBannerSlider from "@/components/NewBannerSlider";
 import ExpertiseSlider from "@/components/ExpertiseSlider";
@@ -76,6 +77,8 @@ export default function Home() {
     const router = useRouter();
 
     const isEnglish = router.locale === "en";
+    const isPortuguese = router.locale === "pt-BR";
+    const isSpanish = router.locale === "es";
 
     return (
         <>
@@ -171,7 +174,9 @@ export default function Home() {
                             <m.button
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => {
-                                    isEnglish ? handleScheduleWhatsApp_EN() : handleScheduleWhatsApp();
+                                    isEnglish && handleScheduleWhatsApp_EN();
+                                    isPortuguese && handleScheduleWhatsApp();
+                                    isSpanish && handleScheduleWhatsApp_ES();
                                 }}
                                 className="Page_Button"
                             >

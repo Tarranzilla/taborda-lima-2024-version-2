@@ -155,6 +155,10 @@ label {
     height: 3.4rem;
 }
 
+.Expertise_Header_Top_Nav_Button {
+    width: unset;
+}
+
 .Banner_Btn > p,
 .Page_Button > p {
     font-size: 1.1rem;
@@ -697,6 +701,7 @@ section {
     letter-spacing: 0.5rem;
     font-family: var(--text-font-family);
     font-weight: 300;
+    text-align: center;
 }
 
 .Expertise_Header_Info_Description {

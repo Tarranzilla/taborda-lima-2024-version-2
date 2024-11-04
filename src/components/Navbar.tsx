@@ -266,7 +266,9 @@ const Navbar = () => {
                         }}
                     >
                         <span className="material-icons">language</span>
-                        {isEnglish ? "Mudar para Português" : "Change to English"}
+                        {isEnglish && "Change Language | EN"}
+                        {isPortuguese && "Mudar Idioma | PT"}
+                        {isSpanish && "Cambiar el Idioma | ES"}
                     </m.button>
 
                     <span className="Service_Full_Description_Pattern Menu_Pattern"></span>

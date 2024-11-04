@@ -10,6 +10,7 @@ import { TeamMember } from "@/types/TeamMember";
 
 import { Team_Data_EN } from "@/content-list/team/english";
 import { Team_Data_PT } from "@/content-list/team/portuguese";
+import { Team_Data_ES } from "@/content-list/team/spanish";
 
 import CardPanner from "@/components/CardPanner";
 const MotionLink = m(Link);
@@ -37,7 +38,16 @@ export const getStaticPaths: GetStaticPaths = async () => {
         }
     });
 
-    console.log("paths:", paths);
+    // Add Spanish paths
+    Team_Data_ES.forEach((person) => {
+        if (person.slug) {
+            paths.push({ params: { slug: person.slug }, locale: "es" });
+        } else {
+            console.error("Missing team member in spanish:", person);
+        }
+    });
+
+    console.log("team paths:", paths);
 
     return {
         paths,
@@ -90,15 +100,29 @@ const TeamMemberDetailPage = ({ person }: { person: TeamMember | null }) => {
 };
 
 export async function getStaticProps({ params, locale }: { params: { slug: string }; locale: string }) {
-    console.log(`getStaticProps called for locale: ${locale}, slug: ${params.slug}`);
     if (!params || typeof params.slug !== "string") {
         return {
             notFound: true,
         };
     }
 
-    const list = locale === "pt-BR" ? Team_Data_PT : Team_Data_EN;
-    console.log("team membeer slug:", params.slug);
+    let list;
+
+    switch (locale) {
+        case "pt-BR":
+            list = Team_Data_PT;
+            break;
+        case "es":
+            list = Team_Data_ES;
+            break;
+        case "en":
+            list = Team_Data_EN;
+            break;
+        default:
+            list = Team_Data_EN; // Fallback para inglês se o idioma não for reconhecido
+            break;
+    }
+
     const person = list.find((person) => person.slug === params.slug);
 
     if (!person) {

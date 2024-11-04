@@ -298,22 +298,6 @@ export const Servicos_Civil: Expertise[] = [
         slug: "indemnizacoes",
         category: "Derecho Civil",
     },
-    {
-        title: "Arbitrajes y Mediaciones",
-        description:
-            "Los Arbitrajes y Mediaciones son métodos alternativos de resolución de conflictos que ofrecen una solución más rápida y flexible en comparación con los procesos judiciales. Fomentan el diálogo y el entendimiento entre las partes, buscando acuerdos que satisfagan a todos los involucrados.",
-        full_description: [
-            "Los Arbitrajes y Mediaciones son métodos alternativos de resolución de conflictos que ofrecen una solución más rápida y flexible en comparación con los procesos judiciales. Ambos métodos se basan en la voluntad de las partes de resolver sus diferencias de forma amigable, evitando el desgaste emocional y financiero de un proceso judicial.",
-            "La Mediación consiste en la intervención de un tercero imparcial, el mediador, que facilita el diálogo entre las partes y ayuda a encontrar un acuerdo satisfactorio para ambos lados. Este proceso es voluntario y confidencial, permitiendo a las partes explorar soluciones creativas y personalizadas para sus conflictos.",
-            "El Arbitraje, por otro lado, implica la designación de un árbitro o un panel de árbitros que toman una decisión vinculante sobre el conflicto. Este método es más formal que la mediación, pero sigue siendo más ágil que el litigio tradicional. El arbitraje es especialmente útil en disputas comerciales y contractuales, donde las partes buscan una resolución eficiente y especializada.",
-            "Ambos métodos fomentan el diálogo y el entendimiento entre las partes, buscando acuerdos que satisfagan a todos los involucrados. Además, son compatibles con los procesos judiciales, ya que las partes pueden recurrir a la mediación o el arbitraje antes de iniciar un litigio o durante el proceso judicial.",
-            "En resumen, los Arbitrajes y Mediaciones son herramientas importantes en el campo del Derecho Civil, ofreciendo alternativas efectivas para la resolución de conflictos y contribuyendo a la pacificación de las relaciones entre las partes.",
-        ],
-        image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil/arbitragem-mediacao",
-        slug: "arbitragem-mediacao",
-        category: "Derecho Civil",
-    },
 ];
 
 export const Servicos_Desportivo: Expertise[] = [
@@ -363,22 +347,6 @@ export const Servicos_Desportivo: Expertise[] = [
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/representacao-litigios-desportivos",
         slug: "representacao-litigios-desportivos",
-        category: "Derecho Deportivo",
-    },
-    {
-        title: "Regulación de Patrocinios y Publicidad en el Deporte",
-        description:
-            "Este servicio asegura que todas las actividades de patrocinio y publicidad cumplan con las normativas vigentes, protegiendo los derechos de los atletas y las marcas.",
-        full_description: [
-            "La regulación de patrocinios y publicidad en el deporte es un servicio esencial que garantiza la legalidad y la ética de las relaciones comerciales entre marcas, atletas y organizaciones deportivas. Este servicio es fundamental para asegurar que todas las actividades de patrocinio y publicidad cumplan con las normativas vigentes, promoviendo la transparencia y protegiendo los derechos de los atletas y las marcas. La experiencia en Derecho Deportivo es vital para navegar por las complejas regulaciones y requisitos que rigen estas relaciones comerciales.",
-            "El proceso de regulación de patrocinios y publicidad en el deporte involucra varias etapas críticas. Inicialmente, los abogados especializados analizan los contratos de patrocinio, asegurando que sean justos y equilibrados, protegiendo los derechos de ambas partes. Esto puede incluir la revisión de cláusulas relacionadas con la exclusividad, derechos de imagen, compensación financiera y duración del acuerdo. Además, los abogados deben asegurarse de que las campañas publicitarias cumplan con las regulaciones de publicidad del deporte y las leyes de protección del consumidor, evitando prácticas engañosas o injustas.",
-            "Una peculiaridad de este servicio es la necesidad de entender la intersección entre el derecho del deporte y el derecho comercial, ya que los patrocinios y la publicidad implican no solo aspectos deportivos, sino también comerciales y de marketing. Además, los abogados deben estar atentos a las tendencias y cambios en el mercado deportivo, así como a las expectativas de los consumidores y la percepción pública, asegurando que los acuerdos de patrocinio y publicidad se alineen con las mejores prácticas y estándares éticos.",
-            "La importancia de la regulación de patrocinios y publicidad en el deporte radica en la protección de los derechos e intereses de los atletas y las marcas. Al asegurar que todas las actividades sean legales y éticas, este servicio contribuye a la creación de relaciones comerciales duraderas y beneficiosas para todas las partes involucradas. Además, la regulación adecuada protege la integridad del deporte y promueve la confianza pública en las competiciones y las marcas asociadas.",
-            "En resumen, la regulación de patrocinios y publicidad en el deporte es un componente vital del Derecho Deportivo que asegura la legalidad y la ética de las relaciones comerciales. Este servicio asegura que todas las actividades de patrocinio y publicidad cumplan con las normativas vigentes, protegiendo los derechos de los atletas y las marcas. La experiencia de los abogados especializados es crucial para navegar por las complejidades de estas relaciones comerciales, garantizando acuerdos justos y transparentes que beneficien a todas las partes involucradas.",
-        ],
-        image: "/general_assets/banner_direito_desportivo.png",
-        link: "/direito-desportivo/regulacao-patrocinios-publicidade",
-        slug: "regulacao-patrocinios-publicidade",
         category: "Derecho Deportivo",
     },
     {
@@ -598,6 +566,22 @@ export const Servicos_Internacional: Expertise[] = [
         slug: "estruturacao-juridica-operacoes-comerciais",
         category: "Derecho Internacional",
     },
+    {
+        title: "Protección y Defensa de los Derechos en los Tribunales y Cámaras de Arbitraje Nacional e Internacional",
+        description:
+            "Un servicio crucial para individuos y empresas que buscan resolver conflictos de manera justa y eficiente. Esta práctica jurídica garantiza que las partes involucradas en una disputa tengan sus intereses protegidos y que los litigios sean resueltos de acuerdo con la ley.",
+        full_description: [
+            "La protección y defensa de los derechos en los tribunales y cámaras de arbitraje nacionales es un servicio crucial para individuos y empresas que buscan resolver conflictos de manera justa y eficiente. Esta práctica jurídica garantiza que las partes involucradas en una disputa tengan sus intereses protegidos y que los litigios sean resueltos de acuerdo con la ley. La importancia de este servicio radica en la capacidad de proporcionar una resolución definitiva y legalmente vinculante para disputas, minimizando el impacto negativo de conflictos prolongados.",
+            "El proceso de protección y defensa de los derechos en los tribunales comienza con un análisis detallado del caso. Los abogados revisan los hechos, recogen pruebas y analizan las leyes aplicables para desarrollar una estrategia legal sólida. Esta etapa inicial es crucial para garantizar que el caso esté bien fundamentado y que todas las opciones legales sean consideradas. Una vez preparado, el caso se presenta al tribunal competente, donde los abogados representan a sus clientes en todas las fases del proceso judicial, desde la presentación de peticiones hasta las audiencias y el juicio final.",
+            "En paralelo al sistema judicial tradicional, el arbitraje emerge como una alternativa eficaz para la resolución de disputas. Las cámaras de arbitraje ofrecen un entorno más flexible y privado para la resolución de conflictos, permitiendo que las partes elijan árbitros especializados en el asunto en cuestión. El proceso de arbitraje generalmente es más rápido y menos formal que los procesos judiciales tradicionales, y las decisiones de los árbitros son legalmente vinculantes y ejecutables.",
+            "La defensa en tribunales y cámaras de arbitraje requiere un entendimiento profundo de las particularidades de cada foro. En los tribunales, los abogados deben estar familiarizados con los procedimientos procesales y las normas de evidencia, mientras que en el arbitraje es crucial entender las reglas específicas de la cámara de arbitraje elegida y la legislación aplicable. Además, la habilidad de negociación y mediación es frecuentemente esencial para alcanzar acuerdos favorables antes de un juicio o decisión arbitral.",
+            "En resumen, la protección y defensa de los derechos en los tribunales y cámaras de arbitraje nacionales es esencial para resolver disputas de manera justa y eficiente. Con un enfoque estratégico, una comprensión detallada de las leyes y procedimientos aplicables, y la capacidad de representar eficazmente los intereses de los clientes, los abogados pueden garantizar que las disputas sean resueltas de forma satisfactoria. Este servicio no solo protege los derechos de las partes involucradas, sino que también promueve la justicia y la estabilidad en las relaciones comerciales y personales.",
+        ],
+        image: "/general_assets/banner_direito_internacional.png",
+        link: "/direito-internacional/protecao-defesa-direitos-tribunais-camaras-arbitragem",
+        slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem",
+        category: "Derecho Internacional",
+    },
 ];
 
 export const Servicos_Migratorio: Expertise[] = [
@@ -718,6 +702,21 @@ export const Servicos_Migratorio: Expertise[] = [
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-3",
         slug: "visto-eb-3",
+        category: "Derecho Migratorio",
+    },
+    {
+        title: "Visa EB-4",
+        description: "El visa EB-4 es un visa de inmigrante para trabajadores religiosos, funcionarios del gobierno, médicos y otros.",
+        full_description: [
+            "La obtención del Visa EB-4 es un servicio esencial para ciertas categorías de inmigrantes especiales que desean residir y trabajar en los Estados Unidos. Este visa es de gran importancia para una variedad de individuos, incluidos religiosos, empleados de organizaciones internacionales, médicos, traductores del gobierno de EE. UU., entre otros. La experiencia en Derecho Migratorio es fundamental para navegar por los requisitos específicos de este visa, asegurando que los candidatos calificados puedan maximizar sus posibilidades de éxito.",
+            "El proceso de obtención del Visa EB-4 comienza con la determinación de la elegibilidad del candidato de acuerdo con una de las subcategorías de inmigrantes especiales. El empleador o el candidato debe presentar una petición de inmigrante, conocida como Formulario I-360, al Servicio de Ciudadanía e Inmigración de los Estados Unidos (USCIS). Cada subcategoría tiene requisitos específicos que deben ser cumplidos y documentados, como pruebas de empleo continuo para trabajadores religiosos, o de servicio calificado para traductores iraquíes o afganos que trabajaron con el gobierno de EE. UU. Después de la aprobación de la petición, los candidatos pueden solicitar un visa de inmigrante a través del consulado estadounidense o ajustar su estatus si ya se encuentran en los Estados Unidos.",
+            "Una peculiaridad del Visa EB-4 es la amplia gama de categorías que cubre, cada una con sus propios requisitos y procesos de calificación. Por ejemplo, los trabajadores religiosos deben demostrar que han sido miembros de una denominación religiosa durante al menos dos años y que continuarán trabajando en una capacidad religiosa en los Estados Unidos. Los médicos extranjeros que se han comprometido a trabajar en áreas desatendidas en EE. UU. también deben proporcionar evidencia de su compromiso y calificaciones. Debido a la diversidad de las categorías, los abogados especializados necesitan tener un conocimiento profundo de los diversos requisitos y ser capaces de adaptar sus estrategias en consecuencia.",
+            "La importancia del Visa EB-4 radica en su capacidad para facilitar la inmigración de individuos que prestan servicios esenciales y contribuciones significativas a la sociedad estadounidense. Este visa no solo beneficia a los individuos que lo reciben, sino que también apoya a las comunidades y organizaciones que dependen de sus servicios. La presencia de estos profesionales y trabajadores especializados fortalece el tejido social y económico de los Estados Unidos, promoviendo la diversidad y la inclusión. Los abogados especializados en Derecho Migratorio desempeñan un papel crucial al guiar a los candidatos a través del complejo proceso de solicitud, asegurando que se cumplan todos los requisitos y que la petición se presente de manera precisa y convincente.",
+            "En resumen, el Visa EB-4 es un componente vital del Derecho Migratorio que permite que inmigrantes especiales residan y trabajen en los Estados Unidos. Este servicio asegura que los candidatos calificados puedan aprovechar las oportunidades ofrecidas por este programa de inmigración, contribuyendo significativamente a la sociedad estadounidense. La experiencia de los abogados especializados es esencial para navegar por las complejidades del proceso de solicitud, garantizando que los candidatos presenten peticiones bien documentadas y convincentes, aumentando sus posibilidades de éxito en la obtención del Visa EB-4.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-eb-4",
+        slug: "visto-eb-4",
         category: "Derecho Migratorio",
     },
     {

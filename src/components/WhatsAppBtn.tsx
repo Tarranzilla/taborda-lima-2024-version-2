@@ -4,9 +4,11 @@ import { useRouter } from "next/router";
 
 import { handleWhatsApp } from "@/utils/WhatsApp";
 import { handleWhatsApp_EN } from "@/utils/WhatsApp_en";
+import { handleWhatsApp_ES } from "@/utils/WhatsApp_es";
 
 import { handleScheduleWhatsApp } from "@/utils/WhatsApp";
 import { handleScheduleWhatsApp_EN } from "@/utils/WhatsApp_en";
+import { handleScheduleWhatsApp_ES } from "@/utils/WhatsApp_es";
 
 import { useSimpleTranslation } from "@/international/use_translation";
 import Link from "next/link";
@@ -22,6 +24,8 @@ const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHi
     const router = useRouter();
 
     const isEnglish = router.locale === "en";
+    const isPortuguese = router.locale === "pt-BR";
+    const isSpanish = router.locale === "es";
 
     const t = useSimpleTranslation();
 
@@ -29,7 +33,9 @@ const WhatsAppBtn: React.FC<WhatsAppBtnProps> = ({ position, high = false, notHi
         <m.div
             whileHover={{ scale: 1.1 }}
             onClick={() => {
-                isEnglish ? handleWhatsApp_EN() : handleWhatsApp();
+                isEnglish && handleWhatsApp_EN();
+                isPortuguese && handleWhatsApp();
+                isSpanish && handleWhatsApp_ES();
             }}
             className={`WhatsApp_Action_Container ${position} ${high ? "WhatsApp_High_Container" : ""}`}
             onMouseEnter={() => !notHidden && setIsHovered(true)}
@@ -79,6 +85,8 @@ interface WhatsAppBtnMobileProps {
 const WhatsAppBtnMobile = () => {
     const router = useRouter();
     const isEnglish = router.locale === "en";
+    const isPortuguese = router.locale === "pt-BR";
+    const isSpanish = router.locale === "es";
     const t = useSimpleTranslation();
 
     return (
@@ -86,7 +94,9 @@ const WhatsAppBtnMobile = () => {
             whileTap={{ scale: 0.95 }}
             className="WhatsApp_Btn_Mobile"
             onClick={() => {
-                isEnglish ? handleScheduleWhatsApp_EN() : handleScheduleWhatsApp();
+                isEnglish && handleScheduleWhatsApp_EN();
+                isPortuguese && handleScheduleWhatsApp();
+                isSpanish && handleScheduleWhatsApp_ES();
             }}
         >
             <p>{t.common.customScheduleText}</p>
