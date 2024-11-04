@@ -34,14 +34,38 @@ const Navbar = () => {
 
     const router = useRouter();
 
+    let isEnglish = false;
+    let isSpanish = false;
+    let isPortuguese = false;
+
+    if (router.locale) {
+        isEnglish = router.locale.startsWith("en");
+        isSpanish = router.locale.startsWith("es");
+        isPortuguese = router.locale.startsWith("pt");
+    }
+
+    {
+        /*
     const changeLanguage = () => {
         const currentLocale = router.locale;
         const newLocale = currentLocale === "en" ? "pt-BR" : "en";
         const currentPath = router.asPath;
         router.push(currentPath, currentPath, { locale: newLocale, scroll: false });
     };
+    */
+    }
 
-    const isEnglish = router.locale === "en";
+    const changeLanguage = (newLocale?: string) => {
+        const languages = ["en", "es", "pt-BR"]; // Lista de idiomas suportados
+
+        const currentLocale = router.locale || "en"; // Define um idioma padrão caso não haja um locale atual
+        const currentPath = router.asPath;
+
+        // Verifica se um idioma foi passado. Caso contrário, altera para o próximo da lista.
+        const nextLocale = newLocale ? newLocale : languages[(languages.indexOf(currentLocale) + 1) % languages.length];
+
+        router.push(currentPath, currentPath, { locale: nextLocale, scroll: false });
+    };
 
     const t = useSimpleTranslation();
 
@@ -51,10 +75,11 @@ const Navbar = () => {
     const searchIsEmpty = searchTerm === "";
 
     const searchExpertises = (searchTerm: string) => {
-        const expertise_list = isEnglish ? expertise_data_EN : expertise_data_PT;
+        const expertise_list = t.expertise_data;
 
-        return expertise_list.flatMap((expertise) =>
-            expertise.expertises.filter((sub_expertise) => sub_expertise.title.toLowerCase().includes(searchTerm.toLowerCase()))
+        // Resolver TYPE EXPERTISE DATA
+        return expertise_list.flatMap((expertise: any) =>
+            expertise.expertises.filter((sub_expertise: any) => sub_expertise.title.toLowerCase().includes(searchTerm.toLowerCase()))
         );
     };
 
@@ -72,7 +97,13 @@ const Navbar = () => {
         <>
             {/* Navbar */}
             <nav className="Navbar_Top">
-                <m.button whileTap={{ scale: 0.95 }} className="Nav_Button Language_Selector_Btn Mobile_Only" onClick={changeLanguage}>
+                <m.button
+                    whileTap={{ scale: 0.95 }}
+                    className="Nav_Button Language_Selector_Btn Mobile_Only"
+                    onClick={() => {
+                        changeLanguage();
+                    }}
+                >
                     {isEnglish ? (
                         <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} quality={100} alt="Language Selector" />
                     ) : (
@@ -128,16 +159,19 @@ const Navbar = () => {
                 </div>
 
                 <div className="Navbar_Tools_Container">
-                    <m.button whileTap={{ scale: 0.95 }} className="Nav_Button Language_Selector_Btn Desktop_Only" onClick={changeLanguage}>
+                    <m.button whileTap={{ scale: 0.95 }} className="Nav_Button Language_Selector_Btn Desktop_Only">
                         <p className="Language_Label">{isEnglish ? "LANGUAGE" : "IDIOMA"}</p>
 
                         <div className="Language_Flags">
                             <Image
                                 src={"/general_assets/navbar_lang_btn_ptbr.png"}
-                                className={isEnglish ? "Language_Flag_Img BR_Flag" : "Language_Flag_Img BR_Flag Active"}
+                                className={isPortuguese ? "Language_Flag_Img BR_Flag Active" : "Language_Flag_Img BR_Flag"}
                                 width={32}
                                 height={32}
                                 alt="Language Selector"
+                                onClick={() => {
+                                    changeLanguage("pt-BR");
+                                }}
                             />
                             <Image
                                 src={"/general_assets/navbar_lang_btn_en.png"}
@@ -145,13 +179,19 @@ const Navbar = () => {
                                 width={32}
                                 height={32}
                                 alt="Language Selector"
+                                onClick={() => {
+                                    changeLanguage("en");
+                                }}
                             />
                             <Image
                                 src={"/general_assets/navbar_lang_btn_es.png"}
-                                className={isEnglish ? "Language_Flag_Img Active" : "Language_Flag_Img"}
+                                className={isSpanish ? "Language_Flag_Img Active" : "Language_Flag_Img"}
                                 width={32}
                                 height={32}
                                 alt="Language Selector"
+                                onClick={() => {
+                                    changeLanguage("es");
+                                }}
                             />
                         </div>
                     </m.button>
@@ -218,7 +258,13 @@ const Navbar = () => {
                         </MotionLink>
                     ))}
 
-                    <m.button whileTap={{ scale: 0.95 }} className="Language_Btn" onClick={changeLanguage}>
+                    <m.button
+                        whileTap={{ scale: 0.95 }}
+                        className="Language_Btn"
+                        onClick={() => {
+                            changeLanguage();
+                        }}
+                    >
                         <span className="material-icons">language</span>
                         {isEnglish ? "Mudar para Português" : "Change to English"}
                     </m.button>
