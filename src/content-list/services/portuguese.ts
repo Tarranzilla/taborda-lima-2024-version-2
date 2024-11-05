@@ -294,8 +294,8 @@ export const Servicos_Civil: Expertise[] = [
             "Resumindo, o Direito das Indenizações protege os direitos das vítimas de danos, garantindo compensação justa por prejuízos materiais e morais. Estabelece a responsabilidade de reparação para quem causa danos e define critérios para a avaliação e quantificação dos prejuízos. Em contexto internacional, aplica normas e tratados para resolver disputas transnacionais e assegurar a reparação adequada.",
         ],
         image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil/direito-indenizacoes",
-        slug: "direito-indenizacoes",
+        link: "/direito-civil/indenizacoes",
+        slug: "indenizacoes",
         category: "Direito Civil",
     },
 ];
@@ -517,7 +517,7 @@ export const Servicos_Internacional: Expertise[] = [
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/planejamento-patrimonial-internacional",
-        slug: "incoterms-maritimos",
+        slug: "planejamento-patrimonial-internacional",
         category: "Direito Internacional",
     },
     {

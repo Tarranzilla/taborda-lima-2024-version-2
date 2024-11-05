@@ -349,7 +349,7 @@ export const Servicos_Internacional: Expertise[] = [
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
-        slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
+        slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem",
         category: "International Law",
     },
 ];
@@ -744,8 +744,8 @@ export const Servicos_Civil: Expertise[] = [
             "In summary, Indemnity Law protects the rights of damage victims, guaranteeing fair compensation for material and moral damages. It establishes the obligation of reparation for those who cause damage and defines criteria for the evaluation and quantification of the harm. In an international context, it applies norms and treaties to resolve transnational disputes and ensure adequate reparation.",
         ],
         image: "/general_assets/banner_direito_civil.png",
-        link: "/direito-civil/direito-indenizacoes",
-        slug: "direito-indenizacoes",
+        link: "/direito-civil/indenizacoes",
+        slug: "indenizacoes",
         category: "Civil Law",
     },
 ];
