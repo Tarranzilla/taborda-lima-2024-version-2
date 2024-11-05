@@ -122,7 +122,7 @@ export default function Home() {
                                 <p className="Page_Button_Main_Text">{t.landingPage.sections.home.aboutUsBtn.title}</p>{" "}
                                 <span className="material-icons">foundation</span>
                             </MotionLink>
-                            <MotionLink whileTap={{ scale: 0.95 }} href={"/mercado-de-capitais-e-investimento-estrangeiro"} className="Page_Button">
+                            <MotionLink whileTap={{ scale: 0.95 }} href={"/atendimento-estrangeiros"} className="Page_Button">
                                 <p className="Page_Button_Main_Text">{t.landingPage.sections.home.internationalServicesBtn.title}</p>
                                 <span className="material-icons">public</span>
                             </MotionLink>

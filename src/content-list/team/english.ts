@@ -1,6 +1,6 @@
 export const Team_Data_EN = [
     {
-        name: "Liana Taborda Lima",
+        name: "Liana Maria Taborda Lima",
         role: "Senior Lawyer",
         slug: "liana-taborda-lima",
         memberPage: "/sobre/liana-taborda-lima",
@@ -35,18 +35,6 @@ export const Team_Data_EN = [
         role: "Partner Lawyer",
         slug: "lilian-taborda",
         memberPage: "/sobre/lilian-taborda",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 123456",
-        oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
-
-        image: "/team/equipe_placeholder.png",
-    },
-    {
-        name: "Amanda Lazarotti Maciel",
-        role: "Controllership",
-        slug: "amanda-lazarotti-maciel",
-        memberPage: "/sobre/amanda-lazarotti-maciel",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",

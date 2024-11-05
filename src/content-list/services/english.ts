@@ -1,6 +1,85 @@
 import { Expertise } from "@/types/Expertise";
 import { Expertise_Data } from "@/types/Expertise_Data";
 
+export const Servicos_Atendimento_Estrangeiro: Expertise[] = [
+    {
+        title: "Investor Visa",
+        description:
+            "The Investor Visa is aimed at foreigners who wish to invest in Brazil, either by creating a new company or investing in an existing business.",
+        full_description: [
+            "This type of visa requires the investor to make a minimum financial investment, as determined by Brazilian authorities.",
+            "Our legal team provides comprehensive support throughout the process, including the analysis and preparation of necessary documents, guidance on financial requirements, and assistance throughout the application procedure to ensure that all requirements are met.",
+        ],
+        image: "/general_assets/banner_atendimento_estrangeiros.jpg",
+        link: "/atendimento-estrangeiros/visto-de-investidor",
+        slug: "visto-de-investidor",
+        category: "Foreign Services",
+    },
+    {
+        title: "Work Visa",
+        description:
+            "The Work Visa allows foreigners to work professionally in Brazil, either through a formal job offer from a Brazilian company or for those coming to the country with a specific mission.",
+        full_description: [
+            "This visa requires authorization from the Ministry of Justice and Public Security, in addition to proof of the candidate’s professional experience and qualifications. Our law firm offers complete assistance, from document gathering to communication with relevant authorities, ensuring the process is quick and efficient, in compliance with Brazilian law.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-trabalho",
+        slug: "visto-de-trabalho",
+        category: "Foreign Services",
+    },
+    {
+        title: "Asylum Visa",
+        description:
+            "The Asylum Visa is intended for foreigners seeking protection in Brazil due to persecution in their country of origin for political, religious, racial, or ideological reasons.",
+        full_description: [
+            "This visa is a right guaranteed by Brazilian law, which recognizes the need to provide a safe environment for those in high-risk situations.",
+            "Our law firm works with responsibility and sensitivity in handling these cases, assisting at every stage of the asylum application process, offering legal and emotional support, and ensuring that all the applicant’s rights are preserved.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-asilo",
+        slug: "visto-de-asilo",
+        category: "Foreign Services",
+    },
+    {
+        title: "Refugee Visa",
+        description:
+            "The Refugee Visa is granted to individuals who are in vulnerable situations, fleeing armed conflicts, human rights violations, or other forms of violence in their home countries.",
+        full_description: [
+            "Brazil recognizes and welcomes these individuals through a specific refugee application process. Our firm provides humane service, guiding the applicant through each step of the process, from preparing the necessary documentation to supporting the process with Brazilian authorities, ensuring a transparent and respectful approach.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-refugio",
+        slug: "visto-de-refugio",
+        category: "Foreign Services",
+    },
+    {
+        title: "Student Visa (VITEM IV)",
+        description:
+            "The Student Visa is aimed at foreigners who wish to study at Brazilian institutions, whether universities, technical schools, or high schools.",
+        full_description: [
+            "This visa is essential for those seeking academic improvement in Brazil and generally requires proof of enrollment at a recognized educational institution.",
+            "Our team of lawyers is prepared to guide applicants from document organization to application support, ensuring that all legal requirements are met in a timely and efficient manner.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-estudante",
+        slug: "visto-de-estudante",
+        category: "Foreign Services",
+    },
+    {
+        title: "Family Reunification Visa (VITEM XI)",
+        description:
+            "The Family Reunification Visa is intended for direct family members of Brazilian citizens or foreigners already residing in Brazil, such as spouses, children, and dependents.",
+        full_description: [
+            "This visa facilitates family reunification and is a common choice for those who have established family ties in the country.",
+            "Our firm offers assistance in all stages, from form filling and document preparation to process follow-up with authorities, ensuring transparency and full support so that families can reunite in Brazil smoothly.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-para-reuniao-familiar",
+        slug: "visto-para-reuniao-familiar",
+        category: "Foreign Services",
+    },
+];
+
 export const Servicos_Migratorio: Expertise[] = [
     {
         title: "L-1 Visa",
@@ -964,6 +1043,16 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
 
 /* Ordem:  Immigration - 0, International - 1, Customs - 2, Sports - 3, Entertainment - 4, Civil - 5, Business - 6, Foreign - 7  */
 
+export const atendimento_estrangeiros_EN: Expertise_Data = {
+    key: "atendimento-estrangeiros",
+    slug: "/atendimento-estrangeiros",
+    name: "Foreign Services",
+    head_title: "Foreign Services | Taborda Lima & Advogados Associados",
+    head_description: "Specialized support for obtaining visas, enabling individuals to reside, conduct business, or be employed in Brazil.",
+    expertises: Servicos_Atendimento_Estrangeiro,
+    image: "/general_assets/banner_atendimento_estrangeiros.jpg",
+};
+
 export const direito_migratorio_EN: Expertise_Data = {
     key: "direito-migratorio",
     slug: "/direito-migratorio",
@@ -1045,72 +1134,13 @@ export const mercado_capitais_investimento_estrangeiro_EN: Expertise_Data = {
 };
 
 export const expertise_data_EN: Expertise_Data[] = [
-    direito_migratorio_EN,
     direito_internacional_EN,
+    direito_migratorio_EN,
     direito_aduaneiro_EN,
+    mercado_capitais_investimento_estrangeiro_EN,
     direito_desportivo_EN,
     direito_entretenimento_EN,
-    direito_civil_EN,
     direito_empresarial_EN,
-    mercado_capitais_investimento_estrangeiro_EN,
-];
-
-// Outdated
-export const Exepertise_Data_EN = [
-    {
-        key: "civil",
-        name: "Civil Law",
-        head_title: "Direito Civil | Taborda Lima & Associated Lawyers",
-        head_description: "",
-        expertises: Servicos_Civil,
-    },
-    {
-        key: "desportivo",
-        name: "Sports Law",
-        head_title: "Sports Law | Taborda Lima & Associated Lawyers",
-        head_description: "",
-        expertises: Servicos_Desportivo,
-    },
-    {
-        key: "internacional",
-        name: "International Law",
-        head_title: "International Law | Taborda Lima & Associated Lawyers",
-        head_description: "",
-        expertises: Servicos_Internacional,
-    },
-    {
-        key: "migratorio",
-        name: "Immigration Law",
-        head_title: "Immigration Law | Taborda Lima & Associated Lawyers",
-        head_description: "",
-        expertises: Servicos_Migratorio,
-    },
-    {
-        key: "aduaneiro",
-        name: "Customs Law",
-        head_title: "Customs Law | Taborda Lima & Associated Lawyers",
-        head_description: "",
-        expertises: Servicos_Aduaneiro,
-    },
-    {
-        key: "empresarial",
-        name: "Business Law",
-        head_title: "Business Law | Taborda Lima & Associated Lawyers",
-        head_description: "",
-        expertises: Servicos_Empresarial,
-    },
-    {
-        key: "entretenimento",
-        name: "Entertainment Law",
-        head_title: "Entertainment Law | Taborda Lima & Associated Lawyers",
-        head_description: "",
-        expertises: Servicos_Entretenimento,
-    },
-    {
-        key: "mercado_de_capitais_e_invesimento_estrangeiro",
-        name: "Capital Market and Foreign Investment",
-        head_title: "Capital Market and Foreign Investment | Taborda Lima & Associated Lawyers",
-        head_description: "",
-        expertises: Servicos_Mercado_Capitais_Estangeiro,
-    },
+    direito_civil_EN,
+    atendimento_estrangeiros_EN,
 ];

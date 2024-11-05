@@ -1,6 +1,85 @@
 import { Expertise } from "@/types/Expertise";
 import { Expertise_Data } from "@/types/Expertise_Data";
 
+export const Servicos_Atendimento_Estrangeiro: Expertise[] = [
+    {
+        title: "Visto de Investidor",
+        description:
+            "O Visto de Investidor é voltado para estrangeiros que desejam investir no Brasil, seja criando uma nova empresa ou investindo em um negócio existente.",
+        full_description: [
+            "Este tipo de visto exige que o investidor realize um aporte financeiro mínimo, conforme determinado pelas autoridades brasileiras.",
+            "Nossa equipe de advocacia oferece suporte completo no processo, incluindo a análise e preparação dos documentos necessários, orientação sobre as exigências financeiras e acompanhamento durante todo o procedimento de solicitação, visando garantir que todos os requisitos sejam cumpridos.",
+        ],
+        image: "/general_assets/banner_atendimento_estrangeiros.jpg",
+        link: "/atendimento-estrangeiros/visto-de-investidor",
+        slug: "visto-de-investidor",
+        category: "Atendimento à Estrangeiros",
+    },
+    {
+        title: "Visto de Trabalho",
+        description:
+            "O Visto de Trabalho permite que estrangeiros atuem profissionalmente no Brasil, seja por meio de uma oferta de emprego formalizada por uma empresa brasileira ou para aqueles que vêm ao país com uma missão específica.",
+        full_description: [
+            "Esse visto requer autorização do Ministério da Justiça e Segurança Pública, além da comprovação da experiência profissional e das qualificações do candidato. Nossa advocacia presta assessoria completa, desde o levantamento de documentos até a comunicação com os órgãos competentes, assegurando que o processo seja rápido e eficiente, dentro da legislação brasileira.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-trabalho",
+        slug: "visto-de-trabalho",
+        category: "Atendimento à Estrangeiros",
+    },
+    {
+        title: "Visto de Asilo",
+        description:
+            "O Visto de Asilo é destinado a estrangeiros que buscam proteção no Brasil devido a perseguições em seu país de origem por motivos políticos, religiosos, raciais ou ideológicos.",
+        full_description: [
+            "Esse visto é um direito garantido pela legislação brasileira, que reconhece a necessidade de oferecer um ambiente seguro para aqueles que se encontram em situação de risco.",
+            "Nossa advocacia trabalha com responsabilidade e sensibilidade ao lidar com esses casos, acompanhando cada etapa do processo de solicitação de asilo, oferecendo suporte legal e emocional, e garantindo que todos os direitos do solicitante sejam preservados.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-asilo",
+        slug: "visto-de-asilo",
+        category: "Atendimento à Estrangeiros",
+    },
+    {
+        title: "Visto de Refúgio",
+        description:
+            "O Visto de Refúgio é concedido a pessoas que se encontram em situação de vulnerabilidade, fugindo de conflitos armados, violações de direitos humanos ou outras formas de violência em seus países de origem.",
+        full_description: [
+            "O Brasil reconhece e acolhe esses indivíduos por meio de um processo específico de solicitação de refúgio. Nosso escritório oferece um atendimento humanizado, orientando o solicitante em cada passo do processo, desde o preparo da documentação necessária até o acompanhamento junto aos órgãos brasileiros, com a garantia de um atendimento transparente e respeitoso.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-refugio",
+        slug: "visto-de-refugio",
+        category: "Atendimento à Estrangeiros",
+    },
+    {
+        title: "Visto de Estudante (VITEM IV)",
+        description:
+            "O Visto de Estudante é direcionado a estrangeiros que desejam realizar seus estudos em instituições brasileiras, sejam elas universidades, escolas técnicas ou de ensino médio.",
+        full_description: [
+            "Esse visto é essencial para quem busca aprimoramento acadêmico no Brasil e geralmente exige comprovação de matrícula em uma instituição de ensino reconhecida.",
+            "Nossa equipe de advocacia está preparada para orientar os solicitantes desde a organização da documentação até o acompanhamento no processo de solicitação, garantindo que todas as exigências legais sejam atendidas de maneira rápida e eficiente.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-estudante",
+        slug: "visto-de-estudante",
+        category: "Atendimento à Estrangeiros",
+    },
+    {
+        title: "Visto para Reunião Familiar (VITEM XI)",
+        description:
+            "O Visto para Reunião Familiar é destinado a familiares diretos de cidadãos brasileiros ou de estrangeiros que já residem no Brasil, como cônjuges, filhos e dependentes.",
+        full_description: [
+            "Esse visto facilita a reunificação familiar e é uma escolha comum para aqueles que possuem vínculos familiares estabelecidos no país.",
+            "Nosso escritório oferece assistência em todas as etapas, desde o preenchimento dos formulários e a preparação da documentação até o acompanhamento do processo com as autoridades, assegurando transparência e suporte completo para que os familiares possam se reunir no Brasil de maneira tranquila.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-para-reuniao-familiar",
+        slug: "visto-para-reuniao-familiar",
+        category: "Atendimento à Estrangeiros",
+    },
+];
+
 export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     {
         title: "Vistos de Investimento",
@@ -968,6 +1047,17 @@ export const Servicos_Empresarial: Expertise[] = [
 
 /* Ordem:  Immigration - 0, International - 1, Customs - 2, Sports - 3, Entertainment - 4, Civil - 5, Business - 6, Foreign - 7  */
 
+export const atendimento_estrangeiros_PT: Expertise_Data = {
+    key: "atendimento-estrangeiros",
+    slug: "/atendimento-estrangeiros",
+    name: "Atendimento à Estrangeiros",
+    head_title: "Atendimento à Estrangeiros | Taborda Lima & Advogados Associados",
+    head_description:
+        "Suporte especializado na obtenção de vistos, possibilitando que indivíduos possam residir, conduzir seus negócios ou ser empregados no Brasil.",
+    expertises: Servicos_Atendimento_Estrangeiro,
+    image: "/general_assets/banner_atendimento_estrangeiros.jpg",
+};
+
 export const direito_migratorio_PT: Expertise_Data = {
     key: "direito-migratorio",
     slug: "/direito-migratorio",
@@ -1057,72 +1147,13 @@ export const mercado_capitais_investimento_estrangeiro_PT: Expertise_Data = {
 };
 
 export const expertise_data_PT: Expertise_Data[] = [
-    direito_migratorio_PT,
     direito_internacional_PT,
+    direito_migratorio_PT,
     direito_aduaneiro_PT,
+    mercado_capitais_investimento_estrangeiro_PT,
     direito_desportivo_PT,
     direito_entretenimento_PT,
-    direito_civil_PT,
     direito_empresarial_PT,
-    mercado_capitais_investimento_estrangeiro_PT,
-];
-
-// Outdated
-export const Exepertise_Data_PT = [
-    {
-        key: "civil",
-        name: "Direito Civil",
-        head_title: "Direito Civil | Taborda Lima & Advogados Associados",
-        head_description: "",
-        expertises: Servicos_Civil,
-    },
-    {
-        key: "desportivo",
-        name: "Direito Desportivo",
-        head_title: "Direito Desportivo | Taborda Lima & Advogados Associados",
-        head_description: "",
-        expertises: Servicos_Desportivo,
-    },
-    {
-        key: "internacional",
-        name: "Direito Internacional",
-        head_title: "Direito Internacional | Taborda Lima & Advogados Associados",
-        head_description: "",
-        expertises: Servicos_Internacional,
-    },
-    {
-        key: "migratorio",
-        name: "Direito Migratorio",
-        head_title: "Direito Migratorio | Taborda Lima & Advogados Associados",
-        head_description: "",
-        expertises: Servicos_Migratorio,
-    },
-    {
-        key: "aduaneiro",
-        name: "Direito Aduaneiro",
-        head_title: "Direito Aduaneiro | Taborda Lima & Advogados Associados",
-        head_description: "",
-        expertises: Servicos_Aduaneiro,
-    },
-    {
-        key: "empresarial",
-        name: "Direito Empresarial",
-        head_title: "Direito Empresarial | Taborda Lima & Advogados Associados",
-        head_description: "",
-        expertises: Servicos_Empresarial,
-    },
-    {
-        key: "entretenimento",
-        name: "Direito do Entretenimento",
-        head_title: "Direito do Entretenimento | Taborda Lima & Advogados Associados",
-        head_description: "",
-        expertises: Servicos_Entretenimento,
-    },
-    {
-        key: "mercado_de_capitais_e_invesimento_estrangeiro",
-        name: "Mercado de Capitais e Investimento Estrangeiro",
-        head_title: "Mercado de Capitais e Investimento Estrangeiro | Taborda Lima & Advogados Associados",
-        head_description: "",
-        expertises: Servicos_Mercado_Capitais_Estangeiro,
-    },
+    direito_civil_PT,
+    atendimento_estrangeiros_PT,
 ];

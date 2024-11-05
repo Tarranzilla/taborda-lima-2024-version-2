@@ -10,18 +10,18 @@ import { commonTransition } from "@/utils/Animations";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 
-import { direito_aduaneiro_EN } from "@/content-list/services/english";
-import { direito_aduaneiro_PT } from "@/content-list/services/portuguese";
-import { direito_aduaneiro_ES } from "@/content-list/services/spanish";
+import { atendimento_estrangeiros_EN } from "@/content-list/services/english";
+import { atendimento_estrangeiros_PT } from "@/content-list/services/portuguese";
+import { atendimento_estrangeiros_ES } from "@/content-list/services/spanish";
 
 import { useSimpleTranslation } from "@/international/use_translation";
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths: { params: { expertise_key: string }; locale: string }[] = [];
 
-    const expertises_PT = direito_aduaneiro_PT.expertises;
-    const expertises_EN = direito_aduaneiro_EN.expertises;
-    const expertises_ES = direito_aduaneiro_ES.expertises;
+    const expertises_PT = atendimento_estrangeiros_PT.expertises;
+    const expertises_EN = atendimento_estrangeiros_EN.expertises;
+    const expertises_ES = atendimento_estrangeiros_ES.expertises;
 
     // Add Portuguese paths
     expertises_PT.forEach((expertise) => {
@@ -87,9 +87,9 @@ const ServicePage = ({ expertise }: { expertise: Expertise | null }) => {
                                     <p>{t.common.returnToMainPage}</p>
                                 </Link>
 
-                                <Link href={"/direito-aduaneiro"} scroll={false} className="Page_Button Expertise_Header_Top_Nav_Button">
+                                <Link href={"/atendimento-estrangeiros"} scroll={false} className="Page_Button Expertise_Header_Top_Nav_Button">
                                     <span className="material-icons">arrow_back</span>
-                                    <p>{t.common.returnToCustomsLaw}</p>
+                                    <p>{t.common.returnForeignServices}</p>
                                 </Link>
                             </div>
                             <Image className="Expertise_Header_Img" src={expertise.image} alt={expertise.title} width={800} height={400} />
@@ -124,9 +124,9 @@ const ServicePage = ({ expertise }: { expertise: Expertise | null }) => {
 export async function getStaticProps({ params, locale }: { params: { expertise_key: string }; locale: string }) {
     console.log(`getStaticProps called for locale: ${locale}, expertise_key: ${params.expertise_key}`);
 
-    const expertises_PT = direito_aduaneiro_PT.expertises;
-    const expertises_EN = direito_aduaneiro_EN.expertises;
-    const expertises_ES = direito_aduaneiro_ES.expertises;
+    const expertises_PT = atendimento_estrangeiros_PT.expertises;
+    const expertises_EN = atendimento_estrangeiros_EN.expertises;
+    const expertises_ES = atendimento_estrangeiros_ES.expertises;
 
     // Get the data for this page based on params
     const expertise_key = params.expertise_key;

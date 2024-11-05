@@ -52,6 +52,7 @@ export type WebStructure = {
         returnToSportsLaw: string;
         returnToEntertainmentLaw: string;
         returnToMarketLaw: string;
+        returnForeignServices: string;
 
         customTitle: string;
         customDescription: string;
@@ -66,7 +67,7 @@ export type WebStructure = {
         more_details: string;
     };
 
-    expertise_data: any;
+    expertise_data: Expertise_Data[];
     team_data: any;
     about_data: any;
 

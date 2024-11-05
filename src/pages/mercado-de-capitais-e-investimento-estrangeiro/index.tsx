@@ -13,15 +13,13 @@ import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 const MercadoCapitaisInvestimentoEstrangeiro = () => {
     const t = useSimpleTranslation();
 
-    const direito_migratório = t.expertise_data[7];
-    const direito_migratorio_banner = t.landingPage.sections.expertise.expertiseBannerList[7];
-    const expertises_direito_migratorio = t.expertise_data[7].expertises;
+    const mercado_de_capitais = t.expertise_data[3];
 
     return (
         <>
-            <Head key={"Head_Expertise" + direito_migratório.head_title}>
-                <title>{direito_migratório.head_title}</title>
-                <meta name="description" content={direito_migratório.head_description} />
+            <Head key={"Head_Expertise" + mercado_de_capitais.head_title}>
+                <title>{mercado_de_capitais.head_title}</title>
+                <meta name="description" content={mercado_de_capitais.head_description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
@@ -42,7 +40,7 @@ const MercadoCapitaisInvestimentoEstrangeiro = () => {
 
                             <Image
                                 className="Expertise_Header_Img"
-                                src={direito_migratorio_banner.image}
+                                src={mercado_de_capitais.image}
                                 alt={"Direito Aduaneiro"}
                                 width={800}
                                 height={400}
@@ -50,15 +48,15 @@ const MercadoCapitaisInvestimentoEstrangeiro = () => {
                         </div>
                         <div className="Expertise_Header_Info">
                             <h2 className="Expertise_Header_Info_Subtitle">{t.common.area_of_expertise}</h2>
-                            <h1 className="Expertise_Header_Info_Title">{direito_migratório.name}</h1>
-                            <p className="Expertise_Header_Info_Description">{direito_migratorio_banner.description}</p>
+                            <h1 className="Expertise_Header_Info_Title">{mercado_de_capitais.name}</h1>
+                            <p className="Expertise_Header_Info_Description">{mercado_de_capitais.head_description}</p>
                             <WhatsAppBtnMobile />
                         </div>
                     </div>
 
                     <div className="Container Services_List_Container">
                         <div className="Services_List">
-                            {expertises_direito_migratorio.map((service: any) => (
+                            {mercado_de_capitais.expertises.map((service: any) => (
                                 <div key={service.title} className="Services_List_Item">
                                     <h2 className="Services_List_Item_Title">{service.title}</h2>
                                     <p className="Services_List_Description">{service.description}</p>

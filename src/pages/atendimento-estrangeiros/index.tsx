@@ -9,22 +9,23 @@ import { commonTransition } from "@/utils/Animations";
 
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
+import { Expertise } from "@/types/Expertise";
 
-const DireitoAduaneiro = () => {
+const Atendimento_Estrangeiros = () => {
     const t = useSimpleTranslation();
 
-    const direito_aduaneiro = t.expertise_data[2];
+    const atendimento_estrangeiros = t.expertise_data[8];
 
     return (
         <>
-            <Head>
-                <title>{direito_aduaneiro.head_title}</title>
-                <meta name="description" content={direito_aduaneiro.head_description} />
+            <Head key={"Head_Expertise" + atendimento_estrangeiros.head_title}>
+                <title>{atendimento_estrangeiros.head_title}</title>
+                <meta name="description" content={atendimento_estrangeiros.head_description} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
 
-            <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" key={"pagina_direito_aduaneiro"}>
+            <m.main variants={commonTransition} initial="hidden" animate="visible" exit="exit" key={"pagina_direito_migratorio"}>
                 {/* Botão do WhatsApp Esquerdo*/}
                 <WhatsAppBtn position="Left" high />
 
@@ -40,7 +41,7 @@ const DireitoAduaneiro = () => {
 
                             <Image
                                 className="Expertise_Header_Img"
-                                src={direito_aduaneiro.image}
+                                src={atendimento_estrangeiros.image}
                                 alt={"Direito Aduaneiro"}
                                 width={800}
                                 height={400}
@@ -48,20 +49,19 @@ const DireitoAduaneiro = () => {
                         </div>
                         <div className="Expertise_Header_Info">
                             <h2 className="Expertise_Header_Info_Subtitle">{t.common.area_of_expertise}</h2>
-                            <h1 className="Expertise_Header_Info_Title">{direito_aduaneiro.name}</h1>
-                            <p className="Expertise_Header_Info_Description">{direito_aduaneiro.head_description}</p>
-
+                            <h1 className="Expertise_Header_Info_Title">{atendimento_estrangeiros.name}</h1>
+                            <p className="Expertise_Header_Info_Description">{atendimento_estrangeiros.head_description}</p>
                             <WhatsAppBtnMobile />
                         </div>
                     </div>
 
                     <div className="Container Services_List_Container">
                         <div className="Services_List">
-                            {direito_aduaneiro.expertises.map((service: any) => (
+                            {atendimento_estrangeiros.expertises.map((service: Expertise) => (
                                 <div key={service.title} className="Services_List_Item">
                                     <h2 className="Services_List_Item_Title">{service.title}</h2>
                                     <p className="Services_List_Description">{service.description}</p>
-                                    <Link href={service.link} scroll={false} className="Page_Button Services_List_Item_Button">
+                                    <Link href={service.link} className="Page_Button Services_List_Item_Button">
                                         {t.common.more_details}
                                     </Link>
                                 </div>
@@ -74,4 +74,4 @@ const DireitoAduaneiro = () => {
     );
 };
 
-export default DireitoAduaneiro;
+export default Atendimento_Estrangeiros;

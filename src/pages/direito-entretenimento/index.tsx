@@ -10,12 +10,10 @@ import { commonTransition } from "@/utils/Animations";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 
-const DireitoEmpresarial = () => {
+const DireitoEntretenimento = () => {
     const t = useSimpleTranslation();
 
-    const direito_entretenimento = t.expertise_data[4];
-    const direito_entretenimento_banner = t.landingPage.sections.expertise.expertiseBannerList[4];
-    const expertises_direito_entretenimento = t.expertise_data[4].expertises;
+    const direito_entretenimento = t.expertise_data[5];
 
     return (
         <>
@@ -42,7 +40,7 @@ const DireitoEmpresarial = () => {
 
                             <Image
                                 className="Expertise_Header_Img"
-                                src={direito_entretenimento_banner.image}
+                                src={direito_entretenimento.image}
                                 alt={"Direito Aduaneiro"}
                                 width={800}
                                 height={400}
@@ -50,8 +48,8 @@ const DireitoEmpresarial = () => {
                         </div>
                         <div className="Expertise_Header_Info">
                             <h2 className="Expertise_Header_Info_Subtitle">{t.common.area_of_expertise}</h2>
-                            <h1 className="Expertise_Header_Info_Title">{direito_entretenimento_banner.title}</h1>
-                            <p className="Expertise_Header_Info_Description">{direito_entretenimento_banner.description}</p>
+                            <h1 className="Expertise_Header_Info_Title">{direito_entretenimento.name}</h1>
+                            <p className="Expertise_Header_Info_Description">{direito_entretenimento.head_description}</p>
 
                             <WhatsAppBtnMobile />
                         </div>
@@ -59,7 +57,7 @@ const DireitoEmpresarial = () => {
 
                     <div className="Container Services_List_Container">
                         <div className="Services_List">
-                            {expertises_direito_entretenimento.map((service: any) => (
+                            {direito_entretenimento.expertises.map((service: any) => (
                                 <div key={service.title} className="Services_List_Item">
                                     <h2 className="Services_List_Item_Title">{service.title}</h2>
                                     <p className="Services_List_Description">{service.description}</p>
@@ -76,4 +74,4 @@ const DireitoEmpresarial = () => {
     );
 };
 
-export default DireitoEmpresarial;
+export default DireitoEntretenimento;

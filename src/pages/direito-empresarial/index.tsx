@@ -14,8 +14,6 @@ const DireitoEmpresarial = () => {
     const t = useSimpleTranslation();
 
     const direito_empresarial = t.expertise_data[6];
-    const direito_empresarial_banner = t.landingPage.sections.expertise.expertiseBannerList[6];
-    const expertises_direito_empresarial = t.expertise_data[6].expertises;
 
     return (
         <>
@@ -42,7 +40,7 @@ const DireitoEmpresarial = () => {
 
                             <Image
                                 className="Expertise_Header_Img"
-                                src={direito_empresarial_banner.image}
+                                src={direito_empresarial.image}
                                 alt={"Direito Aduaneiro"}
                                 width={800}
                                 height={400}
@@ -50,8 +48,8 @@ const DireitoEmpresarial = () => {
                         </div>
                         <div className="Expertise_Header_Info">
                             <h2 className="Expertise_Header_Info_Subtitle">{t.common.area_of_expertise}</h2>
-                            <h1 className="Expertise_Header_Info_Title">{direito_empresarial_banner.title}</h1>
-                            <p className="Expertise_Header_Info_Description">{direito_empresarial_banner.description}</p>
+                            <h1 className="Expertise_Header_Info_Title">{direito_empresarial.name}</h1>
+                            <p className="Expertise_Header_Info_Description">{direito_empresarial.head_description}</p>
 
                             <WhatsAppBtnMobile />
                         </div>
@@ -59,7 +57,7 @@ const DireitoEmpresarial = () => {
 
                     <div className="Container Services_List_Container">
                         <div className="Services_List">
-                            {expertises_direito_empresarial.map((service: any) => (
+                            {direito_empresarial.expertises.map((service: any) => (
                                 <div key={service.title} className="Services_List_Item">
                                     <h2 className="Services_List_Item_Title">{service.title}</h2>
                                     <p className="Services_List_Description">{service.description}</p>

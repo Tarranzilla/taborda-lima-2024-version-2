@@ -29,6 +29,7 @@ const spanish_web_structure: WebStructure = {
         returnToSportsLaw: "Ir a Derecho Deportivo",
         returnToEntertainmentLaw: "Ir a Derecho de Entretenimiento",
         returnToMarketLaw: "Ir a Mercado de Capitales e Inversión Extranjera",
+        returnForeignServices: "Ir a Atendimento a Extranjeros",
 
         customTitle: "Taborda Lima | Abogacía y Consultoría Legal",
         customDescription:

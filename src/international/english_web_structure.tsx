@@ -1,10 +1,7 @@
 import { WebStructure } from "@/types/WebStructure";
 
-import { Exepertise_Data_EN } from "@/content-list/services/english";
 import { Banners_Data_EN } from "@/content-list/banners/english";
-
 import { expertise_data_EN } from "@/content-list/services/english";
-
 import { About_Data_EN } from "@/content-list/about/english";
 import { Team_Data_EN } from "@/content-list/team/english";
 import Privacy_Data_EN from "@/content-list/privacy/english";
@@ -31,6 +28,7 @@ const english_web_structure: WebStructure = {
         returnToEntertainmentLaw: "Go to Entertainment Law",
         returnToMarketLaw: "Go to Market Law",
         returnToMainPage: "Go to the Main Page",
+        returnForeignServices: "Go to Foreign Services",
         customTitle: "Taborda Lima | Advocacy and Legal Consultancy",
         customDescription:
             "Law firm in Curitiba, with more than 30 years of experience in the market and a solid academic background. We offer a wide range of legal services, including civil, criminal, labor, administrative, and tax law, with a commitment to providing reliable and personalized legal guidance to meet the individual needs of our clients.",

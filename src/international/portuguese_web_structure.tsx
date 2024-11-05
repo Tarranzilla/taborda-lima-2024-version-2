@@ -1,10 +1,7 @@
 import { WebStructure } from "@/types/WebStructure";
 
-import { Exepertise_Data_PT } from "@/content-list/services/portuguese";
 import { Banners_Data_PT } from "@/content-list/banners/portuguese";
-
 import { expertise_data_PT } from "@/content-list/services/portuguese";
-
 import { About_Data_PT } from "@/content-list/about/portuguese";
 import { Team_Data_PT } from "@/content-list/team/portuguese";
 import Privacy_Data_PT from "@/content-list/privacy/portuguese";
@@ -31,6 +28,7 @@ const portuguese_web_structure: WebStructure = {
         returnToSportsLaw: "Ir a Direito Desportivo",
         returnToEntertainmentLaw: "Ir a Direito do Entretenimento",
         returnToMarketLaw: "Ir a Mercado de Capitais e Investimento Estrangeiro",
+        returnForeignServices: "Ir a Atendimento à Estrangeiros",
         customTitle: "Taborda Lima | Advocacia e Consultoria Legal",
         customDescription:
             "Escritório de advocacia em Curitiba, com mais de 30 anos de experiência no mercado e uma sólida formação acadêmica. Oferecemos uma ampla gama de serviços jurídicos, incluindo direito civil, criminal, trabalhista, administrativo e tributário, com o compromisso de fornecer orientação jurídica confiável e personalizada para atender às necessidades individuais de nossos clientes.",

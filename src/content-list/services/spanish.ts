@@ -1,6 +1,85 @@
 import { Expertise } from "@/types/Expertise";
 import { Expertise_Data } from "@/types/Expertise_Data";
 
+export const Servicos_Atendimento_Estrangeiro: Expertise[] = [
+    {
+        title: "Visa de Inversionista",
+        description:
+            "La Visa de Inversionista está dirigida a extranjeros que desean invertir en Brasil, ya sea creando una nueva empresa o invirtiendo en un negocio existente.",
+        full_description: [
+            "Este tipo de visa exige que el inversionista realice una aportación financiera mínima, según lo determinado por las autoridades brasileñas.",
+            "Nuestro equipo de abogados ofrece un soporte completo en el proceso, que incluye el análisis y la preparación de los documentos necesarios, orientación sobre los requisitos financieros y acompañamiento durante todo el procedimiento de solicitud, asegurando que se cumplan todos los requisitos.",
+        ],
+        image: "/general_assets/banner_atendimento_estrangeiros.jpg",
+        link: "/atendimento-estrangeiros/visto-de-investidor",
+        slug: "visto-de-investidor",
+        category: "Atendimento a Extranjeros",
+    },
+    {
+        title: "Visa de Trabajo",
+        description:
+            "La Visa de Trabajo permite que los extranjeros ejerzan profesionalmente en Brasil, ya sea mediante una oferta de empleo formalizada por una empresa brasileña o para aquellos que vienen al país con una misión específica.",
+        full_description: [
+            "Esta visa requiere autorización del Ministerio de Justicia y Seguridad Pública, además de la comprobación de la experiencia profesional y las cualificaciones del solicitante. Nuestra firma brinda asesoría completa, desde la recopilación de documentos hasta la comunicación con las autoridades competentes, garantizando que el proceso sea rápido y eficiente, dentro de la legislación brasileña.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-trabalho",
+        slug: "visto-de-trabalho",
+        category: "Atendimento a Extranjeros",
+    },
+    {
+        title: "Visa de Asilo",
+        description:
+            "La Visa de Asilo está destinada a extranjeros que buscan protección en Brasil debido a persecuciones en su país de origen por motivos políticos, religiosos, raciales o ideológicos.",
+        full_description: [
+            "Esta visa es un derecho garantizado por la legislación brasileña, que reconoce la necesidad de ofrecer un entorno seguro para aquellos que se encuentran en situación de riesgo.",
+            "Nuestro equipo de abogados trabaja con responsabilidad y sensibilidad al tratar estos casos, acompañando cada etapa del proceso de solicitud de asilo, ofreciendo apoyo legal y emocional, y asegurando que todos los derechos del solicitante sean preservados.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-asilo",
+        slug: "visto-de-asilo",
+        category: "Atendimento a Extranjeros",
+    },
+    {
+        title: "Visa de Refugio",
+        description:
+            "La Visa de Refugio se concede a personas en situación de vulnerabilidad que huyen de conflictos armados, violaciones de derechos humanos u otras formas de violencia en sus países de origen.",
+        full_description: [
+            "Brasil reconoce y acoge a estos individuos mediante un proceso específico de solicitud de refugio. Nuestra firma ofrece un servicio humanizado, orientando al solicitante en cada paso del proceso, desde la preparación de la documentación necesaria hasta el seguimiento con las autoridades brasileñas, garantizando un servicio transparente y respetuoso.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-refugio",
+        slug: "visto-de-refugio",
+        category: "Atendimento a Extranjeros",
+    },
+    {
+        title: "Visa de Estudiante (VITEM IV)",
+        description:
+            "La Visa de Estudiante está dirigida a extranjeros que desean realizar sus estudios en instituciones brasileñas, como universidades, escuelas técnicas o de educación secundaria.",
+        full_description: [
+            "Esta visa es esencial para quienes buscan mejorar su formación académica en Brasil y generalmente requiere la comprobación de matrícula en una institución de enseñanza reconocida.",
+            "Nuestro equipo de abogados está preparado para orientar a los solicitantes desde la organización de la documentación hasta el acompañamiento en el proceso de solicitud, garantizando que todos los requisitos legales se cumplan de manera rápida y eficiente.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-de-estudante",
+        slug: "visto-de-estudante",
+        category: "Atendimento a Extranjeros",
+    },
+    {
+        title: "Visa de Reunificación Familiar (VITEM XI)",
+        description:
+            "La Visa de Reunificación Familiar está destinada a familiares directos de ciudadanos brasileños o de extranjeros que ya residen en Brasil, como cónyuges, hijos y dependientes.",
+        full_description: [
+            "Esta visa facilita la reunificación familiar y es una opción común para aquellos que tienen lazos familiares establecidos en el país.",
+            "Nuestra firma ofrece asistencia en todas las etapas, desde el llenado de formularios y la preparación de documentos hasta el seguimiento del proceso con las autoridades, asegurando transparencia y apoyo completo para que las familias puedan reunirse en Brasil de manera tranquila.",
+        ],
+        image: "/general_assets/banner_mercado_capital.jpg",
+        link: "/atendimento-estrangeiros/visto-para-reuniao-familiar",
+        slug: "visto-para-reuniao-familiar",
+        category: "Atendimento a Extranjeros",
+    },
+];
+
 export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     {
         title: "Visas de Inversión",
@@ -968,6 +1047,17 @@ export const Servicos_Empresarial: Expertise[] = [
 
 /* Ordem:  Immigration - 0, International - 1, Customs - 2, Sports - 3, Entertainment - 4, Civil - 5, Business - 6, Foreign - 7  */
 
+export const atendimento_estrangeiros_ES: Expertise_Data = {
+    key: "atendimento-estrangeiros",
+    slug: "/atendimento-estrangeiros",
+    name: "Atención a Extranjeros",
+    head_title: "Atención a Extranjeros | Taborda Lima & Advogados Associados",
+    head_description:
+        "Soporte especializado en la obtención de visados, permitiendo que las personas residan, realicen negocios o trabajen en Brasil.",
+    expertises: Servicos_Atendimento_Estrangeiro,
+    image: "/general_assets/banner_atendimento_estrangeiros.jpg",
+};
+
 export const direito_migratorio_ES: Expertise_Data = {
     key: "direito-migratorio",
     slug: "/direito-migratorio",
@@ -1057,12 +1147,13 @@ export const mercado_capitais_investimento_estrangeiro_ES: Expertise_Data = {
 };
 
 export const expertise_data_ES: Expertise_Data[] = [
-    direito_migratorio_ES,
     direito_internacional_ES,
+    direito_migratorio_ES,
     direito_aduaneiro_ES,
+    mercado_capitais_investimento_estrangeiro_ES,
     direito_desportivo_ES,
     direito_entretenimento_ES,
-    direito_civil_ES,
     direito_empresarial_ES,
-    mercado_capitais_investimento_estrangeiro_ES,
+    direito_civil_ES,
+    atendimento_estrangeiros_ES,
 ];

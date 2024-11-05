@@ -13,9 +13,7 @@ import { WhatsAppBtnMobile } from "@/components/WhatsAppBtn";
 const DireitoCivil = () => {
     const t = useSimpleTranslation();
 
-    const direito_civil = t.expertise_data[5];
-    const direito_civil_banner = t.landingPage.sections.expertise.expertiseBannerList[5];
-    const expertises_direito_civil = t.expertise_data[5].expertises;
+    const direito_civil = t.expertise_data[7];
 
     return (
         <>
@@ -40,18 +38,12 @@ const DireitoCivil = () => {
                                 </Link>
                             </div>
 
-                            <Image
-                                className="Expertise_Header_Img"
-                                src={direito_civil_banner.image}
-                                alt={"Direito Aduaneiro"}
-                                width={800}
-                                height={400}
-                            />
+                            <Image className="Expertise_Header_Img" src={direito_civil.image} alt={"Direito Aduaneiro"} width={800} height={400} />
                         </div>
                         <div className="Expertise_Header_Info">
                             <h2 className="Expertise_Header_Info_Subtitle">{t.common.area_of_expertise}</h2>
-                            <h1 className="Expertise_Header_Info_Title">{direito_civil_banner.title}</h1>
-                            <p className="Expertise_Header_Info_Description">{direito_civil_banner.description}</p>
+                            <h1 className="Expertise_Header_Info_Title">{direito_civil.name}</h1>
+                            <p className="Expertise_Header_Info_Description">{direito_civil.head_description}</p>
 
                             <WhatsAppBtnMobile />
                         </div>
@@ -59,7 +51,7 @@ const DireitoCivil = () => {
 
                     <div className="Container Services_List_Container">
                         <div className="Services_List">
-                            {expertises_direito_civil.map((service: any) => (
+                            {direito_civil.expertises.map((service: any) => (
                                 <div key={service.title} className="Services_List_Item">
                                     <h2 className="Services_List_Item_Title">{service.title}</h2>
                                     <p className="Services_List_Description">{service.description}</p>

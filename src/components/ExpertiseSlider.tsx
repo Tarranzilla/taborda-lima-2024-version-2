@@ -11,7 +11,7 @@ const DRAG_LIMIT = 50;
 
 export default function ExpertiseSlider({ padded }: { padded?: boolean }) {
     const t = useSimpleTranslation();
-    const expertises = t.landingPage.sections.expertise.expertiseBannerList;
+    const expertises = t.expertise_data;
 
     const [imgIndex, setImgIndex] = useState(0);
     const [isDragging, setIsDragging] = useState(false);
@@ -56,13 +56,13 @@ export default function ExpertiseSlider({ padded }: { padded?: boolean }) {
             >
                 {expertises.map((expertise_banner, index) => (
                     <div key={index} className={padded ? "Expertise_Banner_Slide Padded" : "Expertise_Banner_Slide"}>
-                        <h2 className="Banner_Title">{expertise_banner.title}</h2>
-                        <p className="Banner_Description">{expertise_banner.description}</p>
-                        <MotionLink whileTap={{ scale: 0.95 }} href={expertise_banner.link} className="Banner_Btn">
+                        <h2 className="Banner_Title">{expertise_banner.name}</h2>
+                        <p className="Banner_Description">{expertise_banner.head_description}</p>
+                        <MotionLink whileTap={{ scale: 0.95 }} href={expertise_banner.slug} className="Banner_Btn">
                             <p>{t.landingPage.sections.expertise.bannerMoreInfoBtn.title}</p>
                             <span className="material-icons">arrow_forward</span>
                         </MotionLink>
-                        <Image className="Banner_Img" src={expertise_banner.image} width={800} height={800} alt={expertise_banner.title} />
+                        <Image className="Banner_Img" src={expertise_banner.image} width={800} height={800} alt={expertise_banner.name} />
                     </div>
                 ))}
             </m.div>

@@ -79,7 +79,7 @@ const Sobre = () => {
                                             href={member.memberPage}
                                             className="material-icons Team_Member_Card_Link"
                                         >
-                                            read_more
+                                            contact_page
                                         </MotionLink>
                                     </m.div>
                                 </m.div>
