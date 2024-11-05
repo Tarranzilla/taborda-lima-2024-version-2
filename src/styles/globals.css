@@ -157,6 +157,8 @@ label {
 
 .Expertise_Header_Top_Nav_Button {
     width: unset;
+    text-align: start;
+    justify-content: flex-start;
 }
 
 .Banner_Btn > p,
@@ -661,6 +663,7 @@ section {
     position: absolute;
     top: var(--medium-gap);
     left: var(--medium-gap);
+    padding-right: var(--medium-gap);
 
     display: flex;
     flex-direction: column;
@@ -1109,9 +1112,9 @@ section {
 
 .Card_Panner {
     height: 60vh;
-    height: 60svh;
+    height: 60dvh;
     width: 45vh;
-    width: 45svh;
+    width: 45dvh;
     background-color: var(--brand-color-beige-light);
     border-radius: var(--default-border-radius);
     object-fit: cover;
@@ -1313,14 +1316,14 @@ section {
 .New_Banner_Slide {
     width: 100%;
     height: 90vh;
-    height: 90svh;
+    height: 90dvh;
     flex-shrink: 0;
 }
 
 .New_Banner_Slide.Padded {
     width: 100%;
     height: calc(90vh - 2 * var(--medium-gap));
-    height: calc(90svh - 2 * var(--medium-gap));
+    height: calc(90dvh - 2 * var(--medium-gap));
     flex-shrink: 0;
 }
 
@@ -1334,7 +1337,7 @@ section {
     padding-inline: var(--large-gap);
     width: 100%;
     height: 90vh;
-    height: 90svh;
+    height: 90dvh;
     flex-shrink: 0;
     position: relative;
 }
@@ -1348,7 +1351,7 @@ section {
 .New_Insta_Feed_Slide {
     width: 100%;
     height: 90vh;
-    height: 90svh;
+    height: 90dvh;
     flex-shrink: 0;
     position: relative;
 }
@@ -1419,7 +1422,7 @@ section {
     position: absolute;
     bottom: 0;
     height: 90vh;
-    height: 90svh;
+    height: 90dvh;
     width: 100%;
     background-color: hsl(35, 100%, 95%);
     border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
@@ -1765,7 +1768,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 90vh;
-    height: 90svh;
+    height: 90dvh;
     z-index: 1;
     position: relative;
     background-color: var(--main-text-color);
@@ -1808,7 +1811,7 @@ footer > img {
     z-index: 1000;
     position: fixed;
     top: 10vh;
-    top: 10svh;
+    top: 10dvh;
     width: 100%;
     gap: var(--small-gap);
     display: flex;
@@ -1901,7 +1904,7 @@ footer > img {
     justify-content: flex-start;
     flex-wrap: wrap;
     min-height: 90vh;
-    min-height: 90svh;
+    min-height: 90dvh;
     height: unset;
 }
 
@@ -2034,7 +2037,7 @@ footer > img {
 
     .Cookies_Banner {
         height: 90vh;
-        height: 90svh;
+        height: 90dvh;
         flex-direction: column;
         justify-content: flex-end;
         background-color: transparent;
@@ -2095,7 +2098,7 @@ footer > img {
     section {
         flex-direction: column;
         min-height: calc(100vh - 10vh);
-        min-height: calc(100svh - 10svh);
+        min-height: calc(100dvh - 10dvh);
     }
 
     .Container {
@@ -2166,7 +2169,7 @@ footer > img {
         scroll-snap-align: start;
         flex-grow: 1;
         min-height: 90vh;
-        min-height: 90svh;
+        min-height: 90dvh;
     }
 
     .Banner_Slider_Btn {
@@ -2358,7 +2361,7 @@ footer > img {
     .New_Insta_Feed_Slide {
         width: 100%;
         height: 50vh;
-        height: 50svh;
+        height: 50dvh;
     }
 
     .New_Banner_Indicator_Dot {
