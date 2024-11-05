@@ -219,7 +219,13 @@ export default function Home() {
                         </div>
 
                         <div className="Intro_Actions_Container">
-                            <m.button whileTap={{ scale: 0.95 }} onClick={() => {}} rel="noopener noreferrer" className="Page_Button">
+                            <m.button
+                                whileTap={{ scale: 0.95 }}
+                                onClick={() => {}}
+                                rel="noopener noreferrer"
+                                className="Page_Button"
+                                id="newsletter_button"
+                            >
                                 <p className="Page_Button_Main_Text">{t.common.signNewsletterText}</p>
                                 <NewsletterForm />
 

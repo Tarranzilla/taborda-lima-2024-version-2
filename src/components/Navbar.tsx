@@ -104,11 +104,24 @@ const Navbar = () => {
                         changeLanguage();
                     }}
                 >
-                    {isEnglish ? (
+                    {isEnglish && (
                         <Image src={"/general_assets/navbar_lang_btn_en.png"} width={32} height={32} quality={100} alt="Language Selector" />
-                    ) : (
+                    )}
+
+                    {isPortuguese && (
                         <Image
                             src={"/general_assets/navbar_lang_btn_ptbr.png"}
+                            className="BR_Flag"
+                            width={32}
+                            height={32}
+                            quality={100}
+                            alt="Language Selector"
+                        />
+                    )}
+
+                    {isSpanish && (
+                        <Image
+                            src={"/general_assets/navbar_lang_btn_es.png"}
                             className="BR_Flag"
                             width={32}
                             height={32}

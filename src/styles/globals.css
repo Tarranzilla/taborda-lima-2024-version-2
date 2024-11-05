@@ -717,12 +717,16 @@ section {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-auto-rows: 280px;
+    grid-auto-rows: auto;
     gap: var(--medium-gap);
 
     padding-right: var(--medium-gap);
 
     overflow-y: auto;
+}
+
+.Services_List_Description {
+    color: var(--brand-color-gray);
 }
 
 .Services_List::-webkit-scrollbar {
@@ -742,7 +746,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--small-gap);
+    gap: var(--medium-gap);
     padding: var(--medium-gap);
     background-color: var(--brand-color-gray-light);
     border-radius: var(--default-border-radius);
@@ -751,7 +755,7 @@ section {
 .Services_List_Item_Title {
     font-family: var(--text-font-family);
     font-weight: 800;
-    color: var(--main-text-color);
+    color: var(--brand-color-gray);
 }
 
 .Services_List_Item_Button {
@@ -2097,6 +2101,17 @@ footer > img {
         justify-content: flex-start;
     }
 
+    .Page_Button_Detail {
+        display: none;
+    }
+
+    #newsletter_button {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
+
     #Imagem_Inicial {
         display: none;
     }
@@ -2352,5 +2367,18 @@ footer > img {
         font-family: var(--text-font-family);
         font-weight: 300;
         letter-spacing: 0.0625rem;
+    }
+
+    .expertise_footer_group:hover {
+        background-color: transparent;
+    }
+
+    .expertise_footer_group:hover > .expertise_footer_group_list > a {
+        color: var(--brand-color-beige-bright);
+        border-bottom: 1px solid var(--brand-color-dark-brown);
+    }
+
+    .expertise_footer_group:hover > .expertise_footer_group_title {
+        color: var(--brand-color-beige-bright);
     }
 }

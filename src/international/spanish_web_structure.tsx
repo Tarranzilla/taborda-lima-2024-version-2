@@ -19,7 +19,7 @@ const spanish_web_structure: WebStructure = {
         accessInstagramText: "Visite nuestro Instagram",
         accessLinkedinText: "Visite nuestro LinkedIn",
 
-        returnToAreasOfExpertise: "Áreas de Especialización",
+        returnToAreasOfExpertise: "Áreas de Experticia",
         returnToMainPage: "Ir a la Página Principal",
         returnToImmigrationLaw: "Ir a Derecho Migratorio",
         returnToInternationalLaw: "Ir a Derecho Internacional",
@@ -36,7 +36,7 @@ const spanish_web_structure: WebStructure = {
         customWebsiteURL: "https://www.tabordalima.com/",
 
         noSearchResultsFound: "No hay resultados que coincidan con su búsqueda.",
-        area_of_expertise: "Área de Especialización",
+        area_of_expertise: "Área de Experticia",
         more_details: "Más Detalles",
 
         knowMoreBtn: {
@@ -74,7 +74,7 @@ const spanish_web_structure: WebStructure = {
             },
             {
                 path: "/#servicos",
-                name: "Especialidades",
+                name: "Experticia",
             },
             {
                 path: "/#consulta",
@@ -111,7 +111,7 @@ const spanish_web_structure: WebStructure = {
             },
             {
                 path: "/#servicos",
-                name: "Especialidades",
+                name: "Experticia",
             },
             {
                 path: "/#consulta",
