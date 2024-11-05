@@ -97,7 +97,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-padding-top: 10vh;
 }
 
@@ -840,6 +840,7 @@ section {
     height: auto;
     flex-grow: 1;
     flex-shrink: 0;
+    display: none;
 }
 
 .Menu_Pattern:first-of-type {
@@ -2408,5 +2409,13 @@ footer > img {
     .New_Insta_Feed_Slide > img {
         border-radius: var(--default-border-radius);
         box-shadow: 0 0 10px 2px var(--brand-color-dark-brown);
+    }
+
+    .Navbar_Logo_Container {
+        transform-origin: center;
+    }
+
+    .Navbar_Logo {
+        padding-inline: var(--medium-gap);
     }
 }

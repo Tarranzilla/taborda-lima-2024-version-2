@@ -195,7 +195,13 @@ export default function Home() {
                                 <p className="Page_Button_Detail">+55 41 3338 7611</p> <span className="material-icons">fax</span>
                             </MotionLink>
 
-                            <MotionLink whileTap={{ scale: 0.95 }} href={"https://google.com"} className="Page_Button">
+                            <MotionLink
+                                whileTap={{ scale: 0.95 }}
+                                href={"https://maps.app.goo.gl/tsZt5Frz2FuKwp7T8"}
+                                target="_blank"
+                                rel="noopener noreferer"
+                                className="Page_Button"
+                            >
                                 <p className="Page_Button_Main_Text">{t.common.visitOfficeText}</p>
                                 <p className="Page_Button_Detail">Rua Nilo Peçanha, nº648 - Centro Cívico - Curitiba - PR</p>
                                 <span className="material-icons">place</span>
@@ -229,7 +235,7 @@ export default function Home() {
                                 <p className="Page_Button_Main_Text">{t.common.signNewsletterText}</p>
                                 <NewsletterForm />
 
-                                <FontAwesomeIcon icon={faNewspaper} id="newsletter_icon"/>
+                                <FontAwesomeIcon icon={faNewspaper} id="newsletter_icon" />
                             </m.button>
 
                             <MotionLink
