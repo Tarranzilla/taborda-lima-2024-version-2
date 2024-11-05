@@ -229,7 +229,7 @@ export default function Home() {
                                 <p className="Page_Button_Main_Text">{t.common.signNewsletterText}</p>
                                 <NewsletterForm />
 
-                                <FontAwesomeIcon icon={faNewspaper} />
+                                <FontAwesomeIcon icon={faNewspaper} id="newsletter_icon"/>
                             </m.button>
 
                             <MotionLink
