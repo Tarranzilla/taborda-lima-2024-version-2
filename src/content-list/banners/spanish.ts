@@ -9,7 +9,7 @@ export const Banners_Data_ES = [
     {
         title: "Derecho Internacional",
         description:
-            "Atendemos a extranjeros en Brasil, ofreciendo soporte en inglés nativo, español, italiano y portugués. Asesoramos inversiones, transacciones comerciales, propiedad intelectual y administración, alineando los intereses de brasileños en el exterior y extranjeros en Brasil.",
+            "Atendemos a extranjeros en Brasil, ofreciendo soporte en inglés, español, italiano y portugués. Asesoramos inversiones, transacciones comerciales, propiedad intelectual y administración, alineando los intereses de brasileños en el exterior y extranjeros en Brasil.",
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional",
     },
