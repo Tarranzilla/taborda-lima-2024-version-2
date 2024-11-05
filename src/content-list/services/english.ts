@@ -1130,7 +1130,7 @@ export const mercado_capitais_investimento_estrangeiro_EN: Expertise_Data = {
     head_title: "Capital Market and Foreign Investment | Taborda Lima & Associated Lawyers",
     head_description: "Legal advice for investors and companies in capital market operations and foreign investments.",
     expertises: Servicos_Mercado_Capitais_Estangeiro,
-    image: "/general_assets/banner_mercado_capitais_investimento_estrangeiro.jpg",
+    image: "/general_assets/banner_mercado_capital.jpg",
 };
 
 export const expertise_data_EN: Expertise_Data[] = [

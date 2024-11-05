@@ -1143,7 +1143,7 @@ export const mercado_capitais_investimento_estrangeiro_ES: Expertise_Data = {
     head_description:
         "Ofrecemos consultoría jurídica especializada en operaciones en el mercado de capitales, incluyendo emisiones de acciones y títulos, y soporte en inversiones extranjeras.",
     expertises: Servicos_Mercado_Capitais_Estangeiro,
-    image: "/general_assets/banner_mercado_capitais_investimento_estrangeiro.jpg",
+    image: "/general_assets/banner_mercado_capital.jpg",
 };
 
 export const expertise_data_ES: Expertise_Data[] = [
