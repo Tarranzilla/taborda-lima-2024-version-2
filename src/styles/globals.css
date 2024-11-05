@@ -97,7 +97,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     scroll-padding-top: 10vh;
 }
 
@@ -2234,7 +2234,11 @@ footer > img {
     }
 
     .Alt_Paragraphs > p {
-        font-size: 1.125rem;
+        font-size: 1rem;
+    }
+
+    .Coisa > p {
+        font-size: 1rem;
     }
 
     #a_nossa_historia {
