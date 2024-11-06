@@ -72,6 +72,16 @@ export default function NewInstaFeed() {
             >
                 {feedList.map((item) => (
                     <div className="New_Insta_Feed_Slide" key={item.id}>
+                        <a
+                            className="Insta_Feed_Slide_Link material-icons"
+                            target="_blank"
+                            rel="noopener noreferer"
+                            title="Leia a publicação no instagram!"
+                            href={item.permalink}
+                        >
+                            library_books
+                        </a>
+
                         {item.media_type === "VIDEO" && <InstaFeedVideo {...item} />}
                         {item.media_type === "IMAGE" && <img width={400} height={400} src={item.media_url} alt={item.caption} />}
                         {item.media_type === "CAROUSEL_ALBUM" && <img width={400} height={400} src={item.media_url} alt={item.caption} />}

@@ -1352,15 +1352,43 @@ section {
     width: 100%;
     height: 90vh;
     height: 90dvh;
+    padding: 4rem;
     flex-shrink: 0;
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.Insta_Feed_Slide_Link {
+    position: absolute;
+    top: var(--medium-gap);
+    right: var(--medium-gap);
+    z-index: 2;
+    color: var(--brand-color-white);
+    text-decoration: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+.Insta_Feed_Slide_Link:hover,
+.Insta_Feed_Slide_Link:focus-within {
+    background-color: var(--brand-color-beige);
+    color: var(--brand-color-white);
+    scale: 1.1;
 }
 
 .New_Insta_Feed_Slide > img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    border-radius: 2rem;
 }
 
 .New_Insta_Feed_Slide > video {
@@ -2409,13 +2437,14 @@ footer > img {
     }
 
     .New_Insta_Feed_Slide {
-        padding: var(--large-gap);
-        padding-top: 2rem;
+        padding: 2rem;
     }
 
     .New_Insta_Feed_Slide > img {
         border-radius: var(--default-border-radius);
-        box-shadow: 0 0 10px 2px var(--brand-color-dark-brown);
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .Navbar_Logo_Container {
@@ -2424,5 +2453,12 @@ footer > img {
 
     .Navbar_Logo {
         padding-inline: var(--medium-gap);
+    }
+
+    .Insta_Feed_Slide_Link {
+        background-color: var(--brand-color-beige);
+        color: var(--brand-color-white);
+        top: 1rem;
+        right: 1rem;
     }
 }
