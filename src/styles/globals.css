@@ -2348,7 +2348,15 @@ footer > img {
     }
 
     .Expertise_Header_Info_Description {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .Expertise_Header_Info_Title {
+        font-size: 1.6rem;
+    }
+
+    .Expertise_Header_Info_Subtitle {
+        font-size: 0.8rem;
     }
 
     .Services_List {
