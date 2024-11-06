@@ -1053,7 +1053,7 @@ export const atendimento_estrangeiros_PT: Expertise_Data = {
     name: "Atendimento à Estrangeiros",
     head_title: "Atendimento à Estrangeiros | Taborda Lima & Advogados Associados",
     head_description:
-        "Suporte especializado na obtenção de vistos, possibilitando que indivíduos possam residir, conduzir seus negócios ou ser empregados no Brasil.",
+        "Suporte especializado na obtenção de vistos, possibilitando que indivíduos possam residir, conduzir seus negócios ou serem empregados no Brasil.",
     expertises: Servicos_Atendimento_Estrangeiro,
     image: "/general_assets/banner_atendimento_estrangeiros.jpg",
 };
