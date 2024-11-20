@@ -4,79 +4,87 @@ import { Expertise_Data } from "@/types/Expertise_Data";
 export const Servicos_Atendimento_Estrangeiro: Expertise[] = [
     {
         title: "Investor Visa",
-        description:
-            "The Investor Visa is aimed at foreigners who wish to invest in Brazil, either by creating a new company or investing in an existing business.",
+        description: "Allows foreigners to reside and invest in Brazil, contributing to economic development and benefiting from tax advantages.",
         full_description: [
-            "This type of visa requires the investor to make a minimum financial investment, as determined by Brazilian authorities.",
-            "Our legal team provides comprehensive support throughout the process, including the analysis and preparation of necessary documents, guidance on financial requirements, and assistance throughout the application procedure to ensure that all requirements are met.",
+            "The investor visa allows foreigners to reside and invest in the country, contributing to economic development and benefiting from tax advantages. It is an essential tool for entrepreneurs who wish to establish businesses and actively participate in the local market.",
+            "This visa requires the applicant to prove the lawful origin of the investment, meet the minimum value required by the authorities, and demonstrate the potential for job creation and positive economic impact. In addition, a detailed business plan must be submitted.",
+            "Investors who obtain this visa can expand their operations and establish strategic partnerships, as well as bring family members to reside in the country. It also offers benefits such as legal stability and greater integration into the local economic environment.",
+            "Legal consultancy guides all stages of the process, ensuring that the requirements are met and the investment is structured securely. This support is indispensable for maximizing business opportunities and ensuring a smooth entry into the market.",
         ],
         image: "/general_assets/banner_atendimento_estrangeiros.jpg",
         link: "/atendimento-estrangeiros/visto-de-investidor",
         slug: "visto-de-investidor",
-        category: "Foreign Services",
+        category: "Foreigners Assistance",
     },
     {
         title: "Work Visa",
-        description:
-            "The Work Visa allows foreigners to work professionally in Brazil, either through a formal job offer from a Brazilian company or for those coming to the country with a specific mission.",
+        description: "Allows foreigners to work legally in Brazil, promoting the transfer of international talent.",
         full_description: [
-            "This visa requires authorization from the Ministry of Justice and Public Security, in addition to proof of the candidate’s professional experience and qualifications. Our law firm offers complete assistance, from document gathering to communication with relevant authorities, ensuring the process is quick and efficient, in compliance with Brazilian law.",
+            "The work visa allows foreigners to work legally in companies or organizations in the country, promoting the transfer of international talent and meeting the demand for qualified professionals. It is essential for companies looking to expand their operations and diversify their workforce.",
+            "To obtain this visa, the employer generally must prove the necessity of hiring a foreigner, demonstrating that there is no local workforce available for the position. Additionally, the candidate needs to present documents proving their qualifications for the role.",
+            "This type of visa is a solution for companies aiming to compete globally, while also offering professionals the opportunity to expand their careers in a new market. It also promotes cultural and professional exchange.",
+            "Legal consultancy is essential to facilitate the visa application process, ensuring compliance with all legal requirements. This support ensures that the process is efficient and that both the employer and employee are protected.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/atendimento-estrangeiros/visto-de-trabalho",
         slug: "visto-de-trabalho",
-        category: "Foreign Services",
+        category: "Foreigners Assistance",
     },
     {
         title: "Asylum Visa",
-        description:
-            "The Asylum Visa is intended for foreigners seeking protection in Brazil due to persecution in their country of origin for political, religious, racial, or ideological reasons.",
+        description: "Grants protection to foreigners facing persecution or serious risks in their home countries.",
         full_description: [
-            "This visa is a right guaranteed by Brazilian law, which recognizes the need to provide a safe environment for those in high-risk situations.",
-            "Our law firm works with responsibility and sensitivity in handling these cases, assisting at every stage of the asylum application process, offering legal and emotional support, and ensuring that all the applicant’s rights are preserved.",
+            "The asylum visa is granted to foreigners facing persecution, life threats, or severe human rights violations in their home countries. It ensures protection and the right to reside, offering a new chance of safety to people in situations of extreme vulnerability.",
+            "To obtain asylum, it is necessary to prove the situation of risk, presenting evidence such as documents, testimonies, or reports from international organizations. The process is sensitive and requires attention to all legal and humanitarian requirements.",
+            "This visa allows the applicant and, in some cases, their family members, to rebuild their lives in a safe environment, with access to fundamental rights such as health, education, and work. It also demonstrates the country's commitment to welcoming individuals seeking protection.",
+            "Legal consultancy plays a crucial role in organizing documentation and presenting the case, ensuring that the applicant's rights are respected. This support is vital to ensure a transparent process and effective protection.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/atendimento-estrangeiros/visto-de-asilo",
         slug: "visto-de-asilo",
-        category: "Foreign Services",
+        category: "Foreigners Assistance",
     },
     {
         title: "Refugee Visa",
-        description:
-            "The Refugee Visa is granted to individuals who are in vulnerable situations, fleeing armed conflicts, human rights violations, or other forms of violence in their home countries.",
+        description: "Provides assistance to individuals fleeing armed conflicts or human rights violations in their home countries.",
         full_description: [
-            "Brazil recognizes and welcomes these individuals through a specific refugee application process. Our firm provides humane service, guiding the applicant through each step of the process, from preparing the necessary documentation to supporting the process with Brazilian authorities, ensuring a transparent and respectful approach.",
+            "The refugee visa is intended for individuals fleeing persecution, armed conflicts, or severe human rights violations in their home countries. It provides shelter and fundamental rights, ensuring that refugees can live with dignity in the host country.",
+            "The refugee application process requires presenting evidence that the individual is at risk in their home country. This includes personal testimonies, official documents, and reports attesting to the severity of the situation.",
+            "By obtaining the refugee visa, the applicant gains access to essential services such as healthcare, education, and social integration. This mechanism is critical for protecting lives and fulfilling the country's commitments to international human rights treaties.",
+            "Legal consultancy assists in preparing and submitting the application, ensuring all legal requirements are met. This support is indispensable for guaranteeing effective protection for refugees and a fair and humanitarian process.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/atendimento-estrangeiros/visto-de-refugio",
         slug: "visto-de-refugio",
-        category: "Foreign Services",
+        category: "Foreigners Assistance",
     },
     {
         title: "Student Visa (VITEM IV)",
-        description:
-            "The Student Visa is aimed at foreigners who wish to study at Brazilian institutions, whether universities, technical schools, or high schools.",
+        description: "Aimed at foreigners wishing to study at Brazilian institutions, promoting cultural and educational exchange.",
         full_description: [
-            "This visa is essential for those seeking academic improvement in Brazil and generally requires proof of enrollment at a recognized educational institution.",
-            "Our team of lawyers is prepared to guide applicants from document organization to application support, ensuring that all legal requirements are met in a timely and efficient manner.",
+            "The student visa allows foreigners to reside temporarily in the country for educational purposes, promoting cultural exchange and enhancing their qualifications. It is an opportunity for students to broaden their horizons and prepare for the global market.",
+            "To obtain the visa, it is necessary to present documents such as a letter of acceptance from a recognized institution, financial proof to cover living expenses, and health insurance. The visa is usually valid for the duration of the course and can be renewed as needed.",
+            "Students who obtain this visa gain access to an enriching educational experience, as well as the opportunity to learn about new cultures and create international networks. It also strengthens educational cooperation between countries.",
+            "Legal consultancy provides guidance on eligibility requirements and helps organize the necessary documentation, ensuring the process is quick and efficient. This support is essential to avoid delays and ensure that students can begin their studies without concerns.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/atendimento-estrangeiros/visto-de-estudante",
         slug: "visto-de-estudante",
-        category: "Foreign Services",
+        category: "Foreigners Assistance",
     },
     {
         title: "Family Reunification Visa (VITEM XI)",
-        description:
-            "The Family Reunification Visa is intended for direct family members of Brazilian citizens or foreigners already residing in Brazil, such as spouses, children, and dependents.",
+        description: "Allows family members of foreign residents to live together, promoting family unity and emotional stability.",
         full_description: [
-            "This visa facilitates family reunification and is a common choice for those who have established family ties in the country.",
-            "Our firm offers assistance in all stages, from form filling and document preparation to process follow-up with authorities, ensuring transparency and full support so that families can reunite in Brazil smoothly.",
+            "The family reunification visa allows family members of foreign residents in the country to live together, promoting family unity and emotional stability. It is an important solution for ensuring families can remain united, even in a migration context.",
+            "The process requires proof of family ties, such as marriage or birth certificates, along with meeting the financial and documentary requirements established by immigration authorities. In some cases, it is necessary to demonstrate the ability to financially support the family members.",
+            "This visa is essential for providing stability to foreigners already residing in the country, allowing them to carry out their activities with greater peace of mind. It also aids in the adaptation of family members to the new environment.",
+            "Legal consultancy provides guidance on the process requirements and assists in preparing the documentation, ensuring everything is handled efficiently and in compliance with the law. This support is crucial for a smooth process, promoting family unity.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/atendimento-estrangeiros/visto-para-reuniao-familiar",
         slug: "visto-para-reuniao-familiar",
-        category: "Foreign Services",
+        category: "Foreigners Assistance",
     },
 ];
 
@@ -84,11 +92,12 @@ export const Servicos_Migratorio: Expertise[] = [
     {
         title: "L-1 Visa",
         description:
-            "A temporary authorization that allows companies to transfer executives, managers, or professionals with specialized knowledge from a foreign branch to a subsidiary or affiliate in the United States.",
+            "Allows the transfer of employees from international companies to branches in the U.S., promoting professional mobility and strengthening corporate operations.",
         full_description: [
-            "The L-1 visa is a temporary authorization that allows companies to transfer executives, managers, or professionals with specialized knowledge from a foreign branch to a subsidiary or affiliate in the United States.",
-            "It is ideal for companies looking to expand their operations in the country, facilitating the opening of new branches or subsidiaries. One of the major benefits of this visa is that it does not require a specific degree and can be a pathway for executives and managers to apply for a Green Card without going through the labor certification process.",
-            "The transfer can occur internally, when the company already has a branch in the U.S., or it can be used to establish a new operation in the country, with the executive in charge of the initial management. The L-1 visa offers a practical solution for companies seeking to expand their activities in the U.S. and transfer their key leaders or specialists to oversee the operation.",
+            "This visa is essential for companies looking to expand their presence in the U.S. market, maintaining the cohesion and efficiency of their teams.",
+            "The L-1 visa caters to executives, managers, and employees with specialized knowledge. It enables the continuity of projects and strategies while facilitating integration between different units of a global company.",
+            "To obtain it, proof of the relationship between the parent company and the branch, as well as the employee's role, is required. These requirements make the process detailed but ensure protection for all parties involved.",
+            "Specialized legal guidance ensures that requirements are precisely met, avoiding delays and increasing the chances of success. This is vital for companies that need speed and compliance in the transfer process.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-l-1",
@@ -98,11 +107,12 @@ export const Servicos_Migratorio: Expertise[] = [
     {
         title: "E-1 Visa",
         description:
-            "Designed for citizens of countries that have trade treaties with the United States, allowing them to substantially engage in the import and export of goods, services, or technology between the two countries.",
+            "For merchants from countries with specific treaties with the U.S., allowing substantial trade transactions between the home country and the U.S.",
         full_description: [
-            "The E-1 visa is designed for citizens of countries that have trade treaties with the United States, allowing them to substantially engage in the import and export of goods, services, or technology between the two countries.",
-            "To be eligible, you must be a citizen of one of these countries, be involved in substantial trade between the U.S. and the treaty country, and hold an essential position in the company, either as the principal operator or key employee.",
-            "The requirements include submitting the I-129 petition by the employer, documentation proving substantial trade transactions, completing the DS-160 form, and other supporting documents such as contracts and invoices. The E-1 visa allows import and export businesses to legally operate in the U.S., covering sectors such as technology, transportation, tourism, and financial services. Additionally, it can be renewed indefinitely as long as the requirements continue to be met.",
+            "This visa is a solution for those seeking to strengthen commercial ties with the U.S. market.",
+            "The E-1 requires that transactions between the countries be regular and significant, covering goods, services, or technology. This structure promotes commercial interaction between treaty signatories, encouraging economic growth.",
+            "Proof of the volume and frequency of operations is crucial for approval. Additionally, the applicant must demonstrate that their presence in the U.S. will benefit trade relations between the countries.",
+            "With proper legal guidance, it is possible to meet all requirements and carry out the process efficiently. This preparation minimizes rejection risks and ensures alignment with U.S. rules.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-e-1",
@@ -112,11 +122,12 @@ export const Servicos_Migratorio: Expertise[] = [
     {
         title: "E-2 Visa",
         description:
-            "Allows citizens of countries with trade treaties with the United States to invest in a business in the country and temporarily reside while the business is operational.",
+            "For investors from countries with specific treaties, allowing individuals to develop and manage substantial investments in the U.S.",
         full_description: [
-            "The E-2 visa allows citizens of countries with trade treaties with the United States to invest in a business in the country and temporarily reside while the business is operational.",
-            "This visa is ideal for entrepreneurs who wish to expand their businesses and live in the U.S. To be eligible, the applicant must be a citizen of a country with a Treaty of Trade and Navigation with the U.S., such as Spain, Germany, Italy, France, and Portugal.",
-            "Additionally, a detailed business plan must be presented to prove the feasibility and growth potential of the business in the U.S. This plan should include a description of the company, market strategies, and financial projections. The E-2 visa offers several advantages, such as the possibility of residing in the U.S. with family, indefinite renewal while the business remains active, and work authorization for the spouse.",
+            "It is ideal for those looking to open or acquire a business in the country.",
+            "The visa requires that the investment be significant and that the company has the potential to generate jobs and economic growth. This structure ensures that the project positively contributes to the local economy.",
+            "Additionally, the applicant must demonstrate active involvement in business management. This involves not only financial input but also dedication to ensuring the success of the operation.",
+            "Legal guidance is essential to meet the required criteria and draft a solid business plan. This support increases the chances of approval and facilitates the investor's adaptation to the U.S. market.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-e-2",
@@ -125,12 +136,12 @@ export const Servicos_Migratorio: Expertise[] = [
     },
     {
         title: "Marriage Visa for the United States",
-        description:
-            "This visa is requested when a U.S. citizen or permanent resident wishes to bring their foreign spouse to the U.S., either to live permanently or temporarily.",
+        description: "Allows spouses of U.S. citizens to reside legally in the U.S., promoting family unity.",
         full_description: [
-            "This visa is requested when a U.S. citizen or permanent resident wishes to bring their foreign spouse to the U.S., either to live permanently or temporarily.",
-            "There are different types of marriage visas, such as the CR-1 (conditional resident) or IR-1 (immediate resident) visas for those already married, and the K-1 (fiancé) visa for those intending to marry in the U.S.",
-            "The process involves submitting specific petitions and documentation, as well as meeting the legal eligibility requirements established by U.S. immigration laws. The goal is to demonstrate the legitimacy of the relationship and ensure that the foreign spouse meets the criteria to legally live in the country.",
+            "To obtain it, proof of the authenticity of the relationship and compliance with specific requirements is necessary.",
+            "The process includes presenting documents that prove the relationship, such as photos, declarations, and a history of living together. Additionally, the foreign spouse must meet U.S. government health and security requirements.",
+            "This visa is one of the main ways to promote family reunification, but its process can be lengthy and bureaucratic. Therefore, adequate preparation is essential to avoid delays or denials.",
+            "Legal guidance provides support in all stages, from organizing documents to attending interviews. This assistance ensures the process proceeds smoothly and in compliance with U.S. regulations.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-de-casamento-eua",
@@ -138,14 +149,13 @@ export const Servicos_Migratorio: Expertise[] = [
         category: "Immigration Law",
     },
     {
-        title: "Pedidos de Waiver",
-        description: "Waivers allow individuals or companies to obtain exemptions from certain legal requirements that would otherwise be mandatory.",
+        title: "Waiver Requests",
+        description: "Allow overcoming immigration impediments, enabling entry into the U.S. for those ineligible due to legal reasons.",
         full_description: [
-            "The importance of these requests lies in their ability to provide flexibility and relief in situations where strict compliance with the rules may be impractical or unfair. The waiver application process begins with a clear identification of the need and legal basis for the request.",
-            "Applicants must demonstrate compelling reasons why the waiver should be granted. This may involve presenting evidence of significant hardship, negative economic impact, or other mitigating circumstances. Preparing a waiver request requires a detailed analysis of the legal requirements and a deep understanding of the specific context of the application.",
-            "Once prepared, the waiver request must be submitted to the relevant authority, which may vary depending on the nature of the waiver and the jurisdiction. It could be a government agency, regulatory body, or international entity. The submission typically includes a formal petition accompanied by supporting documentation, such as sworn statements, financial reports, medical certificates, among others. The rigor and quality of the documentation are crucial to increasing the chances of approval.",
-            "The specifics of waiver requests vary significantly depending on the field of application. In immigration, for example, a waiver may be requested to overcome a barrier to admissibility to the United States, such as a previous immigration violation or criminal conviction. In a business context, waivers may be necessary to exempt certain regulatory requirements affecting the operation of international businesses. Each type of waiver has specific criteria and detailed procedures that must be strictly followed.",
-            "In summary, waiver requests are a vital tool for obtaining legal relief in complex and challenging situations. The importance of this service lies in the ability to flexibly apply the law, offering fair and practical solutions for individuals and businesses. With careful preparation, a deep understanding of the legal requirements, and meticulous presentation, lawyers can effectively advocate for their clients' interests and maximize the chances of success in obtaining waivers.",
+            "These requests are crucial for those facing specific restrictions, such as health barriers, criminal records, or documentation issues.",
+            "The Waiver requires detailed justifications and evidence demonstrating the necessity of entry into the U.S. Furthermore, the applicant must prove that their presence will not pose risks to the country.",
+            "This process can be complex and requires a deep understanding of immigration laws. Therefore, careful preparation of the request is essential to increase the chances of approval.",
+            "Legal support is indispensable to guide the applicant on requirements and compile the necessary documentation. This assistance reduces the risk of errors and expedites processing, making the procedure more efficient.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/pedidos-de-waiver",
@@ -155,13 +165,12 @@ export const Servicos_Migratorio: Expertise[] = [
     {
         title: "EB-1 Visa",
         description:
-            "Obtaining the EB-1 Visa is an essential service for individuals with extraordinary abilities who wish to reside and work in the United States.",
+            "For individuals with extraordinary abilities, professors, researchers, and executives transferred from multinational companies.",
         full_description: [
-            "Obtaining the EB-1 Visa is an essential service for individuals with extraordinary abilities who wish to reside and work in the United States. This visa is of great importance to distinguished professionals, including scientists, artists, educators, executives, and athletes, who have a proven track record of significant achievements in their respective fields. Expertise in immigration law is crucial to navigate the complex requirements of this visa, ensuring that qualified candidates can take advantage of the unique opportunities offered by this immigration program.",
-            "The process of obtaining the EB-1 Visa begins with the preparation and submission of an immigrant petition, known as Form I-140, to the United States Citizenship and Immigration Services (USCIS). This petition must be accompanied by substantial evidence demonstrating the candidate's extraordinary ability, such as international awards, publications, significant contributions to the field, and recognition by organizations and peers. Additionally, the candidate must demonstrate that they will continue to work in their area of expertise in the United States. Presenting a well-documented and convincing petition is crucial to success in the EB-1 Visa process.",
-            "A peculiarity of the EB-1 Visa is that it does not require a job offer in the United States, unlike many other types of work visas. This means that individuals with extraordinary abilities can apply on their own, based solely on their accomplishments and potential to continue making significant contributions in their fields. Additionally, the EB-1 Visa offers a fast track to permanent residency (green card), allowing beneficiaries and their families to settle in the United States more quickly compared to other employment-based visas.",
-            "The importance of the EB-1 Visa lies in its ability to attract and retain exceptional talent from around the world, strengthening the environment of innovation and excellence in the United States. This visa not only benefits the individuals who receive it but also contributes to the advancement of industries, academia, science, and culture in the country. Immigration law specialists play a crucial role in guiding candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and strategically.",
-            "In summary, the EB-1 Visa is a vital component of immigration law that allows individuals with extraordinary abilities to reside and work in the United States. This service ensures that qualified candidates can take advantage of the unique opportunities offered by this immigration program, significantly contributing to advancement and innovation in various fields. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-1 Visa.",
+            "It allows permanent residency in the U.S. for those with distinguished achievements in their field.",
+            "To qualify, the applicant must present evidence of exceptional accomplishments, such as awards, publications, or significant contributions in their field. These criteria ensure the visa is granted only to highly relevant individuals.",
+            "The EB-1 is also an option for companies wishing to transfer high-level executives and managers to the U.S., strengthening global operations. It offers a more direct path to permanent residency.",
+            "Legal guidance is crucial to compile and present documentation appropriately. This support increases the chances of success and ensures the process complies with regulations.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-1",
@@ -171,13 +180,12 @@ export const Servicos_Migratorio: Expertise[] = [
     {
         title: "EB-2 Visa",
         description:
-            "Obtaining the EB-2 Visa is an essential service for professionals with exceptional abilities or advanced degrees who wish to reside and work in the United States.",
+            "Targeted at qualified professionals with advanced degrees or exceptional abilities, allowing specialists to contribute to the U.S. market.",
         full_description: [
-            "Obtaining the EB-2 Visa is an essential service for professionals with exceptional abilities or advanced degrees who wish to reside and work in the United States. This visa is of great importance to specialists in various fields, including science, business, arts, and education, allowing them to contribute significantly to the country's economy and technological development. Expertise in immigration law is crucial to navigate the complex requirements of this visa, ensuring that qualified candidates can maximize their chances of success.",
-            "The process of obtaining the EB-2 Visa begins with the preparation and submission of an immigrant petition, Form I-140, to the United States Citizenship and Immigration Services (USCIS). There are two main subcategories for the EB-2 Visa: EB-2(a), for individuals with advanced degrees, and EB-2(b), for those with exceptional abilities. Additionally, there is the EB-2(c) subcategory for the National Interest Waiver (NIW), which allows certain candidates to qualify without the need for a job offer if they can demonstrate that their presence in the U.S. would be of significant benefit to the country. Each of these subcategories requires meticulous and detailed documentation to prove the candidate's eligibility.",
-            "A peculiarity of the EB-2 Visa is the possibility of the National Interest Waiver (NIW), which allows candidates with exceptional abilities or advanced degrees to request a waiver of the job offer requirement if they can prove that their admission is in the national interest of the United States. This is particularly relevant for professionals whose skills or work are considered critical to the economic, educational, cultural, or scientific development of the U.S. This process requires a well-founded petition, demonstrating how the candidate's presence in the U.S. will substantially benefit the country.",
-            "The importance of the EB-2 Visa lies in its ability to attract highly qualified professionals with exceptional abilities who can contribute significantly to innovation, research, and development in various fields in the United States. This visa not only benefits the individuals who receive it but also strengthens the U.S.'s competitiveness and leadership in various industries and fields of study. Immigration law specialists play a crucial role in guiding candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and convincingly.",
-            "In summary, the EB-2 Visa is a vital component of immigration law that allows professionals with exceptional abilities or advanced degrees to reside and work in the United States. This service ensures that qualified candidates can take advantage of the opportunities offered by this immigration program, significantly contributing to advancement and innovation in various fields. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-2 Visa.",
+            "It is ideal for those seeking permanent residency in the U.S. based on their expertise.",
+            "The visa requires candidates to demonstrate qualifications through degrees, professional experience, and recognition in their field. Additionally, some categories may apply for the EB-2 based on U.S. national interest.",
+            "This visa promotes talent entry into the country, strengthening strategic sectors and driving innovation. It is also an opportunity for professionals to expand their careers in a competitive market.",
+            "Legal consultation is vital for preparing documentation and presenting a solid case. This support ensures the process is efficient and aligned with U.S. requirements.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-2",
@@ -186,14 +194,12 @@ export const Servicos_Migratorio: Expertise[] = [
     },
     {
         title: "EB-3 Visa",
-        description:
-            "Obtaining the EB-3 Visa is crucial for skilled workers, professionals, and other workers who wish to reside and work in the United States.",
+        description: "For skilled workers, professionals, and other workers, allowing permanent residency in the U.S. based on specific skills.",
         full_description: [
-            "Obtaining the EB-3 Visa is crucial for skilled workers, professionals, and other workers who wish to reside and work in the United States. This visa is of great importance for individuals who possess specific skills or professional experience that are highly demanded by the American labor market. Expertise in immigration law is essential to guide candidates through the necessary requirements and procedures to obtain this visa, ensuring they can take advantage of the opportunities offered by the immigration program.",
-            "The process of obtaining the EB-3 Visa begins with securing a job offer from a U.S. employer who must be willing to sponsor the candidate. The employer must initiate the process by requesting a Labor Certification from the U.S. Department of Labor, demonstrating that there are no qualified, available, and willing American workers to fill the offered position. Once the certification is obtained, the employer can then submit an immigrant petition, known as Form I-140, to the United States Citizenship and Immigration Services (USCIS). This petition must include evidence of the candidate's qualifications and the genuineness of the job offer.",
-            "A peculiarity of the EB-3 Visa is that it is subdivided into three categories: skilled workers, professionals, and other workers. Skilled workers are those who have at least two years of experience or training in the specified occupation. Professionals are those who have a bachelor's degree or its equivalent in the relevant field. Other workers include occupations that require less than two years of experience or training. Each subcategory has its specific requirements and priority levels, which can affect processing times and visa availability.",
-            "The importance of the EB-3 Visa lies in its ability to fill critical gaps in the U.S. labor market, allowing employers to access qualified foreign talent to meet their labor needs. This visa not only benefits employers by fulfilling the demand for skilled workers but also offers candidates the opportunity to build a new life in the United States, contributing to the country's economy and society. Immigration law specialists play a crucial role in guiding employers and candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and convincingly.",
-            "In summary, the EB-3 Visa is a vital component of immigration law that allows skilled workers, professionals, and other workers to reside and work in the United States. This service ensures that qualified candidates can take advantage of the opportunities offered by this immigration program, significantly contributing to the country's economic and social development. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-3 Visa.",
+            "It is a viable option for those seeking employment opportunities in the U.S.",
+            "The process requires proof of experience, education, or qualifications for the offered position. Additionally, the sponsoring company must demonstrate that the hiring is necessary and that no local workforce is available.",
+            "The EB-3 is one of the most accessible categories for workers aiming to immigrate to the U.S., but its process can be competitive. Thus, it is crucial that all requirements are precisely met.",
+            "Legal assistance helps with document preparation and communication with the sponsoring company. This support reduces rejection risks and facilitates the worker's transition to the U.S.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-3",
@@ -202,14 +208,12 @@ export const Servicos_Migratorio: Expertise[] = [
     },
     {
         title: "EB-4 Visa",
-        description:
-            "This visa is of great importance to a variety of individuals, including religious workers, employees of international organizations, physicians, U.S. government translators, among others.",
+        description: "For special immigrants, such as religious workers and employees of international organizations.",
         full_description: [
-            "Obtaining the EB-4 Visa is essential for certain categories of special immigrants who wish to reside and work in the United States. This visa is of great importance to a variety of individuals, including religious workers, employees of international organizations, physicians, U.S. government translators, among others. Expertise in immigration law is fundamental to navigate the specific requirements of this visa, ensuring that qualified candidates can maximize their chances of success.",
-            "The process of obtaining the EB-4 Visa begins with determining the candidate's eligibility according to one of the special immigrant subcategories. The employer or the candidate must submit an immigrant petition, known as Form I-360, to the United States Citizenship and Immigration Services (USCIS). Each subcategory has specific requirements that must be met and documented, such as proof of continuous employment for religious workers or qualified service for Iraq or Afghan translators who worked with the U.S. government. After the petition is approved, candidates can apply for an immigrant visa through the U.S. consulate or adjust their status if they are already in the United States.",
-            "A peculiarity of the EB-4 Visa is the wide range of categories it covers, each with its own requirements and qualification processes. For example, religious workers must demonstrate that they have been members of a religious denomination for at least two years and that they will continue to work in a religious capacity in the United States. Foreign physicians who have committed to working in underserved areas in the U.S. must also provide evidence of their commitment and qualifications. Due to the diversity of categories, specialized lawyers need to have a deep knowledge of the various requirements and be able to adapt their strategies accordingly.",
-            "The importance of the EB-4 Visa lies in its ability to facilitate the immigration of individuals who provide essential services and significant contributions to American society. This visa not only benefits the individuals who receive it but also supports the communities and organizations that depend on their services. The presence of these professionals and specialized workers strengthens the social and economic fabric of the United States, promoting diversity and inclusion. Immigration law specialists play a crucial role in guiding candidates through the complex application process, ensuring that all requirements are met and that the petition is presented accurately and convincingly.",
-            "In summary, the EB-4 Visa is a vital component of immigration law that allows special immigrants to reside and work in the United States. This service ensures that qualified candidates can take advantage of the opportunities offered by this immigration program, significantly contributing to American society. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that candidates present well-documented and convincing petitions, increasing their chances of success in obtaining the EB-4 Visa.",
+            "It provides the possibility of permanent residency in the U.S.",
+            "To qualify, the applicant must prove their involvement in the field and their relevance to the sector. Additionally, the process may include additional requirements, such as recommendation letters and professional history.",
+            "This visa is an important tool for those looking to establish a career in the U.S. in areas that directly contribute to social and community development. It values the positive impact of individuals on their communities.",
+            "Legal guidance ensures that the criteria are met and that the application process is conducted efficiently. This support is essential for the applicant to achieve their goals safely.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-4",
@@ -218,13 +222,12 @@ export const Servicos_Migratorio: Expertise[] = [
     },
     {
         title: "EB-5 Visa",
-        description: "EB-5 Visa is highly sought after by foreign investors who wish to reside permanently in the United States.",
+        description: "For investors who make significant contributions to businesses in the U.S., promoting economic development and job creation.",
         full_description: [
-            "Obtaining the EB-5 Visa is highly sought after by foreign investors who wish to reside permanently in the United States. This visa is of great importance to individuals and their families seeking business opportunities and residency in the U.S. through investment in commercial projects. Expertise in immigration law is essential to guide investors through the complex requirements and procedures necessary to obtain this visa, ensuring they can take advantage of the opportunities offered by the EB-5 program.",
-            "The process of obtaining the EB-5 Visa involves making a substantial investment in a commercial project in the United States that creates jobs and promotes economic growth. Investors must invest at least $1.8 million in a general commercial project or at least $900,000 in designated high-unemployment or rural areas, known as Targeted Employment Areas (TEAs). Additionally, the investment must result in the creation of at least 10 full-time jobs for qualified American workers. Immigration law specialists play a crucial role in guiding investors in identifying eligible projects and meeting all EB-5 program requirements.",
-            "A peculiarity of the EB-5 Visa is that it offers a relatively direct route to permanent residency in the United States, without the need for a job offer or employer sponsorship. This provides investors and their families with greater flexibility and control over their immigration status and allows them to pursue business and educational opportunities in the U.S. However, the process of obtaining the EB-5 Visa can be complex and lengthy, and investors must be prepared to face challenges such as selecting suitable projects, analyzing financial risks, and complying with EB-5 program regulations.",
-            "The importance of the EB-5 Visa lies in its ability to attract foreign investment to the United States, promoting economic development and job creation in the country. This visa not only benefits the investors and their families but also supports local communities and the American economy as a whole. The EB-5 program plays a crucial role in funding a variety of commercial projects, from real estate developments to infrastructure and regional development. Immigration law specialists play a fundamental role in guiding investors through the complex application process, ensuring all requirements are met and the investment is made legally and effectively.",
-            "In summary, the EB-5 Visa is a vital component of immigration law that offers foreign investors a unique opportunity to reside permanently in the United States through investment in commercial projects. This service ensures that qualified investors can take advantage of the opportunities offered by the EB-5 program, contributing to economic growth and community development in the U.S. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring investors make successful investments and meet all EB-5 program requirements.",
+            "It offers the opportunity for permanent residency for the investor and their family.",
+            "To obtain the visa, the applicant must meet strict financial requirements, including the investment amount and job creation for American workers. Additionally, they must demonstrate the legitimate origin of the funds.",
+            "The EB-5 is one of the most attractive categories for investors aiming to expand their businesses and access new markets. It also strengthens the local economy by encouraging the establishment of new companies and jobs.",
+            "Specialized consultation is indispensable for meeting legal requirements and ensuring the process is conducted correctly. This support provides security and facilitates compliance with the necessary steps for approval.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-eb-5",
@@ -233,13 +236,12 @@ export const Servicos_Migratorio: Expertise[] = [
     },
     {
         title: "Artist Visa (O-1 Visa)",
-        description: "Indicated for talented artists and creative professionals who wish to work temporarily in the United States.",
+        description: "For individuals with extraordinary abilities in arts, sports, and other fields, allowing them to work temporarily in the U.S.",
         full_description: [
-            "Obtaining the Artist Visa, known as the O-1 Visa, is essential for talented artists and creative professionals who wish to work temporarily in the United States. This visa is of great importance to individuals who possess extraordinary abilities in the fields of visual arts, music, film, television, theater, and more, and who wish to contribute to the American cultural industry. Expertise in immigration law is crucial to guide artists through the complex requirements and procedures necessary to obtain this visa, ensuring they can take advantage of the opportunities offered by the O-1 program.",
-            "The process of obtaining the O-1 Visa involves submitting a nonimmigrant petition, known as Form I-129, to the United States Citizenship and Immigration Services (USCIS). Candidates must prove their extraordinary ability or notable achievements in their field, through recognized national or international awards, participation in prominent events, positive reviews of their work, or evidence of exceptional remuneration for their services. Additionally, candidates must demonstrate that they have a job offer in the United States to perform activities related to their field.",
-            "A peculiarity of the O-1 Visa is that it is intended for individuals who excel in their respective fields, whether in the arts, entertainment, sports, or business. Beneficiaries of the O-1 Visa can include artists, musicians, actors, directors, screenwriters, designers, and other creative professionals who have achieved a high level of recognition and excellence in their careers. This visa offers artists the opportunity to work temporarily in the United States, collaborate with other talented professionals, and contribute to the cultural diversity of the country.",
-            "The importance of the O-1 Visa lies in its ability to attract extraordinary talent to the United States, enriching the country's cultural and artistic industry. This visa not only benefits the artists who receive it but also contributes to the growth and diversity of the arts in the U.S., promoting innovation and excellence in various fields. The O-1 program plays a crucial role in strengthening the United States' position as a global center of creativity and artistic expression. Immigration law specialists play a fundamental role in guiding artists through the complex application process, ensuring all requirements are met and the petition is presented accurately and convincingly.",
-            "In summary, the Artist Visa (O-1 Visa) is a vital component of immigration law that offers talented artists a unique opportunity to work temporarily in the United States. This service ensures that qualified artists can take advantage of the opportunities offered by the O-1 program, significantly contributing to the American cultural and artistic industry. The expertise of specialized lawyers is essential to navigate the complexities of the application process, ensuring that artists present well-documented and convincing petitions, increasing their chances of success in obtaining the O-1 Visa.",
+            "It is ideal for professionals with international recognition who wish to explore the U.S. market.",
+            "The applicant must prove their achievements through awards, reviews, contracts, or evidence of distinction in their field. This documentation is essential to demonstrate eligibility for the visa.",
+            "The O-1 offers a unique opportunity for artists and professionals to expand their careers in an international setting. It promotes cultural exchange and enriches the U.S. market.",
+            "Legal assistance helps prepare documentation and meet requirements. This support increases approval chances and ensures the process is conducted efficiently and transparently.",
         ],
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-artista-o-1",
@@ -252,11 +254,12 @@ export const Servicos_Internacional: Expertise[] = [
     {
         title: "International Trade",
         description:
-            "International trade involves the exchange of goods and services between countries, and for entering this market, companies must choose the best entry strategy.",
+            "International trade encompasses commercial transactions between countries, regulating aspects such as tariffs, taxes, and import/export norms.",
         full_description: [
-            "Options include direct export, where the company sells directly to the foreign market, or indirect export, which uses intermediaries, such as trading companies, to access other countries. Alternatively, partnerships or joint ventures allow sharing risks with local companies, while establishing a subsidiary offers greater control over foreign operations.",
-            "Additionally, it is essential to adapt products and services to meet the cultural norms and preferences of each market, ensuring that packaging and labeling comply with local laws.",
-            "Logistics planning involves choosing the best mode of transportation and managing the supply chain effectively. Compliance requires attention to licenses, certifications, and customs regulations to ensure international operations run smoothly without legal hurdles.",
+            "This set of rules and practices is essential to ensure the smooth flow of global operations, creating a secure and predictable environment for commercial exchanges. Additionally, it facilitates economic development by providing access to international markets.",
+            "This field is crucial for companies aiming to expand their global operations. It ensures that businesses comply with the specific regulations of each country, promoting compliance and avoiding sanctions that could negatively impact operations. Close attention to international norms is critical to protect commercial interests and mitigate risks.",
+            "Legal support can help mitigate trade barriers by providing tools to negotiate more robust contracts tailored to the needs of the parties involved. This is especially relevant in a global scenario where norms can vary significantly from one region to another. Additionally, it contributes to cost reduction through practices that optimize logistical and tax processes.",
+            "The complexity of international transactions demands a detailed focus. Careful evaluation of tariffs, taxes, and local rules ensures that operations are transparent and efficient. This integrated approach not only promotes business sustainability abroad but also strengthens commercial relationships, laying solid foundations for long-term partnerships.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/comercio-internacional",
@@ -266,12 +269,12 @@ export const Servicos_Internacional: Expertise[] = [
     {
         title: "International Taxation",
         description:
-            "International taxation refers to the tax rules and regulations applicable to transactions, profits, and income of companies and individuals operating in more than one country.",
+            "This field applies to transactions conducted between different countries, focusing on preventing double taxation and promoting more efficient tax planning.",
         full_description: [
-            "In common situations, such as a foreign subsidiary taxing its profits locally and the parent company paying taxes on the same profits in its home country, double taxation can occur.",
-            "Expatriates may also be taxed both in the country where they work and in their home country, which can significantly increase their tax burden.",
-            "Double Taxation Treaties (DTTs) are bilateral agreements that help avoid or reduce this excessive burden by regulating which country has the right to tax certain types of income. They can offer benefits such as reduced withholding taxes on dividends, royalties, and interest, as well as eliminating double taxation.",
-            "For companies operating internationally, strategic tax planning is essential to optimize their tax burden by taking advantage of DTTs and special tax regimes, such as free trade zones, foreign investment regimes that reduce taxes on reinvested profits, and simplified tax regimes that streamline processes and reduce taxes.",
+            "It regulates how taxes are levied and distributed between jurisdictions, ensuring that companies meet their fiscal obligations without incurring duplicate payments.",
+            "For companies operating in multiple countries, understanding the nuances of international taxation is vital to reduce costs and avoid penalties. It also enhances competitiveness by aligning tax burdens with local and international practices, fostering a more stable and reliable business environment.",
+            "Tax planning is an indispensable strategic tool in this context. It enables operations to be structured in ways that minimize tax costs while complying with applicable laws. The analysis of international conventions and bilateral treaties, such as double taxation agreements, becomes indispensable for this optimization.",
+            "Finally, adherence to local and international tax norms reduces risks associated with tax audits and legal processes. This ensures greater security for businesses, allowing them to focus efforts on expanding their global operations with solidity and transparency, without compromising financial efficiency.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/tributacao-internacional",
@@ -280,11 +283,12 @@ export const Servicos_Internacional: Expertise[] = [
     },
     {
         title: "International Adoption",
-        description:
-            "A process where a child from one country is adopted by parents from another country, usually regulated by the Hague Convention, which aims to protect the best interests of the child.",
+        description: "A legal process connecting families and children while respecting international and local norms.",
         full_description: [
-            "The process is used when it is not possible to find a family in the country of origin and involves cooperation between the authorities of the countries of origin and adoption. These authorities ensure that the child is adoptable, that the prospective parents are qualified, and that no illegal payments or compensations are involved.",
-            "If one of the countries is not a signatory to the Convention, the process follows national laws. While it offers the opportunity for a new home for the child, international adoption can be complex, with legal, bureaucratic, and cultural adaptation challenges for both the child and adoptive parents.",
+            "It is essential to ensure that the rights of children are protected throughout the procedure, ensuring compliance with global conventions such as The Hague Convention.",
+            "This process is often challenging due to differing laws and cultural requirements. It demands careful planning and an understanding of the specific rules of each participating country to avoid delays or legal complications. Furthermore, it seeks to create a safe and transparent relationship among all parties.",
+            "Transparency and ethics are fundamental to ensuring that adoption serves the interests of all involved. Thus, preparing necessary documentation and closely working with responsible authorities are indispensable steps. These measures ensure that the child is placed in a healthy and loving environment, with their rights respected.",
+            "Supporting families during this process involves overcoming bureaucratic barriers and providing clear and accessible guidance. This provides peace of mind and security, making the adoption process less complex and more efficient without compromising the integrity of the legal system involved.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/adocao-internacional",
@@ -292,12 +296,13 @@ export const Servicos_Internacional: Expertise[] = [
         category: "International Law",
     },
     {
-        title: "Divorce of Marriage Performed Abroad",
-        description:
-            "The divorce of a marriage performed abroad follows a specific process, which first requires the recognition of the marriage in Brazil.",
+        title: "Divorce of Marriage Conducted Abroad",
+        description: "Divorces of marriages conducted outside Brazil require attention to international and local laws.",
         full_description: [
-            "If the marriage has not been registered in the country, its homologation will be necessary for the divorce to have legal validity. Among the necessary documents for the divorce process are the original marriage certificate, translated by a sworn translator, and the personal documents of the spouses. In some cases, the homologation of the foreign marriage will also be required.",
-            "The judicial divorce procedure can be consensual, when both parties agree, or litigious, if there are disagreements, leading to a judicial resolution. As with divorces performed in Brazil, it is important to ensure that all rights and duties of the spouses are respected, including the division of assets, child custody, and alimony.",
+            "This process is essential to ensure that the rights of the parties are respected, particularly in cases involving multiple jurisdictions or assets distributed across different countries.",
+            "Moreover, it is a sensitive issue, often involving child custody, division of assets, and other aspects that require swift and fair resolutions. Understanding the applicable laws in each case is crucial to avoid complications and ensure proper representation for all parties.",
+            "In an international context, coordination between the judicial authorities of the countries involved is indispensable to ensure the validation and enforcement of legal decisions. This allows the divorce to have practical effects in all relevant jurisdictions, preserving rights and promoting legal stability.",
+            "This type of process is particularly relevant for couples with businesses, real estate, or other assets outside Brazil. It provides a basis for decisions to be made clearly and objectively, reducing uncertainties and promoting a fair dissolution of the union.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/divorcio-casamento-realizado-exterior",
@@ -305,12 +310,13 @@ export const Servicos_Internacional: Expertise[] = [
         category: "International Law",
     },
     {
-        title: "Recognition of Marriage Performed Abroad",
-        description:
-            "To register a marriage performed abroad in Brazil, it is necessary to follow some steps and gather the appropriate documentation.",
+        title: "Validation of Marriage Conducted Abroad",
+        description: "The process through which a marriage celebrated outside Brazil is legally recognized in the country.",
         full_description: [
-            "The first step is to ensure you have the original marriage certificate, issued in the country where the marriage took place, duly translated by a sworn translator. In addition, personal documents of the spouses, such as RG and CPF, will be required.",
-            "The registration can be done in two ways: if the couple is still abroad, it is possible to register at the Brazilian consulate in the country where the marriage was performed, which facilitates the recognition process in Brazil. If the couple is already in Brazil, the registration must be done at a Civil Registry office, where the marriage will be formally recognized, ensuring its legal validity in Brazil and allowing it to produce all necessary legal effects.",
+            "This validation allows the marriage to produce legal effects, such as property, inheritance rights, and access to legal benefits tied to marital status.",
+            "This procedure is indispensable for ensuring that the marriage has full effect in Brazilian territory. It ensures that spouses can exercise their rights, such as jointly acquiring assets or accessing inheritances, protecting both parties from potential legal disputes.",
+            "Validation requires detailed knowledge of the applicable Brazilian and international norms. The process involves translating and validating documents and submitting them to the judicial system. These steps are necessary to ensure that all legal formalities are met, avoiding setbacks.",
+            "Formal recognition of the marriage provides legal security to the couple. It is also fundamental to ensuring compliance with the Brazilian legal system, enabling the efficient and transparent regularization of personal and property situations.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/homologacao-casamento-realizado-exterior",
@@ -318,13 +324,13 @@ export const Servicos_Internacional: Expertise[] = [
         category: "International Law",
     },
     {
-        title: "Recognition of Foreign Judgment in Brazil",
-        description:
-            "A legal procedure by which a judicial decision issued in another country is recognized and becomes legally effective in Brazilian territory.",
+        title: "Recognition of Foreign Judgments in Brazil",
+        description: "A procedure that validates judicial decisions made in other countries, granting them effectiveness in Brazil.",
         full_description: [
-            "This process is fundamental to ensure that judgments, such as divorces, decisions on child custody, contractual disputes, or property issues, have legal validity in Brazil.",
-            "For a foreign judgment to be recognized in Brazil, it must meet several requirements. First, the judgment must be final and have been issued by a competent judicial authority in the country of origin. Additionally, the judgment must be translated by a sworn translator and legalized or apostilled, following international norms such as the Hague Convention.",
-            "The required documents include a certified copy of the judgment, an official translation into Portuguese, the full certificate of the judgment, and proof that the foreign court had jurisdiction to issue the decision.",
+            "It is essential for cases such as divorces, child custody, and contract enforcement, ensuring that rights are upheld in national territory.",
+            "This process is indispensable for decisions made abroad to be applicable in Brazil. It promotes legal security and ensures that all parties involved are protected, regardless of where the decision was originally issued.",
+            "For recognition to be granted, the judgment must meet the requirements of the Brazilian legal system, such as not violating national sovereignty or public order. Careful analysis of these criteria is fundamental to avoid legal obstacles and ensure that the decision is acknowledged.",
+            "Following these steps allows the parties' rights to be effectively exercised in Brazil. Additionally, recognition facilitates dispute resolution and promotes integration between international legal systems, ensuring fair and efficient enforcement of decisions.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/homologacao-sentenca-estrangeira-brasil",
@@ -333,10 +339,12 @@ export const Servicos_Internacional: Expertise[] = [
     },
     {
         title: "Back-to-Back Operations",
-        description:
-            "International commercial transactions in which an intermediary company buys goods from a supplier in one country and sells them directly to a customer in another country, without the goods physically passing through the intermediary company's territory.",
+        description: "Commercial transactions where a company acts as an intermediary between the buyer and seller without assuming direct risks.",
         full_description: [
-            "Back-to-back operations offer advantages such as logistics optimization and cost reduction, but they require technical and legal knowledge to ensure that the operation complies with international trade and tax regulations.",
+            "These transactions are widely used in international trade, especially common in global supply chains.",
+            "This practice requires attention to avoid legal and financial conflicts, as it involves various local and international regulations. Clarity in contracts is crucial to defining responsibilities and ensuring compliance with all obligations by the involved parties.",
+            "One of the main benefits of these operations is cost reduction and agility in logistical processes. However, the absence of proper management can lead to significant financial risks, such as fraud or failure to meet fiscal and commercial obligations.",
+            "Ensuring compliance with applicable commercial and tax regulations is indispensable for the success of these transactions. This protects the company from potential litigation, ensures operational viability, and promotes a transparent and efficient commercial relationship.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/operacoes-back-to-back",
@@ -345,10 +353,12 @@ export const Servicos_Internacional: Expertise[] = [
     },
     {
         title: "Maritime Incoterms",
-        description:
-            "A set of standardized rules that define the responsibilities of buyers and sellers in international transactions, specifically in the transportation of goods by sea.",
+        description: "International standards regulating the responsibilities of buyers and sellers in global trade transactions.",
         full_description: [
-            "In the context of international trade operations, maritime Incoterms are essential to define who will be responsible for transportation costs, merchandise insurance, and risk during the journey. Understanding and correctly using maritime Incoterms is crucial to avoid disputes and ensure legal security in international commercial transactions.",
+            "These terms define aspects such as transportation, insurance, and delivery of goods, promoting clarity and preventing disputes.",
+            "The application of Incoterms is essential to determine the limits of each party's obligations. For example, they specify who is responsible for customs fees or insurance during transportation, avoiding ambiguities that could lead to conflicts.",
+            "Choosing the appropriate Incoterm for each operation is a strategic step in international trade. It directly influences transaction costs and timelines and ensures compliance with local and international regulations.",
+            "In addition to promoting transparency, Incoterms facilitate communication between parties and adherence to deadlines and commitments. This makes them indispensable for companies aiming to operate globally with safety and efficiency.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/incoterms-maritimos",
@@ -357,11 +367,12 @@ export const Servicos_Internacional: Expertise[] = [
     },
     {
         title: "International Estate Planning",
-        description:
-            "The process of organizing the distribution of assets across multiple countries, ensuring that the transfer of wealth is carried out according to your wishes and in compliance with the local laws of each jurisdiction.",
+        description: "International estate planning organizes and protects assets for individuals and families with holdings in multiple countries.",
         full_description: [
-            "This type of planning is crucial for individuals with global assets, as it helps navigate varying legal frameworks, inheritance taxes, and cultural differences in succession laws. Each country may have different regulations regarding the distribution of assets, and without a comprehensive plan, the process can become complicated and costly for heirs.",
-            "Key benefits of international estate planning include the reduction of tax burdens through tax-efficient structures and the prevention of disputes among family members. By utilizing tools such as trusts, international wills, and funds, individuals can protect their assets and ensure a smooth transfer of wealth. Proper planning also ensures that your wishes are respected globally, minimizing the risk of legal conflicts or delays in asset distribution across borders.",
+            "It aims to ensure the continuity of assets and avoid issues such as double taxation or succession conflicts.",
+            "This strategy is essential to manage assets efficiently, considering applicable local and international laws. Additionally, it allows families to preserve their wealth across generations, even in a complex global scenario.",
+            "Careful structuring of estate planning reduces risks and promotes a smooth and efficient succession. This is particularly relevant for cases involving multiple jurisdictions, where laws can vary significantly.",
+            "Specialized support in this process is indispensable to align estate strategies with current norms. It provides legal security and facilitates the administration of international assets, promoting stability and patrimonial growth.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/planejamento-patrimonial-internacional",
@@ -370,13 +381,12 @@ export const Servicos_Internacional: Expertise[] = [
     },
     {
         title: "Intellectual Property Registration",
-        description:
-            "Intellectual Property Registration protects intellectual creations, granting authors exclusive rights over their works and inventions. It is fundamental to valuing innovation and creativity, encouraging technological and cultural development.",
+        description: "The registration of intellectual property is an essential tool to protect inventions, trademarks, and creations.",
         full_description: [
-            "Intellectual Property Registration protects intellectual creations, granting authors exclusive rights over their works and inventions. It is fundamental to valuing innovation and creativity, encouraging technological and cultural development. This protection encompasses patents, trademarks, copyrights, and industrial designs, ensuring that creators can enjoy the economic benefits of their creations.",
-            "Patent registration guarantees the inventor the exclusive right to exploit their inventions for a determined period, preventing third parties from manufacturing, using, or selling the invention without authorization. The registration process involves analyzing the novelty, inventive activity, and industrial application of the invention, ensuring that only genuine innovations are protected.",
-            "Trademark registration protects distinctive signs, such as names, logos, and slogans, that identify products or services. This registration prevents other companies from using similar marks that could cause consumer confusion. Copyrights protect literary, artistic, and scientific works, guaranteeing the author rights to reproduction, distribution, and disclosure.",
-            "Internationally, Intellectual Property is regulated by treaties and conventions, such as the Agreement on Trade-Related Aspects of Intellectual Property Rights (TRIPS). These agreements facilitate the recognition and protection of creations in different countries, promoting international cooperation and ensuring the global protection of intellectual property rights.",
+            "It guarantees exclusive rights over the use and exploitation of these properties, preventing misuse and promoting innovation.",
+            "This registration is especially important in a competitive global environment where protecting brand identity and innovations is crucial. It ensures that companies can differentiate themselves in the market, maintaining exclusivity over their products and services.",
+            "The registration process involves analyzing specific legal requirements and submitting documents to the competent authorities. This is necessary to avoid conflicts and ensure that rights are duly recognized.",
+            "Effective intellectual property protection promotes legal security and strengthens a company's position in the market. Additionally, it facilitates international expansion, ensuring that trademarks and patents are protected across various jurisdictions.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/registro-propriedade-intelectual",
@@ -384,15 +394,13 @@ export const Servicos_Internacional: Expertise[] = [
         category: "International Law",
     },
     {
-        title: "Internationalization of Franchises",
-        description:
-            "The internationalization of franchises is a strategic process crucial for business expansion, allowing successful brands in their home markets to reach new global horizons.",
+        title: "Franchise Internationalization",
+        description: "Expanding franchises to other countries increases brand visibility and reach.",
         full_description: [
-            "The internationalization of franchises is a strategic process crucial for business expansion, allowing successful brands in their home markets to reach new global horizons. This move not only broadens the brand's reach but also diversifies revenue sources and minimizes risks associated with a single market. However, internationalization requires careful analysis and detailed planning to ensure a successful and sustainable transition in the long term.",
-            "The process of internationalizing franchises involves several critical steps. Initially, it is essential to conduct comprehensive market research to identify countries with growth potential and demand for the offered product or service. This analysis should consider economic, cultural, legal, and competitive factors. Based on the results, the company can select target markets and develop an entry strategy, which may include opening own units, selling franchises, or forming joint ventures with local partners.",
-            "Once the market is chosen, adapting the business model to local specifics is vital. This includes adjusting the product or service to meet local consumer preferences and adapting operational processes to comply with local regulations. Training franchisees and transferring know-how are essential steps, ensuring that quality standards and brand culture are consistently maintained across all international units.",
-            "Legal complexity is a significant peculiarity in the internationalization of franchises. Each country has its own laws and regulations regarding franchise contracts, consumer protection, intellectual property, and labor rights. It is crucial to have the support of lawyers specialized in international law and franchises to draft contracts that protect the company's interests and comply with local legislation. Additionally, issues of international taxation and royalty transfers need to be carefully managed to avoid tax problems.",
-            "In summary, the internationalization of franchises is a powerful strategy for global business growth, but it requires meticulous planning and adaptation to local conditions. With detailed market research, business model adaptation, franchisee training, and specialized legal support, companies can successfully expand their brands, reaching new consumers and solidifying their global presence. By addressing the challenges of internationalization with a well-structured approach, franchises can benefit from the opportunities offered by international markets and ensure sustainable and profitable growth.",
+            "However, this internationalization requires adaptation to local laws and specific strategies to operate in unfamiliar markets.",
+            "One of the biggest challenges in this process is structuring contracts that respect the legal particularities of each country. Additionally, protecting the brand in different jurisdictions is indispensable to avoiding conflicts and ensuring the integrity of operations.",
+            "Entering new markets requires careful analysis of local commercial and tax norms. This includes studying legal and cultural barriers that could impact the franchise's success abroad, as well as ensuring compliance with regulations.",
+            "With planning and alignment to legal requirements, franchise internationalization offers a unique opportunity for sustainable growth. It strengthens the brand globally, promoting operations aligned with international best practices.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/internacionalizacao-franquias",
@@ -401,14 +409,12 @@ export const Servicos_Internacional: Expertise[] = [
     },
     {
         title: "Legal Structuring of International Commercial Operations",
-        description:
-            "The legal structuring of international commercial operations is an essential practice for companies seeking to expand their businesses beyond national borders. This process aims to ensure that all commercial transactions are conducted in accordance with applicable laws and regulations, minimizing risks and ensuring legal compliance.",
+        description: "Legal structuring is essential to organize and protect global transactions, ensuring compliance with international laws.",
         full_description: [
-            "The legal structuring of international commercial operations is an essential practice for companies seeking to expand their businesses beyond national borders. This process aims to ensure that all commercial transactions are conducted in accordance with applicable laws and regulations, minimizing risks and ensuring legal compliance. The importance of this legal structuring cannot be underestimated, as it provides a solid foundation for the success and sustainability of international operations.",
-            "The process of legal structuring of international commercial operations involves several steps. Initially, it is necessary to conduct a detailed analysis of target markets, considering factors such as the regulatory environment, business practices, and legal barriers. This study allows the company to identify specific challenges and opportunities in each market. Next, the company must select the most appropriate legal structure for its operations, which may include creating subsidiaries, joint ventures, strategic partnerships, or distribution contracts.",
-            "Once the legal structure is defined, it is crucial to meticulously draft and review international contracts. These contracts should address all aspects of the commercial operation, including payment terms, delivery deadlines, guarantees, liabilities, and dispute resolution mechanisms. Clarity and precision in contracts are essential to avoid future litigation and protect the company's interests. Additionally, it is important to consider the tax and customs implications of commercial operations, ensuring that the company complies with the tax requirements of each country.",
-            "The peculiarities of international commercial operations require a deep understanding of local and international laws. Each country has its own set of commercial regulations, intellectual property laws, labor standards, and compliance requirements. Therefore, having the support of lawyers specialized in international law is indispensable. These professionals can provide valuable guidance on navigating the complex global legal landscape, helping the company avoid legal pitfalls and maximize growth opportunities.",
-            "In summary, the legal structuring of international commercial operations is vital for companies that wish to operate globally in an efficient and secure manner. With careful planning, the selection of the appropriate legal structure, well-defined contract drafting, and the support of international law specialists, companies can face the challenges of international trade and achieve success in global markets. Proper legal structuring not only protects the company against legal risks but also facilitates the expansion and consolidation of its international presence.",
+            "It encompasses everything from contract drafting to aligning fiscal and commercial obligations.",
+            "This practice enables companies to minimize risks, such as contractual disputes or sanctions, while maximizing operational efficiency. Additionally, it ensures that all involved parties clearly understand their responsibilities and rights.",
+            "The complexity of international operations demands attention to detail, particularly regarding taxation, transportation, and customs regulations. Each aspect must be carefully analyzed to avoid setbacks.",
+            "A well-crafted legal structure not only protects the company's interests but also promotes transparency and trust in global negotiations. It lays a solid foundation for commercial partnerships and sustainable growth.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
         link: "/direito-internacional/estruturacao-juridica-operacoes-comerciais-internacionais",
@@ -416,18 +422,16 @@ export const Servicos_Internacional: Expertise[] = [
         category: "International Law",
     },
     {
-        title: "Protection and Defense of Rights in National Courts and Arbitration Chambers",
-        description:
-            "The protection and defense of rights in national courts and arbitration chambers is a crucial service for individuals and companies seeking to resolve conflicts fairly and efficiently. This legal practice ensures that the parties involved in a dispute have their interests protected and that disputes are resolved according to the law.",
+        title: "Protection and Defense of Rights in National and International Arbitration Courts",
+        description: "The resolution of commercial disputes is essential to maintaining stability in international relations.",
         full_description: [
-            "The protection and defense of rights in national courts and arbitration chambers is a crucial service for individuals and companies seeking to resolve conflicts fairly and efficiently. This legal practice ensures that the parties involved in a dispute have their interests protected and that disputes are resolved according to the law. The importance of this service lies in its ability to provide a definitive and legally binding resolution to disputes, minimizing the negative impact of prolonged conflicts.",
-            "The process of protecting and defending rights in courts begins with a detailed analysis of the case. Lawyers review the facts, collect evidence, and analyze applicable laws to develop a solid legal strategy. This initial step is crucial to ensure that the case is well-founded and that all legal options are considered. Once prepared, the case is presented to the competent court, where lawyers represent their clients at all stages of the judicial process, from filing petitions to hearings and the final judgment.",
-            "In parallel to the traditional judicial system, arbitration emerges as an effective alternative for dispute resolution. Arbitration chambers offer a more flexible and private environment for conflict resolution, allowing the parties to choose arbitrators specialized in the subject matter. The arbitration process is generally faster and less formal than traditional judicial processes, and the arbitrators' decisions are legally binding and enforceable.",
-            "Defense in courts and arbitration chambers requires a deep understanding of the particularities of each forum. In courts, lawyers must be familiar with procedural procedures and rules of evidence, while in arbitration, it is crucial to understand the specific rules of the chosen arbitration chamber and the applicable legislation. Additionally, negotiation and mediation skills are often essential to reaching favorable agreements before a trial or arbitration decision.",
-            "In summary, the protection and defense of rights in national courts and arbitration chambers are essential for resolving disputes fairly and efficiently. With a strategic approach, a detailed understanding of applicable laws and procedures, and the ability to effectively represent clients' interests, lawyers can ensure that disputes are resolved satisfactorily. This service not only protects the rights of the parties involved but also promotes justice and stability in commercial and personal relationships.",
+            "Courts and arbitration chambers offer effective mechanisms to resolve conflicts, ensuring that the rights of the parties are respected.",
+            "These forums allow for faster and more efficient resolutions compared to traditional judicial systems, particularly in complex commercial disputes. Arbitration, for instance, offers confidentiality and flexibility, making it an attractive option for global companies.",
+            "Legal representation in such instances is indispensable to ensure that interests are adequately defended. From initial case analysis to agreement negotiations, each stage of the process is conducted with a focus on achieving fair outcomes.",
+            "In addition to promoting dispute resolution, participation in arbitration chambers strengthens commercial relationships. It demonstrates a commitment to transparency and ethics, creating a conducive environment for future collaborations and long-lasting partnerships.",
         ],
         image: "/general_assets/banner_direito_internacional.png",
-        link: "/direito-internacional/protecao-defesa-direitos-tribunais-camaras-arbitragem-nacional",
+        link: "/direito-internacional/protecao-defesa-direitos-tribunais-camaras-arbitragem",
         slug: "protecao-defesa-direitos-tribunais-camaras-arbitragem",
         category: "International Law",
     },
@@ -436,14 +440,12 @@ export const Servicos_Internacional: Expertise[] = [
 export const Servicos_Aduaneiro: Expertise[] = [
     {
         title: "Contract Analysis and Drafting",
-        description:
-            " The importance of this legal service lies in creating well-structured contracts that unequivocally detail the obligations and rights of each party, thus reducing the risk of future conflicts.",
+        description: "Defines the terms of import and export operations, ensuring clarity and security in transactions.",
         full_description: [
-            "Contract analysis and drafting is a fundamental area of law that ensures the clarity, fairness, and legal compliance of agreements made between parties. These processes are crucial for preventing litigation and protecting the interests of those involved, whether individuals or businesses. The importance of this legal service lies in creating well-structured contracts that unequivocally detail the obligations and rights of each party, thus reducing the risk of future conflicts.",
-            "The contract analysis process begins with a thorough review of all clauses and terms in the document. The goal is to identify any ambiguity, gap, or term that may be detrimental to one of the parties. Lawyers evaluate the legality and effectiveness of the contractual provisions, ensuring they comply with current legislation. Additionally, they check whether the terms accurately reflect the intentions and agreements established between the parties.",
-            "Contract drafting, on the other hand, involves creating a document that formalizes the negotiated conditions between the parties in a clear and precise manner. This process requires a detailed understanding of the context and specific needs of the parties involved. Lawyers work to include clauses that protect their clients' interests, addressing issues such as deadlines, payment terms, responsibilities, guarantees, and dispute resolution mechanisms. Customizing contracts to meet the particulars of each transaction is essential for their effectiveness.",
-            "An important peculiarity in contract analysis and drafting is the need to adapt the documents to local norms and practices, especially in international transactions. Legal, cultural, and commercial differences between countries can significantly influence the drafting and interpretation of contracts. Therefore, having experienced lawyers in international law who are familiar with the specificities of the local market is crucial to avoid legal problems and ensure the contract is valid and enforceable in all relevant jurisdictions.",
-            "In summary, contract analysis and drafting is a vital legal service to ensure that agreements between parties are clear, fair, and legally valid. With a detailed review of terms and careful drafting of documents, lawyers can prevent litigation and protect their clients' interests. Adapting contracts to local and international norms is fundamental to the success of transactions, ensuring all legal aspects are adequately addressed. Thus, contract analysis and drafting provide legal security and stability in commercial and personal relationships.",
+            "Contract analysis and drafting in customs matters are crucial steps to define the terms of import and export operations. These contracts regulate rights and obligations between parties, ensuring clarity and security in transactions.",
+            "This process includes specifying clauses that address aspects such as transportation, insurance, tax payments, and delivery of goods. Additionally, well-drafted contracts help prevent conflicts by outlining solutions for potential disputes.",
+            "Legal assistance is essential to align contracts with local and international regulations. It ensures that operations comply with current norms, reducing the risks of penalties or litigation.",
+            "With well-structured contracts, companies can operate more confidently, ensuring protection against unforeseen events. This allows foreign trade operations to be carried out efficiently and securely.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/analise-elaboracao-contratos",
@@ -452,12 +454,12 @@ export const Servicos_Aduaneiro: Expertise[] = [
     },
     {
         title: "Drawback",
-        description:
-            "A special regime aimed at reducing taxes and stimulating Brazilian exports, allowing companies to acquire inputs with exemption, suspension, or tax refund.",
+        description: "A tax mechanism that allows exemption, suspension, or refund of taxes on imported inputs for export.",
         full_description: [
-            "This mechanism is essential to make Brazilian products more competitive in the international market, reducing production costs by eliminating taxes on inputs used in the manufacture of goods destined for export.",
-            "Among the taxes that can be suspended or refunded are Import Tax (II), Tax on Industrialized Products (IPI), and contributions to PIS/PASEP and Cofins.",
-            "For companies involved in foreign trade, Drawback is a powerful tool for cost reduction and increased competitiveness.",
+            "The drawback regime is a tax mechanism that allows exemption, suspension, or refund of taxes levied on imported inputs used for the production of export goods. It is an important incentive for companies seeking greater competitiveness in the international market.",
+            "By reducing tax costs, the drawback makes the final price of exported products more attractive in the external market. This benefit is widely used by industries that depend on imported inputs for production.",
+            "The regime requires strict control of operations, including meeting deadlines and proving that the inputs were used for export-oriented production. This demands organization and alignment with current legislation.",
+            "Legal assistance is essential to guide companies through the process and ensure the proper use of the incentive. This support helps maximize benefits and avoid issues with regulatory authorities.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/drawback",
@@ -465,12 +467,13 @@ export const Servicos_Aduaneiro: Expertise[] = [
         category: "Customs Law",
     },
     {
-        title: "Customs Warehouse",
-        description:
-            "A special regime in Customs Law that allows the storage of imported goods or goods destined for export without the immediate payment of taxes, such as Import Tax (II) and IPI.",
+        title: "Customs Bonded Warehouse",
+        description: "Allows goods to be stored in national territory or bonded zones without immediate tax payment.",
         full_description: [
-            "This regime offers flexibility for companies to wait for the best destination of goods, whether for the domestic market or export, optimizing their operations and avoiding upfront tax costs.",
-            "Legal advice is essential to ensure the correct use of the regime and compliance with fiscal and customs obligations.",
+            "The customs bonded warehouse is a special regime that allows goods to be stored in national territory or bonded zones without immediate tax payment. It offers greater flexibility for companies needing to optimize import and export logistics.",
+            "This regime is particularly advantageous for operations requiring extended storage or specific conditions before distribution or re-exportation. It also enables companies to adjust their inventory according to market demand.",
+            "Using the customs bonded warehouse requires strict control of stored goods and compliance with fiscal and customs regulations. This includes submitting periodic reports to competent authorities.",
+            "Legal consultation facilitates obtaining and maintaining the regime, ensuring that all obligations are met. This guidance provides operational security and helps reduce tax costs.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/entreposto-aduaneiro",
@@ -478,12 +481,13 @@ export const Servicos_Aduaneiro: Expertise[] = [
         category: "Customs Law",
     },
     {
-        title: "Customs Clearance Parameterization",
-        description:
-            "A fundamental process in Customs Law, used by the Federal Revenue Service to determine the level of inspection required during the clearance of imported or exported goods.",
+        title: "Customs Parameterization",
+        description: "Organizes the control and classification of goods during import and export processes.",
         full_description: [
-            "This system classifies operations into different channels (green, yellow, red, and gray), each with a degree of verification, ranging from automatic release to the need for detailed physical or documentary inspection.",
-            "Customs clearance parameterization is based on risk criteria and aims to ensure compliance with legal and tax obligations, as well as prevent fraud and irregularities in foreign trade operations.",
+            "Customs parameterization organizes the control and classification of goods during import and export processes. This step is fundamental to ensure operational efficiency and avoid issues with regulatory authorities.",
+            "This procedure uses criteria such as value, fiscal classification, and the origin of goods to determine the necessary inspection level. It contributes to reducing delays and ensuring efficient cargo clearance.",
+            "Companies investing in proper parameterization minimize the risks of penalties and fines stemming from errors in documentation or classification. This also ensures greater predictability in customs operations.",
+            "With legal support, it is possible to adjust internal processes to meet all legal requirements. This assistance promotes operational security and strengthens the company's reputation in international trade.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/parametrizacao-aduaneira",
@@ -491,15 +495,13 @@ export const Servicos_Aduaneiro: Expertise[] = [
         category: "Customs Law",
     },
     {
-        title: "Tax Planning",
-        description:
-            "This process involves a detailed analysis of tax obligations and the implementation of strategies that allow for the reduction of tax liabilities within the limits of current legislation.",
+        title: "Tax Planning Development",
+        description: "Optimizes tax burdens in import and export operations, ensuring financial efficiency.",
         full_description: [
-            "Tax planning is an essential service for companies and individuals who wish to optimize their tax burden legally and efficiently. This process involves a detailed analysis of tax obligations and the implementation of strategies that allow for the reduction of tax liabilities within the limits of current legislation. The importance of this service lies in its ability to provide significant savings, increase competitiveness, and ensure compliance with tax regulations.",
-            "The tax planning process begins with a comprehensive diagnosis of the client's fiscal situation. Tax law specialists examine the operations, revenues, expenses, and organizational structure of the company or individual. This detailed analysis allows for the identification of savings opportunities and areas where the tax burden can be reduced. The goal is to create a personalized plan that maximizes tax benefits and minimizes the risks of audits and penalties.",
-            "Once the diagnosis is completed, lawyers develop specific strategies for tax planning. These strategies may include corporate reorganization, choosing the most advantageous tax regime, utilizing tax incentives, reviewing contracts, and implementing tax governance practices. Each strategy is carefully crafted to ensure compliance with tax legislation and practical feasibility.",
-            "The peculiarities of tax planning vary according to the legislation and regulatory environment of each country or region. In Brazil, for example, the complexity of the tax system, with its multiple federal, state, and municipal regulations, requires deep technical knowledge and a careful approach. Additionally, the constant changes in tax legislation and court interpretations require lawyers to stay updated to ensure the strategies adopted remain valid and effective.",
-            "In summary, tax planning is a fundamental service for the efficient management of taxes, providing savings, competitiveness, and legal security. With a detailed analysis of the fiscal situation, development of personalized strategies, and adaptation to the peculiarities of current legislation, specialized lawyers can help companies and individuals optimize their tax burden legally and effectively. Therefore, tax planning is an indispensable tool for long-term financial success and sustainability.",
+            "Customs tax planning is an essential strategy to optimize tax burdens in import and export operations. It enables companies to reduce tax costs and enhance financial efficiency.",
+            "This planning involves a detailed analysis of taxes levied on operations, considering special regimes, tax benefits, and international treaties. It is an indispensable tool for companies seeking global competitiveness.",
+            "By identifying opportunities for exemption, suspension, or tax reduction, tax planning contributes to the financial sustainability of operations. It also promotes greater predictability in the associated costs.",
+            "Legal advisory services create personalized strategies, ensuring that operations comply with current legislation. This support is crucial for companies to take advantage of all available benefits securely.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/elaboracao-planejamento-tributario",
@@ -508,14 +510,12 @@ export const Servicos_Aduaneiro: Expertise[] = [
     },
     {
         title: "Consultancy and Analysis of Tariff and Non-Tariff Barriers",
-        description:
-            "This service aims to identify, evaluate, and overcome obstacles that can hinder international trade, ensuring that companies can operate efficiently and competitively in different markets.",
+        description: "Identifies, evaluates, and overcomes obstacles to facilitate international trade.",
         full_description: [
-            "Consultancy and analysis of tariff and non-tariff barriers are essential services for companies that wish to expand their operations in the international market. This service aims to identify, evaluate, and overcome obstacles that can hinder international trade, ensuring that companies can operate efficiently and competitively in different markets. The importance of this service lies in its ability to facilitate the entry and sustainability of companies in new markets, avoiding unpleasant surprises and unexpected costs.",
-            "The consultancy and analysis process of tariff and non-tariff barriers begins with detailed research of the target markets. Specialists identify all import tariffs, quotas, taxes, and other charges that may affect the cost of products entering a new market. Simultaneously, non-tariff barriers are analyzed, which may include technical regulations, sanitary and phytosanitary standards, import licenses, subsidy policies, and other restrictions that may impact product competitiveness.",
-            "After identifying the barriers, the consultancy prepares a detailed report that includes an assessment of the potential impacts of these barriers on the company's operations. This report not only identifies the obstacles but also proposes strategies to mitigate or overcome them. Strategies may include adapting products to local standards, obtaining necessary certifications, negotiating more favorable conditions with trade partners, or using trade agreements that can reduce or eliminate certain barriers.",
-            "A peculiarity of this service is the need for deep knowledge of international regulations and trade agreements. Each country has its own rules and regulations that can vary significantly. Additionally, free trade agreements and other international partnerships can offer opportunities to reduce or eliminate barriers but require specialized knowledge to be fully utilized. Lawyers and consultants specialized in international trade play a crucial role in interpreting these complex regulatory networks and advising companies on the best way to proceed.",
-            "In summary, consultancy and analysis of tariff and non-tariff barriers are fundamental for companies seeking success in international trade. With detailed research, impact assessment, and development of effective strategies, specialists help companies navigate the complexities of international regulations and maximize their market opportunities. This service not only facilitates entry into new markets but also ensures that operations are sustainable and competitive in the long term.",
+            "Tariff and non-tariff barriers are restrictions imposed by governments on the importation of goods. These can include high taxes, quotas, technical requirements, or regulations that hinder market access.",
+            "Analyzing these barriers is essential for companies to understand the challenges of international trade and adjust their import operations. This includes studying local regulations and adapting to the specific requirements of the destination country.",
+            "Overcoming these barriers requires well-defined strategies, which may include revising contracts, changing supply chains, or adapting products to technical standards. These actions promote greater accessibility to target markets.",
+            "With specialized legal consultancy, companies can effectively address these restrictions, ensuring compliance with regulations and increasing their chances of success in the international market.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/consultoria-analise-barreiras-tarifarias-nao-tarifarias",
@@ -524,14 +524,12 @@ export const Servicos_Aduaneiro: Expertise[] = [
     },
     {
         title: "Import Licensing",
-        description:
-            "This process involves obtaining the necessary authorizations to bring goods from other countries, ensuring compliance with national and international regulations.",
+        description: "Ensures the entry of goods into the country in compliance with national and international regulations.",
         full_description: [
-            "Import licensing is an essential legal service for companies that wish to import products legally and efficiently. This process involves obtaining the necessary authorizations to bring goods from other countries, ensuring compliance with national and international regulations. The importance of this service lies in its ability to ensure that import operations are carried out in accordance with the law, avoiding delays, fines, and other penalties.",
-            "The import licensing process begins with a detailed analysis of the regulations applicable to the product to be imported. Each type of commodity may be subject to different requirements, varying according to its nature and the country of origin. Specialized lawyers conduct thorough research to identify all legal requirements, including compliance certificates, sanitary and phytosanitary standards, and specific import restrictions.",
-            "After identifying the requirements, lawyers assist in preparing and submitting the necessary documents to obtain import licenses. This may include drafting forms, obtaining authorizations from regulatory bodies, and coordinating with customs authorities. The accuracy and completeness of the documents are crucial to avoid processing delays and ensure license approval. Additionally, lawyers monitor the status of applications and provide regular updates to clients.",
-            "A peculiarity of import licensing is its complexity and the variation in requirements depending on the type of product and the importing country. For example, the import of food, medicines, chemicals, and electronics may be subject to strict standards and require specific certifications. Additionally, frequent changes in regulations can affect the licensing process, making it essential to continuously monitor laws and trade policies. Having the support of experienced lawyers is fundamental to navigate these complexities and ensure compliance.",
-            "In summary, import licensing is a critical service for companies that wish to import products legally and efficiently. With detailed analysis of applicable regulations, careful preparation of necessary documents, and continuous monitoring of the process, specialized lawyers ensure that import operations are carried out in accordance with the law. This service not only facilitates the entry of goods into the domestic market but also protects companies against legal and operational risks, ensuring the success and sustainability of their import operations.",
+            "Import licensing is the process through which customs authorities authorize the entry of goods into the country. It is mandatory for certain categories of products and ensures that local norms are met.",
+            "This procedure requires the submission of specific documents, such as certificates of origin, technical reports, and compliance declarations. The lack of proper licensing can result in the retention or seizure of goods.",
+            "Obtaining the license is a crucial step to ensure that the import operation is carried out legally and efficiently. It also avoids penalties and delays that could compromise the supply chain.",
+            "Legal consultancy guides companies through all stages of the process, ensuring compliance with the requirements. This support promotes greater agility in operations and reduces the risks of bureaucratic obstacles.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/licenciamento-importacao",
@@ -540,11 +538,12 @@ export const Servicos_Aduaneiro: Expertise[] = [
     },
     {
         title: "Special Customs Regimes, Benefits, and Tax Incentives",
-        description:
-            "Mechanisms provided in Customs Law that offer differentiated tax treatment for goods in international transit, aiming to promote foreign trade and increase the competitiveness of companies.",
+        description: "Offer differentiated tax treatment for goods in international transit.",
         full_description: [
-            "These regimes allow the suspension, exemption, or reduction of taxes on imported or exported goods, providing greater flexibility and cost reduction in commercial operations.",
-            "Among the main special customs regimes are Drawback, which allows tax exemption on imported inputs destined for export; Customs Warehouse, which enables the storage of goods without immediate payment of taxes; Temporary Admission, which allows the entry of goods into the country for a determined period with tax suspension; and Temporary Exportation, which allows goods to leave the country with tax exemption, as long as they return to Brazil within a specified period.",
+            "Special customs regimes offer tax benefits that reduce the costs of import and export operations, making them more competitive. These regimes include options such as drawback, bonded warehouse, and temporary admission.",
+            "These benefits are designed to encourage national production, facilitate international trade, and promote economic development. They are particularly useful for companies looking to expand their global operations.",
+            "Choosing the most suitable regime depends on the specific characteristics of the operation, such as the type of goods, destination, and timelines involved. This requires a careful analysis of the applicable rules.",
+            "With the support of specialized legal consultancy, companies can identify and implement the most advantageous regimes for their needs. This support ensures legal compliance and maximizes available tax benefits.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-aduaneiro/regimes-aduaneiros-especiais-beneficios-incentivos-fiscais",
@@ -556,14 +555,12 @@ export const Servicos_Aduaneiro: Expertise[] = [
 export const Servicos_Desportivo: Expertise[] = [
     {
         title: "Negotiation and Drafting of Athlete Transfer Contracts",
-        description:
-            "The negotiation and drafting of athlete transfer contracts are essential activities that ensure the integrity and transparency of movements between clubs. This service is vital to protect the interests of athletes, clubs, and all parties involved, ensuring that transfers are carried out in accordance with current regulations and international agreements.",
+        description: "Ensures secure and transparent transfers, protecting the rights of athletes and clubs.",
         full_description: [
-            "The negotiation and drafting of athlete transfer contracts are essential activities that ensure the integrity and transparency of movements between clubs. This service is vital to protect the interests of athletes, clubs, and all parties involved, ensuring that transfers are carried out in accordance with current regulations and international agreements. Expertise in Sports Law is crucial to navigate the complex legal and regulatory requirements that govern these transactions.",
-            "The process of negotiating and drafting athlete transfer contracts is detailed and involves several critical stages. Initially, specialized lawyers conduct a thorough analysis of the proposed terms and conditions, ensuring compliance with national and international sports laws, as well as the guidelines of regulatory entities such as FIFA. Negotiation involves defining financial aspects, such as transfer fees, termination clauses, bonuses, and other compensations. The contract drafting must be precise, covering all responsibilities and rights of the parties involved, ensuring the clarity and legal enforceability of the agreement.",
-            "A peculiarity of this service is the need to consider multiple jurisdictions and specific sports regulations, which can vary significantly between countries and leagues. Additionally, negotiating athlete transfer contracts often involves not only financial aspects but also issues related to the athletes' well-being, such as working conditions, housing, and professional development opportunities. Lawyers must be attentive to the specific needs of athletes, as well as the expectations of clubs, to ensure a balanced and beneficial agreement for all parties.",
-            "The importance of negotiating and drafting athlete transfer contracts lies in protecting the rights and interests of athletes, ensuring that transfers are fair and transparent. This service contributes to the stability and sustainability of the sports environment, preventing disputes and conflicts that may arise from poorly formulated or inadequately negotiated agreements. Specialized Sports Law attorneys play a crucial role in mediating these complex transactions, ensuring that all legal and regulatory aspects are rigorously observed.",
-            "In summary, negotiating and drafting athlete transfer contracts in Sports Law are complex and essential processes that require a deep understanding of sports and legal regulations. This service ensures that transfers are conducted fairly, protecting the interests of athletes and clubs, and promoting integrity and transparency in sports. The expertise of specialized lawyers is crucial to navigate the challenges and peculiarities of these transactions, ensuring solid and legally valid agreements that benefit all parties involved.",
+            "The negotiation of athlete transfer contracts is essential to ensure compliance with sports regulations and protect the interests of all parties involved, such as athletes, clubs, and agents.",
+            "These contracts include detailed clauses on values, payment conditions, deadlines, and responsibilities, promoting transparency and preventing future conflicts. Additionally, they adhere to the regulations of federations and international entities like FIFA.",
+            "Customizing contractual clauses, such as economic rights and percentages on future transfers, ensures that interests are protected, while compliance with sports regulations promotes integrity in operations.",
+            "Specialized legal assistance is essential to draft and negotiate robust contracts, ensuring that transfers are conducted fairly and in accordance with regulations. This provides peace of mind to all parties and strengthens relationships in sports.",
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/negociacao-contratos-transferencia-atletas",
@@ -571,15 +568,13 @@ export const Servicos_Desportivo: Expertise[] = [
         category: "Sports Law",
     },
     {
-        title: "Licensing of Athletes and Agents",
-        description:
-            "The licensing of athletes and agents is an essential aspect that ensures the regulation and integrity of professional relationships in sports. This service is crucial to ensure that all involved, from athletes to agents, are properly qualified and authorized to operate within the norms established by regulatory entities.",
+        title: "Athlete and Agent Licensing",
+        description: "Ensures compliance with sports regulations, protecting integrity and legality in sports.",
         full_description: [
-            "The licensing of athletes and agents is an essential aspect that ensures the regulation and integrity of professional relationships in sports. This service is crucial to ensure that all involved, from athletes to agents, are properly qualified and authorized to operate within the norms established by regulatory entities. Expertise in Sports Law is vital to navigate the complex rules and requirements imposed by these entities, promoting a fair and transparent sports environment.",
-            "This process involves several detailed and rigorous stages. For athletes, this may include eligibility verification, compliance with league and competition registration requirements, and analysis of contracts and sponsorship agreements. For agents, the process is even more complex, requiring the obtaining of specific certifications, adherence to professional codes of conduct, and often passing exams or training courses recognized by sports entities. Compliance with these requirements is essential to ensure the validity and legality of representations and negotiations conducted by agents.",
-            "A peculiarity of this service is the need for constant updating and adaptation to changes in sports regulations, which can vary significantly between different countries and leagues. Additionally, licensing is not a one-time process; it requires periodic renewals and continuous compliance with training and conduct requirements. Specialized Sports Law attorneys play a crucial role in monitoring these changes and ensuring that athletes and agents maintain their license status in good standing, avoiding penalties and sanctions that could harm their careers.",
-            "The importance of licensing athletes and agents lies in protecting integrity and ethics in sports. By ensuring that all participants are properly licensed, the service promotes transparency and fairness in contractual and commercial relationships, preventing fraudulent and abusive practices. Additionally, proper licensing protects the rights and interests of athletes, ensuring that they are represented by qualified and competent agents who act in accordance with the legal and ethical norms of sports.",
-            "In summary, the licensing of athletes and agents is a vital component of Sports Law that ensures the regulation and integrity of professional activities in sports. This service ensures that all participants are properly qualified and authorized, promoting a fair and transparent environment. The expertise of specialized lawyers is crucial to navigate the complex regulatory requirements and ensure continuous compliance, protecting the interests of athletes and agents and contributing to integrity and ethics in the sports world.",
+            "The licensing of athletes and agents is a crucial step to ensure that everyone involved in sports is qualified and registered in accordance with current sports regulations. It promotes trust and transparency in the sports market.",
+            "Licensing requirements vary among federations but typically include certifications, exams, and adherence to codes of conduct. Regularization ensures that athletes and agents act legally, preventing improper or illegal practices.",
+            "This service provides legal security for both professionals and clubs, facilitating negotiations and preventing contractual conflicts. It also protects athletes from unqualified representatives or those with ill intentions.",
+            "Legal consultancy is indispensable to guide compliance with requirements and ensure that all parties operate within regulations. This promotes an ethical and transparent sports environment.",
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/licenciamento-atletas-agentes",
@@ -588,14 +583,12 @@ export const Servicos_Desportivo: Expertise[] = [
     },
     {
         title: "Representation in Sports Litigation Cases",
-        description:
-            "Representation in sports litigation cases is an essential service that ensures the protection of the rights and interests of athletes, clubs, leagues, and other entities involved in sports. This service is crucial for resolving disputes that may arise in various areas, such as contracts, transfers, discipline, doping, and regulatory issues.",
+        description: "Defends the rights of athletes and clubs, promoting fair and transparent resolutions.",
         full_description: [
-            "Representation in sports litigation cases is an essential service that ensures the protection of the rights and interests of athletes, clubs, leagues, and other entities involved in sports. This service is crucial for resolving disputes that may arise in various areas, such as contracts, transfers, discipline, doping, and regulatory issues. Expertise in Sports Law is fundamental for handling these litigations efficiently and effectively, ensuring fair and balanced decisions.",
-            "The process of representation in sports litigation involves several complex stages and requires a strategic and well-founded approach. Initially, specialized lawyers conduct a detailed analysis of the case, gathering all relevant evidence and information. They then develop a personalized legal strategy, considering the specific sports regulations, the norms of regulatory entities, and relevant jurisprudence. Representation can include negotiations for out-of-court settlements, as well as defense in sports tribunals, such as the Court of Arbitration for Sport (CAS), or in civil and administrative courts.",
-            "A peculiarity of this service is the need for deep knowledge of the specific rules and regulations of the sport in question, which can vary significantly between different disciplines and organizations. Additionally, sports litigation often involves strict deadlines and specific procedures that require quick and precise responses. Specialized lawyers must be prepared to handle a variety of complex issues, from contractual interpretations to allegations of misconduct or doping violations, ensuring a robust and well-informed defense.",
-            "The importance of representation in sports litigation lies in protecting the integrity of the sport and ensuring that disputes are resolved fairly and transparently. This service not only protects the rights of the parties involved but also contributes to maintaining public trust in competitions and sports entities. Specialized Sports Law attorneys play a crucial role in mediating and resolving disputes, promoting compliance with norms and justice in sports.",
-            "In summary, representation in sports litigation cases is a vital component of Sports Law, ensuring that disputes are resolved fairly and efficiently. This service protects the rights and interests of athletes, clubs, and other entities, promoting integrity and transparency in sports. The expertise of specialized lawyers is crucial for navigating the complexities and peculiarities of sports litigation, ensuring effective defense and equitable resolution of disputes.",
+            "Sports litigation often involves contractual issues, transfers, disciplinary sanctions, and disputes with federations. Efficient resolution of these conflicts is essential to protect the rights of parties and preserve sports integrity.",
+            "These cases require specialized knowledge of national and international sports regulations, including those of federations and leagues. Correct interpretation of these regulations is crucial to achieving fair decisions.",
+            "Legal representation covers all stages, from case analysis and evidence collection to defense in sports courts or arbitration. Expertise in the sector is essential to ensure strong and effective representation.",
+            "Legal support promotes stability in sports, ensuring that disputes are resolved ethically and in compliance with regulations. It protects athletes' careers and clubs' reputations.",
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/representacao-litigios-desportivos",
@@ -603,15 +596,13 @@ export const Servicos_Desportivo: Expertise[] = [
         category: "Sports Law",
     },
     {
-        title: "Regulatory and Compliance Consulting",
-        description:
-            "An essential service that ensures athletes, clubs, leagues, and other entities involved in sports operate within established norms. This service is crucial to avoid penalties, sanctions, and other legal issues that may arise from non-compliance with national and international sports regulations.",
+        title: "Consultancy on Regulatory and Compliance Issues",
+        description: "Ensures that clubs and athletes comply with sports regulations, promoting ethics and transparency.",
         full_description: [
-            "Regulatory and compliance consulting in Sports Law is an essential service that ensures athletes, clubs, leagues, and other entities involved in sports operate within established norms. This service is crucial to avoid penalties, sanctions, and other legal issues that may arise from non-compliance with national and international sports regulations. Expertise in Sports Law is fundamental for navigating the complex and dynamic regulatory requirements, ensuring continuous compliance and the integrity of sports operations.",
-            "The process of regulatory and compliance consulting involves a detailed analysis of applicable regulations, identifying risk areas, and implementing compliance measures. Initially, specialized lawyers review relevant regulations, including the statutes of sports entities, national laws, and international guidelines. They then work closely with clients to develop internal policies and procedures that ensure compliance. This can include training and capacity building for staff, creating monitoring systems, and conducting regular internal audits.",
-            "A peculiarity of this service is the need for constant updating and adaptation to changes in sports regulations. Rules and guidelines can vary significantly between different sports and jurisdictions and are frequently updated to reflect new practices and standards. Additionally, regulatory compliance in sports can cover a wide range of issues, from licensing and registration requirements to anti-doping norms and financial fair play guidelines. Specialized lawyers must always be informed about the latest regulatory changes and be able to quickly adjust clients' compliance policies.",
-            "The importance of regulatory and compliance consulting lies in protecting the reputation and operations of sports entities. This service not only helps to avoid penalties and sanctions but also promotes trust and credibility in the sports environment. Rigorous compliance with regulations demonstrates a commitment to integrity and ethics, creating a fair and transparent environment for all participants. Specialized Sports Law attorneys play a crucial role in guiding and supporting their clients in navigating these regulatory complexities.",
-            "In summary, regulatory and compliance consulting in Sports Law is a vital service that ensures athletes, clubs, and other entities operate within established norms. This service protects against penalties and promotes integrity and transparency in sports. The expertise of specialized lawyers is essential for maintaining continuous compliance and quickly adapting to regulatory changes, ensuring that sports operations are conducted ethically and legally.",
+            "Regulatory issues in sports encompass a broad set of rules governing transfers, contracts, and athlete registrations. Compliance with these rules is essential to avoid penalties and ensure the legal operation of clubs and federations.",
+            "Regulations can vary between sports and jurisdictions, requiring continuous monitoring to identify risks and ensure compliance. This service provides support to ensure that all activities align with sector requirements.",
+            "Legal consultancy includes analyzing regulations, implementing internal policies, and training teams to promote compliance. This helps clubs and athletes navigate complex rules and prevent legal issues.",
+            "Regulatory compliance strengthens reputation in sports and ensures a fair and transparent competition environment. With specialized legal support, stakeholders can operate ethically and securely.",
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/consultoria-questoes-regulatorias-conformidade",
@@ -619,15 +610,13 @@ export const Servicos_Desportivo: Expertise[] = [
         category: "Sports Law",
     },
     {
-        title: "Doping and Anti-Doping Consulting",
-        description:
-            "Doping and anti-doping consulting is an essential service that ensures integrity and ethics in sports. This service is crucial for athletes, coaches, clubs, and federations, ensuring that all involved understand and comply with strict anti-doping regulations.",
+        title: "Advisory on Doping and Anti-Doping Issues",
+        description: "Advises athletes and organizations on anti-doping rules, protecting rights and promoting ethics in sports.",
         full_description: [
-            "Doping and anti-doping consulting is an essential service that ensures integrity and ethics in sports. This service is crucial for athletes, coaches, clubs, and federations, ensuring that all involved understand and comply with strict anti-doping regulations. Expertise in Sports Law is fundamental for handling the complex legal and regulatory aspects related to doping, protecting athletes' rights, and promoting a fair and competitive sports environment.",
-            "The process of doping and anti-doping consulting involves several critical stages, starting with education and awareness about anti-doping regulations. Specialized lawyers provide guidance on prohibited substances, doping control procedures, and the consequences of violations. Additionally, they offer support in implementing anti-doping compliance programs within clubs and federations, including drafting internal policies and conducting regular training. When a doping allegation occurs, lawyers work on the athlete's defense, ensuring that all procedures are correctly followed and that the athlete's rights are respected.",
-            "A peculiarity of this service is the need for deep and up-to-date knowledge of anti-doping regulations, which are frequently revised and updated by international bodies such as the World Anti-Doping Agency (WADA). Additionally, doping cases can involve complex scientific aspects, such as biological sample analysis and laboratory result interpretation. Specialized lawyers must be able to collaborate with technical and medical experts to build a robust and well-founded defense.",
-            "The importance of doping and anti-doping consulting lies in protecting athletes' rights and promoting integrity in sports. This service not only helps prevent the use of prohibited substances but also ensures that athletes are treated fairly and transparently in doping allegations. Compliance with anti-doping regulations is vital for the credibility of sports competitions and for public trust in sports. Specialized lawyers play a crucial role in ensuring that all involved are aware of their responsibilities and in providing competent defense in doping cases.",
-            "In summary, doping and anti-doping consulting in Sports Law is a vital service that ensures integrity and fairness in sports. This service protects athletes' rights and promotes compliance with strict anti-doping regulations, contributing to an ethical and competitive sports environment. The expertise of specialized lawyers is essential for navigating the complex legal and technical aspects of doping cases, ensuring effective defense and promoting fair and transparent sports practices.",
+            "Advisory on doping and anti-doping issues is essential to ensure compliance with international regulations and protect sports integrity. This service targets athletes, clubs, and federations seeking to understand and follow the rules set by the World Anti-Doping Agency (WADA) and other regulatory bodies.",
+            "Key activities include guidance on prohibited substances, support in doping control procedures, and defense of athletes in alleged violation cases. Legal approaches ensure that the rights of those involved are respected and that processes are conducted fairly.",
+            "Advisory services may also involve implementing internal anti-doping compliance programs, including training and policy development for clubs and organizations. These programs help prevent violations and reinforce ethics and transparency in sports.",
+            "Legal expertise is essential to interpret complex anti-doping regulations and provide robust defense in dispute cases. This protects athletes' careers and reputations while strengthening public trust in sports competitions.",
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/assessoria-doping-antidoping",
@@ -635,15 +624,13 @@ export const Servicos_Desportivo: Expertise[] = [
         category: "Sports Law",
     },
     {
-        title: "Conflict Resolution in Sports Arbitrations",
-        description:
-            "Conflict resolution through sports arbitrations is a fundamental service that provides an efficient and specialized alternative for resolving disputes in sports. This service is essential for athletes, clubs, leagues, and federations, offering a quicker and less formal means than the traditional judicial system.",
+        title: "Dispute Resolution in Sports Arbitrations",
+        description: "Provides fast and specialized solutions for sports disputes, promoting fairness and efficiency.",
         full_description: [
-            "Conflict resolution through sports arbitrations is a fundamental service that provides an efficient and specialized alternative for resolving disputes in sports. This service is essential for athletes, clubs, leagues, and federations, offering a quicker and less formal means than the traditional judicial system. Expertise in Sports Law is crucial for navigating the specific and complex procedures of sports arbitration, ensuring fair decisions tailored to the particularities of the sports context.",
-            "The process of conflict resolution in sports arbitrations begins with choosing an appropriate arbitration tribunal, such as the Court of Arbitration for Sport (CAS), which is widely recognized for its competence in resolving sports disputes. Specialized lawyers assist their clients in preparing and presenting their claims or defenses, ensuring that all relevant arguments and evidence are presented clearly and convincingly. The arbitration process involves formal hearings where parties can present their cases, followed by the arbitrators' deliberation and decision, which is generally final and binding.",
-            "A peculiarity of this service is the need for deep knowledge of specific sports rules and regulations, as well as the procedural rules of sports arbitration. Additionally, sports arbitration often involves interpreting sports contracts, competition regulations, anti-doping rules, and other technical issues that require a specialized approach. Lawyers must be prepared to handle a wide range of complex issues and provide effective and strategic representation.",
-            "The importance of conflict resolution in sports arbitrations lies in its ability to offer a quick, specialized, and confidential solution for sports disputes. This service promotes fairness and equity, allowing the involved parties to resolve their conflicts without the long delays and costs associated with traditional judicial processes. Additionally, sports arbitration contributes to the stability and integrity of the sports environment, ensuring that disputes are resolved according to the norms and values of sports.",
-            "In summary, conflict resolution in sports arbitrations is a vital component of Sports Law, providing an efficient and specialized means to resolve disputes. This service ensures that athletes, clubs, and other entities can resolve their conflicts fairly and quickly, promoting integrity and stability in sports. The expertise of specialized lawyers is essential for navigating the complex procedures of sports arbitration, ensuring effective representation and fair decisions that respect the particularities and values of the sports context.",
+            "Dispute resolution in sports arbitration is an efficient alternative to resolve conflicts outside the traditional judicial system. This service is widely used for contractual issues, disciplinary matters, transfers, and other conflicts in the sports environment.",
+            "Arbitration processes are conducted by specialized entities, such as the Court of Arbitration for Sport (CAS), ensuring fast and fair decisions. Confidentiality and a focus on the specificities of sports make arbitration a preferred choice for athletes, clubs, and federations.",
+            "Legal support includes preparing arguments, analyzing contracts, presenting evidence, and representation during arbitration hearings. Specialized lawyers ensure that all regulatory and legal aspects are observed, protecting clients' interests.",
+            "Moreover, sports arbitration promotes stability and transparency, avoiding lengthy and costly judicial processes. Legal expertise is essential to achieve balanced solutions that respect sports norms and values.",
         ],
         image: "/general_assets/banner_direito_desportivo.png",
         link: "/direito-desportivo/resolucao-conflitos-arbitragens-desportivas",
@@ -656,9 +643,12 @@ export const Servicos_Entretenimento: Expertise[] = [
     {
         title: "Copyrights, Trademarks, and Publicity Rights",
         description:
-            "We protect your intellectual property rights, including trademark registration, copyrights, and image rights, ensuring that your work or brand is secure from misuse.",
+            "The protection of copyrights, trademarks, and publicity rights is essential to ensure that intellectual creations, visual identities, and public images have exclusive use.",
         full_description: [
-            "We protect your intellectual property rights, including trademark registration, copyrights, and image rights, ensuring that your work or brand is secure from misuse.",
+            "This protection is crucial to prevent unauthorized use of works and to ensure the recognition and value of authors, artists, and brands.",
+            "Copyrights protect artistic, literary, and scientific works, while trademarks guarantee exclusivity in the use of logos, slogans, and other visual elements that identify products or services. Publicity rights safeguard the image and identity of artists and public figures, ensuring their commercial use is duly authorized.",
+            "Violations of these rights can cause financial and reputational damage, making it indispensable to adopt preventive and corrective measures. These include the formal registration of copyrights and trademarks, as well as the drafting of contracts regulating the use of images and works.",
+            "Specialized legal consultancy assists in the registration, protection, and defense of these rights, ensuring that the creations and image of artists and companies are preserved. This support promotes legal security and protects the value of brands and works in the market.",
         ],
         image: "/general_assets/banner_direito_entretenimento.jpg",
         link: "/direito-entretenimento/direito-autoral-marcas-publicidade",
@@ -668,9 +658,12 @@ export const Servicos_Entretenimento: Expertise[] = [
     {
         title: "Acquisition, Licensing, and Distribution of Intellectual Property",
         description:
-            "We offer comprehensive legal advice on the acquisition, licensing, and distribution of audiovisual, musical, or digital content, ensuring that your rights are respected in contracts with third parties.",
+            "The acquisition, licensing, and distribution of intellectual property regulate the use of cultural and creative content by third parties, ensuring that authors and rights holders receive adequate remuneration.",
         full_description: [
-            "We offer comprehensive legal advice on the acquisition, licensing, and distribution of audiovisual, musical, or digital content, ensuring that your rights are respected in contracts with third parties.",
+            "These processes are fundamental to protecting the originality of works and regulating their commercial exploitation.",
+            "Licensing allows third parties to use intellectual property through authorization and royalty payments, while distribution ensures that content reaches its intended audience legally. Both processes require clear contracts detailing usage conditions and the responsibilities of the parties involved.",
+            "These mechanisms promote the economic sustainability of cultural works, benefiting both creators and the consumer market. Additionally, they prevent disputes by establishing clear boundaries for the use of intellectual property.",
+            "Legal consultancy is indispensable for drafting robust contracts and negotiating terms that protect the rights of authors. This support ensures that transactions occur transparently, promoting the value of creations in the market.",
         ],
         image: "/general_assets/banner_direito_entretenimento.jpg",
         link: "/direito-entretenimento/aquisicao-licenciamento-distribuicao-propriedade-intelectual",
@@ -678,11 +671,14 @@ export const Servicos_Entretenimento: Expertise[] = [
         category: "Entertainment Law",
     },
     {
-        title: "Intellectual Property Protection and Related Litigation",
+        title: "Protection of Intellectual Property Rights and Related Disputes",
         description:
-            "We work to protect and defend your intellectual property rights, representing your interests in litigation cases, including copyright or trademark infringement actions.",
+            "The protection of intellectual property rights is essential to ensure that creators maintain control over their works and that third parties do not use them without authorization.",
         full_description: [
-            "We work to protect and defend your intellectual property rights, representing your interests in litigation cases, including copyright or trademark infringement actions.",
+            "This defense protects not only the economic value of creations but also the reputation and recognition of authors.",
+            "Unfortunately, violations such as plagiarism, misuse of trademarks, and piracy are recurrent, requiring strict legal measures. These infringements can seriously compromise the commercial potential of works and generate prolonged disputes between the parties involved.",
+            "Legal support is essential to identify and respond to these violations. This includes sending extrajudicial notifications to representing interests in courts and specialized bodies to resolve disputes fairly.",
+            "With the support of specialized legal consultancy, authors and companies can protect their rights, ensure the integrity of their creations, and mitigate the negative impacts of infringements. This support strengthens market confidence and enhances the originality of works.",
         ],
         image: "/general_assets/banner_direito_entretenimento.jpg",
         link: "/direito-entretenimento/protecao-da-propriedade-intelectual",
@@ -692,9 +688,12 @@ export const Servicos_Entretenimento: Expertise[] = [
     {
         title: "Artist Management and Endorsement Agreements",
         description:
-            "We help artists and celebrities negotiate endorsement and management contracts, ensuring that the agreements benefit their careers and protect their public image.",
+            "The management of artists and the execution of endorsement agreements foster partnerships between artists and brands, allowing their images to be associated with products and services.",
         full_description: [
-            "We help artists and celebrities negotiate endorsement and management contracts, ensuring that the agreements benefit their careers and protect their public image.",
+            "This practice adds value for both the artist and the companies, but it requires clear contracts to protect the interests of both parties.",
+            "Endorsement agreements establish the obligations of the artist, such as participating in advertising campaigns, and the benefits offered by the brand, including remuneration and royalties. These contracts must be carefully drafted to avoid future conflicts.",
+            "Legal protection in these agreements ensures that the artist retains autonomy over their image and that brands can use it ethically and in compliance with regulations. It also prevents abusive practices and ensures all contractual obligations are fulfilled.",
+            "Legal consultancy assists in drafting, reviewing, and negotiating these contracts, ensuring a transparent and productive relationship between artists and brands. This support is essential for both parties to achieve their goals safely and in compliance.",
         ],
         image: "/general_assets/banner_direito_entretenimento.jpg",
         link: "/direito-entretenimento/gestao-de-artistas-e-acordos-de-endosso",
@@ -703,10 +702,12 @@ export const Servicos_Entretenimento: Expertise[] = [
     },
     {
         title: "Audiovisual Productions and Licensing Dispute Resolution",
-        description:
-            "We provide legal support for audiovisual productions, from development to distribution, as well as resolve disputes involving the licensing of content across different platforms.",
+        description: "Audiovisual productions involve complex contracts that regulate the rights of creation, use, and distribution of content.",
         full_description: [
-            "We provide legal support for audiovisual productions, from development to distribution, as well as resolve disputes involving the licensing of content across different platforms.",
+            "These contracts define aspects such as intellectual property, revenue sharing, and responsibilities among the parties, being crucial to prevent disputes and ensure the success of projects.",
+            "Content licensing allows third parties to use audiovisual productions, such as films, series, and music, through formal authorization. This process is vital to maximize the distribution of works and generate consistent revenues for creators and investors.",
+            "Disputes related to licensing, such as unauthorized use or contract breaches, can severely compromise the viability of productions. For this reason, it is essential that agreements are clearly drafted and that all parties understand their responsibilities.",
+            "Legal consultancy provides support in drafting licensing contracts and resolving related disputes, promoting a transparent business environment aligned with industry standards. This guidance protects the interests of all parties involved and ensures the sustainability of productions.",
         ],
         image: "/general_assets/banner_direito_entretenimento.jpg",
         link: "/direito-entretenimento/producoes-audiovisuais-resolucao-disputas-licenciamento",
@@ -715,10 +716,12 @@ export const Servicos_Entretenimento: Expertise[] = [
     },
     {
         title: "Consulting on Data Privacy and Data Use in Advertising",
-        description:
-            "We advise our clients on complying with privacy regulations and the ethical use of data in advertising campaigns and digital marketing, ensuring compliance with national and international laws.",
+        description: "Data privacy is a central theme in advertising campaigns, especially in the context of strict personal data protection laws.",
         full_description: [
-            "We advise our clients on complying with privacy regulations and the ethical use of data in advertising campaigns and digital marketing, ensuring compliance with national and international laws.",
+            "Ensuring that the collection, storage, and use of information comply with the legislation is essential to maintain consumer trust and avoid sanctions.",
+            "Campaigns that use personal data, such as audience segmentation and behavior analysis, must adhere to legal standards like Brazil's LGPD (General Data Protection Law) or the European Union's GDPR. This includes obtaining the consent of data subjects and ensuring the responsible use of information.",
+            "Violating these standards can result in significant penalties and damage to the company's reputation. Therefore, legal guidance is crucial to evaluate data collection and usage practices and implement compliance policies.",
+            "With appropriate legal support, companies can develop advertising campaigns that respect privacy laws, strengthening public trust and driving the success of their marketing strategies.",
         ],
         image: "/general_assets/banner_direito_entretenimento.jpg",
         link: "/direito-entretenimento/consultoria-privacidade-dados-uso-dados-publicidade",
@@ -728,9 +731,12 @@ export const Servicos_Entretenimento: Expertise[] = [
     {
         title: "Assistance with Film, Television, Music, and Live Event Agreements",
         description:
-            "We negotiate and draft contracts for all aspects of the entertainment industry, such as film productions, TV shows, live events, and music tours, handling all legal details to ensure their success.",
+            "We negotiate and draft contracts for all aspects of the entertainment industry, such as film productions, TV programs, live events, and musical tours, taking care of all legal details to ensure their success.",
         full_description: [
-            "We negotiate and draft contracts for all aspects of the entertainment industry, such as film productions, TV shows, live events, and music tours, handling all legal details to ensure their success.",
+            "The production of cultural projects, such as films, television programs, music, and live events, involves agreements that regulate the rights and duties of the parties involved. These contracts are essential to ensure that the projects comply with regulations and are legally secure.",
+            "These agreements cover various aspects, such as intellectual property, team remuneration, rights assignment, and conditions for exhibition or performance. Poorly structured contracts can generate conflicts and jeopardize the viability of the project.",
+            "Clarity in contractual terms is crucial so that all parties involved understand their obligations and have their rights protected. This also contributes to the project's success by avoiding disputes and delays in production.",
+            "Legal consultancy reviews, drafts, and negotiates these contracts, ensuring that partnerships are fair and transparent. This support promotes the safe, efficient realization of cultural projects aligned with the expectations of all parties involved.",
         ],
         image: "/general_assets/banner_direito_entretenimento.jpg",
         link: "/direito-entretenimento/assistencia-acordos-cinema-televisao-musica-eventos-ao-vivo",
@@ -742,13 +748,12 @@ export const Servicos_Entretenimento: Expertise[] = [
 export const Servicos_Civil: Expertise[] = [
     {
         title: "Contract Law",
-        description:
-            "We operate in various areas of civil law, encompassing Banking Law, Consumer Law, Contract Law, Real Estate Law, Family and Inheritance Law, Indemnities, Arbitrations, and Mediations.",
+        description: "We regulate legal relations established by contracts, ensuring legal security and preventing conflicts between parties.",
         full_description: [
-            "Contract Law is essential for regulating the legal relationships established by contracts, ensuring legal security and predictability. It is based on principles such as autonomy of will and objective good faith, which guide the formation and execution of contracts.",
-            "There are various types of contracts, each with its own peculiarities and regulations, such as purchase and sale contracts, lease agreements, and service contracts. The form of contracts, preferably written, is important to avoid ambiguities and future disputes.",
-            "Contract Law also provides mechanisms to resolve conflicts and breaches, allowing parties to resort to the judiciary to demand compliance or termination of the contract, as well as compensation for damages.",
-            "The field is constantly evolving to adapt to new realities, such as electronic and international contracts, ensuring legal security in modern contractual relationships.",
+            "Contract Law regulates relations between parties, ensuring that commitments made are fulfilled according to the established terms. It is fundamental to guarantee clarity of obligations, preventing conflicts and promoting legal security in contractual relations.",
+            "The drafting and analysis of contracts are crucial steps to outline the rights and duties of the parties and to foresee solutions for possible disputes. Well-structured contracts avoid ambiguities and ensure that agreed conditions are respected.",
+            "This branch of law is widely applied in various areas, from commercial contracts to personal agreements, being indispensable for establishing trust between the involved parties. It also protects against abuses and improper interpretations that could cause harm.",
+            "Legal advice in Contract Law ensures that all documents are prepared in compliance with the legislation, protecting the interests of the parties and providing security so that the contractual relationship is maintained transparently and efficiently.",
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-contratual",
@@ -757,11 +762,13 @@ export const Servicos_Civil: Expertise[] = [
     },
     {
         title: "Banking Law",
-        description: "Banking Law regulates the activities of financial institutions, ensuring stability and confidence in the financial system.",
+        description:
+            "We regulate financial operations and relationships between institutions and their clients, promoting transparency and security.",
         full_description: [
-            "Banking Law regulates the activities of financial institutions, ensuring stability and confidence in the financial system. It includes supervision by regulatory bodies such as the Central Bank, monitoring the solvency and liquidity of banks.",
-            "The regulation of banking contracts, such as credit and financing agreements, ensures transparency and consumer protection, preventing abuses. Banking Law also combats financial crimes, requiring institutions to adopt measures against money laundering and terrorism financing.",
-            "Finally, this area of law constantly adapts to technological innovations, regulating fintechs, cryptocurrencies, and new payment platforms to maintain the security and efficiency of the financial system.",
+            "Banking Law regulates financial operations and relationships between institutions and their clients, promoting fair practices within legal norms. This branch of law is essential to ensure that financial transactions occur with transparency and security.",
+            "It covers issues such as credit contracts, financing, deposits, insurance, and banking services. Additionally, it protects consumer rights against abusive practices and ensures that financial institutions act ethically and in accordance with current legislation.",
+            "Disputes in the banking sector may involve contractual issues, rates, or undue charges, and legal intervention is often necessary to resolve these conflicts fairly and effectively. Protecting both consumers and financial institutions is a key pillar of this field.",
+            "Specialized legal consultancy offers support to address these situations, ensuring that all financial operations comply with legal standards. This guidance preserves the integrity of the financial system and ensures trust in banking relationships.",
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-bancario",
@@ -770,12 +777,12 @@ export const Servicos_Civil: Expertise[] = [
     },
     {
         title: "Consumer Law",
-        description:
-            "Consumer Law protects the interests of consumers in consumer relations, establishing principles such as the protection of life, health, and safety, and the need for clear information about products and services.",
+        description: "We protect consumer rights and regulate market practices, promoting balance in consumer relations.",
         full_description: [
-            "Consumer Law protects the interests of consumers in consumer relations, establishing principles such as the protection of life, health, and safety, and the need for clear information about products and services. It aims to balance the relationship between suppliers and consumers, ensuring that consumers have access to accurate information and can make informed decisions.",
-            "Additionally, it regulates advertising and commercial practices, prohibiting misleading and abusive advertisements. It ensures the quality and safety of products, allowing consumers to demand repairs, replacements, or returns in case of problems. This protects consumers against fraud and unfair practices.",
-            "Consumer Law also offers conflict resolution mechanisms, such as consumer protection agencies and small claims courts. It is constantly evolving to keep up with market changes and new forms of consumption, such as e-commerce, ensuring consumer protection in all transactions.",
+            "Consumer Law ensures fair and balanced consumer relations, protecting customer rights and regulating market practices. This branch of law is essential to resolve conflicts between consumers and businesses ethically and transparently.",
+            "It addresses issues such as defective products or services, abusive practices, misleading advertising, and undue charges. The legislation seeks to balance the power relationship between consumers and suppliers, ensuring protection for the more vulnerable side.",
+            "Companies that adopt good practices in customer relations can avoid litigation and strengthen their market image. For consumers, Consumer Law ensures damage compensation and access to quality products and services.",
+            "Specialized legal advice in this field acts both in prevention and conflict resolution, ensuring that rights are respected and commercial practices comply with the legislation. This support fosters trust and balance in consumer relations.",
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-consumidor",
@@ -784,13 +791,12 @@ export const Servicos_Civil: Expertise[] = [
     },
     {
         title: "Real Estate Law",
-        description:
-            "Real Estate Law is a branch of law that regulates transactions and legal relationships related to real estate. Its importance lies in ensuring legal security and organizing the negotiations for the purchase, sale, lease, and use of properties.",
+        description: "We ensure legal security in real estate transactions, including purchase, sale, lease, and property regularization.",
         full_description: [
-            "Real Estate Law is a branch of law that regulates transactions and legal relationships related to real estate. Its importance lies in ensuring legal security and organizing the negotiations for the purchase, sale, lease, and use of properties. This field covers everything from registration and documentation issues to the resolution of conflicts between owners and tenants.",
-            "Firstly, Real Estate Law establishes rules for the regularization of properties, including property registration in notary offices, obtaining certificates, and verifying the necessary documentation for real estate transactions. This process ensures that negotiations are transparent and that property rights are duly recognized and protected.",
-            "Additionally, Real Estate Law regulates purchase and sale contracts, leases, and other forms of property use. It defines the rights and duties of the parties involved, such as owners, tenants, and intermediaries, ensuring that contractual clauses are fulfilled and that possible disputes are resolved fairly. This area of law also keeps pace with changes in the real estate market, adapting to new realities and social demands, such as housing needs and property valuation.",
-            "In summary, Real Estate Law ensures legal security in real estate transactions, regulates the regularization of properties and necessary documentation, and defines rights and duties in purchase, sale, and lease contracts. It is constantly evolving to meet new market demands and ensure the protection of property rights.",
+            "Real Estate Law regulates transactions involving the purchase, sale, lease, and regularization of properties, ensuring legal security at all stages of the process. It is indispensable for individuals and companies looking to acquire or negotiate properties.",
+            "This branch of law covers issues such as contract analysis, property transfer, document regularization, and dispute resolution related to real estate. It also ensures that all transactions are conducted in compliance with applicable legal standards.",
+            "Buying real estate involves risks, such as legal or financial liabilities, and legal advice is essential to prevent future issues. Specialized assistance is also important in commercial negotiations, such as lease contracts and real estate development.",
+            "With appropriate legal support, all real estate transactions can be carried out safely and efficiently, protecting the rights of the parties involved and ensuring compliance with legal obligations.",
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-imobiliario",
@@ -799,13 +805,12 @@ export const Servicos_Civil: Expertise[] = [
     },
     {
         title: "National and International Family and Succession Law",
-        description:
-            "O Direito de Família e Sucessões protege os direitos dos membros da família e assegura a distribuição justa do patrimônio. Regula as relações familiares, incluindo casamento, divórcio e guarda de filhos, e trata da transferência de bens após a morte.",
+        description: "We handle family and succession matters, ensuring fairness in custody, divorce, and inheritance processes.",
         full_description: [
-            "Family and Succession Law is a branch of law that regulates family relationships and the transfer of assets after a person's death. Its importance lies in ensuring the protection of family members' rights and the proper distribution of the estate. This area of law deals with issues such as marriage, divorce, child custody, and inheritance, both nationally and internationally.",
-            "Firstly, Family Law establishes norms for family relationships, including marriage, stable unions, divorce, and child custody. It defines the rights and duties of spouses and parents, aiming to protect the interests of children and ensure justice in family relations. Internationally, it addresses issues such as transnational marriages and custody disputes involving different countries, applying treaties and international conventions to resolve conflicts.",
-            "Additionally, Succession Law deals with the transfer of assets and rights after a person's death. It regulates the drafting of wills, legitimate succession, and disputes among heirs, ensuring that the deceased's wishes are respected and that assets are distributed according to the law. In the international context, it involves the succession of assets located in different countries, requiring the application of private international law norms and cooperation between jurisdictions.",
-            "In summary, Family and Succession Law protects the rights of family members and ensures the fair distribution of assets. It regulates family relationships, including marriage, divorce, and child custody, and deals with the transfer of assets after death. Internationally, it applies treaties and conventions to resolve transnational conflicts, ensuring the protection of rights and justice in family and succession matters.",
+            "Family and Succession Law covers issues such as child custody, alimony, divorce, and succession planning, both nationally and internationally. This branch of law is essential to protect family rights and ensure the continuity of assets.",
+            "In succession processes, the legislation governs the transfer of assets between generations, seeking to avoid conflicts and ensure that heirs' rights are respected. In family matters, the priority is to protect the interests of the parties, especially children and dependents.",
+            "In international cases, Family and Succession Law presents additional challenges, such as jurisdiction conflicts and the application of norms from different countries. Specialized legal assistance is therefore indispensable to ensure efficient resolution of these issues.",
+            "Legal consultancy offers support in structuring family and succession agreements clearly and transparently, promoting legal security and preventing disputes. This guidance is essential to preserve balance and family well-being.",
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/direito-familia-sucessoes",
@@ -814,13 +819,12 @@ export const Servicos_Civil: Expertise[] = [
     },
     {
         title: "Indemnities",
-        description:
-            "Indemnity Law is a branch of law aimed at the reparation of damages caused to a person or property. Its importance lies in the protection of individual rights and the guarantee that victims of damages can obtain fair compensation.",
+        description: "We ensure damage compensation, providing fair reparation for material and moral damages.",
         full_description: [
-            "Indemnity Law is a branch of law aimed at the reparation of damages caused to a person or property. Its importance lies in the protection of individual rights and the guarantee that victims of damages can obtain fair compensation. This area covers various types of indemnities, including material, moral, and aesthetic damages, and applies both nationally and internationally.",
-            "Firstly, Indemnity Law establishes that anyone who causes damage to another, whether by action or omission, has the obligation to repair it. This includes material damages, which directly affect the victim's assets, and moral damages, which involve suffering, humiliation, or psychological distress. The norms define the criteria for the evaluation and quantification of these damages, ensuring that compensation is proportional to the harm suffered.",
-            "Additionally, Indemnity Law covers specific situations such as traffic accidents, medical errors, and environmental damages. In each case, it is necessary to prove the existence of the damage, the fault or responsibility of the perpetrator, and the causal link between the action and the damage. Internationally, it deals with cases involving parties from different countries, applying treaties and international conventions to resolve disputes and ensure adequate reparation.",
-            "In summary, Indemnity Law protects the rights of damage victims, guaranteeing fair compensation for material and moral damages. It establishes the obligation of reparation for those who cause damage and defines criteria for the evaluation and quantification of the harm. In an international context, it applies norms and treaties to resolve transnational disputes and ensure adequate reparation.",
+            "Indemnities aim to compensate for damages caused to individuals or companies, ensuring fair reparation for financial, moral, or physical harm. This branch of law is essential to ensure that the rights of injured parties are respected and that responsible parties are held accountable.",
+            "Situations that may generate indemnities include traffic accidents, medical errors, consumer relations, and reputation damage. In each case, it is necessary to prove the damage and the causal relationship with the responsible party's action or omission.",
+            "The value of indemnities is determined based on the extent of the damage and the losses incurred, which may include material and immaterial losses. Careful analysis of these aspects is fundamental to ensure that compensation is fair and proportional.",
+            "Specialized legal consultancy assists in identifying the appropriate value of indemnities and conducting judicial processes or extrajudicial negotiations. This support is indispensable to protect victims' rights and ensure that compensation occurs fairly and efficiently.",
         ],
         image: "/general_assets/banner_direito_civil.png",
         link: "/direito-civil/indenizacoes",
@@ -831,105 +835,104 @@ export const Servicos_Civil: Expertise[] = [
 
 export const Servicos_Empresarial: Expertise[] = [
     {
-        title: "Appraisal of Withdrawing Partner’s Share",
+        title: "Calculation of Withdrawing Partner's Shares",
         description:
-            "An essential process in corporate law, used to calculate the value of a partner's share when they decide to withdraw from a company.",
+            "A crucial process in corporate law used to calculate the value of the partnership interest of a partner who decides to leave a company.",
         full_description: [
-            "This procedure is crucial to ensure that the withdrawing partner fairly receives the value corresponding to their shares or quotas, considering the company's net worth, reserves, accumulated profits, and potential liabilities. Proper appraisal of the partner’s share helps prevent conflicts between the remaining partners and the one leaving the company, promoting an organized and transparent transition.",
-            "Furthermore, the process may involve thorough evaluations, including accounting expertise and detailed analysis of the company’s assets and liabilities. Another relevant aspect is defining the moment of the share appraisal, which may be the partner's withdrawal date or a date previously stipulated in the partnership agreement. Ensuring that the procedure is conducted with proper legal support is essential to protect the interests of all parties involved and avoid litigation that could compromise the continuity of the business.",
+            "The calculation of a withdrawing partner's shares determines the fair value of the partnership interest of a partner leaving the company. This process is essential to ensure that the withdrawing partner receives fair compensation while preserving the financial health and continuity of the company.",
+            "This requires a thorough analysis of financial and legal documents, considering factors like net worth, financial reserves, assets, and liabilities. Additionally, the criteria for calculation are often defined in the partnership agreement or applicable corporate rules.",
+            "Fair and impartial calculations are vital to avoiding disputes among partners and protecting everyone's interests. It also promotes the company's stability by ensuring the payment to the withdrawing partner does not compromise business operations.",
+            "Legal advisory plays a fundamental role in conducting this process transparently and in compliance with legal standards. This support ensures that the withdrawing partner's rights are respected and the company maintains financial and organizational balance.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/apuracao-haveres-socio-retirante",
         slug: "apuracao-haveres-socio-retirante",
-        category: "Business Law",
+        category: "Corporate Law",
     },
     {
         title: "Family Holding Company",
-        description: "An essential tool in estate and succession planning that allows the organization and protection of a family's assets.",
+        description: "An essential tool in asset and succession planning, allowing for the organization and protection of family assets.",
         full_description: [
-            "Through the establishment of a holding company, it is possible to centralize the management of assets and properties in a single entity, ensuring greater control over administration and facilitating the division of assets among heirs.",
-            "Additionally, this legal structure allows for optimizing the tax burden, especially regarding the transfer of assets and the payment of taxes, offering fiscal advantages and avoiding future complications.",
-            "Another relevant aspect of a family holding company is asset protection against financial risks such as debts and lawsuits. By separating personal and business assets, the family gains more security in managing their properties, as well as ensuring that the succession process is carried out efficiently and harmoniously. This planning model is ideal for families seeking to preserve their legacy and facilitate business continuity, avoiding family conflicts and legal disputes.",
+            "A family holding company is a legal structure designed to organize and protect family assets, facilitating succession planning and asset management. This model is especially useful in preventing conflicts among heirs and ensuring the continuity of wealth across generations.",
+            "Establishing a holding company centralizes the management of family assets and businesses within a single entity, reducing operational costs and streamlining strategic decision-making. It also offers tax benefits and improved efficiency in asset management.",
+            "This model is widely used to prevent disputes among heirs by predefining succession and distribution rules. It also safeguards family assets from creditors and legal disputes.",
+            "Legal consultancy in creating family holding companies is crucial for structuring the model according to individual needs and legal requirements. This support ensures efficient and secure asset protection and succession planning.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/holding-familiar",
         slug: "holding-familiar",
-        category: "Business Law",
+        category: "Corporate Law",
     },
     {
-        title: "Consultancy and Strategic Legal Support for Negotiation and Business Model Development",
-        description:
-            "This service is of utmost importance to ensure that business activities are conducted within established legal boundaries, minimizing risks and maximizing opportunities.",
+        title: "Strategic Legal Advisory for Business Model Negotiation and Development",
+        description: "This service ensures business activities are conducted within legal boundaries, minimizing risks and maximizing opportunities.",
         full_description: [
-            "In the field of Business Law, consultancy and strategic legal support for the negotiation and development of business models play an essential role for companies and organizations seeking to operate efficiently and in compliance with administrative laws and regulations. This service is of utmost importance to ensure that business activities are conducted within established legal boundaries, minimizing risks and maximizing opportunities. Expertise in Administrative Law is crucial to guide companies through regulatory complexities and help them achieve their business objectives effectively.",
-            "The process of consultancy and strategic legal support begins with a detailed analysis of the company's needs and goals. Specialized lawyers work closely with clients to understand their organizational structure, commercial operations, and areas of activity, in order to identify potential legal issues and offer tailored strategic solutions. This may involve reviewing and negotiating commercial contracts, analyzing regulatory compliance, resolving administrative disputes, and assessing legal risks associated with the company's commercial activities.",
-            "A peculiarity of this service is the need for a comprehensive understanding of the administrative laws and regulations governing business activities. This includes laws related to licensing, authorization, public contracting, bidding, regulation of specific sectors, and consumer protection, among other areas. Specialized lawyers must stay updated on changes in legislation and administrative jurisprudence and be able to apply this knowledge effectively to provide precise and relevant legal guidance to clients.",
-            "The importance of consultancy and strategic legal support in Administrative Law lies in its ability to provide companies with the tools and knowledge necessary to operate effectively and in compliance with applicable laws and regulations. This service not only helps mitigate legal risks and avoid litigation but also promotes transparency, integrity, and corporate responsibility. Specialized lawyers play a crucial role in providing specialized legal insights and strategic guidance that enable companies to achieve their business goals in an ethical and legally sound manner.",
-            "In summary, consultancy and strategic legal support for the negotiation and development of business models in Administrative Law are vital components for business success. This service allows companies to operate within established legal parameters, minimizing risks and maximizing growth opportunities. The expertise of specialized lawyers is essential to provide precise and relevant legal guidance, ensuring that companies can successfully navigate regulatory complexities and achieve their business objectives in an ethical and legally sound manner.",
+            "Strategic legal consultancy in business model development helps companies create solid and secure structures, fostering sustainable growth and legal compliance. This service is essential for entrepreneurs seeking to build strong legal foundations for their operations.",
+            "The process includes legal feasibility analysis, risk review, and structuring contracts and agreements. These steps ensure efficient business operations while adhering to regulatory standards and minimizing legal risks.",
+            "Moreover, legal advisory supports negotiations with partners, investors, and suppliers, safeguarding the company's interests. This includes drafting clauses that promote transparency and fairness in agreements.",
+            "With strategic legal guidance, businesses can develop innovative and competitive models aligned with market regulations. This support is essential for building a solid foundation and preparing the business for future challenges.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/consultoria-apoio-juridico-estrategico-negociacao-desenvolvimento-modelos-negocios",
         slug: "consultoria-apoio-juridico-estrategico-negociacao-desenvolvimento-modelos-negocios",
-        category: "Business Law",
+        category: "Corporate Law",
     },
     {
-        title: "Development, Negotiation, Creation, and/or Review of Commercial Contracts",
+        title: "Development, Negotiation, Creation, and Review of Commercial Contracts",
         description:
-            "This service is essential to ensure that commercial transactions are clear, transparent, and legally binding, providing security and mitigating risks for all parties involved. ",
+            "Ensures commercial transactions are clear, transparent, and legally binding, providing security and mitigating risks for all parties involved.",
         full_description: [
-            "The development, negotiation, creation, and/or review of commercial contracts play a crucial role for companies and organizations seeking to establish solid commercial relationships and protect their interests. This service is essential to ensure that commercial transactions are clear, transparent, and legally binding, providing security and mitigating risks for all parties involved. Expertise in Commercial Law is fundamental to guide companies through contractual complexities and help them achieve mutually beneficial agreements.",
-            "The process of developing, negotiating, creating, and/or reviewing commercial contracts begins with a detailed analysis of the needs and objectives of the parties involved. Specialized lawyers work closely with their clients to understand their commercial interests, market conditions, and applicable legal requirements. Based on this understanding, customized contracts are drafted that reflect the agreed terms and conditions between the parties, protecting their rights and clearly defining their obligations.",
-            "A peculiarity of this service is the need for a personalized and adaptable approach to each commercial transaction. Commercial contracts can cover a wide range of transactions, from purchase and sale agreements, service contracts, distribution agreements, to partnership and joint venture agreements. Each type of contract may have specific requirements and legal nuances that must be considered during the drafting and review process. Additionally, negotiating contracts often involves multiple parties with divergent interests, requiring effective communication skills and a diplomatic approach to reach a satisfactory agreement for all involved.",
-            "The importance of developing, negotiating, creating, and/or reviewing commercial contracts lies in its ability to provide a solid legal framework for commercial transactions, minimizing disputes and litigation in the future. This service not only clearly defines the rights and obligations of the parties involved but also establishes mechanisms to resolve any disputes that may arise during the execution of the contract. Specialized lawyers play a crucial role in ensuring that contracts are drafted clearly and precisely, reflecting the interests and intentions of the parties equitably.",
-            "In summary, the development, negotiation, creation, and/or review of commercial contracts are vital components for the effective operation of companies and organizations. This service provides security and protection for all parties involved in commercial transactions, ensuring that their interests are adequately protected and that their obligations are clearly defined. The expertise of specialized lawyers is essential to ensure that contracts are drafted accurately and reflect the interests of the parties equitably, thereby promoting solid and lasting commercial relationships.",
+            "Commercial contracts are essential tools for formalizing relationships between companies, ensuring clarity and security in the obligations and rights of the parties. Their drafting and review are indispensable for preventing disputes and protecting commercial interests.",
+            "Contract development involves analyzing the parties' needs and objectives, as well as including clauses on payment, product or service delivery, penalties, and termination conditions. Every detail matters in avoiding ambiguities and misunderstandings.",
+            "Negotiating contractual terms is crucial to ensuring mutual agreement and defending the company's interests. Careful drafting guarantees legal compliance and anticipates potential scenarios.",
+            "Legal consultancy provides support at every stage, from creation to review of contracts. This guidance promotes transparency, reduces risks of disputes, and ensures commercial agreements are executed efficiently and securely.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/desenvolvimento-negociacao-criacao-revisao-contratos-comerciais",
         slug: "desenvolvimento-negociacao-criacao-revisao-contratos-comerciais",
-        category: "Business Law",
+        category: "Corporate Law",
     },
     {
-        title: "Advisory and Legal Support for the Management and Analysis of Corporate Contracts",
+        title: "Legal Advisory for Corporate Contract Management and Analysis",
         description:
-            "This service is essential to ensure that corporate contracts are drafted, interpreted, and executed accurately and in compliance with applicable laws and regulations.",
+            "Ensures corporate contracts are drafted, interpreted, and executed precisely and in compliance with applicable laws and regulations.",
         full_description: [
-            "Advisory and legal support for the management and analysis of corporate contracts play a fundamental role for companies seeking to effectively manage their contracts and protect their commercial interests. This service is essential to ensure that corporate contracts are drafted, interpreted, and executed accurately and in compliance with applicable laws and regulations. Expertise in Corporate Law is crucial to guide companies through contractual complexities and help them make informed decisions that promote business success.",
-            "The process of advisory and legal support for the management and analysis of corporate contracts begins with a comprehensive evaluation of the company's existing contracts and future needs. Specialized lawyers work closely with the internal or external legal team to review, analyze, and interpret the terms and conditions of each contract, identifying potential areas of risk or opportunities for improvement. Based on this analysis, strategies are developed for the effective management of corporate contracts, including the implementation of policies and procedures to ensure ongoing compliance with contractual obligations.",
-            "A peculiarity of this service is the need for a comprehensive understanding of the laws and regulations governing corporate contracts, as well as the specific commercial practices of the industry in which the company operates. Corporate contracts can cover a wide range of areas, including supply agreements, service contracts, partnership agreements, licensing agreements, and more. Each type of contract may have unique legal and commercial requirements that must be considered during management and analysis.",
-            "The importance of advisory and legal support for the management and analysis of corporate contracts lies in its ability to protect the company's interests and minimize legal risks associated with its commercial operations. This service not only ensures that corporate contracts are drafted and executed accurately and legally but also offers strategic guidance to maximize the commercial benefits derived from these contracts. Specialized lawyers play a crucial role in providing specialized legal insights and strategic guidance that enable companies to achieve their business objectives in an ethical and effective manner.",
-            "In summary, advisory and legal support for the management and analysis of corporate contracts are essential components of business success. This service provides security and protection for companies, ensuring that their contracts are managed and interpreted accurately and in compliance with applicable laws and regulations. The expertise of specialized lawyers is fundamental to provide precise and relevant legal guidance, thereby promoting the growth and sustainability of companies in the long term.",
+            "Legal advisory in managing and analyzing corporate contracts is essential for businesses seeking efficient contract management. This support ensures contractual obligations are monitored and fulfilled, mitigating risks and safeguarding business interests.",
+            "Contract management includes tracking deadlines, payments, renewal terms, and other obligations. It also ensures compliance with agreed terms, preventing conflicts and facilitating operational continuity.",
+            "Legal contract analysis identifies critical clauses and potential risks, such as ambiguities or missing key protections. This process also enables contract updates to meet regulatory changes or market conditions.",
+            "With legal consultancy, businesses can ensure their contracts are well-managed and executed, promoting legal security and operational integrity. This support reduces litigation risks and strengthens the organization's contractual foundations.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/aconselhamento-suporte-juridico-administracao-analise-contratos-corporativos",
         slug: "aconselhamento-suporte-juridico-administracao-analise-contratos-corporativos",
-        category: "Business Law",
+        category: "Corporate Law",
     },
     {
         title: "Legal Studies and Opinions",
         description:
-            "This service is essential for companies, organizations, and individuals seeking to better understand the legal implications of certain situations, make informed decisions, and face legal challenges with confidence.",
+            "Provides companies, organizations, and individuals with clear legal analyses to make informed decisions and address legal challenges confidently.",
         full_description: [
-            "Legal studies and opinions play a fundamental role in guiding decisions, providing specialized insights, and helping resolve complex legal issues. This service is essential for companies, organizations, and individuals seeking to better understand the legal implications of certain situations, make informed decisions, and face legal challenges with confidence. Expertise in Law is crucial to produce accurate and relevant legal studies and opinions that meet the specific needs of each client.",
-            "The process of developing legal studies and opinions begins with a detailed analysis of the legal issue at hand. Specialized lawyers work closely with the client to understand the relevant facts, intended objectives, and specific concerns related to the matter. Based on this analysis, comprehensive research and a critical assessment of applicable laws, regulations, and jurisprudence are conducted to develop a well-founded and thorough legal opinion.",
-            "A peculiarity of legal studies and opinions is the need for an analytical and impartial approach to evaluating the legal issues in question. Lawyers must be able to identify and analyze different perspectives, consider relevant precedents, and apply fundamental legal principles coherently and logically. Additionally, legal studies and opinions often involve interpreting complex laws and analyzing constantly evolving legal issues, requiring a deep and up-to-date understanding of the Law.",
-            "The importance of legal studies and opinions lies in their ability to provide specialized and informed guidance on specific legal issues. This service not only helps clients better understand their options and the potential legal outcomes of their actions but also provides a solid foundation for strategic decision-making. Legal studies and opinions can be used in a variety of contexts, from business legal advice to complex litigation, and are often used as evidence in judicial and administrative proceedings.",
-            "In summary, legal studies and opinions are essential tools for the practice of Law, providing specialized and informed guidance on complex legal issues. This service offers clients a deeper understanding of the legal implications of their actions and helps ensure they make informed and well-founded decisions. The expertise of specialized lawyers is crucial to producing high-quality legal studies and opinions that meet the specific needs of each client and promote success in legal matters.",
+            "Legal studies and opinions offer in-depth analyses of issues impacting corporate operations and strategies. These documents are vital for providing technical insights, helping businesses navigate complex scenarios securely.",
+            "Legal opinions address specific issues, such as interpreting regulations, assessing legislative changes, or evaluating risks in commercial transactions. They are impartially crafted based on a detailed analysis of applicable laws and jurisprudence.",
+            "This service enables companies to make well-informed strategic decisions, minimizing risks and maximizing opportunities. It also supports regulatory compliance, preventing future problems related to misinterpretation of laws or contracts.",
+            "Specialized legal consultancy provides studies and opinions offering clarity and technical support to guide business actions. This assistance is indispensable for organizations aiming to align with best practices and act securely in their business strategies.",
         ],
         image: "/general_assets/banner_direito_aduaneiro.png",
         link: "/direito-empresarial/estudos-pareceres",
         slug: "estudos-pareceres",
-        category: "Business Law",
+        category: "Corporate Law",
     },
 ];
 
 export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     {
         title: "Investment Visas",
-        description:
-            "We assist foreigners who wish to obtain residency in Brazil through investments. Our firm provides full support in establishing companies, ensuring that all legal steps are fulfilled.",
+        description: "Allow foreigners to reside in the country while making investments that boost the local economy.",
         full_description: [
-            "We assist foreigners who wish to obtain residency in Brazil through investments. Our firm provides full support in establishing companies, ensuring that all legal steps are fulfilled.",
-            "Additionally, we handle the Registration of Foreign Investments with the Central Bank, ensuring compliance with Brazilian law and facilitating the process for investors looking to establish or expand their businesses in the country.",
+            "Investment visas allow foreigners to legally reside in the country while making investments that boost the local economy. These visas are designed to attract foreign capital, encouraging the creation of businesses, job generation, and the development of strategic sectors.",
+            "To obtain this type of visa, the investor must demonstrate the origin of the funds, the positive impact of the investment on the local economy, and compliance with specific requirements defined by the destination country authorities. Presenting a detailed and transparent business plan is also a common requirement.",
+            "These visas are a strategic opportunity for those wishing to expand international operations, diversify portfolios, and explore new markets. They also offer benefits such as the possibility of bringing family members and, in some cases, accessing rights and benefits of permanent residents.",
+            "Specialized legal consultancy is essential to ensure that all steps are conducted efficiently and in compliance with local regulations. This support ensures investment security and avoids legal issues during the immigration process.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-investimento",
@@ -937,10 +940,13 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
         category: "Capital Markets and Foreign Investment",
     },
     {
-        title: "Family Reunion Visas",
-        description: "For foreigners seeking to reside in Brazil due to marriage, stable union, or children.",
+        title: "Family Reunification Visas",
+        description: "Ensure family members can live together in a new country, promoting emotional stability.",
         full_description: [
-            "We assist through all stages of the process, from planning to the preparation of necessary documentation. We also represent our clients in administrative appeals, ensuring their rights are upheld, providing peace of mind to keep their families together.",
+            "These visas allow family members of foreigners residing in the country to live together, promoting emotional stability and strengthening family bonds. This visa category is essential to ensure family unity in a new country.",
+            "The process requires proof of family ties, such as marriage or birth certificates, as well as meeting specific requirements of the destination country. In some cases, it may be necessary to demonstrate financial capacity to support family members.",
+            "Family reunification is a right recognized by various international legislations, being a priority to ensure foreigners can settle fully and with emotional support in the host country.",
+            "Specialized legal assistance facilitates compliance with all legal requirements, making the process faster and reducing the risk of denial. This support is crucial to protect family bonds and ensure a smooth transition.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-reuniao-familiar",
@@ -949,9 +955,12 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     },
     {
         title: "Work Visas",
-        description: "Our firm offers complete consultancy for Brazilian companies and foreign employees in obtaining work visas.",
+        description: "Allow foreigners to work legally in the destination country, meeting the demand for specialized labor.",
         full_description: [
-            "We ensure that all legal requirements are met, guiding companies through the requirements for hiring foreigners and assisting in the preparation of all documentation. Our goal is to facilitate the process for foreigners to work legally in Brazil without bureaucratic obstacles.",
+            "Work visas allow foreigners to work legally in a profession in the destination country, meeting the demand for qualified or specialized labor. This category is essential for companies wishing to hire international talent or transfer professionals from other branches.",
+            "The process of obtaining a work visa requires proof of employment, professional qualifications, and, in some cases, demonstrating that no local workforce is available for the position. Additionally, it is necessary to comply with immigration rules and labor legislation of the country.",
+            "These visas promote the exchange of global talent, allowing companies to benefit from international perspectives and professionals to develop their careers in foreign markets. They also enhance economic competitiveness by filling labor gaps.",
+            "Legal support is indispensable to ensure all requirements are met and to avoid legal obstacles that could compromise the visa's approval. This assistance provides security for both the employer and the professional.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/vistos-de-trabalho",
@@ -960,10 +969,12 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     },
     {
         title: "Other Types of Visas",
-        description:
-            "We provide legal support for foreigners seeking different types of visas, whether for retirement, studies, or technical activities.",
+        description: "Designed to meet specific needs such as study, research, cultural programs, and tourism.",
         full_description: [
-            "Our team closely follows the immigration process, offering personalized consultancy for each situation. We analyze the best options to meet the needs of each client, aiming for legal residency in Brazil, either temporarily or permanently.",
+            "There are various visa categories beyond work, investment, and family reunification, designed to meet specific needs such as study, research, cultural programs, and tourism. Each visa has unique criteria that vary depending on the destination country and the purpose of the trip.",
+            "Study visas, for example, allow foreigners to enroll in educational institutions abroad, while research visas provide opportunities for academics to conduct projects in collaboration with local organizations. Cultural visas promote exchanges between different nations.",
+            "Choosing the right visa is a crucial step, as each category requires specific documentation and follows distinct processes. An error in this choice can result in delays, denials, or even entry bans in the country.",
+            "Legal guidance facilitates identifying the most appropriate visa for each profile and ensures all requirements are met. This support is essential for an efficient process conducted within the established norms.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/outros-vistos",
@@ -972,9 +983,12 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     },
     {
         title: "Brazilian Naturalization",
-        description: "Our firm offers full advisory services for foreigners who wish to become naturalized Brazilian citizens.",
+        description: "Grants full rights and duties in Brazil, promoting integration into Brazilian society.",
         full_description: [
-            "We provide guidance on the legal requirements and act directly with the Ministry of Justice to conduct the process efficiently. Additionally, we represent clients in nationality option cases and in reversing the loss of nationality, ensuring proper handling of complex and sensitive processes.",
+            "It is the process by which foreigners acquire Brazilian citizenship, obtaining full rights and duties in the country. It is an important step for those wishing to reside permanently in Brazil and fully integrate into society.",
+            "To obtain naturalization, the candidate must meet several requirements, such as residence time in the country, knowledge of the Portuguese language, absence of criminal records, and, in some cases, proof of means of subsistence.",
+            "Brazilian citizenship offers benefits such as the right to vote, participate in public tenders, and access social programs. It also simplifies bureaucratic processes related to work, study, and international travel.",
+            "Legal consultancy is indispensable to guide the candidate throughout the process, ensuring compliance with the required criteria and proper documentation submission. This support ensures a smooth transition in compliance with the legislation.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/naturalizacao-brasileira",
@@ -983,9 +997,12 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     },
     {
         title: "Deportation, Extradition, and Asylum",
-        description: "We represent foreigners in deportation, extradition, and asylum cases in Brazil.",
+        description: "Processes involving the stay or removal of foreigners, including humanitarian protection.",
         full_description: [
-            "Specializing in services for Francophone clients, we provide effective and personalized legal support to ensure the protection of our clients' rights. Our attorneys work with dedication to prevent the expulsion or extradition of individuals, seeking legal alternatives to ensure their stay in the country.",
+            "Deportation, extradition, and asylum processes are directly related to the stay or removal of foreigners from national territory. While deportation and extradition address legal and criminal issues, asylum is a right granted to individuals needing humanitarian protection.",
+            "Deportation occurs when a foreigner violates the migration laws of the country, while extradition involves handing over a person to face criminal proceedings in another country. Asylum is granted to individuals facing political, religious, or other serious threats in their home country.",
+            "These processes involve international treaties and conventions, such as the Geneva Convention, which establish the rights and duties of those involved. Each case requires a detailed analysis to ensure procedures are conducted fairly and in accordance with the law.",
+            "Specialized legal assistance is essential to ensure the foreigner's rights are defended and the process is conducted ethically and transparently. This support is vital to protect the integrity and safety of the individuals involved.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/deportacao-extradicao-asilo",
@@ -994,10 +1011,12 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     },
     {
         title: "Real Estate Purchase Advisory",
-        description:
-            "The purchase of real estate in Brazil by foreigners requires specific legal care, and we offer complete advisory throughout all phases of this process.",
+        description: "Provides legal support at every stage of property purchase by foreigners in Brazil.",
         full_description: [
-            "We conduct a thorough review of documents, draft purchase and sale contracts, and research debts related to both the property and the owner. In addition, we provide guidance on the stages of international fund transfers, ensuring a secure purchase in compliance with the law.",
+            "Property acquisition by foreigners in Brazil requires special attention to local laws and bureaucratic procedures involved. This process can be challenging, especially for those unfamiliar with the Brazilian legal system.",
+            "Property purchase requires contract analysis, verification of the property's status, and transaction regularization with the competent authorities. Additionally, it is important to ensure that the acquisition complies with the regulations governing the purchase of assets by foreigners.",
+            "This service is essential both for those wishing to invest in the Brazilian real estate market and for those seeking to establish permanent residence in the country. It offers legal security and prevents future problems related to property ownership.",
+            "Specialized legal consultancy is indispensable to ensure the process is conducted safely and transparently. This support ensures all steps are completed within legal norms and without risks.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/assessoria-compra-imoveis",
@@ -1006,10 +1025,12 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     },
     {
         title: "General Support for Foreign Residents in Brazil",
-        description:
-            "We offer broad assistance to foreigners residing in Brazil, facilitating the acquisition of necessary documents, retirement regularization, and representation in legal proceedings.",
+        description: "Facilitates document regularization and integration of foreigners into Brazil.",
         full_description: [
-            "Taborda Lima Advogados also provides support to expatriates in matters such as visa renewal and regularization of their status in the country, always ensuring that all legal procedures are properly followed, so they can live safely and peacefully.",
+            "Foreigners residing in Brazil face a series of challenges related to document regularization, adapting to the new environment, and meeting local legal requirements. Legal support addresses these needs, providing peace of mind and security.",
+            "This service includes assistance with obtaining a CPF, national foreign registration (RNE), opening bank accounts, and other aspects of daily life. It also covers the regularization of migration status, such as visa renewals and work authorizations.",
+            "General support is essential for foreigners to fully integrate into Brazilian society and exercise their rights and duties efficiently. It also helps prevent legal problems that could compromise their stay in the country.",
+            "With legal consultancy, foreigners can navigate bureaucratic requirements more easily and ensure compliance with regulations. This guidance promotes a smoother and more organized adaptation process.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/suporte-geral-estrangeiro-residente-brasil",
@@ -1018,10 +1039,12 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     },
     {
         title: "Foreign Investment",
-        description:
-            "It involves the allocation of capital to businesses or projects outside the investor's home country, aiming to diversify revenue sources and explore new market opportunities.",
+        description: "Attracts foreign capital to local projects, stimulating economic development.",
         full_description: [
-            "In Brazil, this type of investment is regulated by specific laws, which aim to both protect investors and ensure local economic development. Taborda Lima Advogados offers complete support in this process, guiding foreign investors on regulatory compliance, taxation, and business structuring.",
+            "Foreign investment in Brazil is an important tool for economic development, as it attracts capital and stimulates strategic sectors. It can include everything from opening branches to participating in infrastructure and technology projects.",
+            "This process requires compliance with local and international standards, ensuring that resources are applied safely and legally. Additionally, investors need to consider tax and regulatory aspects that directly affect operations.",
+            "Proper planning is crucial to minimize risks and maximize investment benefits. This includes analyzing tax incentives, structuring operations, and ensuring compliance with Brazilian legislation.",
+            "Legal consultancy is indispensable to guide the investor at every stage, ensuring the capital is applied efficiently and in line with legal requirements. This support ensures a successful operation that benefits all parties.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/investimento-estrangeiro",
@@ -1030,9 +1053,12 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
     },
     {
         title: "Cross-Border Transactions",
-        description: "These refer to financial or commercial operations carried out between companies or individuals from different countries.",
+        description: "Encompass financial and commercial operations between countries, requiring legal compliance.",
         full_description: [
-            "These transactions involve specific legal and regulatory challenges, such as differences in each country's laws, exchange policies, and bilateral agreements. Taborda Lima Advogados works to ensure these operations are carried out safely and efficiently, offering legal consultancy on topics like international contracts, project financing, and risk management in international transactions.",
+            "Cross-border transactions involve financial and commercial operations between companies and investors from different countries, requiring a high level of compliance with local and international regulations. They are essential for companies seeking to expand their activities globally.",
+            "These transactions include everything from purchase and sale agreements to investments in multinational projects. The complexity of these operations demands detailed planning and understanding of the rules governing each jurisdiction involved.",
+            "The success of these transactions depends on a thorough analysis of tax, customs, and contractual regulations, as well as strategies to mitigate currency and operational risks. This ensures operations are conducted efficiently and safely.",
+            "Legal consultancy is vital to ensure all parties involved comply with applicable regulations. This support reduces the risk of legal conflicts and promotes transparent and successful transactions.",
         ],
         image: "/general_assets/banner_mercado_capital.jpg",
         link: "/mercado-de-capitais-e-investimento-estrangeiro/transacoes-cross-border",
@@ -1046,8 +1072,8 @@ export const Servicos_Mercado_Capitais_Estangeiro: Expertise[] = [
 export const atendimento_estrangeiros_EN: Expertise_Data = {
     key: "atendimento-estrangeiros",
     slug: "/atendimento-estrangeiros",
-    name: "Foreign Services",
-    head_title: "Foreign Services | Taborda Lima & Advogados Associados",
+    name: "Foreigners Assistance in Brazil",
+    head_title: "Foreigners Assistance in Brazil | Taborda Lima & Advogados Associados",
     head_description: "Specialized support for obtaining visas, enabling individuals to reside, conduct business, or be employed in Brazil.",
     expertises: Servicos_Atendimento_Estrangeiro,
     image: "/general_assets/banner_atendimento_estrangeiros.jpg",
