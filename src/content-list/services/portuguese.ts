@@ -853,7 +853,7 @@ export const Servicos_Migratorio: Expertise[] = [
         category: "Direito Migratório",
     },
     {
-        title: "Visto de Artista (Visto O-1)",
+        title: "Visto O-1 | Visto de Artista",
         description:
             "Destinado a indivíduos com habilidades extraordinárias nas artes, esportes e outras áreas, permite que atuem temporariamente nos EUA.",
         full_description: [
@@ -865,6 +865,20 @@ export const Servicos_Migratorio: Expertise[] = [
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-artista-o-1",
         slug: "visto-artista-o-1",
+        category: "Direito Migratório",
+    },
+    {
+        title: "Visto P-1 | Visto de Artista",
+        description: "Destinado a atletas, artistas ou grupos de entretenimento que possuem reconhecimento internacional.",
+        full_description: [
+            "Ele permite que esses profissionais entrem nos Estados Unidos para participar de eventos esportivos, apresentações culturais ou turnês de grande relevância. Suas duas subcategorias incluem o P-1A, voltado para atletas, e o P-1B, direcionado a grupos artísticos renomados.",
+            "Para solicitar o visto, é necessário que um empregador ou patrocinador dos EUA envie uma petição ao USCIS, comprovando a relevância do trabalho do candidato. Atletas devem demonstrar participação em competições de alto nível, enquanto artistas precisam comprovar sucesso internacional. Também é permitido incluir membros essenciais da equipe de suporte.",
+            "Esse visto é importante porque promove o intercâmbio cultural e esportivo nos Estados Unidos, além de movimentar a economia local. Ele facilita a realização de eventos globais, ampliando a visibilidade dos profissionais envolvidos e fortalecendo conexões internacionais.",
+            "Com validade limitada ao período do evento ou projeto, o P-1 oferece uma oportunidade valiosa para atletas e artistas expandirem suas carreiras no cenário internacional. É uma via acessível para quem busca projeção global em um dos maiores mercados do mundo.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-artista-p-1",
+        slug: "visto-artista-p-1",
         category: "Direito Migratório",
     },
 ];

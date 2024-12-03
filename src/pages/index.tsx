@@ -29,7 +29,23 @@ import { faNewspaper } from "@fortawesome/free-regular-svg-icons";
 
 const officePictures = [
     {
+        src: "/office/fotos_escritorio_001.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
         src: "/office/fotos_escritorio_004.png",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_002_alt.png",
         alt: "Escritório Taborda Lima & Advogados Associados",
         size: {
             width: 1080,
@@ -62,6 +78,14 @@ const officePictures = [
     },
     {
         src: "/office/fotos_escritorio_008.jpg",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_005.png",
         alt: "Escritório Taborda Lima & Advogados Associados",
         size: {
             width: 1080,

@@ -235,7 +235,7 @@ export const Servicos_Migratorio: Expertise[] = [
         category: "Immigration Law",
     },
     {
-        title: "Artist Visa (O-1 Visa)",
+        title: "O-1 Visa | Artist Visa",
         description: "For individuals with extraordinary abilities in arts, sports, and other fields, allowing them to work temporarily in the U.S.",
         full_description: [
             "It is ideal for professionals with international recognition who wish to explore the U.S. market.",
@@ -246,6 +246,20 @@ export const Servicos_Migratorio: Expertise[] = [
         image: "/general_assets/banner_direito_migratorio.png",
         link: "/direito-migratorio/visto-artista-o-1",
         slug: "visto-artista-o-1",
+        category: "Immigration Law",
+    },
+    {
+        title: "P-1 Visa | Artist Visa",
+        description: "Destined for athletes, artists, or entertainment groups with international recognition.",
+        full_description: [
+            "This visa allows these professionals to enter the United States to participate in sports events, cultural performances, or major tours. Its two subcategories include the P-1A, for athletes, and the P-1B, for renowned artistic groups.",
+            "To apply for the visa, a U.S. employer or sponsor must submit a petition to USCIS, demonstrating the relevance of the candidate's work. Athletes must show participation in high-level competitions, while artists need to prove international success. Essential support team members may also be included.",
+            "This visa is significant as it promotes cultural and sports exchanges in the United States, while also boosting the local economy. It facilitates global events, increasing the visibility of the professionals involved and strengthening international connections.",
+            "With validity limited to the duration of the event or project, the P-1 visa offers a valuable opportunity for athletes and artists to expand their careers on the international stage. It provides accessible pathways for those seeking global exposure in one of the world's largest markets.",
+        ],
+        image: "/general_assets/banner_direito_migratorio.png",
+        link: "/direito-migratorio/visto-artista-p-1",
+        slug: "visto-artista-p-1",
         category: "Immigration Law",
     },
 ];

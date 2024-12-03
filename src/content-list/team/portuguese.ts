@@ -43,6 +43,30 @@ export const Team_Data_PT = [
         image: "/team/equipe_placeholder.png",
     },
     {
+        name: "Luana Moratelli Orofino",
+        role: "Compliance",
+        slug: "luana-moratelli",
+        memberPage: "/sobre/luana-moratelli",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_luana.png",
+    },
+    {
+        name: "Gabriela",
+        role: "Compliance",
+        slug: "gabriela",
+        memberPage: "/sobre/gabriela",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_gabriela.png",
+    },
+    {
         name: "Juliana Prata",
         role: "Compliance",
         slug: "juliana-prata",
