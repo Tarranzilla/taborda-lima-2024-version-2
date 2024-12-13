@@ -4,7 +4,7 @@ const Terms_Data_EN: ParagraphsWithTitle[] = [
     {
         title: "Terms of Use",
         paragraphs: [
-            "These Terms of Use govern the use of Taborda Lima & Associates website (we, our, or us). By accessing and using our website www.tabordalima.com, you agree to these terms and conditions.",
+            "These Terms of Use govern the use of Taborda Lima & Advogados Associados website (we, our, or us). By accessing and using our website www.tabordalima.com, you agree to these terms and conditions.",
         ],
     },
     {
@@ -16,7 +16,7 @@ const Terms_Data_EN: ParagraphsWithTitle[] = [
     {
         title: "Intellectual Property",
         paragraphs: [
-            "The content of our website, including text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the exclusive property of the Stresser e Machado law firm and is protected by copyright laws and other applicable intellectual property laws.",
+            "The content of our website, including text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the exclusive property of the Taborda Lima & Advogados Associados law firm and is protected by copyright laws and other applicable intellectual property laws.",
         ],
     },
     {

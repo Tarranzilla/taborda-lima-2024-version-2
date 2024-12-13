@@ -16,7 +16,7 @@ const Terms_Data_ES: ParagraphsWithTitle[] = [
     {
         title: "Propiedad Intelectual",
         paragraphs: [
-            "El contenido de nuestro sitio, incluidos texto, gráficos, logotipos, íconos de botones, imágenes, clips de audio, descargas digitales, compilaciones de datos y software, es propiedad exclusiva del despacho de abogados Stresser e Machado y está protegido por leyes de derechos de autor y otras leyes de propiedad intelectual aplicables.",
+            "El contenido de nuestro sitio, incluidos texto, gráficos, logotipos, íconos de botones, imágenes, clips de audio, descargas digitales, compilaciones de datos y software, es propiedad exclusiva del despacho de abogados Taborda Lima & Advogados Associados y está protegido por leyes de derechos de autor y otras leyes de propiedad intelectual aplicables.",
         ],
     },
     {
