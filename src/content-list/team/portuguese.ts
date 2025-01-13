@@ -16,21 +16,6 @@ export const Team_Data_PT = [
         image: "/team/equipe_placeholder.png",
     },
     {
-        name: "Cesar Augusto Taborda Lima",
-        role: "Advogado Sócio",
-        slug: "cesar-augusto-taborda-lima",
-        memberPage: "/sobre/cesar-augusto-taborda-lima",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 112654",
-        oabLink: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=112654&tpinsc=A",
-        bio: [
-            "Cesar Augusto Taborda Lima é sócio do escritório Taborda Lima, e atua como Head of Immigration and International Law na Taborda Lima & Advogados Associados.",
-            "Com expertise nas áreas de Imigração/Migração e Direito Internacional, Seus serviços incluem consultoria jurídica, direito de propriedade intelectual, direito do entretenimento, direito imigratório e direito societário.",
-            "Com uma carreira de tempo integral na Taborda Lima & Advogados Associados desde janeiro de 2017, acumulando mais de 7 anos e 2 meses de experiência, Cesar possui formação acadêmica em Direito e uma pós graduação em Direito Internacional pela Pontifícia Universidade Católica do Paraná.",
-        ],
-        image: "/team/equipe_cesar_01.png",
-    },
-    {
         name: "Lilian Taborda",
         role: "Advogada Sócia",
         slug: "lilian-taborda",
@@ -43,8 +28,36 @@ export const Team_Data_PT = [
         image: "/team/equipe_placeholder.png",
     },
     {
+        name: "Cesar Augusto Taborda Lima",
+        role: "Advogado Sócio",
+        slug: "cesar-augusto-taborda-lima",
+        memberPage: "/sobre/cesar-augusto-taborda-lima",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 112654",
+        oabLink: "https://www.oabpr.org.br/servicos-consulta-de-advogados/consulta-de-advogado/?oabn=112654&tpinsc=A",
+        bio: [
+            "Cesar Augusto Taborda Lima é sócio do escritório Taborda Lima, e atua como Head of Immigration and International Law na Taborda Lima & Advogados Associados.",
+            "Com expertise nas áreas de Imigração/Migração e Direito Internacional, Seus serviços incluem consultoria jurídica, direito de propriedade intelectual, direito do entretenimento, direito imigratório e direito societário.",
+            "Com uma carreira de tempo integral na Taborda Lima & Advogados Associados desde janeiro de 2017, acumulando mais de 7 anos e 2 meses de experiência, Cesar possui formação acadêmica em Direito e uma pós graduação em Direito Internacional pela Pontifícia Universidade Católica do Paraná.",
+        ],
+        image: "/team/equipe_cesar_2025.png",
+    },
+
+    {
+        name: "Sofia Paula Leandro",
+        role: "Departamento de Marketing",
+        slug: "sofia-paula-leandro",
+        memberPage: "/sobre/sofia-paula-leandro",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_sofia_2025.png",
+    },
+    {
         name: "Luana Moratelli Orofino",
-        role: "Compliance",
+        role: "Departamento Jurídico",
         slug: "luana-moratelli",
         memberPage: "/sobre/luana-moratelli",
         linkedin: "https://www.linkedin.com/",
@@ -52,23 +65,23 @@ export const Team_Data_PT = [
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
 
-        image: "/team/equipe_luana.png",
+        image: "/team/equipe_luana_2025.png",
     },
     {
-        name: "Gabriela",
-        role: "Compliance",
-        slug: "gabriela",
-        memberPage: "/sobre/gabriela",
+        name: "Gabriela Stark",
+        role: "Departamento Jurídico",
+        slug: "gabriela-stark",
+        memberPage: "/sobre/gabriela-stark",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
 
-        image: "/team/equipe_gabriela.png",
+        image: "/team/equipe_gabriela_2025.png",
     },
     {
         name: "Juliana Prata",
-        role: "Compliance",
+        role: "Departamento de Compliance",
         slug: "juliana-prata",
         memberPage: "/sobre/juliana-prata",
         linkedin: "https://www.linkedin.com/",
@@ -76,8 +89,23 @@ export const Team_Data_PT = [
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
 
-        image: "/team/equipe_placeholder.png",
+        image: "/team/equipe_juliana_2025.png",
     },
+    {
+        name: "Carlos Miguel Perotti",
+        role: "Departamento de Direito Desportivo",
+        slug: "carlos-miguel-perotti",
+        memberPage: "/sobre/carlos-miguel-perotti",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_carlos_2025.png",
+    },
+
+    /* Pessoas sem fotos */
+
     {
         name: "Daniella da Matta",
         role: "Controladoria",

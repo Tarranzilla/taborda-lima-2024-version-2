@@ -16,6 +16,17 @@ export const Team_Data_ES = [
         image: "/team/equipe_placeholder.png",
     },
     {
+        name: "Lilian Taborda",
+        role: "Abogada Socia",
+        slug: "lilian-taborda",
+        memberPage: "/sobre/lilian-taborda",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+        image: "/team/equipe_placeholder.png",
+    },
+    {
         name: "Cesar Augusto Taborda Lima",
         role: "Abogado Socio",
         slug: "cesar-augusto-taborda-lima",
@@ -28,18 +39,19 @@ export const Team_Data_ES = [
             "Con experiencia en las áreas de Inmigración/Migración y Derecho Internacional, sus servicios incluyen asesoría jurídica, derecho de propiedad intelectual, derecho del entretenimiento, derecho de inmigración y derecho societario.",
             "Con una carrera de tiempo completo en Taborda Lima & Advogados Associados desde enero de 2017, acumulando más de 7 años y 2 meses de experiencia, Cesar tiene una formación académica en Derecho y una posgrado en Derecho Internacional por la Pontificia Universidad Católica de Paraná.",
         ],
-        image: "/team/equipe_cesar_01.png",
+        image: "/team/equipe_cesar_2025.png",
     },
     {
-        name: "Lilian Taborda",
-        role: "Abogada Socia",
-        slug: "lilian-taborda",
-        memberPage: "/sobre/lilian-taborda",
+        name: "Sofia Paula Leandro",
+        role: "Marketing",
+        slug: "sofia-paula-leandro",
+        memberPage: "/sobre/sofia-paula-leandro",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/equipe_placeholder.png",
+
+        image: "/team/equipe_sofia_2025.png",
     },
     {
         name: "Luana Moratelli Orofino",
@@ -51,19 +63,19 @@ export const Team_Data_ES = [
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
 
-        image: "/team/equipe_luana.png",
+        image: "/team/equipe_luana_2025.png",
     },
     {
-        name: "Gabriela",
+        name: "Gabriela Stark",
         role: "Compliance",
-        slug: "gabriela",
-        memberPage: "/sobre/gabriela",
+        slug: "gabriela-stark",
+        memberPage: "/sobre/gabriela-stark",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
 
-        image: "/team/equipe_gabriela.png",
+        image: "/team/equipe_gabriela_2025.png",
     },
     {
         name: "Juliana Prata",
@@ -74,8 +86,23 @@ export const Team_Data_ES = [
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/equipe_placeholder.png",
+        image: "/team/equipe_juliana_2025.png",
     },
+    {
+        name: "Carlos Miguel Perotti",
+        role: "Derecho Deportivo",
+        slug: "carlos-miguel-perotti",
+        memberPage: "/sobre/carlos-miguel-perotti",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_carlos_2025.png",
+    },
+
+    /* Pessoas sem fotos */
+
     {
         name: "Daniella da Matta",
         role: "Controladoria",

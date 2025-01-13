@@ -94,6 +94,49 @@ const officePictures = [
     },
 ];
 
+const officePictures_2025 = [
+    {
+        src: "/office/fotos_escritorio_2025_01.jpg",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_2025_02.jpg",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_2025_03.jpg",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_2025_04.jpg",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+    {
+        src: "/office/fotos_escritorio_2025_05.jpg",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
+];
+
 const MotionLink = m(Link);
 
 export default function Home() {
@@ -130,7 +173,7 @@ export default function Home() {
                 {/* Seção de Início | Atualizar o Scroll com as Novas Imagens do Escritório */}
                 <section id="inicio" className="Main_Section LP_Section">
                     <div id="Imagem_Inicial" className="Container Container_Left Image_Container Dark_Container">
-                        <NewBannerSlider pictures={officePictures} />
+                        <NewBannerSlider pictures={officePictures_2025} />
                     </div>
 
                     <div className="Container Container_Right Centered_Container Padded_Container">
@@ -236,10 +279,6 @@ export default function Home() {
 
                 {/* Seção de Novidades | Ajustar o tamanho da seção e o tamanho das imagens que o instafeed recebe */}
                 <section id="novidades">
-                    <div className="Container Unpadded_Container Dark_Container Half_Width_Container Relative_Container">
-                        <NewInstaFeed />
-                    </div>
-
                     <div className="Content_Container Container Centered_Container Padded_Container">
                         <div className="Coisa">
                             <h1>{t.landingPage.sections.updates.title}</h1>
@@ -282,6 +321,9 @@ export default function Home() {
                                 <p className="Page_Button_Main_Text">{t.common.accessLinkedinText}</p> <FontAwesomeIcon icon={faLinkedin} />
                             </MotionLink>
                         </div>
+                    </div>
+                    <div className="Container Unpadded_Container Dark_Container Half_Width_Container Relative_Container">
+                        <NewInstaFeed />
                     </div>
                 </section>
 
