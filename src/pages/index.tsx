@@ -96,7 +96,7 @@ const officePictures = [
 
 const officePictures_2025 = [
     {
-        src: "/office/fotos_escritorio_2025_01.jpg",
+        src: "/office/fotos_escritorio_2025_01.png",
         alt: "Escritório Taborda Lima & Advogados Associados",
         size: {
             width: 1080,
@@ -104,7 +104,7 @@ const officePictures_2025 = [
         },
     },
     {
-        src: "/office/fotos_escritorio_2025_02.jpg",
+        src: "/office/fotos_escritorio_2025_02.png",
         alt: "Escritório Taborda Lima & Advogados Associados",
         size: {
             width: 1080,
@@ -112,7 +112,7 @@ const officePictures_2025 = [
         },
     },
     {
-        src: "/office/fotos_escritorio_2025_03.jpg",
+        src: "/office/fotos_escritorio_2025_03.png",
         alt: "Escritório Taborda Lima & Advogados Associados",
         size: {
             width: 1080,
@@ -120,7 +120,7 @@ const officePictures_2025 = [
         },
     },
     {
-        src: "/office/fotos_escritorio_2025_04.jpg",
+        src: "/office/fotos_escritorio_2025_04.png",
         alt: "Escritório Taborda Lima & Advogados Associados",
         size: {
             width: 1080,
@@ -128,7 +128,7 @@ const officePictures_2025 = [
         },
     },
     {
-        src: "/office/fotos_escritorio_2025_05.jpg",
+        src: "/office/fotos_escritorio_2025_05.png",
         alt: "Escritório Taborda Lima & Advogados Associados",
         size: {
             width: 1080,
