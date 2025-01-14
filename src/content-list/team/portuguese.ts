@@ -16,18 +16,6 @@ export const Team_Data_PT = [
         image: "/team/equipe_placeholder.png",
     },
     {
-        name: "Lilian Taborda",
-        role: "Advogada Sócia",
-        slug: "lilian-taborda",
-        memberPage: "/sobre/lilian-taborda",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 123456",
-        oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
-
-        image: "/team/equipe_placeholder.png",
-    },
-    {
         name: "Cesar Augusto Taborda Lima",
         role: "Advogado Sócio",
         slug: "cesar-augusto-taborda-lima",
@@ -43,31 +31,29 @@ export const Team_Data_PT = [
         image: "/team/equipe_cesar_2025.png",
     },
     {
-        name: "Giovanna Moreira de Souza Carrão",
-        role: "Departamento Administrativo",
-        slug: "giovana-moreira-de-souza-carrao",
-        memberPage: "/sobre/giovana-moreira-de-souza-carrao",
+        name: "Rafael Weiss Brandt",
+        role: "Controladoria",
+        slug: "rafael-weiss-brandt",
+        memberPage: "/sobre/rafael-weiss-brandt",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-
-        image: "/team/equipe_giovana_2025.png",
+        image: "/team/equipe_rafael_2025.png",
     },
     {
-        name: "Sofia Paula Leandro",
-        role: "Departamento de Marketing",
-        slug: "sofia-paula-leandro",
-        memberPage: "/sobre/sofia-paula-leandro",
+        name: "Susan Petza",
+        role: "Controladoria",
+        slug: "susan-petza",
+        memberPage: "/sobre/susan-petza",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-
-        image: "/team/equipe_sofia_2025.png",
+        image: "/team/equipe_susan_2025.png",
     },
     {
-        name: "Luana Moratelli Orofino",
+        name: "Luana Moratelli Orofino",
         role: "Departamento Jurídico",
         slug: "luana-moratelli",
         memberPage: "/sobre/luana-moratelli",
@@ -77,18 +63,6 @@ export const Team_Data_PT = [
         bio: ["", "", ""],
 
         image: "/team/equipe_luana_2025.png",
-    },
-    {
-        name: "Gabriela Magagnin Stark",
-        role: "Departamento Jurídico",
-        slug: "gabriela-stark",
-        memberPage: "/sobre/gabriela-stark",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 123456",
-        oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
-
-        image: "/team/equipe_gabriela_2025.png",
     },
     {
         name: "Juliana Da Costa Prataviera",
@@ -103,6 +77,18 @@ export const Team_Data_PT = [
         image: "/team/equipe_juliana_2025.png",
     },
     {
+        name: "Gabriela Magagnin Stark",
+        role: "Departamento Jurídico",
+        slug: "gabriela-stark",
+        memberPage: "/sobre/gabriela-stark",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_gabriela_2025.png",
+    },
+    {
         name: "Carlos Miguel Perotti",
         role: "Departamento de Direito Desportivo",
         slug: "carlos-miguel-perotti",
@@ -114,9 +100,46 @@ export const Team_Data_PT = [
 
         image: "/team/equipe_carlos_2025.png",
     },
+    {
+        name: "Giovanna Moreira de Souza Carrão",
+        role: "Departamento Administrativo",
+        slug: "giovana-moreira-de-souza-carrao",
+        memberPage: "/sobre/giovana-moreira-de-souza-carrao",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
 
-    /* Pessoas sem fotos */
+        image: "/team/equipe_giovana_2025.png",
+    },
+    {
+        name: "Ester Oliveira Marques",
+        role: "Departamento Jurídico",
+        slug: "ester-oliveira-marques",
+        memberPage: "/sobre/ester-oliveira-marques",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
 
+        image: "/team/equipe_ester_2025.png",
+    },
+    {
+        name: "Sofia Paula Leandro",
+        role: "Departamento de Marketing",
+        slug: "sofia-paula-leandro",
+        memberPage: "/sobre/sofia-paula-leandro",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_sofia_2025.png",
+    },
+];
+
+/* Pessoas removidas
+    
     {
         name: "Daniella da Matta",
         role: "Controladoria",
@@ -128,26 +151,5 @@ export const Team_Data_PT = [
         bio: ["", "", ""],
         image: "/team/equipe_placeholder.png",
     },
-    {
-        name: "Rafael Weiss Brandt",
-        role: "Controladoria",
-        slug: "rafael-weiss-brandt",
-        memberPage: "/sobre/rafael-weiss-brandt",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 123456",
-        oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
-        image: "/team/equipe_placeholder.png",
-    },
-    {
-        name: "Susan Petza",
-        role: "Controladoria",
-        slug: "susan-petza",
-        memberPage: "/sobre/susan-petza",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 123456",
-        oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
-        image: "/team/equipe_placeholder.png",
-    },
-];
+    
+*/

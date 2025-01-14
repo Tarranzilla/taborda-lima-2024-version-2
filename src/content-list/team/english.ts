@@ -16,18 +16,6 @@ export const Team_Data_EN = [
         image: "/team/equipe_placeholder.png",
     },
     {
-        name: "Lilian Taborda",
-        role: "Partner Lawyer",
-        slug: "lilian-taborda",
-        memberPage: "/sobre/lilian-taborda",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 123456",
-        oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
-
-        image: "/team/equipe_placeholder.png",
-    },
-    {
         name: "Cesar Augusto Taborda Lima",
         role: "Partner Lawyer",
         slug: "cesar-augusto-taborda-lima",
@@ -43,28 +31,26 @@ export const Team_Data_EN = [
         image: "/team/equipe_cesar_2025.png",
     },
     {
-        name: "Giovanna Moreira de Souza Carrão",
-        role: "Admnistrative Department",
-        slug: "giovana-moreira-de-souza-carrao",
-        memberPage: "/sobre/giovana-moreira-de-souza-carrao",
+        name: "Rafael Weiss Brandt",
+        role: "Controllership",
+        slug: "rafael-weiss-brandt",
+        memberPage: "/sobre/rafael-weiss-brandt",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-
-        image: "/team/equipe_giovana_2025.png",
+        image: "/team/equipe_rafael_2025.png",
     },
     {
-        name: "Sofia Paula Leandro",
-        role: "Marketing Department",
-        slug: "sofia-paula-leandro",
-        memberPage: "/sobre/sofia-paula-leandro",
+        name: "Susan Petza",
+        role: "Controllership",
+        slug: "susan-petza",
+        memberPage: "/sobre/susan-petza",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-
-        image: "/team/equipe_sofia_2025.png",
+        image: "/team/equipe_susan_2025.png",
     },
     {
         name: "Luana Moratelli Orofino",
@@ -79,18 +65,6 @@ export const Team_Data_EN = [
         image: "/team/equipe_luana_2025.png",
     },
     {
-        name: "Gabriela Magagnin Stark",
-        role: "Legal Department",
-        slug: "gabriela-stark",
-        memberPage: "/sobre/gabriela-stark",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 123456",
-        oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
-
-        image: "/team/equipe_gabriela_2025.png",
-    },
-    {
         name: "Juliana Da Costa Prataviera",
         role: "Compliance Department",
         slug: "juliana-pratavieira",
@@ -101,6 +75,18 @@ export const Team_Data_EN = [
         bio: ["", "", ""],
 
         image: "/team/equipe_juliana_2025.png",
+    },
+    {
+        name: "Gabriela Magagnin Stark",
+        role: "Legal Department",
+        slug: "gabriela-stark",
+        memberPage: "/sobre/gabriela-stark",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_gabriela_2025.png",
     },
     {
         name: "Carlos Miguel Perotti",
@@ -114,40 +100,40 @@ export const Team_Data_EN = [
 
         image: "/team/equipe_carlos_2025.png",
     },
-
-    /* Pessoas sem fotos */
-
     {
-        name: "Daniella da Matta",
-        role: "Controllership",
-        slug: "daniella-da-matta",
-        memberPage: "/sobre/daniella-da-matta",
+        name: "Giovanna Moreira de Souza Carrão",
+        role: "Admnistrative Department",
+        slug: "giovana-moreira-de-souza-carrao",
+        memberPage: "/sobre/giovana-moreira-de-souza-carrao",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/equipe_placeholder.png",
+
+        image: "/team/equipe_giovana_2025.png",
     },
     {
-        name: "Rafael Weiss Brandt",
-        role: "Controllership",
-        slug: "rafael-weiss-brandt",
-        memberPage: "/sobre/rafael-weiss-brandt",
+        name: "Ester Oliveira Marques",
+        role: "Legal Department",
+        slug: "ester-oliveira-marques",
+        memberPage: "/sobre/ester-oliveira-marques",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/equipe_placeholder.png",
+
+        image: "/team/equipe_ester_2025.png",
     },
     {
-        name: "Susan Petza",
-        role: "Controllership",
-        slug: "susan-petza",
-        memberPage: "/sobre/susan-petza",
+        name: "Sofia Paula Leandro",
+        role: "Marketing Department",
+        slug: "sofia-paula-leandro",
+        memberPage: "/sobre/sofia-paula-leandro",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/equipe_placeholder.png",
+
+        image: "/team/equipe_sofia_2025.png",
     },
 ];
