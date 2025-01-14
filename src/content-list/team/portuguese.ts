@@ -42,7 +42,18 @@ export const Team_Data_PT = [
         ],
         image: "/team/equipe_cesar_2025.png",
     },
+    {
+        name: "Giovanna Moreira de Souza Carrão",
+        role: "Departamento Administrativo",
+        slug: "giovana-moreira-de-souza-carrao",
+        memberPage: "/sobre/giovana-moreira-de-souza-carrao",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
 
+        image: "/team/equipe_giovana_2025.png",
+    },
     {
         name: "Sofia Paula Leandro",
         role: "Departamento de Marketing",
@@ -68,7 +79,7 @@ export const Team_Data_PT = [
         image: "/team/equipe_luana_2025.png",
     },
     {
-        name: "Gabriela Stark",
+        name: "Gabriela Magagnin Stark",
         role: "Departamento Jurídico",
         slug: "gabriela-stark",
         memberPage: "/sobre/gabriela-stark",
@@ -80,10 +91,10 @@ export const Team_Data_PT = [
         image: "/team/equipe_gabriela_2025.png",
     },
     {
-        name: "Juliana Prata",
+        name: "Juliana Da Costa Prataviera",
         role: "Departamento de Compliance",
-        slug: "juliana-prata",
-        memberPage: "/sobre/juliana-prata",
+        slug: "juliana-pratavieira",
+        memberPage: "/sobre/juliana-pratavieira",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
