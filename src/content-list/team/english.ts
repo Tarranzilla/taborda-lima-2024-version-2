@@ -42,6 +42,17 @@ export const Team_Data_EN = [
         image: "/team/equipe_rafael_2025.png",
     },
     {
+        name: "Daniella da Matta",
+        role: "Controllership",
+        slug: "daniella-da-matta",
+        memberPage: "/sobre/daniella-da-matta",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+        image: "/team/equipe_placeholder.png",
+    },
+    {
         name: "Susan Petza",
         role: "Controllership",
         slug: "susan-petza",
@@ -53,16 +64,15 @@ export const Team_Data_EN = [
         image: "/team/equipe_susan_2025.png",
     },
     {
-        name: "Luana Moratelli Orofino",
-        role: "Legal Department",
-        slug: "luana-moratelli",
-        memberPage: "/sobre/luana-moratelli",
+        name: "Amanda",
+        role: "Controllership",
+        slug: "amanda",
+        memberPage: "/sobre/amanda",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-
-        image: "/team/equipe_luana_2025.png",
+        image: "/team/equipe_placeholder.png",
     },
     {
         name: "Juliana Da Costa Prataviera",
@@ -77,16 +87,16 @@ export const Team_Data_EN = [
         image: "/team/equipe_juliana_2025.png",
     },
     {
-        name: "Gabriela Magagnin Stark",
+        name: "Luana Moratelli Orofino",
         role: "Legal Department",
-        slug: "gabriela-stark",
-        memberPage: "/sobre/gabriela-stark",
+        slug: "luana-moratelli",
+        memberPage: "/sobre/luana-moratelli",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
 
-        image: "/team/equipe_gabriela_2025.png",
+        image: "/team/equipe_luana_2025.png",
     },
     {
         name: "Carlos Miguel Perotti",
@@ -99,6 +109,18 @@ export const Team_Data_EN = [
         bio: ["", "", ""],
 
         image: "/team/equipe_carlos_2025.png",
+    },
+    {
+        name: "Gabriela Magagnin Stark",
+        role: "Legal Department",
+        slug: "gabriela-stark",
+        memberPage: "/sobre/gabriela-stark",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_gabriela_2025.png",
     },
     {
         name: "Giovanna Moreira de Souza Carrão",

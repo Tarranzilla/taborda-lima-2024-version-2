@@ -11,7 +11,7 @@ import { faInstagram, faLinkedin, faMailchimp } from "@fortawesome/free-brands-s
 
 import { useSimpleTranslation } from "@/international/use_translation";
 
-import GoogleMap from "@/components/GoogleMap";
+// import GoogleMap from "@/components/GoogleMap";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 
 import { handleScheduleWhatsApp } from "@/utils/WhatsApp";

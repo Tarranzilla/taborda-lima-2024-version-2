@@ -42,7 +42,18 @@ export const Team_Data_PT = [
         image: "/team/equipe_rafael_2025.png",
     },
     {
-        name: "Susan Petza",
+        name: "Daniella da Matta",
+        role: "Controladoria",
+        slug: "daniella-da-matta",
+        memberPage: "/sobre/daniella-da-matta",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+        image: "/team/equipe_placeholder.png",
+    },
+    {
+        name: "Susan Petza",
         role: "Controladoria",
         slug: "susan-petza",
         memberPage: "/sobre/susan-petza",
@@ -53,16 +64,15 @@ export const Team_Data_PT = [
         image: "/team/equipe_susan_2025.png",
     },
     {
-        name: "Luana Moratelli Orofino",
-        role: "Departamento Jurídico",
-        slug: "luana-moratelli",
-        memberPage: "/sobre/luana-moratelli",
+        name: "Amanda",
+        role: "Controladoria",
+        slug: "amanda",
+        memberPage: "/sobre/amanda",
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-
-        image: "/team/equipe_luana_2025.png",
+        image: "/team/equipe_placeholder.png",
     },
     {
         name: "Juliana Da Costa Prataviera",
@@ -77,6 +87,30 @@ export const Team_Data_PT = [
         image: "/team/equipe_juliana_2025.png",
     },
     {
+        name: "Luana Moratelli Orofino",
+        role: "Departamento Jurídico",
+        slug: "luana-moratelli",
+        memberPage: "/sobre/luana-moratelli",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_luana_2025.png",
+    },
+    {
+        name: "Carlos Miguel Perotti",
+        role: "Departamento de Direito Desportivo",
+        slug: "carlos-miguel-perotti",
+        memberPage: "/sobre/carlos-miguel-perotti",
+        linkedin: "https://www.linkedin.com/",
+        oab: "OAB/PR 123456",
+        oabLink: "https://www.oabpr.org.br/",
+        bio: ["", "", ""],
+
+        image: "/team/equipe_carlos_2025.png",
+    },
+    {
         name: "Gabriela Magagnin Stark",
         role: "Departamento Jurídico",
         slug: "gabriela-stark",
@@ -89,19 +123,7 @@ export const Team_Data_PT = [
         image: "/team/equipe_gabriela_2025.png",
     },
     {
-        name: "Carlos Miguel Perotti",
-        role: "Departamento de Direito Desportivo",
-        slug: "carlos-miguel-perotti",
-        memberPage: "/sobre/carlos-miguel-perotti",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 123456",
-        oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
-
-        image: "/team/equipe_carlos_2025.png",
-    },
-    {
-        name: "Giovanna Moreira de Souza Carrão",
+        name: "Giovanna Moreira de Souza Carrão",
         role: "Departamento Administrativo",
         slug: "giovana-moreira-de-souza-carrao",
         memberPage: "/sobre/giovana-moreira-de-souza-carrao",
@@ -137,19 +159,3 @@ export const Team_Data_PT = [
         image: "/team/equipe_sofia_2025.png",
     },
 ];
-
-/* Pessoas removidas
-    
-    {
-        name: "Daniella da Matta",
-        role: "Controladoria",
-        slug: "daniella-da-matta",
-        memberPage: "/sobre/daniella-da-matta",
-        linkedin: "https://www.linkedin.com/",
-        oab: "OAB/PR 123456",
-        oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
-        image: "/team/equipe_placeholder.png",
-    },
-    
-*/
