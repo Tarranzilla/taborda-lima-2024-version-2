@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import axios from "axios";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    const token = process.env.NEW_INSTAGRAM_TABORDA_LIMA_TOKEN;
+    const token = process.env.INSTAGRAM_ACCOUNT_TOKEN_2025;
     const fields = "id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username";
 
     // Check if the token exists before proceeding
@@ -11,7 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         return res.status(500).json({ error: "Instagram token is not configured" });
     }
 
-    const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
+    const url = `https://graph.instagram.com/v22.0/me/media?access_token=${token}&fields=${fields}`;
 
     try {
         // Make the API request to Instagram

@@ -20,9 +20,9 @@ export default function NewInstaFeed() {
     const [feedList, setFeedList] = useState<FeedItem[]>([]);
 
     async function getInstagramPosts() {
-        // const { data } = await axios.get("/api/instagram");
-        // console.log(data.data);
-        // setFeedList(data.data);
+        const { data } = await axios.get("/api/instagram");
+        console.log(data.data);
+        setFeedList(data.data);
     }
 
     const [imgIndex, setImgIndex] = useState(0);
