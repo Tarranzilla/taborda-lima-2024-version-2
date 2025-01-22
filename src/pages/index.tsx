@@ -135,6 +135,14 @@ const officePictures_2025 = [
             height: 1080,
         },
     },
+    {
+        src: "/office/fotos_escritorio_2025_06.jpg",
+        alt: "Escritório Taborda Lima & Advogados Associados",
+        size: {
+            width: 1080,
+            height: 1080,
+        },
+    },
 ];
 
 const MotionLink = m(Link);
@@ -222,7 +230,7 @@ export default function Home() {
                     <div className="Container Container_Left Image_Container Dark_Container">
                         <Image
                             className="Section_Image Consulta_Image"
-                            src={"/office/fotos_escritorio_002.png"}
+                            src={"/office/fotos_escritorio_2025_06.jpg"}
                             width={1280}
                             height={1280}
                             alt="Agende uma Consulta"
