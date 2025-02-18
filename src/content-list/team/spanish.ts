@@ -13,7 +13,7 @@ export const Team_Data_ES = [
             "Actuando en el área internacional, Liana tiene experiencia en Comercio Internacional, Derecho Aduanero e Inmigración para EE.UU., Europa y varios otros países.",
             "Con su sólida formación académica y vasta experiencia práctica, Liana es una referencia respetada en el ámbito jurídico, proporcionando asesoría jurídica confiable y estratégica a sus clientes.",
         ],
-        image: "/team/equipe_placeholder.png",
+        image: "/team/equipe_liana_2025.png",
     },
     {
         name: "Cesar Augusto Taborda Lima",

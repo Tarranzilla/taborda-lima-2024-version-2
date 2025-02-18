@@ -13,7 +13,7 @@ export const Team_Data_PT = [
             "Atuante na área internacional, Liana tem expertise em Comércio Internacional, Direito Aduaneiro e Imigratório para os EUA, Europa e diversos outros países.",
             "Com sua sólida formação acadêmica e vasta experiência prática, Liana é uma referência respeitada no meio jurídico, proporcionando orientação jurídica confiável e estratégica para seus clientes.",
         ],
-        image: "/team/equipe_placeholder.png",
+        image: "/team/equipe_liana_2025.png",
     },
     {
         name: "Cesar Augusto Taborda Lima",
@@ -82,7 +82,12 @@ export const Team_Data_PT = [
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
+        bio: [
+            "Graduada em Direito pela Faculdade de Cuiabá - Unic",
+            "Pós-Graduada em Processo Civil  na FACUMINAS",
+            "Pós-Graduanda em Compliance e Gestão de Risco na Faculdade Anhanguera",
+            "Idiomas: Português, Inglês e Espanhol",
+        ],
 
         image: "/team/equipe_juliana_2025.png",
     },
@@ -94,7 +99,12 @@ export const Team_Data_PT = [
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
+        bio: [
+            "Graduada em Direito pela Universidade Federal do Paraná - UFPR",
+            "Pós-Graduanda em Direito Internacional na Universidade Cruzeiro do Sul",
+            "Certificado sobre  Tribunal Penal Internacional - Harvard Model Congress Latin America 2015",
+            "Idiomas: Português ,Inglês, Francês e Alemão",
+        ],
 
         image: "/team/equipe_luana_2025.png",
     },
@@ -106,7 +116,7 @@ export const Team_Data_PT = [
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
+        bio: ["Graduando em Direito pela Universidade Federal do Paraná -UFPR", "Idiomas: Português, Inglês, Espanhol e Italiano"],
 
         image: "/team/equipe_carlos_2025.png",
     },
@@ -130,7 +140,7 @@ export const Team_Data_PT = [
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
+        bio: ["Graduanda em Administração pela Universidade Federal do Paraná -UFPR", "Idiomas:  Português e Inglês"],
 
         image: "/team/equipe_giovana_2025.png",
     },
@@ -142,7 +152,7 @@ export const Team_Data_PT = [
         linkedin: "https://www.linkedin.com/",
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
-        bio: ["", "", ""],
+        bio: ["Graduanda em Direito pela Faculdade de Administração e Economia - FAE", "Idiomas: Português, Inglês,  Espanhol  e Alemão"],
 
         image: "/team/equipe_ester_2025.png",
     },

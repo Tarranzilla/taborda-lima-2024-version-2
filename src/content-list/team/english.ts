@@ -13,7 +13,7 @@ export const Team_Data_EN = [
             "Active in the international area, Liana has expertise in International Trade, Customs Law, and Immigration Law for the U.S., Europe, and various other countries.",
             "With her solid academic background and extensive practical experience, Liana is a respected reference in the legal field, providing reliable and strategic legal guidance to her clients.",
         ],
-        image: "/team/equipe_placeholder.png",
+        image: "/team/equipe_liana_2025.png",
     },
     {
         name: "Cesar Augusto Taborda Lima",
