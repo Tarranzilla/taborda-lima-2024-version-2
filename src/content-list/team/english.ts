@@ -39,7 +39,7 @@ export const Team_Data_EN = [
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/equipe_rafael_2025.png",
+        image: "/team/equipe_rafael_2025_B.png",
     },
     {
         name: "Daniella da Matta",
