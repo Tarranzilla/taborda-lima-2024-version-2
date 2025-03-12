@@ -61,7 +61,7 @@ export const Team_Data_PT = [
         oab: "OAB/PR 123456",
         oabLink: "https://www.oabpr.org.br/",
         bio: ["", "", ""],
-        image: "/team/equipe_susan_2025.png",
+        image: "/team/equipe_susan_2025_B.png",
     },
     {
         name: "Amanda",
