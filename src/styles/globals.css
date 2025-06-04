@@ -56,6 +56,7 @@
     --brand-color-white: #ffffff;
     --brand-color-gray: #000810;
     --brand-color-gray-faded: #00081080;
+    --brand-color-gray-faded-2: #ffffff3b;
     --brand-color-dark-brown: #3c2f2f;
 
     --brand-color-beige: #bea07d;
@@ -1084,6 +1085,7 @@ section {
 /* ------ Página Sobre os Profissionais ------ */
 .Team_Member_Description_Card {
     display: flex;
+    align-items: center;
     gap: var(--medium-gap);
     margin-inline: auto;
 }
@@ -1091,15 +1093,61 @@ section {
 .Team_Member_Description_Card_Info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    border: 1px solid var(--brand-color-beige-bright);
+    padding: var(--medium-gap);
+    padding-bottom: 1.5rem;
+    border-radius: 2rem;
     gap: var(--small-gap);
+    max-height: 60vh;
 }
 
-.Team_Member_Description_Card_Info > p {
+.Team_Member_Container_Content {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: var(--medium-gap);
+}
+
+.Team_Member_Container_Content::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.Team_Member_Container_Content::-webkit-scrollbar-thumb {
+    background-color: var(--brand-color-beige-bright);
+    border-radius: var(--default-border-radius);
+    border-radius: 2rem;
+}
+
+.Team_Member_Container_Content::-webkit-scrollbar-track {
+    background-color: var(--brand-color-gray-faded-2);
+    border-radius: 2rem;
+}
+
+.Team_Member_Container_Content > p {
     font-size: 1.2rem;
     font-weight: 300;
     color: var(--alt-text-color);
-    max-width: 60ch;
+    max-width: 70ch;
+}
+
+.Team_Member_Curriculum {
+    display: flex;
+    flex-direction: column;
+    color: var(--alt-text-color);
+    font-family: var(--text-font-family);
+    font-weight: 300;
+    font-size: 1.2rem;
+    gap: var(--medium-gap);
+    margin-top: 1rem;
+}
+
+.Team_Member_Curriculum_Item {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--medium-gap);
+    border-left: 2px solid var(--special-text-color);
 }
 
 .Team_Member_Container_Image {
@@ -1117,7 +1165,7 @@ section {
     width: 45vh;
     width: 45dvh;
     background-color: var(--brand-color-beige-light);
-    border-radius: var(--default-border-radius);
+    border-radius: 2rem;
     object-fit: cover;
     position: relative;
     overflow: hidden;
@@ -2469,5 +2517,18 @@ footer > img {
         color: var(--brand-color-white);
         top: 1rem;
         right: 1rem;
+    }
+
+    .Team_Member_Container_Header {
+        
+    }
+
+    .Team_Member_Container_Content {
+        overflow-y: unset;
+        max-height: unset;
+    }
+
+    .Team_Member_Description_Card_Info {
+        max-height: unset;
     }
 }

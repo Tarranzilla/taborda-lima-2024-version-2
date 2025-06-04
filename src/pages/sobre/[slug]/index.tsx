@@ -78,19 +78,42 @@ const TeamMemberDetailPage = ({ person }: { person: TeamMember | null }) => {
                             <div className="Team_Member_Container_Header">
                                 <h1>{person.name}</h1>
                                 <h2>{person.role}</h2>
-                                <MotionLink
-                                    whileTap={{ scale: 0.95 }}
-                                    className="Team_Member_Container_OAB_Link"
-                                    href={person.oabLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {person.oab} <span className="material-icons">open_in_new</span>
-                                </MotionLink>
+                                {person.oab && person.oabLink && (
+                                    <MotionLink
+                                        whileTap={{ scale: 0.95 }}
+                                        className="Team_Member_Container_OAB_Link"
+                                        href={person.oabLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        {person.oab} <span className="material-icons">open_in_new</span>
+                                    </MotionLink>
+                                )}
+
                             </div>
-                            {person.bio.map((paragraph, index) => (
-                                <p key={index}>{paragraph}</p>
-                            ))}
+                            <div className="Team_Member_Container_Content">
+                                {person.bio.map((paragraph, index) => (
+                                    <p key={index}>{paragraph}</p>
+                                ))}
+
+                                {person.curriculum && person.curriculum.items.length > 0 && (
+                                    <div className="Team_Member_Curriculum">
+
+                                            {person.curriculum.items.map((item, index) => (
+                                                <div className="Team_Member_Curriculum_Item" key={index}>
+                                                    {item.title && <strong>{item.title}</strong>} {item.description}
+                                                    {item.date && <span> ({item.date})</span>}
+                                                    {item.link && (
+                                                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                                                            <span className="material-icons">open_in_new</span>
+                                                        </a>
+                                                    )}
+                                                </div>
+                                            ))}
+                                        
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
