@@ -2519,8 +2519,9 @@ footer > img {
         right: 1rem;
     }
 
-    .Team_Member_Container_Header {
-        
+    .Team_Member_Curriculum_Item {
+        text-align: start;
+        align-items: flex-start; 
     }
 
     .Team_Member_Container_Content {
