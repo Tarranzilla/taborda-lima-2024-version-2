@@ -106,7 +106,7 @@ export const Team_Data_EN = [
     },
     {
         name: "Rafael Weiss Brandt",
-        role: "Partner Lawyer",
+        role: "Associate Lawyer",
         slug: "rafael-weiss-brandt",
         memberPage: "/sobre/rafael-weiss-brandt",
         linkedin: "https://www.linkedin.com/",
@@ -137,7 +137,7 @@ export const Team_Data_EN = [
     },
     {
         name: "Daniella da Matta",
-        role: "Partner Lawyer",
+        role: "Associate Lawyer",
         slug: "daniella-da-matta",
         memberPage: "/sobre/daniella-da-matta",
         linkedin: "https://www.linkedin.com/",
@@ -169,7 +169,7 @@ export const Team_Data_EN = [
     },
     {
         name: "Susan Petza",
-        role: "Partner Lawyer",
+        role: "Associate Lawyer",
         slug: "susan-petza",
         memberPage: "/sobre/susan-petza",
         linkedin: "https://www.linkedin.com/",
