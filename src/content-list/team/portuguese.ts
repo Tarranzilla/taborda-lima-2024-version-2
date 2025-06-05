@@ -1,7 +1,7 @@
 export const Team_Data_PT = [
     {
         name: "Liana Maria Taborda Lima",
-        role: "Advogada Senior",
+        role: "Advogada Sócia",
         slug: "liana-taborda-lima",
         memberPage: "/sobre/liana-taborda-lima",
         linkedin: "https://www.linkedin.com/in/liana-taborda-lima-7b1b1b1b1/",
@@ -15,7 +15,7 @@ export const Team_Data_PT = [
         curriculum: {
             items: [
                 {
-                    title: "Sócia fundadora",
+                    title: "Sócia Fundadora",
                     description: "Taborda Lima & Advogados Associados",
                 },
                 {
@@ -105,7 +105,7 @@ export const Team_Data_PT = [
     },
     {
         name: "Rafael Weiss Brandt",
-        role: "Controladoria",
+        role: "Advogado Associado",
         slug: "rafael-weiss-brandt",
         memberPage: "/sobre/rafael-weiss-brandt",
         linkedin: "https://www.linkedin.com/",
@@ -134,7 +134,7 @@ export const Team_Data_PT = [
     },
     {
         name: "Daniella da Matta",
-        role: "Controladoria",
+        role: "Advogada Associada",
         slug: "daniella-da-matta",
         memberPage: "/sobre/daniella-da-matta",
         linkedin: "https://www.linkedin.com/",
@@ -164,7 +164,7 @@ export const Team_Data_PT = [
     },
     {
         name: "Susan Petza",
-        role: "Controladoria",
+        role: "Advogada Associada",
         slug: "susan-petza",
         memberPage: "/sobre/susan-petza",
         linkedin: "https://www.linkedin.com/",
@@ -189,7 +189,7 @@ export const Team_Data_PT = [
     },
     {
         name: "Juliana Da Costa Prataviera",
-        role: "Departamento de Compliance",
+        role: "Departamento Compliance",
         slug: "juliana-pratavieira",
         memberPage: "/sobre/juliana-pratavieira",
         linkedin: "https://www.linkedin.com/",
@@ -221,6 +221,31 @@ export const Team_Data_PT = [
             ],
         },
         image: "/team/equipe_juliana_2025.png",
+    },
+    {
+        name: "Giovanna Moreira de Souza Carrão",
+        role: "Departamento Administrativo",
+        slug: "giovana-moreira-de-souza-carrao",
+        memberPage: "/sobre/giovana-moreira-de-souza-carrao",
+        linkedin: "https://www.linkedin.com/",
+        bio: ["Giovanna Moreira de Souza Carrão atua no Departamento Administrativo do Taborda Lima & Advogados Associados. Graduanda em Administração pela Universidade Federal do Paraná (UFPR), contribui para a gestão e organização dos processos internos do escritório. "],
+        curriculum: {
+            items: [
+                {
+                    title: "Departamento Administrativo",
+                    description: "Taborda Lima & Advogados Associados",
+                },
+                {
+                    title: "Graduanda em Administração",
+                    description: "Universidade Federal do Paraná - UFPR",
+                },
+                {
+                    title: "Idiomas",
+                    description: "Português e Inglês",
+                },
+            ],
+        },
+        image: "/team/equipe_giovana_2025.png",
     },   
     {
         name: "Carlos Miguel Perotti",
@@ -249,7 +274,7 @@ export const Team_Data_PT = [
     },
     {
         name: "Gabriela Magagnin Stark",
-        role: "Departamento Jurídico",
+        role: "Departamento Direito Civil",
         slug: "gabriela-stark",
         memberPage: "/sobre/gabriela-stark",
         linkedin: "https://www.linkedin.com/",
@@ -258,33 +283,8 @@ export const Team_Data_PT = [
         image: "/team/equipe_gabriela_2025.png",
     },
     {
-        name: "Giovanna Moreira de Souza Carrão",
-        role: "Departamento Administrativo",
-        slug: "giovana-moreira-de-souza-carrao",
-        memberPage: "/sobre/giovana-moreira-de-souza-carrao",
-        linkedin: "https://www.linkedin.com/",
-        bio: ["Giovanna Moreira de Souza Carrão atua no Departamento Administrativo do Taborda Lima & Advogados Associados. Graduanda em Administração pela Universidade Federal do Paraná (UFPR), contribui para a gestão e organização dos processos internos do escritório. "],
-        curriculum: {
-            items: [
-                {
-                    title: "Departamento Administrativo",
-                    description: "Taborda Lima & Advogados Associados",
-                },
-                {
-                    title: "Graduanda em Administração",
-                    description: "Universidade Federal do Paraná - UFPR",
-                },
-                {
-                    title: "Idiomas",
-                    description: "Português e Inglês",
-                },
-            ],
-        },
-        image: "/team/equipe_giovana_2025.png",
-    },
-    {
         name: "Ester Oliveira Marques",
-        role: "Departamento Jurídico",
+        role: "Departamento Direito Cível",
         slug: "ester-oliveira-marques",
         memberPage: "/sobre/ester-oliveira-marques",
         linkedin: "https://www.linkedin.com/",

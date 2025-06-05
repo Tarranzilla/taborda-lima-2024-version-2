@@ -1,7 +1,7 @@
 export const Team_Data_ES = [
     {
         name: "Liana Maria Taborda Lima",
-        role: "Abogada Senior",
+        role: "Abogada Socia",
         slug: "liana-taborda-lima",
         memberPage: "/sobre/liana-taborda-lima",
         linkedin: "https://www.linkedin.com/in/liana-taborda-lima-7b1b1b1b1/",
@@ -105,7 +105,7 @@ export const Team_Data_ES = [
     },
     {
         name: "Rafael Weiss Brandt",
-        role: "Controladoria",
+        role: "Abogado Asociado",
         slug: "rafael-weiss-brandt",
         memberPage: "/sobre/rafael-weiss-brandt",
         linkedin: "https://www.linkedin.com/",
@@ -136,7 +136,7 @@ export const Team_Data_ES = [
     },
     {
         name: "Daniella da Matta",
-        role: "Controladoria",
+        role: "Abogada Asociada",
         slug: "daniella-da-matta",
         memberPage: "/sobre/daniella-da-matta",
         linkedin: "https://www.linkedin.com/",
@@ -168,7 +168,7 @@ export const Team_Data_ES = [
     },
     {
         name: "Susan Petza",
-        role: "Controladoria",
+        role: "Abogada Asociada",
         slug: "susan-petza",
         memberPage: "/sobre/susan-petza",
         linkedin: "https://www.linkedin.com/",
@@ -230,6 +230,33 @@ export const Team_Data_ES = [
         image: "/team/equipe_juliana_2025.png",
     },
     {
+        name: "Giovanna Moreira de Souza Carrão",
+        role: "Departamento Administrativo",
+        slug: "giovana-moreira-de-souza-carrao",
+        memberPage: "/sobre/giovana-moreira-de-souza-carrao",
+        linkedin: "https://www.linkedin.com/",
+        bio: [
+        "Giovanna Moreira de Souza Carrão forma parte del Departamento Administrativo de Taborda Lima & Advogados Associados. Estudiante de Administración en la Universidad Federal de Paraná (UFPR), contribuye a la gestión y organización de los procesos internos del despacho."
+        ],
+        curriculum: {
+        items: [
+            {
+            title: "Departamento Administrativo",
+            description: "Taborda Lima & Advogados Associados",
+            },
+            {
+            title: "Estudiante de Administración",
+            description: "Universidad Federal de Paraná - UFPR",
+            },
+            {
+            title: "Idiomas",
+            description: "Portugués e Inglés",
+            },
+        ],
+        },
+        image: "/team/equipe_giovana_2025.png",
+    },
+    {
         name: "Carlos Miguel Perotti",
         role: "Derecho Deportivo",
         slug: "carlos-miguel-perotti",
@@ -259,7 +286,7 @@ export const Team_Data_ES = [
     },
     {
         name: "Gabriela Magagnin Stark",
-        role: "Departamento Legal",
+        role: "Departamento de Derecho Civil",
         slug: "gabriela-stark",
         memberPage: "/sobre/gabriela-stark",
         linkedin: "https://www.linkedin.com/",
@@ -268,35 +295,8 @@ export const Team_Data_ES = [
         image: "/team/equipe_gabriela_2025.png",
     },
     {
-        name: "Giovanna Moreira de Souza Carrão",
-        role: "Departamento Administrativo",
-        slug: "giovana-moreira-de-souza-carrao",
-        memberPage: "/sobre/giovana-moreira-de-souza-carrao",
-        linkedin: "https://www.linkedin.com/",
-        bio: [
-        "Giovanna Moreira de Souza Carrão forma parte del Departamento Administrativo de Taborda Lima & Advogados Associados. Estudiante de Administración en la Universidad Federal de Paraná (UFPR), contribuye a la gestión y organización de los procesos internos del despacho."
-        ],
-        curriculum: {
-        items: [
-            {
-            title: "Departamento Administrativo",
-            description: "Taborda Lima & Advogados Associados",
-            },
-            {
-            title: "Estudiante de Administración",
-            description: "Universidad Federal de Paraná - UFPR",
-            },
-            {
-            title: "Idiomas",
-            description: "Portugués e Inglés",
-            },
-        ],
-        },
-        image: "/team/equipe_giovana_2025.png",
-    },
-    {
         name: "Ester Oliveira Marques",
-        role: "Departamento Legal",
+        role: "Departamento de Derecho Civil",
         slug: "ester-oliveira-marques",
         memberPage: "/sobre/ester-oliveira-marques",
         linkedin: "https://www.linkedin.com/",
