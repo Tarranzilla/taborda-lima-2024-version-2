@@ -7,6 +7,17 @@ export default function Document() {
             <Head>
                 <link rel="manifest" href="/manifest.json" />
                 <meta name="theme-color" content="#bea07d" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17151557620"></script>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'AW-17151557620');
+                        `,
+                    }}
+                />
             </Head>
 
             <body>
